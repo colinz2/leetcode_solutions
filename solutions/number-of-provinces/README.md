@@ -119,5 +119,5 @@ func findCircleNum(isConnected [][]int) int {
 ## Links
 
 - [Prev](../next-greater-element-i/README.md) 
-- [Next](../daily-temperatures/README.md) 
+- [Next](../average-of-levels-in-binary-tree/README.md) 
 

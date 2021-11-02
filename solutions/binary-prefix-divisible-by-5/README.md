@@ -77,6 +77,6 @@ public:
 
 ## Links
 
-- [Prev](../daily-temperatures/README.md) 
+- [Prev](../maximum-depth-of-n-ary-tree/README.md) 
 - [Next](../yong-liang-ge-zhan-shi-xian-dui-lie-lcof/README.md) 
 

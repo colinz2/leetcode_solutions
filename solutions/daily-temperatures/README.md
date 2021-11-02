@@ -77,6 +77,6 @@ public:
 
 ## Links
 
-- [Prev](../number-of-provinces/README.md) 
-- [Next](../binary-prefix-divisible-by-5/README.md) 
+- [Prev](../redundant-connection/README.md) 
+- [Next](../maximum-depth-of-n-ary-tree/README.md) 
 

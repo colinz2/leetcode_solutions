@@ -73,6 +73,6 @@ public:
 
 ## Links
 
-- [Prev](../binary-tree-level-order-traversal/README.md) 
+- [Prev](../minimum-depth-of-binary-tree/README.md) 
 - [Next](../best-time-to-buy-and-sell-stock-ii/README.md) 
 

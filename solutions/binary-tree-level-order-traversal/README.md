@@ -77,10 +77,13 @@ public:
 
 ## 相似题目
 
+- [二叉树的层序遍历 II](../binary-tree-level-order-traversal-ii/README.md)  [Medium] 
+- [二叉树的最小深度](../minimum-depth-of-binary-tree/README.md)  [Easy] 
+- [二叉树的层平均值](../average-of-levels-in-binary-tree/README.md)  [Easy] 
 
 
 ## Links
 
 - [Prev](../search-insert-position/README.md) 
-- [Next](../best-time-to-buy-and-sell-stock/README.md) 
+- [Next](../maximum-depth-of-binary-tree/README.md) 
 
