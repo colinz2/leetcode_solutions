@@ -81,6 +81,6 @@ public:
 
 ## Links
 
-- [Prev](../number-of-1-bits/README.md) 
+- [Prev](../kth-largest-element-in-an-array/README.md) 
 - [Next](../valid-anagram/README.md) 
 

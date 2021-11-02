@@ -75,6 +75,6 @@ public:
 
 ## Links
 
-- [Prev](../best-time-to-buy-and-sell-stock-ii/README.md) 
+- [Prev](../min-stack/README.md) 
 - [Next](../number-of-1-bits/README.md) 
 

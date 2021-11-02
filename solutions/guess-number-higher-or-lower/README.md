@@ -107,6 +107,6 @@ public:
 
 ## Links
 
-- [Prev](../first-bad-version/README.md) 
+- [Prev](../moving-average-from-data-stream/README.md) 
 - [Next](../next-greater-element-i/README.md) 
 

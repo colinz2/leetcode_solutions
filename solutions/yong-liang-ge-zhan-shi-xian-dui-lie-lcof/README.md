@@ -88,4 +88,5 @@ private:
 ## Links
 
 - [Prev](../binary-prefix-divisible-by-5/README.md) 
+- [Next](../zui-xiao-de-kge-shu-lcof/README.md) 
 

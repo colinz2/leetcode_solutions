@@ -83,5 +83,5 @@ public:
 ## Links
 
 - [Prev](../add-digits/README.md) 
-- [Next](../guess-number-higher-or-lower/README.md) 
+- [Next](../moving-average-from-data-stream/README.md) 
 
