@@ -155,6 +155,7 @@ class Solution:
 
 ## 相似题目
 
+- [数据流中的第 K 大元素](../kth-largest-element-in-a-stream/README.md)  [Easy] 
 
 
 ## Links

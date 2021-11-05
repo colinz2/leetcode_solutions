@@ -77,6 +77,6 @@ public:
 
 ## Links
 
-- [Prev](../maximum-depth-of-n-ary-tree/README.md) 
+- [Prev](../kth-largest-element-in-a-stream/README.md) 
 - [Next](../yong-liang-ge-zhan-shi-xian-dui-lie-lcof/README.md) 
 
