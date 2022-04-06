@@ -1,5 +1,5 @@
 // @Title: Reverse Bits
-// @Author: realzhangm
+// @Author: colinjxc
 // @Date: 2021-11-01T21:43:57+08:00
 // @URL: https://leetcode-cn.com/problems/reverse-bits
 

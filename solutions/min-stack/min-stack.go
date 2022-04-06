@@ -1,5 +1,5 @@
 // @Title: Min Stack
-// @Author: realzhangm
+// @Author: colinjxc
 // @Date: 2021-11-02T19:12:46+08:00
 // @URL: https://leetcode-cn.com/problems/min-stack
 

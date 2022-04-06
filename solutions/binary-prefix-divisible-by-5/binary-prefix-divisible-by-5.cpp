@@ -1,5 +1,5 @@
 // @Title: Binary Prefix Divisible By 5
-// @Author: realzhangm
+// @Author: colinjxc
 // @Date: 2021-10-29T17:02:33+08:00
 // @URL: https://leetcode-cn.com/problems/binary-prefix-divisible-by-5
 

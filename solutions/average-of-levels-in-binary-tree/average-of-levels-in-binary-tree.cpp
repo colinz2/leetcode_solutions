@@ -1,5 +1,5 @@
 // @Title: Average of Levels in Binary Tree
-// @Author: realzhangm
+// @Author: colinjxc
 // @Date: 2021-11-02T00:47:37+08:00
 // @URL: https://leetcode-cn.com/problems/average-of-levels-in-binary-tree
 

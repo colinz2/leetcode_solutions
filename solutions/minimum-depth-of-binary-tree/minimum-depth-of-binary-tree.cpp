@@ -1,5 +1,5 @@
 // @Title: Minimum Depth of Binary Tree
-// @Author: realzhangm
+// @Author: colinjxc
 // @Date: 2021-11-02T12:20:01+08:00
 // @URL: https://leetcode-cn.com/problems/minimum-depth-of-binary-tree
 

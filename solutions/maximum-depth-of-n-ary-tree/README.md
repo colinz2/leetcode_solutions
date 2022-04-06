@@ -132,6 +132,6 @@ func maxDepth(root *Node) int {
 
 ## Links
 
-- [Prev](../daily-temperatures/README.md) 
-- [Next](../kth-largest-element-in-a-stream/README.md) 
+- [Prev](../flatten-a-multilevel-doubly-linked-list/README.md) 
+- [Next](../n-ary-tree-preorder-traversal/README.md) 
 

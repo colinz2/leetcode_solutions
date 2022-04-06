@@ -62,6 +62,33 @@
 
 ## 题解
 
+### c [🔗](guess-number-higher-or-lower.c) 
+```c
+/** 
+ * Forward declaration of guess API.
+ * @param  num   your guess
+ * @return 	     -1 if num is lower than the guess number
+ *			      1 if num is higher than the guess number
+ *               otherwise return 0
+ * int guess(int num);
+ */
+
+int guessNumber(int n){
+    int lo = 0, hi = n;
+    while (lo <= hi) {
+        int m = lo + (hi - lo) / 2;
+        int ret = guess(m);
+        if (ret == 1) {
+            lo = m + 1;
+        } else if (ret == -1) {
+            hi = m - 1;
+        } else {
+            return m;
+        }
+    }
+    return -1;
+}
+```
 ### cpp [🔗](guess-number-higher-or-lower.cpp) 
 ```cpp
 /** 
@@ -75,19 +102,21 @@
 
 class Solution {
 public:
-    int guessNumber(int n) {    
-        int l = 1, r = n;
-        while (l <= r) {
-            int mid = l + (r - l)/2;
-            int ret = guess(mid);
-            if (ret == -1) {
-                r = mid - 1;
+    int guessNumber(int n) {
+        int j = 1, k = n;
+        while (j <= n) {
+            int m = j + (k - j)/2;
+            int ret = guess(m);
+            if (ret == 0) {
+                return m;
             } else if (ret == 1) {
-                l = mid + 1;
+                j = m + 1;
+            } else if (ret == -1) {
+                k = m - 1;
             } else {
-                return mid;
+                break;
             }
-        }
+        } 
         return -1;
     }
 };
@@ -107,6 +136,6 @@ public:
 
 ## Links
 
-- [Prev](../moving-average-from-data-stream/README.md) 
-- [Next](../next-greater-element-i/README.md) 
+- [Prev](../sum-of-two-integers/README.md) 
+- [Next](../linked-list-random-node/README.md) 
 

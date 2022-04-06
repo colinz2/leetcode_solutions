@@ -1,0 +1,8 @@
+// @Title: Second Highest Salary
+// @Author: colinjxc
+// @Date: 2018-12-11T00:22:26+08:00
+// @URL: https://leetcode-cn.com/problems/second-highest-salary
+
+
+# Write your MySQL query statement below
+select (select DISTINCT  Salary from Employee ORDER BY Salary DESC limit 1, 1) as SecondHighestSalary;

@@ -1,5 +1,5 @@
 // @Title: Kth Largest Element in an Array
-// @Author: realzhangm
+// @Author: colinjxc
 // @Date: 2021-11-02T23:54:50+08:00
 // @URL: https://leetcode-cn.com/problems/kth-largest-element-in-an-array
 

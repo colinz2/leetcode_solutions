@@ -38,6 +38,33 @@
 
 ## 题解
 
+### c [🔗](valid-anagram.c) 
+```c
+bool is_all_zero(int *array, int len) {
+    for (int i = 0; i < len; i++) {
+        if (array[i] != 0) return false;
+    }
+    return true;
+}
+
+bool isAnagram(char * s, char * t){
+    int find[256] = {0};
+    int s_len = 0, t_len = 0;
+
+    if (s == NULL || t == NULL)
+        return false;
+
+    while (*s != '\0') {
+        find[*s++ - 'a']++;
+        s_len++;
+    }
+    while (*t != '\0') {
+        find[*t++ - 'a']--;
+        t_len++;
+    } 
+    return s_len == t_len && is_all_zero(find, 26);
+}
+```
 ### cpp [🔗](valid-anagram.cpp) 
 ```cpp
 class Solution {
@@ -45,11 +72,42 @@ public:
     bool isAnagram(string s, string t) {
         int cnt[256] = {0,};
 
-        for (auto &c : s) cnt[c - 'a']++;
-        for (auto &c : t) cnt[c - 'a']--;
-        return all_of(cnt, cnt+32, [](int c){ return  c == 0; });
+        for (auto &c : s) cnt[c]++;
+        for (auto &c : t) cnt[c]--;
+        return all_of(cnt+'a', cnt+'z' + 1, [](int c){ return  c == 0; });
     }
 };
+```
+### golang [🔗](valid-anagram.go) 
+```golang
+func isAnagram(s string, t string) bool {
+    cntMap := make(map[rune]int)
+    if len(s) != len(t) {
+        return false
+    }
+
+    for _, c := range s {
+        cntMap[c]++
+    }
+
+    for _, c := range t {
+        cntMap[c]--
+    }
+
+    for _, v := range cntMap {
+        if v != 0 {
+            return false
+        }
+    }
+
+    return true
+}
+```
+### python3 [🔗](valid-anagram.py) 
+```python3
+class Solution:
+    def isAnagram(self, s: str, t: str) -> bool:
+        return sorted(s) == sorted(t)
 ```
 
 
@@ -62,10 +120,12 @@ public:
 
 ## 相似题目
 
+- [字母异位词分组](../group-anagrams/README.md)  [Medium] 
+- [回文排列](../palindrome-permutation/README.md)  [Easy] 
 
 
 ## Links
 
-- [Prev](../invert-binary-tree/README.md) 
-- [Next](../add-digits/README.md) 
+- [Prev](../sliding-window-maximum/README.md) 
+- [Next](../group-shifted-strings/README.md) 
 

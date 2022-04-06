@@ -1,5 +1,5 @@
 // @Title: Maximum Depth of Binary Tree
-// @Author: realzhangm
+// @Author: colinjxc
 // @Date: 2021-11-02T12:30:36+08:00
 // @URL: https://leetcode-cn.com/problems/maximum-depth-of-binary-tree
 

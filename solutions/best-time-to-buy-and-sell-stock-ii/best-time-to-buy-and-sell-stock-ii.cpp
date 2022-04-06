@@ -1,5 +1,5 @@
 // @Title: Best Time to Buy and Sell Stock II
-// @Author: realzhangm
+// @Author: colinjxc
 // @Date: 2021-11-01T18:39:55+08:00
 // @URL: https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock-ii
 

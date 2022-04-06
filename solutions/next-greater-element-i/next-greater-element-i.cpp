@@ -1,28 +1,33 @@
 // @Title: Next Greater Element I
-// @Author: realzhangm
-// @Date: 2021-10-29T19:06:44+08:00
+// @Author: colinjxc
+// @Date: 2022-01-25T10:22:44+08:00
 // @URL: https://leetcode-cn.com/problems/next-greater-element-i
 
 
 class Solution {
 public:
     vector<int> nextGreaterElement(vector<int>& nums1, vector<int>& nums2) {
-        vector<int> res(nums1.size(), -1);
         stack<int> st;
-        map<int, int> m;
-        // 先遍历 nums2 啊，再遍历 nums1，类似每日温度
-        for (auto &v : nums2) {
-            m[v] = -1;
-            while (!st.empty() && v > st.top()) {
-                m[st.top()] = v;
+        map<int, int> greaterMap;
+
+        for (auto& n : nums2) {
+            while (!st.empty() && n > st.top()) {
+                greaterMap[st.top()] = n;
                 st.pop();
             }
-            st.push(v);
+            st.push(n);
+        }
+        
+        vector<int> res;
+        for (auto& n : nums1) {
+            auto itr = greaterMap.find(n);
+            if (itr != greaterMap.end()) {
+                res.push_back(itr->second);
+            } else {
+                res.push_back(-1);
+            }
         }
 
-        for (int i = 0; i < nums1.size(); i++) {
-            res[i] = m[nums1[i]];
-        }
         return res;
     }
 };

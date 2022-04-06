@@ -1,24 +1,21 @@
 // @Title: Search Insert Position
-// @Author: realzhangm
-// @Date: 2021-10-30T21:59:19+08:00
+// @Author: colinjxc
+// @Date: 2022-02-08T03:44:31+08:00
 // @URL: https://leetcode-cn.com/problems/search-insert-position
 
 
 class Solution {
 public:
     int searchInsert(vector<int>& nums, int target) {
-        int l = 0, r = nums.size() - 1;
-        int mid = 0;
-        while (l <= r) {
-            mid = l + (r - l)/2;
-            if (nums[mid] == target) {
-                return mid;
-            } else if (nums[mid] > target) {
-                r = mid - 1;
-            } else {
-                l = mid + 1;
+        int j = 0, k = nums.size();
+        while (j < k) {
+            int m = j + (k -j )/2;
+            if (nums[m] < target) {
+                j = m + 1;
+            } else  {
+                k = m; 
             }
         }
-        return l;
+        return k;
     }
 };

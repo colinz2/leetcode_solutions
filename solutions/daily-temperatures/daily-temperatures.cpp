@@ -1,5 +1,5 @@
 // @Title: Daily Temperatures
-// @Author: realzhangm
+// @Author: colinjxc
 // @Date: 2021-10-29T16:51:43+08:00
 // @URL: https://leetcode-cn.com/problems/daily-temperatures
 

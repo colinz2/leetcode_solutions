@@ -45,16 +45,13 @@
 class Solution {
 public:
     int maxProfit(vector<int>& prices) {
-        int buy = prices[0];
-        int max = 0;
-        for (int i = 0; i < prices.size(); i++) {
-            if (prices[i] > buy) {
-                max = std::max(max, prices[i] - buy);
-            } else {
-                buy = prices[i];
-            }
-        }  
-        return max;
+        int max_profit = 0;
+        int min_price = prices[0];
+        for (int i = 1; i < prices.size(); i++) {
+            max_profit = std::max(max_profit, prices[i] - min_price);
+            min_price = std::min(min_price, prices[i]);
+        }
+        return max_profit;
     }
 };
 ```
@@ -68,11 +65,12 @@ public:
 
 ## 相似题目
 
+- [最大子数组和](../maximum-subarray/README.md)  [Easy] 
 - [买卖股票的最佳时机 II](../best-time-to-buy-and-sell-stock-ii/README.md)  [Medium] 
 
 
 ## Links
 
-- [Prev](../minimum-depth-of-binary-tree/README.md) 
+- [Prev](../triangle/README.md) 
 - [Next](../best-time-to-buy-and-sell-stock-ii/README.md) 
 

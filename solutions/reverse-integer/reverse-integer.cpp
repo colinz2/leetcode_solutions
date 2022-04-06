@@ -1,5 +1,5 @@
 // @Title: Reverse Integer
-// @Author: realzhangm
+// @Author: colinjxc
 // @Date: 2021-11-01T22:26:56+08:00
 // @URL: https://leetcode-cn.com/problems/reverse-integer
 

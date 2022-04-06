@@ -1,5 +1,5 @@
 // @Title: Number of Provinces
-// @Author: realzhangm
+// @Author: colinjxc
 // @Date: 2021-10-28T22:03:16+08:00
 // @URL: https://leetcode-cn.com/problems/number-of-provinces
 

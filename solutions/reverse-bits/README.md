@@ -69,12 +69,12 @@ public:
 
 ## 相似题目
 
-- [整数反转](../reverse-integer/README.md)  [Easy] 
+- [整数反转](../reverse-integer/README.md)  [Medium] 
 - [位1的个数](../number-of-1-bits/README.md)  [Easy] 
 
 
 ## Links
 
-- [Prev](../min-stack/README.md) 
+- [Prev](../rotate-array/README.md) 
 - [Next](../number-of-1-bits/README.md) 
 

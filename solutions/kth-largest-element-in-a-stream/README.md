@@ -52,19 +52,24 @@ kthLargest.add(4);   // return 8
 class KthLargest {
 public:
     KthLargest(int k, vector<int>& nums) : k_(k) {
-        for (auto &v : nums) {
-            add(v);
+        for (auto num : nums) {
+            add(num);
         }
     }
     
     int add(int val) {
-        if (pq_.size() < k_) {
-            pq_.push(val);
-        } else if (pq_.top() < val) {
-            pq_.push(val);
+        pq_.push(val);
+        if (pq_.size() > k_) {
             pq_.pop();
         }
-        
+        // if (pq_.size() < k_) {
+        //     pq_.push(val);
+        // } else {
+        //     if (val > pq_.top()) {
+        //         pq_.pop();
+        //         pq_.push(val);
+        //     }
+        // }
         return pq_.top();
     }
 private:
@@ -97,6 +102,6 @@ private:
 
 ## Links
 
-- [Prev](../maximum-depth-of-n-ary-tree/README.md) 
-- [Next](../binary-prefix-divisible-by-5/README.md) 
+- [Prev](../search-in-a-sorted-array-of-unknown-size/README.md) 
+- [Next](../binary-search/README.md) 
 

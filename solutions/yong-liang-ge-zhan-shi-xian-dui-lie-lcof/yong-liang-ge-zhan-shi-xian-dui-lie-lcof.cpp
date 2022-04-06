@@ -1,6 +1,6 @@
 // @Title: 用两个栈实现队列 LCOF
-// @Author: realzhangm
-// @Date: 2021-10-29T16:19:10+08:00
+// @Author: colinjxc
+// @Date: 2022-04-01T21:19:57+08:00
 // @URL: https://leetcode-cn.com/problems/yong-liang-ge-zhan-shi-xian-dui-lie-lcof
 
 
@@ -11,27 +11,27 @@ public:
     }
     
     void appendTail(int value) {
-        s1.push(value);
+        st1.push(value);
     }
     
     int deleteHead() {
-        if (s2.empty()) {
-            while (!s1.empty()) {
-                s2.push(s1.top());
-                s1.pop();
+        if (st2.empty()) {
+            while (!st1.empty()) {
+                st2.push(st1.top());
+                st1.pop();
             }
         }
-
-        if (!s2.empty()) {
-            int res = s2.top();
-            s2.pop();
-            return res;
+        if (st2.empty()) {
+            return -1;
         }
-        return -1;
+
+        int top = st2.top();
+        st2.pop();
+        return top;
     }
 private:
-    stack<int> s1;
-    stack<int> s2;
+    stack<int> st1;
+    stack<int> st2;
 };
 
 /**

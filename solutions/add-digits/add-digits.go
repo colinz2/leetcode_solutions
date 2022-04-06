@@ -1,22 +1,19 @@
 // @Title: Add Digits
-// @Author: realzhangm
-// @Date: 2021-10-28T23:14:47+08:00
+// @Author: colinjxc
+// @Date: 2022-01-26T21:01:01+08:00
 // @URL: https://leetcode-cn.com/problems/add-digits
 
 
 func addDigits(num int) int {
-    if num < 10 {
-        return num
+    if num > 9 {
+        return addDigits(func(n int) int {
+            res := 0
+            for n > 0 {
+                res += n % 10
+                n /= 10
+            }
+            return res
+        }(num))
     }
-    num = addD(num)
-    return addDigits(num)
-}
-
-func addD(n int) int {
-    sum := 0
-    for n > 0 {
-        sum += n%10
-        n /= 10
-    }
-    return sum 
+    return num
 }

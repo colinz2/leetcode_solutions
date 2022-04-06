@@ -99,6 +99,6 @@ func (this *MovingAverage) Next(val int) float64 {
 
 ## Links
 
-- [Prev](../first-bad-version/README.md) 
-- [Next](../guess-number-higher-or-lower/README.md) 
+- [Prev](../reverse-vowels-of-a-string/README.md) 
+- [Next](../top-k-frequent-elements/README.md) 
 

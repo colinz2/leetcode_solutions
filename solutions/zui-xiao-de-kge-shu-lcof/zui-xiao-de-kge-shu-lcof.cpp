@@ -1,19 +1,17 @@
 // @Title: 最小的k个数  LCOF
-// @Author: realzhangm
-// @Date: 2021-11-02T20:22:49+08:00
+// @Author: colinjxc
+// @Date: 2022-03-04T01:42:19+08:00
 // @URL: https://leetcode-cn.com/problems/zui-xiao-de-kge-shu-lcof
 
 
 class Solution {
 public:
     vector<int> getLeastNumbers(vector<int>& arr, int k) {
-        vector<int> res;
-        priority_queue<int, vector<int>, less<int> > pq;
-        if (k == 0) {
-            return res;
-        }
+        std::vector<int> res;
+        if (k == 0) return res;
+        std::priority_queue<int, std::vector<int>, std::less<int>> pq;
 
-        for (auto &v : arr) {
+        for (auto v : arr) {
             if (pq.size() < k) {
                 pq.push(v);
             } else {
@@ -23,12 +21,11 @@ public:
                 }
             }
         }
-
-        while (!pq.empty()) {
-            res.push_back(pq.top());
+        while (pq.size() > 0) {
+            res.emplace_back(pq.top());
             pq.pop();
         }
 
-        return res; 
+        return res;      
     }
 };

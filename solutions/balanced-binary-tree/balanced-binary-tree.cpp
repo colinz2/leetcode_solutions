@@ -1,5 +1,5 @@
 // @Title: Balanced Binary Tree
-// @Author: realzhangm
+// @Author: colinjxc
 // @Date: 2021-11-02T15:21:34+08:00
 // @URL: https://leetcode-cn.com/problems/balanced-binary-tree
 

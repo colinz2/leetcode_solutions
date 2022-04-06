@@ -1,6 +1,6 @@
 // @Title: Min Stack
-// @Author: realzhangm
-// @Date: 2021-11-02T18:54:44+08:00
+// @Author: colinjxc
+// @Date: 2022-02-06T22:25:37+08:00
 // @URL: https://leetcode-cn.com/problems/min-stack
 
 
@@ -13,11 +13,9 @@ public:
     void push(int val) {
         if (stack_.empty()) {
             stack_.push({val, val});
-            return;
+        } else {
+            stack_.push({val, std::min(val, stack_.top().second)});
         }
-        int min = getMin();
-        min = std::min(min, val);
-        stack_.push({val, min});
     }
     
     void pop() {
@@ -31,9 +29,8 @@ public:
     int getMin() {
         return stack_.top().second;
     }
-
 private:
-    stack<pair<int, int>> stack_;
+    std::stack<std::pair<int,int>> stack_;
 };
 
 /**

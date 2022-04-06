@@ -1,5 +1,5 @@
 // @Title: Maximum Depth of N-ary Tree
-// @Author: realzhangm
+// @Author: colinjxc
 // @Date: 2021-11-02T15:33:25+08:00
 // @URL: https://leetcode-cn.com/problems/maximum-depth-of-n-ary-tree
 

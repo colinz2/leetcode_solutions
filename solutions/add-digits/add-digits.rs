@@ -1,5 +1,5 @@
 // @Title: Add Digits
-// @Author: realzhangm
+// @Author: colinjxc
 // @Date: 2021-10-29T10:58:19+08:00
 // @URL: https://leetcode-cn.com/problems/add-digits
 

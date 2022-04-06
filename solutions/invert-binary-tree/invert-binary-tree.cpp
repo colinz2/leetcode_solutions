@@ -1,6 +1,6 @@
 // @Title: Invert Binary Tree
-// @Author: realzhangm
-// @Date: 2021-11-01T01:05:32+08:00
+// @Author: colinjxc
+// @Date: 2022-03-04T00:07:55+08:00
 // @URL: https://leetcode-cn.com/problems/invert-binary-tree
 
 
@@ -18,20 +18,16 @@
 class Solution {
 public:
     TreeNode* invertTree(TreeNode* root) {
-        if (root == nullptr) 
-            return root;
-        
-        queue<TreeNode*> q;
+        if (root == nullptr) return nullptr;
+        std::queue<TreeNode*> q;
         q.push(root);
-
         while (!q.empty()) {
-            TreeNode* node = q.front();
+            auto node = q.front();
             q.pop();
-            std::swap(node->left, node->right);
-            if (node->left) q.push(node->left);
+            std::swap(node->right, node->left);
             if (node->right) q.push(node->right);
+            if (node->left) q.push(node->left);
         }
-
         return root;
     }
 };

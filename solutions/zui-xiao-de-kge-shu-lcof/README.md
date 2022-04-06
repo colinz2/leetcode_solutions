@@ -35,13 +35,11 @@
 class Solution {
 public:
     vector<int> getLeastNumbers(vector<int>& arr, int k) {
-        vector<int> res;
-        priority_queue<int, vector<int>, less<int> > pq;
-        if (k == 0) {
-            return res;
-        }
+        std::vector<int> res;
+        if (k == 0) return res;
+        std::priority_queue<int, std::vector<int>, std::less<int>> pq;
 
-        for (auto &v : arr) {
+        for (auto v : arr) {
             if (pq.size() < k) {
                 pq.push(v);
             } else {
@@ -51,13 +49,12 @@ public:
                 }
             }
         }
-
-        while (!pq.empty()) {
-            res.push_back(pq.top());
+        while (pq.size() > 0) {
+            res.emplace_back(pq.top());
             pq.pop();
         }
 
-        return res; 
+        return res;      
     }
 };
 ```
@@ -182,5 +179,6 @@ func getLeastNumbers(arr []int, k int) []int {
 
 ## Links
 
-- [Prev](../yong-liang-ge-zhan-shi-xian-dui-lie-lcof/README.md) 
+- [Prev](../shan-chu-lian-biao-de-jie-dian-lcof/README.md) 
+- [Next](../lian-xu-zi-shu-zu-de-zui-da-he-lcof/README.md) 
 

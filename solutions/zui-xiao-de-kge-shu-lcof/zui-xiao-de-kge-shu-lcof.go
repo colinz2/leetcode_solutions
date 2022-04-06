@@ -1,5 +1,5 @@
 // @Title: 最小的k个数  LCOF
-// @Author: realzhangm
+// @Author: colinjxc
 // @Date: 2021-11-02T21:02:26+08:00
 // @URL: https://leetcode-cn.com/problems/zui-xiao-de-kge-shu-lcof
 

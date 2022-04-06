@@ -37,37 +37,59 @@
 ### cpp [🔗](kth-largest-element-in-an-array.cpp) 
 ```cpp
 class Solution {
-public:
-    int findKthLargest(vector<int>& nums, int k) {
-        priority_queue<int, vector<int>, greater<int> > pq;
-        
-        for (auto &v : nums) {
-            if (pq.size() == k) {
-                if (v > pq.top()) {
-                    pq.push(v);
-                    pq.pop();
-                }
-            } else {
-                pq.push(v);
-            }
+private:
+    int FindKthLargest_(vector<int> &nums, int k,  int l, int r) {
+        if (l >= r) {
+            return nums[l];
         }
 
-        return pq.top();
+        int p = Partition(nums, l, r);
+        if (p < k) {
+            return FindKthLargest_(nums, k, p + 1, r);
+        } else if (p > k) {
+            return FindKthLargest_(nums, k, l, p - 1);
+        } else {
+            return nums[p];
+        }
+    }
+    
+    int Partition(vector<int> &nums, int l, int r) {
+        int ri = random() % (r - l) + l;
+        std::swap(nums[l], nums[ri]);
+
+        int pv = nums[l];
+        int p = l;
+
+        for (int i = l + 1; i <= r; i++) {
+            if (nums[i] > pv) {
+                std::swap(nums[++p], nums[i]);
+            }
+        }
+        std::swap(nums[p], nums[l]);
+        return p;
+    }
+    
+public:
+    int findKthLargest(vector<int> &nums, int k) {
+        int r = FindKthLargest_(nums, k - 1, 0, nums.size() - 1);
+        return r;
     }
 };
 ```
 ### golang [🔗](kth-largest-element-in-an-array.go) 
 ```golang
 // 降序
-func partioin(nums []int, l, r int) int {
+func partioin(nums []int, l int,  r int) int {
+    ri := rand.Intn(r-l) % (r-l) + l
+    nums[ri], nums[l] = nums[l],nums[ri]
     pv := nums[l]
-    i, j := l + 1, r
 
+    i, j := l + 1, r
     for {
         for nums[i] > pv && i < r {
             i++
         }
-        for nums[j] < pv && j >= l + 1 {
+        for nums[j] < pv && j > l {
             j--
         }
 
@@ -102,8 +124,6 @@ func findKthLargest0(nums []int, k, l, r int) int {
 func findKthLargest(nums []int, k int) int {
     return findKthLargest0(nums, k-1, 0, len(nums) - 1)
 }
-
-
 ```
 ### python3 [🔗](kth-largest-element-in-an-array.py) 
 ```python3
@@ -155,11 +175,12 @@ class Solution:
 
 ## 相似题目
 
+- [前 K 个高频元素](../top-k-frequent-elements/README.md)  [Medium] 
 - [数据流中的第 K 大元素](../kth-largest-element-in-a-stream/README.md)  [Easy] 
 
 
 ## Links
 
-- [Prev](../number-of-1-bits/README.md) 
-- [Next](../invert-binary-tree/README.md) 
+- [Prev](../house-robber-ii/README.md) 
+- [Next](../contains-duplicate/README.md) 
 

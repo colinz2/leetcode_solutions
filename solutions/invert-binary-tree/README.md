@@ -3,34 +3,70 @@
 
 ## 题目描述
 
-<p>翻转一棵二叉树。</p>
+<p>给你一棵二叉树的根节点 <code>root</code> ，翻转这棵二叉树，并返回其根节点。</p>
 
-<p><strong>示例：</strong></p>
+<p>&nbsp;</p>
 
-<p>输入：</p>
+<p><strong>示例 1：</strong></p>
 
-<pre>     4
-   /   \
-  2     7
- / \   / \
-1   3 6   9</pre>
+<p><img alt="" src="https://assets.leetcode.com/uploads/2021/03/14/invert1-tree.jpg" style="height: 165px; width: 500px;" /></p>
 
-<p>输出：</p>
+<pre>
+<strong>输入：</strong>root = [4,2,7,1,3,6,9]
+<strong>输出：</strong>[4,7,2,9,6,3,1]
+</pre>
 
-<pre>     4
-   /   \
-  7     2
- / \   / \
-9   6 3   1</pre>
+<p><strong>示例 2：</strong></p>
 
-<p><strong>备注:</strong><br>
-这个问题是受到 <a href="https://twitter.com/mxcl" target="_blank">Max Howell </a>的 <a href="https://twitter.com/mxcl/status/608682016205344768" target="_blank">原问题</a> 启发的 ：</p>
+<p><img alt="" src="https://assets.leetcode.com/uploads/2021/03/14/invert2-tree.jpg" style="width: 500px; height: 120px;" /></p>
 
-<blockquote>谷歌：我们90％的工程师使用您编写的软件(Homebrew)，但是您却无法在面试时在白板上写出翻转二叉树这道题，这太糟糕了。</blockquote>
+<pre>
+<strong>输入：</strong>root = [2,1,3]
+<strong>输出：</strong>[2,3,1]
+</pre>
+
+<p><strong>示例 3：</strong></p>
+
+<pre>
+<strong>输入：</strong>root = []
+<strong>输出：</strong>[]
+</pre>
+
+<p>&nbsp;</p>
+
+<p><strong>提示：</strong></p>
+
+<ul>
+	<li>树中节点数目范围在 <code>[0, 100]</code> 内</li>
+	<li><code>-100 &lt;= Node.val &lt;= 100</code></li>
+</ul>
 
 
 ## 题解
 
+### c [🔗](invert-binary-tree.c) 
+```c
+/**
+ * Definition for a binary tree node.
+ * struct TreeNode {
+ *     int val;
+ *     struct TreeNode *left;
+ *     struct TreeNode *right;
+ * };
+ */
+
+
+struct TreeNode* invertTree(struct TreeNode* root){
+    if (root == NULL) return root;
+    invertTree(root->left);
+    invertTree(root->right);
+    struct TreeNode* tmp;
+    tmp = root->left;
+    root->left = root->right;
+    root->right = tmp;
+    return root;
+}
+```
 ### cpp [🔗](invert-binary-tree.cpp) 
 ```cpp
 /**
@@ -47,20 +83,16 @@
 class Solution {
 public:
     TreeNode* invertTree(TreeNode* root) {
-        if (root == nullptr) 
-            return root;
-        
-        queue<TreeNode*> q;
+        if (root == nullptr) return nullptr;
+        std::queue<TreeNode*> q;
         q.push(root);
-
         while (!q.empty()) {
-            TreeNode* node = q.front();
+            auto node = q.front();
             q.pop();
-            std::swap(node->left, node->right);
-            if (node->left) q.push(node->left);
+            std::swap(node->right, node->left);
             if (node->right) q.push(node->right);
+            if (node->left) q.push(node->left);
         }
-
         return root;
     }
 };
@@ -81,6 +113,6 @@ public:
 
 ## Links
 
-- [Prev](../kth-largest-element-in-an-array/README.md) 
-- [Next](../valid-anagram/README.md) 
+- [Prev](../implement-stack-using-queues/README.md) 
+- [Next](../summary-ranges/README.md) 
 

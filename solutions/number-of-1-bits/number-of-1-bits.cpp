@@ -1,5 +1,5 @@
 // @Title: Number of 1 Bits
-// @Author: realzhangm
+// @Author: colinjxc
 // @Date: 2021-11-01T21:45:20+08:00
 // @URL: https://leetcode-cn.com/problems/number-of-1-bits
 

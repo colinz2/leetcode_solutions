@@ -85,10 +85,13 @@ public:
 ## 相似题目
 
 - [颠倒二进制位](../reverse-bits/README.md)  [Easy] 
+- [2 的幂](../power-of-two/README.md)  [Easy] 
+- [比特位计数](../counting-bits/README.md)  [Easy] 
+- [汉明距离](../hamming-distance/README.md)  [Easy] 
 
 
 ## Links
 
 - [Prev](../reverse-bits/README.md) 
-- [Next](../kth-largest-element-in-an-array/README.md) 
+- [Next](../tenth-line/README.md) 
 

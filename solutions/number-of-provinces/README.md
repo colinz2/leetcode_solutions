@@ -47,36 +47,6 @@
 
 ## 题解
 
-### cpp [🔗](number-of-provinces.cpp) 
-```cpp
-class Solution {
-public:
-    int findCircleNum(vector<vector<int>>& isConnected) {
-        // BFS check 联通分量
-        queue<int> q;
-        int cnt = 0;
-        int n = isConnected.size();
-        vector<bool> vis(n, false);
-        for (int i = 0; i < n; i++) {
-            if (!vis[i]) {
-                q.push(i);
-                while (!q.empty()) {
-                    int c = q.front(); q.pop();
-                    vis[c] = true;
-                    for (int j = 0; j < n; j++) {
-                        if (isConnected[c][j] == 1 && !vis[j]) {
-                            q.push(j);
-                        }
-                    }
-                }
-                cnt++;
-            }
-        } 
-
-        return cnt;
-    }
-};
-```
 ### golang [🔗](number-of-provinces.go) 
 ```golang
 func findCircleNum(isConnected [][]int) int {
@@ -102,6 +72,35 @@ func findCircleNum(isConnected [][]int) int {
     return pCnt
 }
 ```
+### cpp [🔗](number-of-provinces.cpp) 
+```cpp
+class Solution {
+public:
+    int findCircleNum(vector<vector<int>>& isConnected) {
+        int N = isConnected.size();
+        std::vector<bool> visited(N, false);
+
+        std::function<void(int)> dfsVisit = [&](int n) {
+            if (visited[n]) return;
+            visited[n] = true;
+            for (int i = 0; i < isConnected[n].size(); i++) {
+                if (isConnected[n][i] == 1) {
+                    dfsVisit(i);
+                }     
+            }
+        };
+
+        int cnt = 0;
+        for (int i = 0; i < N; i++) {
+            if (!visited[i]) {
+                dfsVisit(i);
+                cnt++;
+            }
+        }
+        return cnt;
+    }
+};
+```
 
 
 ## 相关话题
@@ -118,6 +117,6 @@ func findCircleNum(isConnected [][]int) int {
 
 ## Links
 
-- [Prev](../next-greater-element-i/README.md) 
-- [Next](../average-of-levels-in-binary-tree/README.md) 
+- [Prev](../diameter-of-binary-tree/README.md) 
+- [Next](../student-attendance-record-i/README.md) 
 

@@ -1,6 +1,6 @@
 // @Title: Redundant Connection
-// @Author: realzhangm
-// @Date: 2021-11-02T16:47:35+08:00
+// @Author: colinjxc
+// @Date: 2022-01-24T22:51:05+08:00
 // @URL: https://leetcode-cn.com/problems/redundant-connection
 
 
@@ -20,8 +20,11 @@ func findRedundantConnection(edges [][]int) []int {
 }
 
 func union(p []int, a, b int) {
-    p[find(p, a)] = find(p, b)
-    p[find(p, b)] = find(p, a)
+    rootA := find(p, a)
+    rootB := find(p, b)
+    if rootA != rootB {
+        p[rootA] = rootB
+    }
 }
 
 func find(p []int, a int) int {

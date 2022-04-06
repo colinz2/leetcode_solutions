@@ -1,33 +1,32 @@
 // @Title: Number of Provinces
-// @Author: realzhangm
-// @Date: 2021-10-28T22:19:02+08:00
+// @Author: colinjxc
+// @Date: 2022-01-25T18:18:44+08:00
 // @URL: https://leetcode-cn.com/problems/number-of-provinces
 
 
 class Solution {
 public:
     int findCircleNum(vector<vector<int>>& isConnected) {
-        // BFS check 联通分量
-        queue<int> q;
+        int N = isConnected.size();
+        std::vector<bool> visited(N, false);
+
+        std::function<void(int)> dfsVisit = [&](int n) {
+            if (visited[n]) return;
+            visited[n] = true;
+            for (int i = 0; i < isConnected[n].size(); i++) {
+                if (isConnected[n][i] == 1) {
+                    dfsVisit(i);
+                }     
+            }
+        };
+
         int cnt = 0;
-        int n = isConnected.size();
-        vector<bool> vis(n, false);
-        for (int i = 0; i < n; i++) {
-            if (!vis[i]) {
-                q.push(i);
-                while (!q.empty()) {
-                    int c = q.front(); q.pop();
-                    vis[c] = true;
-                    for (int j = 0; j < n; j++) {
-                        if (isConnected[c][j] == 1 && !vis[j]) {
-                            q.push(j);
-                        }
-                    }
-                }
+        for (int i = 0; i < N; i++) {
+            if (!visited[i]) {
+                dfsVisit(i);
                 cnt++;
             }
-        } 
-
+        }
         return cnt;
     }
 };

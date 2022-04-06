@@ -47,22 +47,17 @@
 
 class Solution {
 public:
-    // the first version must in [earlyVer, latestVer]
     int firstBadVersion(int n) {
-        int earlyVer = 1, latestVer = n;
-        while (latestVer != earlyVer) {
-            int checkVer = earlyVer + (latestVer - earlyVer) / 2;
-            // check the middle versoin
-            // if checkVer is bad, then the checkVer become the latestVer
-            // if checkVer no bad, then the checkVer + 1 become the earlyVer
-            
-            if (isBadVersion(checkVer)) {
-                latestVer = checkVer;
+        int j = 0, k = n;
+        while (j < k) {
+            int m = j + (k-j)/2;
+            if (!isBadVersion(m)) {
+                j = m + 1;
             } else {
-                earlyVer = checkVer + 1;
+                k = m;
             }
         }
-        return earlyVer;
+        return k;
     }
 };
 ```
@@ -76,12 +71,13 @@ public:
 
 ## 相似题目
 
+- [在排序数组中查找元素的第一个和最后一个位置](../find-first-and-last-position-of-element-in-sorted-array/README.md)  [Medium] 
 - [搜索插入位置](../search-insert-position/README.md)  [Easy] 
 - [猜数字大小](../guess-number-higher-or-lower/README.md)  [Easy] 
 
 
 ## Links
 
-- [Prev](../add-digits/README.md) 
-- [Next](../moving-average-from-data-stream/README.md) 
+- [Prev](../closest-binary-search-tree-value/README.md) 
+- [Next](../perfect-squares/README.md) 
 

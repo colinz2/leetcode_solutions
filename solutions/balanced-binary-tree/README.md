@@ -95,6 +95,6 @@ public:
 
 ## Links
 
-- [Prev](../binary-tree-level-order-traversal-ii/README.md) 
+- [Prev](../convert-sorted-list-to-binary-search-tree/README.md) 
 - [Next](../minimum-depth-of-binary-tree/README.md) 
 

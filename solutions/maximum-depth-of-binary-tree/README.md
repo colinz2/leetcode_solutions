@@ -23,6 +23,27 @@
 
 ## 题解
 
+### cpp [🔗](maximum-depth-of-binary-tree.cpp) 
+```cpp
+/**
+ * Definition for a binary tree node.
+ * struct TreeNode {
+ *     int val;
+ *     TreeNode *left;
+ *     TreeNode *right;
+ *     TreeNode() : val(0), left(nullptr), right(nullptr) {}
+ *     TreeNode(int x) : val(x), left(nullptr), right(nullptr) {}
+ *     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
+ * };
+ */
+class Solution {
+public:
+    int maxDepth(TreeNode* root) {
+        if (root == nullptr) return 0;
+        return std::max(maxDepth(root->right), maxDepth(root->left)) + 1;
+    }
+};
+```
 ### golang [🔗](maximum-depth-of-binary-tree.go) 
 ```golang
 /**
@@ -47,41 +68,6 @@ func max(a, b int) int {
     return b;
 }
 ```
-### cpp [🔗](maximum-depth-of-binary-tree.cpp) 
-```cpp
-/**
- * Definition for a binary tree node.
- * struct TreeNode {
- *     int val;
- *     TreeNode *left;
- *     TreeNode *right;
- *     TreeNode() : val(0), left(nullptr), right(nullptr) {}
- *     TreeNode(int x) : val(x), left(nullptr), right(nullptr) {}
- *     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
- * };
- */
-class Solution {
-public:
-    int maxDepth(TreeNode* root) {
-        int depth = 0;
-        if (root == nullptr) return 0;
-        queue<TreeNode*> q;
-        q.push(root);
-
-        while (!q.empty()) {
-            auto level_size = q.size();
-            for (auto i = 0; i < level_size; i++) {
-                if (q.front()->left) q.push(q.front()->left);
-                if (q.front()->right) q.push(q.front()->right);
-                q.pop();
-            }
-            depth++;
-        }
-
-        return depth;
-    }
-};
-```
 
 
 ## 相关话题
@@ -101,6 +87,6 @@ public:
 
 ## Links
 
-- [Prev](../binary-tree-level-order-traversal/README.md) 
+- [Prev](../binary-tree-zigzag-level-order-traversal/README.md) 
 - [Next](../binary-tree-level-order-traversal-ii/README.md) 
 

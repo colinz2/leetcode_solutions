@@ -1,25 +1,30 @@
 // @Title: Kth Largest Element in a Stream
-// @Author: realzhangm
-// @Date: 2021-11-03T00:18:21+08:00
+// @Author: colinjxc
+// @Date: 2022-02-10T10:30:45+08:00
 // @URL: https://leetcode-cn.com/problems/kth-largest-element-in-a-stream
 
 
 class KthLargest {
 public:
     KthLargest(int k, vector<int>& nums) : k_(k) {
-        for (auto &v : nums) {
-            add(v);
+        for (auto num : nums) {
+            add(num);
         }
     }
     
     int add(int val) {
-        if (pq_.size() < k_) {
-            pq_.push(val);
-        } else if (pq_.top() < val) {
-            pq_.push(val);
+        pq_.push(val);
+        if (pq_.size() > k_) {
             pq_.pop();
         }
-        
+        // if (pq_.size() < k_) {
+        //     pq_.push(val);
+        // } else {
+        //     if (val > pq_.top()) {
+        //         pq_.pop();
+        //         pq_.push(val);
+        //     }
+        // }
         return pq_.top();
     }
 private:

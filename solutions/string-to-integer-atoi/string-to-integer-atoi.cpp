@@ -1,5 +1,5 @@
 // @Title: String to Integer (atoi)
-// @Author: realzhangm
+// @Author: colinjxc
 // @Date: 2021-11-01T22:32:00+08:00
 // @URL: https://leetcode-cn.com/problems/string-to-integer-atoi
 
