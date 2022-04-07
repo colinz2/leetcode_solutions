@@ -58,6 +58,27 @@
 
 ## 题解
 
+### c [🔗](linked-list-cycle.c) 
+```c
+/**
+ * Definition for singly-linked list.
+ * struct ListNode {
+ *     int val;
+ *     struct ListNode *next;
+ * };
+ */
+bool hasCycle(struct ListNode *head) {
+    struct ListNode* fast = head;
+    while (fast && fast->next) {
+        fast = fast->next->next;
+        head = head->next;
+        if (head == fast) {
+            return true;
+        }
+    } 
+    return false;
+}
+```
 ### cpp [🔗](linked-list-cycle.cpp) 
 ```cpp
 /**
@@ -175,27 +196,6 @@ function hasCycle(head: ListNode | null): boolean {
     }
     return false
 };
-```
-### c [🔗](linked-list-cycle.c) 
-```c
-/**
- * Definition for singly-linked list.
- * struct ListNode {
- *     int val;
- *     struct ListNode *next;
- * };
- */
-bool hasCycle(struct ListNode *head) {
-    struct ListNode* fast = head;
-    while (fast && fast->next) {
-        fast = fast->next->next;
-        head = head->next;
-        if (head == fast) {
-            return true;
-        }
-    } 
-    return false;
-}
 ```
 
 

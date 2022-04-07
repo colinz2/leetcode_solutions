@@ -49,6 +49,36 @@
 
 ## 题解
 
+### c [🔗](richest-customer-wealth.c) 
+```c
+int maximumWealth(int** accounts, int accountsSize, int* accountsColSize){
+    int maxW = 0;
+    for (int i = 0; i < accountsSize; i++) {
+        int wealthOneAccount = 0;
+        for (int j = 0; j < accountsColSize[i]; j++) {
+            wealthOneAccount += accounts[i][j];
+        }
+        if (maxW < wealthOneAccount) {
+            maxW = wealthOneAccount;
+        } 
+    }
+    return maxW;
+}
+```
+### cpp [🔗](richest-customer-wealth.cpp) 
+```cpp
+class Solution {
+public:
+    int maximumWealth(vector<vector<int>>& accounts) {
+        vector<int> res;
+        for (auto &v : accounts) {
+            res.push_back(accumulate(v.begin(), v.end(), 0));
+        }
+        sort(res.begin(), res.end());
+        return res.back();
+    }
+};
+```
 ### golang [🔗](richest-customer-wealth.go) 
 ```golang
 func maximumWealth(accounts [][]int) int {
@@ -84,36 +114,6 @@ impl Solution {
             .unwrap()
     }
 }
-```
-### c [🔗](richest-customer-wealth.c) 
-```c
-int maximumWealth(int** accounts, int accountsSize, int* accountsColSize){
-    int maxW = 0;
-    for (int i = 0; i < accountsSize; i++) {
-        int wealthOneAccount = 0;
-        for (int j = 0; j < accountsColSize[i]; j++) {
-            wealthOneAccount += accounts[i][j];
-        }
-        if (maxW < wealthOneAccount) {
-            maxW = wealthOneAccount;
-        } 
-    }
-    return maxW;
-}
-```
-### cpp [🔗](richest-customer-wealth.cpp) 
-```cpp
-class Solution {
-public:
-    int maximumWealth(vector<vector<int>>& accounts) {
-        vector<int> res;
-        for (auto &v : accounts) {
-            res.push_back(accumulate(v.begin(), v.end(), 0));
-        }
-        sort(res.begin(), res.end());
-        return res.back();
-    }
-};
 ```
 
 

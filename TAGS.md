@@ -20,8 +20,8 @@
 |17|递归|[🔗](tags/recursion.md)|[Recursion](https://leetcode-cn.com/tag/recursion)|21|
 |18|二叉搜索树|[🔗](tags/binary-search-tree.md)|[Binary Search Tree](https://leetcode-cn.com/tag/binary-search-tree)|20|
 |19|矩阵|[🔗](tags/matrix.md)|[Matrix](https://leetcode-cn.com/tag/matrix)|17|
-|20|分治|[🔗](tags/divide-and-conquer.md)|[Divide and Conquer](https://leetcode-cn.com/tag/divide-and-conquer)|13|
-|21|回溯|[🔗](tags/backtracking.md)|[Backtracking](https://leetcode-cn.com/tag/backtracking)|13|
+|20|回溯|[🔗](tags/backtracking.md)|[Backtracking](https://leetcode-cn.com/tag/backtracking)|13|
+|21|分治|[🔗](tags/divide-and-conquer.md)|[Divide and Conquer](https://leetcode-cn.com/tag/divide-and-conquer)|13|
 |22|堆（优先队列）|[🔗](tags/heap-priority-queue.md)|[Heap (Priority Queue)](https://leetcode-cn.com/tag/heap-priority-queue)|11|
 |23|模拟|[🔗](tags/simulation.md)|[Simulation](https://leetcode-cn.com/tag/simulation)|11|
 |24|计数|[🔗](tags/counting.md)|[Counting](https://leetcode-cn.com/tag/counting)|9|
@@ -30,32 +30,32 @@
 |27|队列|[🔗](tags/queue.md)|[Queue](https://leetcode-cn.com/tag/queue)|8|
 |28|字典树|[🔗](tags/trie.md)|[Trie](https://leetcode-cn.com/tag/trie)|6|
 |29|并查集|[🔗](tags/union-find.md)|[Union Find](https://leetcode-cn.com/tag/union-find)|6|
-|30|单调栈|[🔗](tags/monotonic-stack.md)|[Monotonic Stack](https://leetcode-cn.com/tag/monotonic-stack)|5|
-|31|记忆化搜索|[🔗](tags/memoization.md)|[Memoization](https://leetcode-cn.com/tag/memoization)|5|
+|30|记忆化搜索|[🔗](tags/memoization.md)|[Memoization](https://leetcode-cn.com/tag/memoization)|5|
+|31|单调栈|[🔗](tags/monotonic-stack.md)|[Monotonic Stack](https://leetcode-cn.com/tag/monotonic-stack)|5|
 |32|前缀和|[🔗](tags/prefix-sum.md)|[Prefix Sum](https://leetcode-cn.com/tag/prefix-sum)|5|
-|33|双向链表|[🔗](tags/doubly-linked-list.md)|[Doubly-Linked List](https://leetcode-cn.com/tag/doubly-linked-list)|4|
-|34|数据流|[🔗](tags/data-stream.md)|[Data Stream](https://leetcode-cn.com/tag/data-stream)|4|
+|33|数据流|[🔗](tags/data-stream.md)|[Data Stream](https://leetcode-cn.com/tag/data-stream)|4|
+|34|双向链表|[🔗](tags/doubly-linked-list.md)|[Doubly-Linked List](https://leetcode-cn.com/tag/doubly-linked-list)|4|
 |35|滑动窗口|[🔗](tags/sliding-window.md)|[Sliding Window](https://leetcode-cn.com/tag/sliding-window)|4|
-|36|哈希函数|[🔗](tags/hash-function.md)|[Hash Function](https://leetcode-cn.com/tag/hash-function)|3|
-|37|迭代器|[🔗](tags/iterator.md)|[Iterator](https://leetcode-cn.com/tag/iterator)|3|
-|38|桶排序|[🔗](tags/bucket-sort.md)|[Bucket Sort](https://leetcode-cn.com/tag/bucket-sort)|3|
-|39|字符串匹配|[🔗](tags/string-matching.md)|[String Matching](https://leetcode-cn.com/tag/string-matching)|3|
+|36|桶排序|[🔗](tags/bucket-sort.md)|[Bucket Sort](https://leetcode-cn.com/tag/bucket-sort)|3|
+|37|哈希函数|[🔗](tags/hash-function.md)|[Hash Function](https://leetcode-cn.com/tag/hash-function)|3|
+|38|交互|[🔗](tags/interactive.md)|[Interactive](https://leetcode-cn.com/tag/interactive)|3|
+|39|迭代器|[🔗](tags/iterator.md)|[Iterator](https://leetcode-cn.com/tag/iterator)|3|
 |40|快速选择|[🔗](tags/quickselect.md)|[Quickselect](https://leetcode-cn.com/tag/quickselect)|3|
-|41|交互|[🔗](tags/interactive.md)|[Interactive](https://leetcode-cn.com/tag/interactive)|3|
+|41|字符串匹配|[🔗](tags/string-matching.md)|[String Matching](https://leetcode-cn.com/tag/string-matching)|3|
 |42|脑筋急转弯|[🔗](tags/brainteaser.md)|[Brainteaser](https://leetcode-cn.com/tag/brainteaser)|2|
-|43|归并排序|[🔗](tags/merge-sort.md)|[Merge Sort](https://leetcode-cn.com/tag/merge-sort)|2|
-|44|有序集合|[🔗](tags/ordered-set.md)|[Ordered Set](https://leetcode-cn.com/tag/ordered-set)|2|
-|45|几何|[🔗](tags/geometry.md)|[Geometry](https://leetcode-cn.com/tag/geometry)|2|
-|46|图|[🔗](tags/graph.md)|[Graph](https://leetcode-cn.com/tag/graph)|2|
-|47|数论|[🔗](tags/number-theory.md)|[Number Theory](https://leetcode-cn.com/tag/number-theory)|2|
-|48|博弈|[🔗](tags/game-theory.md)|[Game Theory](https://leetcode-cn.com/tag/game-theory)|1|
-|49|组合数学|[🔗](tags/combinatorics.md)|[Combinatorics](https://leetcode-cn.com/tag/combinatorics)|1|
-|50|单调队列|[🔗](tags/monotonic-queue.md)|[Monotonic Queue](https://leetcode-cn.com/tag/monotonic-queue)|1|
-|51|数据库|[🔗](tags/database.md)|[Database](https://leetcode-cn.com/tag/database)|1|
-|52||[🔗](tags/shell.md)|[Shell](https://leetcode-cn.com/tag/shell)|1|
-|53|枚举|[🔗](tags/enumeration.md)|[Enumeration](https://leetcode-cn.com/tag/enumeration)|1|
-|54|随机化|[🔗](tags/randomized.md)|[Randomized](https://leetcode-cn.com/tag/randomized)|1|
-|55|水塘抽样|[🔗](tags/reservoir-sampling.md)|[Reservoir Sampling](https://leetcode-cn.com/tag/reservoir-sampling)|1|
+|43|几何|[🔗](tags/geometry.md)|[Geometry](https://leetcode-cn.com/tag/geometry)|2|
+|44|图|[🔗](tags/graph.md)|[Graph](https://leetcode-cn.com/tag/graph)|2|
+|45|归并排序|[🔗](tags/merge-sort.md)|[Merge Sort](https://leetcode-cn.com/tag/merge-sort)|2|
+|46|数论|[🔗](tags/number-theory.md)|[Number Theory](https://leetcode-cn.com/tag/number-theory)|2|
+|47|有序集合|[🔗](tags/ordered-set.md)|[Ordered Set](https://leetcode-cn.com/tag/ordered-set)|2|
+|48|组合数学|[🔗](tags/combinatorics.md)|[Combinatorics](https://leetcode-cn.com/tag/combinatorics)|1|
+|49|数据库|[🔗](tags/database.md)|[Database](https://leetcode-cn.com/tag/database)|1|
+|50|枚举|[🔗](tags/enumeration.md)|[Enumeration](https://leetcode-cn.com/tag/enumeration)|1|
+|51|博弈|[🔗](tags/game-theory.md)|[Game Theory](https://leetcode-cn.com/tag/game-theory)|1|
+|52|单调队列|[🔗](tags/monotonic-queue.md)|[Monotonic Queue](https://leetcode-cn.com/tag/monotonic-queue)|1|
+|53|随机化|[🔗](tags/randomized.md)|[Randomized](https://leetcode-cn.com/tag/randomized)|1|
+|54|水塘抽样|[🔗](tags/reservoir-sampling.md)|[Reservoir Sampling](https://leetcode-cn.com/tag/reservoir-sampling)|1|
+|55||[🔗](tags/shell.md)|[Shell](https://leetcode-cn.com/tag/shell)|1|
 # 标签
 
 ## [数组](https://leetcode-cn.com/tag/array)
@@ -981,24 +981,6 @@
 
 
 
-## [分治](https://leetcode-cn.com/tag/divide-and-conquer)
-
-1. [寻找两个正序数组的中位数](../solutions/median-of-two-sorted-arrays/README.md)
-2. [合并K个升序链表](../solutions/merge-k-sorted-lists/README.md)
-3. [最大子数组和](../solutions/maximum-subarray/README.md)
-4. [将有序数组转换为二叉搜索树](../solutions/convert-sorted-array-to-binary-search-tree/README.md)
-5. [有序链表转换二叉搜索树](../solutions/convert-sorted-list-to-binary-search-tree/README.md)
-6. [排序链表](../solutions/sort-list/README.md)
-7. [多数元素](../solutions/majority-element/README.md)
-8. [颠倒二进制位](../solutions/reverse-bits/README.md)
-9. [数组中的第K个最大元素](../solutions/kth-largest-element-in-an-array/README.md)
-10. [前 K 个高频元素](../solutions/top-k-frequent-elements/README.md)
-11. [最小高度树](../solutions/minimum-height-tree-lcci/README.md)
-12. [最小的k个数](../solutions/zui-xiao-de-kge-shu-lcof/README.md)
-13. [连续子数组的最大和](../solutions/lian-xu-zi-shu-zu-de-zui-da-he-lcof/README.md)
-
-
-
 ## [回溯](https://leetcode-cn.com/tag/backtracking)
 
 1. [电话号码的字母组合](../solutions/letter-combinations-of-a-phone-number/README.md)
@@ -1014,6 +996,24 @@
 11. [因子的组合](../solutions/factor-combinations/README.md)
 12. [二叉树的所有路径](../solutions/binary-tree-paths/README.md)
 13. [字母大小写全排列](../solutions/letter-case-permutation/README.md)
+
+
+
+## [分治](https://leetcode-cn.com/tag/divide-and-conquer)
+
+1. [寻找两个正序数组的中位数](../solutions/median-of-two-sorted-arrays/README.md)
+2. [合并K个升序链表](../solutions/merge-k-sorted-lists/README.md)
+3. [最大子数组和](../solutions/maximum-subarray/README.md)
+4. [将有序数组转换为二叉搜索树](../solutions/convert-sorted-array-to-binary-search-tree/README.md)
+5. [有序链表转换二叉搜索树](../solutions/convert-sorted-list-to-binary-search-tree/README.md)
+6. [排序链表](../solutions/sort-list/README.md)
+7. [多数元素](../solutions/majority-element/README.md)
+8. [颠倒二进制位](../solutions/reverse-bits/README.md)
+9. [数组中的第K个最大元素](../solutions/kth-largest-element-in-an-array/README.md)
+10. [前 K 个高频元素](../solutions/top-k-frequent-elements/README.md)
+11. [最小高度树](../solutions/minimum-height-tree-lcci/README.md)
+12. [最小的k个数](../solutions/zui-xiao-de-kge-shu-lcof/README.md)
+13. [连续子数组的最大和](../solutions/lian-xu-zi-shu-zu-de-zui-da-he-lcof/README.md)
 
 
 
@@ -1125,16 +1125,6 @@
 
 
 
-## [单调栈](https://leetcode-cn.com/tag/monotonic-stack)
-
-1. [接雨水](../solutions/trapping-rain-water/README.md)
-2. [柱状图中最大的矩形](../solutions/largest-rectangle-in-histogram/README.md)
-3. [下一个更大元素 I](../solutions/next-greater-element-i/README.md)
-4. [每日温度](../solutions/daily-temperatures/README.md)
-5. [每日温度](../solutions/iIQa4I/README.md)
-
-
-
 ## [记忆化搜索](https://leetcode-cn.com/tag/memoization)
 
 1. [爬楼梯](../solutions/climbing-stairs/README.md)
@@ -1142,6 +1132,16 @@
 3. [斐波那契数](../solutions/fibonacci-number/README.md)
 4. [第 N 个泰波那契数](../solutions/n-th-tribonacci-number/README.md)
 5. [斐波那契数列](../solutions/fei-bo-na-qi-shu-lie-lcof/README.md)
+
+
+
+## [单调栈](https://leetcode-cn.com/tag/monotonic-stack)
+
+1. [接雨水](../solutions/trapping-rain-water/README.md)
+2. [柱状图中最大的矩形](../solutions/largest-rectangle-in-histogram/README.md)
+3. [下一个更大元素 I](../solutions/next-greater-element-i/README.md)
+4. [每日温度](../solutions/daily-temperatures/README.md)
+5. [每日温度](../solutions/iIQa4I/README.md)
 
 
 
@@ -1155,21 +1155,21 @@
 
 
 
-## [双向链表](https://leetcode-cn.com/tag/doubly-linked-list)
-
-1. [LRU 缓存](../solutions/lru-cache/README.md)
-2. [最大栈](../solutions/max-stack/README.md)
-3. [将二叉搜索树转化为排序的双向链表](../solutions/convert-binary-search-tree-to-sorted-doubly-linked-list/README.md)
-4. [扁平化多级双向链表](../solutions/flatten-a-multilevel-doubly-linked-list/README.md)
-
-
-
 ## [数据流](https://leetcode-cn.com/tag/data-stream)
 
 1. [数据流中的移动平均值](../solutions/moving-average-from-data-stream/README.md)
 2. [数据流中的第 K 大元素](../solutions/kth-largest-element-in-a-stream/README.md)
 3. [最近的请求次数](../solutions/number-of-recent-calls/README.md)
 4. [数据流的第 K 大数值](../solutions/jBjn9C/README.md)
+
+
+
+## [双向链表](https://leetcode-cn.com/tag/doubly-linked-list)
+
+1. [LRU 缓存](../solutions/lru-cache/README.md)
+2. [最大栈](../solutions/max-stack/README.md)
+3. [将二叉搜索树转化为排序的双向链表](../solutions/convert-binary-search-tree-to-sorted-doubly-linked-list/README.md)
+4. [扁平化多级双向链表](../solutions/flatten-a-multilevel-doubly-linked-list/README.md)
 
 
 
@@ -1182,22 +1182,6 @@
 
 
 
-## [哈希函数](https://leetcode-cn.com/tag/hash-function)
-
-1. [TinyURL 的加密与解密](../solutions/encode-and-decode-tinyurl/README.md)
-2. [设计哈希集合](../solutions/design-hashset/README.md)
-3. [设计哈希映射](../solutions/design-hashmap/README.md)
-
-
-
-## [迭代器](https://leetcode-cn.com/tag/iterator)
-
-1. [二叉搜索树迭代器](../solutions/binary-search-tree-iterator/README.md)
-2. [展开二维向量](../solutions/flatten-2d-vector/README.md)
-3. [迭代压缩字符串](../solutions/design-compressed-string-iterator/README.md)
-
-
-
 ## [桶排序](https://leetcode-cn.com/tag/bucket-sort)
 
 1. [前 K 个高频元素](../solutions/top-k-frequent-elements/README.md)
@@ -1206,19 +1190,11 @@
 
 
 
-## [字符串匹配](https://leetcode-cn.com/tag/string-matching)
+## [哈希函数](https://leetcode-cn.com/tag/hash-function)
 
-1. [实现 strStr()](../solutions/implement-strstr/README.md)
-2. [重复的子字符串](../solutions/repeated-substring-pattern/README.md)
-3. [旋转字符串](../solutions/rotate-string/README.md)
-
-
-
-## [快速选择](https://leetcode-cn.com/tag/quickselect)
-
-1. [数组中的第K个最大元素](../solutions/kth-largest-element-in-an-array/README.md)
-2. [前 K 个高频元素](../solutions/top-k-frequent-elements/README.md)
-3. [最小的k个数](../solutions/zui-xiao-de-kge-shu-lcof/README.md)
+1. [TinyURL 的加密与解密](../solutions/encode-and-decode-tinyurl/README.md)
+2. [设计哈希集合](../solutions/design-hashset/README.md)
+3. [设计哈希映射](../solutions/design-hashmap/README.md)
 
 
 
@@ -1230,24 +1206,34 @@
 
 
 
+## [迭代器](https://leetcode-cn.com/tag/iterator)
+
+1. [二叉搜索树迭代器](../solutions/binary-search-tree-iterator/README.md)
+2. [展开二维向量](../solutions/flatten-2d-vector/README.md)
+3. [迭代压缩字符串](../solutions/design-compressed-string-iterator/README.md)
+
+
+
+## [快速选择](https://leetcode-cn.com/tag/quickselect)
+
+1. [数组中的第K个最大元素](../solutions/kth-largest-element-in-an-array/README.md)
+2. [前 K 个高频元素](../solutions/top-k-frequent-elements/README.md)
+3. [最小的k个数](../solutions/zui-xiao-de-kge-shu-lcof/README.md)
+
+
+
+## [字符串匹配](https://leetcode-cn.com/tag/string-matching)
+
+1. [实现 strStr()](../solutions/implement-strstr/README.md)
+2. [重复的子字符串](../solutions/repeated-substring-pattern/README.md)
+3. [旋转字符串](../solutions/rotate-string/README.md)
+
+
+
 ## [脑筋急转弯](https://leetcode-cn.com/tag/brainteaser)
 
 1. [Nim 游戏](../solutions/nim-game/README.md)
 2. [最大数值](../solutions/maximum-lcci/README.md)
-
-
-
-## [归并排序](https://leetcode-cn.com/tag/merge-sort)
-
-1. [合并K个升序链表](../solutions/merge-k-sorted-lists/README.md)
-2. [排序链表](../solutions/sort-list/README.md)
-
-
-
-## [有序集合](https://leetcode-cn.com/tag/ordered-set)
-
-1. [最大栈](../solutions/max-stack/README.md)
-2. [最大频率栈](../solutions/maximum-frequency-stack/README.md)
 
 
 
@@ -1265,6 +1251,13 @@
 
 
 
+## [归并排序](https://leetcode-cn.com/tag/merge-sort)
+
+1. [合并K个升序链表](../solutions/merge-k-sorted-lists/README.md)
+2. [排序链表](../solutions/sort-list/README.md)
+
+
+
 ## [数论](https://leetcode-cn.com/tag/number-theory)
 
 1. [计数质数](../solutions/count-primes/README.md)
@@ -1272,9 +1265,10 @@
 
 
 
-## [博弈](https://leetcode-cn.com/tag/game-theory)
+## [有序集合](https://leetcode-cn.com/tag/ordered-set)
 
-1. [Nim 游戏](../solutions/nim-game/README.md)
+1. [最大栈](../solutions/max-stack/README.md)
+2. [最大频率栈](../solutions/maximum-frequency-stack/README.md)
 
 
 
@@ -1284,27 +1278,27 @@
 
 
 
-## [单调队列](https://leetcode-cn.com/tag/monotonic-queue)
-
-1. [滑动窗口最大值](../solutions/sliding-window-maximum/README.md)
-
-
-
 ## [数据库](https://leetcode-cn.com/tag/database)
 
 1. [第二高的薪水](../solutions/second-highest-salary/README.md)
 
 
 
-## [SHELL](https://leetcode-cn.com/tag/shell)
-
-1. [第十行](../solutions/tenth-line/README.md)
-
-
-
 ## [枚举](https://leetcode-cn.com/tag/enumeration)
 
 1. [计数质数](../solutions/count-primes/README.md)
+
+
+
+## [博弈](https://leetcode-cn.com/tag/game-theory)
+
+1. [Nim 游戏](../solutions/nim-game/README.md)
+
+
+
+## [单调队列](https://leetcode-cn.com/tag/monotonic-queue)
+
+1. [滑动窗口最大值](../solutions/sliding-window-maximum/README.md)
 
 
 
@@ -1317,6 +1311,12 @@
 ## [水塘抽样](https://leetcode-cn.com/tag/reservoir-sampling)
 
 1. [链表随机节点](../solutions/linked-list-random-node/README.md)
+
+
+
+## [SHELL](https://leetcode-cn.com/tag/shell)
+
+1. [第十行](../solutions/tenth-line/README.md)
 
 
 
