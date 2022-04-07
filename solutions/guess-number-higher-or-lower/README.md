@@ -62,33 +62,6 @@
 
 ## 题解
 
-### c [🔗](guess-number-higher-or-lower.c) 
-```c
-/** 
- * Forward declaration of guess API.
- * @param  num   your guess
- * @return 	     -1 if num is lower than the guess number
- *			      1 if num is higher than the guess number
- *               otherwise return 0
- * int guess(int num);
- */
-
-int guessNumber(int n){
-    int lo = 0, hi = n;
-    while (lo <= hi) {
-        int m = lo + (hi - lo) / 2;
-        int ret = guess(m);
-        if (ret == 1) {
-            lo = m + 1;
-        } else if (ret == -1) {
-            hi = m - 1;
-        } else {
-            return m;
-        }
-    }
-    return -1;
-}
-```
 ### cpp [🔗](guess-number-higher-or-lower.cpp) 
 ```cpp
 /** 
@@ -120,6 +93,33 @@ public:
         return -1;
     }
 };
+```
+### c [🔗](guess-number-higher-or-lower.c) 
+```c
+/** 
+ * Forward declaration of guess API.
+ * @param  num   your guess
+ * @return 	     -1 if num is lower than the guess number
+ *			      1 if num is higher than the guess number
+ *               otherwise return 0
+ * int guess(int num);
+ */
+
+int guessNumber(int n){
+    int lo = 0, hi = n;
+    while (lo <= hi) {
+        int m = lo + (hi - lo) / 2;
+        int ret = guess(m);
+        if (ret == 1) {
+            lo = m + 1;
+        } else if (ret == -1) {
+            hi = m - 1;
+        } else {
+            return m;
+        }
+    }
+    return -1;
+}
 ```
 
 

@@ -44,34 +44,6 @@
 
 ## 题解
 
-### golang [🔗](binary-tree-inorder-traversal.go) 
-```golang
-/**
- * Definition for a binary tree node.
- * type TreeNode struct {
- *     Val int
- *     Left *TreeNode
- *     Right *TreeNode
- * }
- */
-func inorderTraversal(root *TreeNode) []int {
-	res := []int{}
-	var inorder func(*TreeNode)
-
-	inorder = func(n *TreeNode) {
-		if n == nil {
-			return
-		}
-		inorder(n.Left)
-		res = append(res, n.Val)
-		inorder(n.Right)
-	}
-
-	inorder(root)
-	return res
-}
-
-```
 ### python3 [🔗](binary-tree-inorder-traversal.py) 
 ```python3
 # Definition for a binary tree node.
@@ -123,6 +95,34 @@ public:
         return res;
     }
 };
+```
+### golang [🔗](binary-tree-inorder-traversal.go) 
+```golang
+/**
+ * Definition for a binary tree node.
+ * type TreeNode struct {
+ *     Val int
+ *     Left *TreeNode
+ *     Right *TreeNode
+ * }
+ */
+func inorderTraversal(root *TreeNode) []int {
+	res := []int{}
+	var inorder func(*TreeNode)
+
+	inorder = func(n *TreeNode) {
+		if n == nil {
+			return
+		}
+		inorder(n.Left)
+		res = append(res, n.Val)
+		inorder(n.Right)
+	}
+
+	inorder(root)
+	return res
+}
+
 ```
 
 

@@ -49,12 +49,6 @@ F(n) = F(n - 1) + F(n - 2)，其中 n &gt; 1
 
 ## 题解
 
-### python3 [🔗](fibonacci-number.py) 
-```python3
-class Solution:
-    def fib(self, n: int) -> int:
-        return int((5**0.5)*0.2*( ((1+5**0.5)/2)**n-((1-5**0.5)/2)**n))
-```
 ### c [🔗](fibonacci-number.c) 
 ```c
 int fib(int n) {
@@ -90,6 +84,12 @@ func fib(n int) int {
     }
     return fib(n-1) + fib(n-2)
 }
+```
+### python3 [🔗](fibonacci-number.py) 
+```python3
+class Solution:
+    def fib(self, n: int) -> int:
+        return int((5**0.5)*0.2*( ((1+5**0.5)/2)**n-((1-5**0.5)/2)**n))
 ```
 
 

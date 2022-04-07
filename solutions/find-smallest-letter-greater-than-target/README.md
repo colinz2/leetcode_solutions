@@ -49,6 +49,24 @@
 
 ## 题解
 
+### golang [🔗](find-smallest-letter-greater-than-target.go) 
+```golang
+func nextGreatestLetter(letters []byte, target byte) byte {
+    lo, hi := 0, len(letters)
+    for lo < hi {
+        m := (lo + hi) >> 1
+        if letters[m] <= target {
+            lo = m + 1
+        } else {
+            hi = m
+        }
+    }
+    if lo == len(letters) {
+        lo = 0
+    }
+    return letters[lo]
+}
+```
 ### cpp [🔗](find-smallest-letter-greater-than-target.cpp) 
 ```cpp
 class Solution {
@@ -67,24 +85,6 @@ public:
         return letters[hi];
     }
 };
-```
-### golang [🔗](find-smallest-letter-greater-than-target.go) 
-```golang
-func nextGreatestLetter(letters []byte, target byte) byte {
-    lo, hi := 0, len(letters)
-    for lo < hi {
-        m := (lo + hi) >> 1
-        if letters[m] <= target {
-            lo = m + 1
-        } else {
-            hi = m
-        }
-    }
-    if lo == len(letters) {
-        lo = 0
-    }
-    return letters[lo]
-}
 ```
 
 

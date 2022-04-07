@@ -26,6 +26,41 @@
 
 ## 题解
 
+### golang [🔗](diameter-of-binary-tree.go) 
+```golang
+/**
+ * Definition for a binary tree node.
+ * type TreeNode struct {
+ *     Val int
+ *     Left *TreeNode
+ *     Right *TreeNode
+ * }
+ */
+func diameterOfBinaryTree(root *TreeNode) int {
+    diameter := 0
+    depth(root, &diameter)
+    return diameter
+}
+
+func depth(root *TreeNode, diameter *int) int {
+    if root == nil {
+        return 0
+    }
+    le := depth(root.Left, diameter)
+    ri := depth(root.Right, diameter)
+    *diameter = max(*diameter, le + ri)
+    return max(le, ri) + 1
+}
+
+func max(a, b int) int {
+    if a > b {
+        return a
+    }
+    return b
+}
+
+
+```
 ### c [🔗](diameter-of-binary-tree.c) 
 ```c
 /**
@@ -84,41 +119,6 @@ public:
         return std::max(d1, d2) + 1;
     }
 };
-```
-### golang [🔗](diameter-of-binary-tree.go) 
-```golang
-/**
- * Definition for a binary tree node.
- * type TreeNode struct {
- *     Val int
- *     Left *TreeNode
- *     Right *TreeNode
- * }
- */
-func diameterOfBinaryTree(root *TreeNode) int {
-    diameter := 0
-    depth(root, &diameter)
-    return diameter
-}
-
-func depth(root *TreeNode, diameter *int) int {
-    if root == nil {
-        return 0
-    }
-    le := depth(root.Left, diameter)
-    ri := depth(root.Right, diameter)
-    *diameter = max(*diameter, le + ri)
-    return max(le, ri) + 1
-}
-
-func max(a, b int) int {
-    if a > b {
-        return a
-    }
-    return b
-}
-
-
 ```
 
 

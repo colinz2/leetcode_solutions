@@ -38,6 +38,35 @@
 
 ## 题解
 
+### c [🔗](reverse-linked-list-ii.c) 
+```c
+/**
+ * Definition for singly-linked list.
+ * struct ListNode {
+ *     int val;
+ *     struct ListNode *next;
+ * };
+ */
+
+
+struct ListNode* reverseBetween(struct ListNode* head, int left, int right){
+    struct ListNode dummy = {.next = head};
+    struct ListNode *curr = head, *pre = &dummy, *next;
+    int index = 0;
+    while (curr) {
+        if (++index >= left && index < right) {
+            next = curr->next;
+            curr->next = next->next;
+            next->next = pre->next;
+            pre->next = next;
+        } else {
+            pre = curr;
+            curr = curr->next;
+        }
+    }
+    return dummy.next;
+}
+```
 ### cpp [🔗](reverse-linked-list-ii.cpp) 
 ```cpp
 /**
@@ -69,35 +98,6 @@ public:
         return dummy->next;
     }
 };
-```
-### c [🔗](reverse-linked-list-ii.c) 
-```c
-/**
- * Definition for singly-linked list.
- * struct ListNode {
- *     int val;
- *     struct ListNode *next;
- * };
- */
-
-
-struct ListNode* reverseBetween(struct ListNode* head, int left, int right){
-    struct ListNode dummy = {.next = head};
-    struct ListNode *curr = head, *pre = &dummy, *next;
-    int index = 0;
-    while (curr) {
-        if (++index >= left && index < right) {
-            next = curr->next;
-            curr->next = next->next;
-            next->next = pre->next;
-            pre->next = next;
-        } else {
-            pre = curr;
-            curr = curr->next;
-        }
-    }
-    return dummy.next;
-}
 ```
 
 

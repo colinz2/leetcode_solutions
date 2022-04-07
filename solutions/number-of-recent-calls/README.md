@@ -46,6 +46,55 @@ recentCounter.ping(3002);  // requests = [1, <strong>100</strong>, <strong>3001<
 
 ## 题解
 
+### golang [🔗](number-of-recent-calls.go) 
+```golang
+type RecentCounter struct {
+    slice []int
+}
+
+
+func Constructor() RecentCounter {
+    return RecentCounter {
+        slice : make([]int, 0, 30000),
+    }    
+}
+
+
+func (this *RecentCounter) Ping(t int) int {
+    this.slice = append(this.slice, t)
+    for this.slice[0] + 3000 < t {
+        this.slice = this.slice[1:]
+    }
+    return len(this.slice)
+}
+
+
+/**
+ * Your RecentCounter object will be instantiated and called as such:
+ * obj := Constructor();
+ * param_1 := obj.Ping(t);
+ */
+```
+### python3 [🔗](number-of-recent-calls.py) 
+```python3
+class RecentCounter:
+
+    def __init__(self):
+        from collections import deque
+        self.q = deque()
+
+    def ping(self, t: int) -> int:
+        self.q.append(t)
+        while self.q[0] + 3000 < t:
+            self.q.popleft()
+
+        return len(self.q)
+
+
+# Your RecentCounter object will be instantiated and called as such:
+# obj = RecentCounter()
+# param_1 = obj.ping(t)
+```
 ### c [🔗](number-of-recent-calls.c) 
 ```c
 typedef struct Node {
@@ -136,55 +185,6 @@ private:
  * RecentCounter* obj = new RecentCounter();
  * int param_1 = obj->ping(t);
  */
-```
-### golang [🔗](number-of-recent-calls.go) 
-```golang
-type RecentCounter struct {
-    slice []int
-}
-
-
-func Constructor() RecentCounter {
-    return RecentCounter {
-        slice : make([]int, 0, 30000),
-    }    
-}
-
-
-func (this *RecentCounter) Ping(t int) int {
-    this.slice = append(this.slice, t)
-    for this.slice[0] + 3000 < t {
-        this.slice = this.slice[1:]
-    }
-    return len(this.slice)
-}
-
-
-/**
- * Your RecentCounter object will be instantiated and called as such:
- * obj := Constructor();
- * param_1 := obj.Ping(t);
- */
-```
-### python3 [🔗](number-of-recent-calls.py) 
-```python3
-class RecentCounter:
-
-    def __init__(self):
-        from collections import deque
-        self.q = deque()
-
-    def ping(self, t: int) -> int:
-        self.q.append(t)
-        while self.q[0] + 3000 < t:
-            self.q.popleft()
-
-        return len(self.q)
-
-
-# Your RecentCounter object will be instantiated and called as such:
-# obj = RecentCounter()
-# param_1 = obj.ping(t)
 ```
 
 

@@ -44,6 +44,14 @@
 
 ## 题解
 
+### c [🔗](1-bit-and-2-bit-characters.c) 
+```c
+bool isOneBitCharacter(int* bits, int bitsSize){
+    int i = bitsSize - 2;
+    while (i >= 0 && bits[i] == 1)i--;
+    return (bitsSize-2-i) % 2 == 0;
+}
+```
 ### cpp [🔗](1-bit-and-2-bit-characters.cpp) 
 ```cpp
 class Solution {
@@ -88,14 +96,6 @@ function isOneBitCharacter(bits: number[]): boolean {
     return (bits.length - 2 - i) % 2 == 0
 
 };
-```
-### c [🔗](1-bit-and-2-bit-characters.c) 
-```c
-bool isOneBitCharacter(int* bits, int bitsSize){
-    int i = bitsSize - 2;
-    while (i >= 0 && bits[i] == 1)i--;
-    return (bitsSize-2-i) % 2 == 0;
-}
 ```
 
 

@@ -44,13 +44,6 @@
 
 ## 题解
 
-### c [🔗](is-subsequence.c) 
-```c
-bool isSubsequence(char * s, char * t){
-    while (*s && *t) s += (*s == *t++);
-    return !*s;
-}
-```
 ### cpp [🔗](is-subsequence.cpp) 
 ```cpp
 class Solution {
@@ -85,6 +78,13 @@ func isSubsequence(s string, t string) bool {
         }
     }
     return dp[m][n] == len(s)
+}
+```
+### c [🔗](is-subsequence.c) 
+```c
+bool isSubsequence(char * s, char * t){
+    while (*s && *t) s += (*s == *t++);
+    return !*s;
 }
 ```
 

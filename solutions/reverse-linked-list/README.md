@@ -47,6 +47,27 @@
 
 ## 题解
 
+### c [🔗](reverse-linked-list.c) 
+```c
+/**
+ * Definition for singly-linked list.
+ * struct ListNode {
+ *     int val;
+ *     struct ListNode *next;
+ * };
+ */
+
+
+struct ListNode* reverseList(struct ListNode* head){
+    if (head == NULL || head->next == NULL) {
+        return head;
+    }
+    struct ListNode* new_head = reverseList(head->next);
+    head->next->next = head;
+    head->next = NULL;
+    return new_head;
+}
+```
 ### cpp [🔗](reverse-linked-list.cpp) 
 ```cpp
 /**
@@ -189,27 +210,6 @@ function reverseList(head: ListNode | null): ListNode | null {
     head.next = null
     return newNode
 };
-```
-### c [🔗](reverse-linked-list.c) 
-```c
-/**
- * Definition for singly-linked list.
- * struct ListNode {
- *     int val;
- *     struct ListNode *next;
- * };
- */
-
-
-struct ListNode* reverseList(struct ListNode* head){
-    if (head == NULL || head->next == NULL) {
-        return head;
-    }
-    struct ListNode* new_head = reverseList(head->next);
-    head->next->next = head;
-    head->next = NULL;
-    return new_head;
-}
 ```
 
 
