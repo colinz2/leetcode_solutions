@@ -49,31 +49,6 @@
 
 ## 题解
 
-### golang [🔗](richest-customer-wealth.go) 
-```golang
-func maximumWealth(accounts [][]int) int {
-    // 原地操作
-    for i := 0; i < len(accounts); i++ {
-        for j := 1; j < len(accounts[0]); j++ {
-            accounts[i][0] += accounts[i][j]
-        }
-        if accounts[0][0] < accounts[i][0] {
-            accounts[0][0] = accounts[i][0]
-        }
-    }
-    return accounts[0][0]
-}
-```
-### python [🔗](richest-customer-wealth.py) 
-```python
-class Solution(object):
-    def maximumWealth(self, accounts):
-        """
-        :type accounts: List[List[int]]
-        :rtype: int
-        """
-        return max([sum(account) for account in accounts])
-```
 ### c [🔗](richest-customer-wealth.c) 
 ```c
 int maximumWealth(int** accounts, int accountsSize, int* accountsColSize){
@@ -103,6 +78,31 @@ public:
         return res.back();
     }
 };
+```
+### golang [🔗](richest-customer-wealth.go) 
+```golang
+func maximumWealth(accounts [][]int) int {
+    // 原地操作
+    for i := 0; i < len(accounts); i++ {
+        for j := 1; j < len(accounts[0]); j++ {
+            accounts[i][0] += accounts[i][j]
+        }
+        if accounts[0][0] < accounts[i][0] {
+            accounts[0][0] = accounts[i][0]
+        }
+    }
+    return accounts[0][0]
+}
+```
+### python [🔗](richest-customer-wealth.py) 
+```python
+class Solution(object):
+    def maximumWealth(self, accounts):
+        """
+        :type accounts: List[List[int]]
+        :rtype: int
+        """
+        return max([sum(account) for account in accounts])
 ```
 ### rust [🔗](richest-customer-wealth.rs) 
 ```rust

@@ -34,29 +34,33 @@
 
 ## 题解
 
-### python3 [🔗](rotate-list.py) 
-```python3
-# Definition for singly-linked list.
-# class ListNode:
-#     def __init__(self, val=0, next=None):
-#         self.val = val
-#         self.next = next
-class Solution:
-    def rotateRight(self, head: Optional[ListNode], k: int) -> Optional[ListNode]:
-        if head == None:
-            return head
-        last = head
-        list_len = 1
-        while last.next:
-            last = last.next
-            list_len += 1
-        # link to head
-        last.next = head
-        for _ in range(0, list_len - (k % list_len)):
-            last = last.next
-        head = last.next
-        last.next = None
-        return head
+### c [🔗](rotate-list.c) 
+```c
+/**
+ * Definition for singly-linked list.
+ * struct ListNode {
+ *     int val;
+ *     struct ListNode *next;
+ * };
+ */
+
+
+struct ListNode* rotateRight(struct ListNode* head, int k){
+    if (head == NULL) return NULL;
+    struct ListNode *last = head;
+    int list_len = 1;
+    while (last->next) {
+        list_len++;
+        last = last->next;
+    }
+    last->next = head;
+    for (int i = 0; i < list_len - (k % list_len); i++) {
+        last = last->next;
+    }
+    head = last->next;
+    last->next = NULL;
+    return head;
+}
 ```
 ### cpp [🔗](rotate-list.cpp) 
 ```cpp
@@ -116,33 +120,29 @@ func rotateRight(head *ListNode, k int) *ListNode {
     return head 
 }
 ```
-### c [🔗](rotate-list.c) 
-```c
-/**
- * Definition for singly-linked list.
- * struct ListNode {
- *     int val;
- *     struct ListNode *next;
- * };
- */
-
-
-struct ListNode* rotateRight(struct ListNode* head, int k){
-    if (head == NULL) return NULL;
-    struct ListNode *last = head;
-    int list_len = 1;
-    while (last->next) {
-        list_len++;
-        last = last->next;
-    }
-    last->next = head;
-    for (int i = 0; i < list_len - (k % list_len); i++) {
-        last = last->next;
-    }
-    head = last->next;
-    last->next = NULL;
-    return head;
-}
+### python3 [🔗](rotate-list.py) 
+```python3
+# Definition for singly-linked list.
+# class ListNode:
+#     def __init__(self, val=0, next=None):
+#         self.val = val
+#         self.next = next
+class Solution:
+    def rotateRight(self, head: Optional[ListNode], k: int) -> Optional[ListNode]:
+        if head == None:
+            return head
+        last = head
+        list_len = 1
+        while last.next:
+            last = last.next
+            list_len += 1
+        # link to head
+        last.next = head
+        for _ in range(0, list_len - (k % list_len)):
+            last = last.next
+        head = last.next
+        last.next = None
+        return head
 ```
 
 

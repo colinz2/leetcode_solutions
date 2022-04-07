@@ -24,19 +24,6 @@
 
 ## 题解
 
-### c [🔗](shu-zu-zhong-zhong-fu-de-shu-zi-lcof.c) 
-```c
-int findRepeatNumber(int* nums, int numsSize){
-    for (int i = 0; i < numsSize; i++) {
-        int idx = nums[i] % numsSize;
-        if (nums[idx] >= numsSize) {
-            return idx;
-        }
-        nums[idx] += numsSize;
-    }
-    return -1;
-}
-```
 ### python3 [🔗](shu-zu-zhong-zhong-fu-de-shu-zi-lcof.py) 
 ```python3
 class Solution:
@@ -48,17 +35,17 @@ class Solution:
             seen.add(n)
         return -1
 ```
-### golang [🔗](shu-zu-zhong-zhong-fu-de-shu-zi-lcof.go) 
-```golang
-func findRepeatNumber(nums []int) int {
-    seen := make(map[int]struct{})
-    for _, n := range nums {
-        if _, e := seen[n]; e {
-            return n
+### c [🔗](shu-zu-zhong-zhong-fu-de-shu-zi-lcof.c) 
+```c
+int findRepeatNumber(int* nums, int numsSize){
+    for (int i = 0; i < numsSize; i++) {
+        int idx = nums[i] % numsSize;
+        if (nums[idx] >= numsSize) {
+            return idx;
         }
-        seen[n] = struct{}{}
+        nums[idx] += numsSize;
     }
-    return -1
+    return -1;
 }
 ```
 ### cpp [🔗](shu-zu-zhong-zhong-fu-de-shu-zi-lcof.cpp) 
@@ -77,6 +64,19 @@ public:
         return -1;
     }
 };
+```
+### golang [🔗](shu-zu-zhong-zhong-fu-de-shu-zi-lcof.go) 
+```golang
+func findRepeatNumber(nums []int) int {
+    seen := make(map[int]struct{})
+    for _, n := range nums {
+        if _, e := seen[n]; e {
+            return n
+        }
+        seen[n] = struct{}{}
+    }
+    return -1
+}
 ```
 
 

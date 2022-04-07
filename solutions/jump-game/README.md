@@ -39,20 +39,6 @@
 
 ## 题解
 
-### python3 [🔗](jump-game.py) 
-```python3
-class Solution:
-    def canJump(self, nums: List[int]) -> bool:
-        n, far_most = len(nums), 0
-        for i in range(n):
-            if i <= far_most:
-                far_most = max(far_most, i + nums[i])
-                if far_most + 1 >= len(nums):
-                    return True
-            else:
-                break
-        return False
-```
 ### cpp [🔗](jump-game.cpp) 
 ```cpp
 class Solution {
@@ -71,6 +57,20 @@ public:
         return far_most >= nums.size() - 1;
     }
 };
+```
+### python3 [🔗](jump-game.py) 
+```python3
+class Solution:
+    def canJump(self, nums: List[int]) -> bool:
+        n, far_most = len(nums), 0
+        for i in range(n):
+            if i <= far_most:
+                far_most = max(far_most, i + nums[i])
+                if far_most + 1 >= len(nums):
+                    return True
+            else:
+                break
+        return False
 ```
 
 

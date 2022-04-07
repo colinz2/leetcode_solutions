@@ -53,17 +53,6 @@ public:
     }
 };
 ```
-### python3 [🔗](majority-element.py) 
-```python3
-class Solution:
-    def majorityElement(self, nums: List[int]) -> int:
-        ans, count = 0, 0
-        for x in nums:
-            ans = x if count == 0  else ans
-            count = count + 1 if ans == x else count - 1
-
-        return ans
-```
 ### golang [🔗](majority-element.go) 
 ```golang
 func majorityElement(nums []int) int {
@@ -81,6 +70,17 @@ func majorityElement(nums []int) int {
 	}
 	return res
 }
+```
+### python3 [🔗](majority-element.py) 
+```python3
+class Solution:
+    def majorityElement(self, nums: List[int]) -> int:
+        ans, count = 0, 0
+        for x in nums:
+            ans = x if count == 0  else ans
+            count = count + 1 if ans == x else count - 1
+
+        return ans
 ```
 
 

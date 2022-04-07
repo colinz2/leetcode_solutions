@@ -51,27 +51,6 @@
 
 ## 题解
 
-### golang [🔗](linked-list-cycle-lcci.go) 
-```golang
-/**
- * Definition for singly-linked list.
- * type ListNode struct {
- *     Val int
- *     Next *ListNode
- * }
- */
-func detectCycle(head *ListNode) *ListNode {
-    nodeMap := make(map[*ListNode]struct{})
-    for head != nil {
-        if _, e := nodeMap[head]; e {
-            return head;
-        }
-        nodeMap[head] = struct{}{}
-        head = head.Next
-    }   
-    return nil
-}
-```
 ### cpp [🔗](linked-list-cycle-lcci.cpp) 
 ```cpp
 /**
@@ -96,6 +75,27 @@ public:
         return nullptr;
     }
 };
+```
+### golang [🔗](linked-list-cycle-lcci.go) 
+```golang
+/**
+ * Definition for singly-linked list.
+ * type ListNode struct {
+ *     Val int
+ *     Next *ListNode
+ * }
+ */
+func detectCycle(head *ListNode) *ListNode {
+    nodeMap := make(map[*ListNode]struct{})
+    for head != nil {
+        if _, e := nodeMap[head]; e {
+            return head;
+        }
+        nodeMap[head] = struct{}{}
+        head = head.Next
+    }   
+    return nil
+}
 ```
 
 

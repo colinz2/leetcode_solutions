@@ -25,10 +25,11 @@
 22. [前K个高频单词](../solutions/top-k-frequent-words/README.md)
 23. [匹配子序列的单词数](../solutions/number-of-matching-subsequences/README.md)
 24. [按奇偶排序数组](../solutions/sort-array-by-parity/README.md)
-25. [两个数组间的距离值](../solutions/find-the-distance-value-between-two-arrays/README.md)
-26. [元素计数](../solutions/count-elements-with-strictly-smaller-and-greater-elements/README.md)
-27. [判定字符是否唯一](../solutions/is-unique-lcci/README.md)
-28. [数组中重复的数字](../solutions/shu-zu-zhong-zhong-fu-de-shu-zi-lcof/README.md)
-29. [最小的k个数](../solutions/zui-xiao-de-kge-shu-lcof/README.md)
+25. [小于 K 的两数之和](../solutions/two-sum-less-than-k/README.md)
+26. [两个数组间的距离值](../solutions/find-the-distance-value-between-two-arrays/README.md)
+27. [元素计数](../solutions/count-elements-with-strictly-smaller-and-greater-elements/README.md)
+28. [判定字符是否唯一](../solutions/is-unique-lcci/README.md)
+29. [数组中重复的数字](../solutions/shu-zu-zhong-zhong-fu-de-shu-zi-lcof/README.md)
+30. [最小的k个数](../solutions/zui-xiao-de-kge-shu-lcof/README.md)
 
 

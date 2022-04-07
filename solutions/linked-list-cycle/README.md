@@ -58,6 +58,100 @@
 
 ## 题解
 
+### typescript [🔗](linked-list-cycle.ts) 
+```typescript
+/**
+ * Definition for singly-linked list.
+ * class ListNode {
+ *     val: number
+ *     next: ListNode | null
+ *     constructor(val?: number, next?: ListNode | null) {
+ *         this.val = (val===undefined ? 0 : val)
+ *         this.next = (next===undefined ? null : next)
+ *     }
+ * }
+ */
+
+function hasCycle(head: ListNode | null): boolean {
+    let fast = head
+    while (fast != null && fast.next != null) {
+        fast = fast.next.next
+        head = head.next
+        if (head === fast) {
+            return true
+        }
+    }
+    return false
+};
+```
+### c [🔗](linked-list-cycle.c) 
+```c
+/**
+ * Definition for singly-linked list.
+ * struct ListNode {
+ *     int val;
+ *     struct ListNode *next;
+ * };
+ */
+bool hasCycle(struct ListNode *head) {
+    struct ListNode* fast = head;
+    while (fast && fast->next) {
+        fast = fast->next->next;
+        head = head->next;
+        if (head == fast) {
+            return true;
+        }
+    } 
+    return false;
+}
+```
+### cpp [🔗](linked-list-cycle.cpp) 
+```cpp
+/**
+ * Definition for singly-linked list.
+ * struct ListNode {
+ *     int val;
+ *     ListNode *next;
+ *     ListNode(int x) : val(x), next(NULL) {}
+ * };
+ */
+class Solution {
+public:
+    bool hasCycle(ListNode *head) {
+        ListNode* fast = head;
+        while (fast && head) {
+            head = head->next;
+            if (fast->next)
+                fast = fast->next->next;
+            else
+                break;
+            if (head == fast) return true;
+        }
+        return false;
+    }
+};
+```
+### golang [🔗](linked-list-cycle.go) 
+```golang
+/**
+ * Definition for singly-linked list.
+ * type ListNode struct {
+ *     Val int
+ *     Next *ListNode
+ * }
+ */
+func hasCycle(head *ListNode) bool {
+    fast := head
+    for fast != nil && fast.Next != nil {
+        head = head.Next
+        fast = fast.Next.Next
+        if fast == head {
+            return true
+        }
+    }
+    return false
+}
+```
 ### java [🔗](linked-list-cycle.java) 
 ```java
 /**
@@ -102,100 +196,6 @@ class Solution:
             if fast == head:
                 return True
         return False
-```
-### golang [🔗](linked-list-cycle.go) 
-```golang
-/**
- * Definition for singly-linked list.
- * type ListNode struct {
- *     Val int
- *     Next *ListNode
- * }
- */
-func hasCycle(head *ListNode) bool {
-    fast := head
-    for fast != nil && fast.Next != nil {
-        head = head.Next
-        fast = fast.Next.Next
-        if fast == head {
-            return true
-        }
-    }
-    return false
-}
-```
-### cpp [🔗](linked-list-cycle.cpp) 
-```cpp
-/**
- * Definition for singly-linked list.
- * struct ListNode {
- *     int val;
- *     ListNode *next;
- *     ListNode(int x) : val(x), next(NULL) {}
- * };
- */
-class Solution {
-public:
-    bool hasCycle(ListNode *head) {
-        ListNode* fast = head;
-        while (fast && head) {
-            head = head->next;
-            if (fast->next)
-                fast = fast->next->next;
-            else
-                break;
-            if (head == fast) return true;
-        }
-        return false;
-    }
-};
-```
-### c [🔗](linked-list-cycle.c) 
-```c
-/**
- * Definition for singly-linked list.
- * struct ListNode {
- *     int val;
- *     struct ListNode *next;
- * };
- */
-bool hasCycle(struct ListNode *head) {
-    struct ListNode* fast = head;
-    while (fast && fast->next) {
-        fast = fast->next->next;
-        head = head->next;
-        if (head == fast) {
-            return true;
-        }
-    } 
-    return false;
-}
-```
-### typescript [🔗](linked-list-cycle.ts) 
-```typescript
-/**
- * Definition for singly-linked list.
- * class ListNode {
- *     val: number
- *     next: ListNode | null
- *     constructor(val?: number, next?: ListNode | null) {
- *         this.val = (val===undefined ? 0 : val)
- *         this.next = (next===undefined ? null : next)
- *     }
- * }
- */
-
-function hasCycle(head: ListNode | null): boolean {
-    let fast = head
-    while (fast != null && fast.next != null) {
-        fast = fast.next.next
-        head = head.next
-        if (head === fast) {
-            return true
-        }
-    }
-    return false
-};
 ```
 
 

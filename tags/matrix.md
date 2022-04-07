@@ -14,8 +14,9 @@
 11. [最大正方形](../solutions/maximal-square/README.md)
 12. [生命游戏](../solutions/game-of-life/README.md)
 13. [图片平滑器](../solutions/image-smoother/README.md)
-14. [转置矩阵](../solutions/transpose-matrix/README.md)
-15. [飞地的数量](../solutions/number-of-enclaves/README.md)
-16. [最富有客户的资产总量](../solutions/richest-customer-wealth/README.md)
+14. [翻转图像](../solutions/flipping-an-image/README.md)
+15. [转置矩阵](../solutions/transpose-matrix/README.md)
+16. [飞地的数量](../solutions/number-of-enclaves/README.md)
+17. [最富有客户的资产总量](../solutions/richest-customer-wealth/README.md)
 
 

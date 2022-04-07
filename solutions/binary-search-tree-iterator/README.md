@@ -63,106 +63,6 @@ bSTIterator.hasNext(); // 返回 False
 
 ## 题解
 
-### golang [🔗](binary-search-tree-iterator.go) 
-```golang
-/**
- * Definition for a binary tree node.
- * type TreeNode struct {
- *     Val int
- *     Left *TreeNode
- *     Right *TreeNode
- * }
- */
-type BSTIterator struct {
-    root  *TreeNode
-    stack []*TreeNode
-}
-
-
-func Constructor(root *TreeNode) BSTIterator {
-    return BSTIterator{
-        root: root,
-    }
-}
-
-
-func (this *BSTIterator) Next() int {
-    if !this.HasNext() {
-        return -1
-    }
-
-    for this.root != nil {
-        this.stack = append(this.stack, this.root)
-        this.root = this.root.Left
-    }
-    topIndex := len(this.stack) - 1
-    this.root = this.stack[topIndex]
-    this.stack = this.stack[:topIndex]
-    ret := this.root.Val
-    this.root = this.root.Right
-    return ret
-}
-
-
-func (this *BSTIterator) HasNext() bool {
-    return this.root != nil || len(this.stack) != 0 
-}
-
-
-/**
- * Your BSTIterator object will be instantiated and called as such:
- * obj := Constructor(root);
- * param_1 := obj.Next();
- * param_2 := obj.HasNext();
- */
-```
-### cpp [🔗](binary-search-tree-iterator.cpp) 
-```cpp
-/**
- * Definition for a binary tree node.
- * struct TreeNode {
- *     int val;
- *     TreeNode *left;
- *     TreeNode *right;
- *     TreeNode() : val(0), left(nullptr), right(nullptr) {}
- *     TreeNode(int x) : val(x), left(nullptr), right(nullptr) {}
- *     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
- * };
- */
-class BSTIterator {
-public:
-    BSTIterator(TreeNode* root) : vec_(0), index_(0) {
-        std::function<void(TreeNode*)> inorder = [&,this](TreeNode *node) {
-            if (node == nullptr) return;
-            inorder(node->left);
-            vec_.push_back(node->val);
-            inorder(node->right);
-        };
-        inorder(root);
-    }
-    
-    int next() {
-        return vec_[index_++];
-    }
-    
-    bool hasNext() {
-        if (index_ == vec_.size()) {
-            return false;
-        }
-        return true;
-    }
-private:
-    vector<int> vec_;
-    int index_;
-};
-
-/**
- * Your BSTIterator object will be instantiated and called as such:
- * BSTIterator* obj = new BSTIterator(root);
- * int param_1 = obj->next();
- * bool param_2 = obj->hasNext();
- */
-```
 ### c [🔗](binary-search-tree-iterator.c) 
 ```c
 /**
@@ -236,6 +136,106 @@ void bSTIteratorFree(BSTIterator* obj) {
  
  * bSTIteratorFree(obj);
 */
+```
+### cpp [🔗](binary-search-tree-iterator.cpp) 
+```cpp
+/**
+ * Definition for a binary tree node.
+ * struct TreeNode {
+ *     int val;
+ *     TreeNode *left;
+ *     TreeNode *right;
+ *     TreeNode() : val(0), left(nullptr), right(nullptr) {}
+ *     TreeNode(int x) : val(x), left(nullptr), right(nullptr) {}
+ *     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
+ * };
+ */
+class BSTIterator {
+public:
+    BSTIterator(TreeNode* root) : vec_(0), index_(0) {
+        std::function<void(TreeNode*)> inorder = [&,this](TreeNode *node) {
+            if (node == nullptr) return;
+            inorder(node->left);
+            vec_.push_back(node->val);
+            inorder(node->right);
+        };
+        inorder(root);
+    }
+    
+    int next() {
+        return vec_[index_++];
+    }
+    
+    bool hasNext() {
+        if (index_ == vec_.size()) {
+            return false;
+        }
+        return true;
+    }
+private:
+    vector<int> vec_;
+    int index_;
+};
+
+/**
+ * Your BSTIterator object will be instantiated and called as such:
+ * BSTIterator* obj = new BSTIterator(root);
+ * int param_1 = obj->next();
+ * bool param_2 = obj->hasNext();
+ */
+```
+### golang [🔗](binary-search-tree-iterator.go) 
+```golang
+/**
+ * Definition for a binary tree node.
+ * type TreeNode struct {
+ *     Val int
+ *     Left *TreeNode
+ *     Right *TreeNode
+ * }
+ */
+type BSTIterator struct {
+    root  *TreeNode
+    stack []*TreeNode
+}
+
+
+func Constructor(root *TreeNode) BSTIterator {
+    return BSTIterator{
+        root: root,
+    }
+}
+
+
+func (this *BSTIterator) Next() int {
+    if !this.HasNext() {
+        return -1
+    }
+
+    for this.root != nil {
+        this.stack = append(this.stack, this.root)
+        this.root = this.root.Left
+    }
+    topIndex := len(this.stack) - 1
+    this.root = this.stack[topIndex]
+    this.stack = this.stack[:topIndex]
+    ret := this.root.Val
+    this.root = this.root.Right
+    return ret
+}
+
+
+func (this *BSTIterator) HasNext() bool {
+    return this.root != nil || len(this.stack) != 0 
+}
+
+
+/**
+ * Your BSTIterator object will be instantiated and called as such:
+ * obj := Constructor(root);
+ * param_1 := obj.Next();
+ * param_2 := obj.HasNext();
+ */
 ```
 
 

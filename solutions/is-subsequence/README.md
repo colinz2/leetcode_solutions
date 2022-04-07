@@ -44,6 +44,13 @@
 
 ## 题解
 
+### c [🔗](is-subsequence.c) 
+```c
+bool isSubsequence(char * s, char * t){
+    while (*s && *t) s += (*s == *t++);
+    return !*s;
+}
+```
 ### cpp [🔗](is-subsequence.cpp) 
 ```cpp
 class Solution {
@@ -58,13 +65,6 @@ public:
         return index == s.size();
     }
 };
-```
-### c [🔗](is-subsequence.c) 
-```c
-bool isSubsequence(char * s, char * t){
-    while (*s && *t) s += (*s == *t++);
-    return !*s;
-}
 ```
 ### golang [🔗](is-subsequence.go) 
 ```golang

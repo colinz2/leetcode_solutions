@@ -47,24 +47,6 @@
 
 ## 题解
 
-### golang [🔗](reverse-linked-list.go) 
-```golang
-/**
- * Definition for singly-linked list.
- * type ListNode struct {
- *     Val int
- *     Next *ListNode
- * }
- */
-func reverseList(head *ListNode) *ListNode {
-    var pre, next *ListNode = nil, nil
-    for head != nil {
-        next, head.Next = head.Next, pre
-        pre , head = head, next
-    }
-    return pre
-}
-```
 ### python3 [🔗](reverse-linked-list.py) 
 ```python3
 # Definition for singly-linked list.
@@ -80,6 +62,63 @@ class Solution:
         head.next.next = head
         head.next = None
         return new_head 
+```
+### rust [🔗](reverse-linked-list.rs) 
+```rust
+// Definition for singly-linked list.
+// #[derive(PartialEq, Eq, Clone, Debug)]
+// pub struct ListNode {
+//   pub val: i32,
+//   pub next: Option<Box<ListNode>>
+// }
+//
+// impl ListNode {
+//   #[inline]
+//   fn new(val: i32) -> Self {
+//     ListNode {
+//       next: None,
+//       val
+//     }
+//   }
+// }
+impl Solution {
+    pub fn reverse_list(head: Option<Box<ListNode>>) -> Option<Box<ListNode>> {
+        if head.is_none() { return None; }
+        let mut prev = None;
+        let mut current = head;
+        while let Some(mut tmp) = current.take() {
+	        let next = tmp.next.take();
+	        tmp.next = prev.take();
+	        prev = Some(tmp);
+	        current = next;
+        }
+        prev
+    }
+}
+```
+### typescript [🔗](reverse-linked-list.ts) 
+```typescript
+/**
+ * Definition for singly-linked list.
+ * class ListNode {
+ *     val: number
+ *     next: ListNode | null
+ *     constructor(val?: number, next?: ListNode | null) {
+ *         this.val = (val===undefined ? 0 : val)
+ *         this.next = (next===undefined ? null : next)
+ *     }
+ * }
+ */
+
+function reverseList(head: ListNode | null): ListNode | null {
+    if (head == null || head.next == null) {
+        return head;
+    }
+    let newNode = reverseList(head.next)
+    head.next.next = head
+    head.next = null
+    return newNode
+};
 ```
 ### c [🔗](reverse-linked-list.c) 
 ```c
@@ -129,37 +168,22 @@ public:
     }
 };
 ```
-### rust [🔗](reverse-linked-list.rs) 
-```rust
-// Definition for singly-linked list.
-// #[derive(PartialEq, Eq, Clone, Debug)]
-// pub struct ListNode {
-//   pub val: i32,
-//   pub next: Option<Box<ListNode>>
-// }
-//
-// impl ListNode {
-//   #[inline]
-//   fn new(val: i32) -> Self {
-//     ListNode {
-//       next: None,
-//       val
-//     }
-//   }
-// }
-impl Solution {
-    pub fn reverse_list(head: Option<Box<ListNode>>) -> Option<Box<ListNode>> {
-        if head.is_none() { return None; }
-        let mut prev = None;
-        let mut current = head;
-        while let Some(mut tmp) = current.take() {
-	        let next = tmp.next.take();
-	        tmp.next = prev.take();
-	        prev = Some(tmp);
-	        current = next;
-        }
-        prev
+### golang [🔗](reverse-linked-list.go) 
+```golang
+/**
+ * Definition for singly-linked list.
+ * type ListNode struct {
+ *     Val int
+ *     Next *ListNode
+ * }
+ */
+func reverseList(head *ListNode) *ListNode {
+    var pre, next *ListNode = nil, nil
+    for head != nil {
+        next, head.Next = head.Next, pre
+        pre , head = head, next
     }
+    return pre
 }
 ```
 ### java [🔗](reverse-linked-list.java) 
@@ -186,30 +210,6 @@ class Solution {
         return pre;
     }
 }
-```
-### typescript [🔗](reverse-linked-list.ts) 
-```typescript
-/**
- * Definition for singly-linked list.
- * class ListNode {
- *     val: number
- *     next: ListNode | null
- *     constructor(val?: number, next?: ListNode | null) {
- *         this.val = (val===undefined ? 0 : val)
- *         this.next = (next===undefined ? null : next)
- *     }
- * }
- */
-
-function reverseList(head: ListNode | null): ListNode | null {
-    if (head == null || head.next == null) {
-        return head;
-    }
-    let newNode = reverseList(head.next)
-    head.next.next = head
-    head.next = null
-    return newNode
-};
 ```
 
 

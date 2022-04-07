@@ -42,28 +42,6 @@
 
 ## 题解
 
-### python3 [🔗](odd-even-linked-list.py) 
-```python3
-# Definition for singly-linked list.
-# class ListNode:
-#     def __init__(self, val=0, next=None):
-#         self.val = val
-#         self.next = next
-class Solution:
-    def oddEvenList(self, head: ListNode) -> ListNode:
-        if head == None:
-            return head
-        odd = head
-        even = head.next
-        even_head = even
-        while even and even.next and odd.next:
-            odd.next = odd.next.next
-            even.next = even.next.next
-            odd = odd.next
-            even = even.next
-        odd.next = even_head
-        return head        
-```
 ### c [🔗](odd-even-linked-list.c) 
 ```c
 /**
@@ -121,6 +99,28 @@ public:
         return head;
     }
 };
+```
+### python3 [🔗](odd-even-linked-list.py) 
+```python3
+# Definition for singly-linked list.
+# class ListNode:
+#     def __init__(self, val=0, next=None):
+#         self.val = val
+#         self.next = next
+class Solution:
+    def oddEvenList(self, head: ListNode) -> ListNode:
+        if head == None:
+            return head
+        odd = head
+        even = head.next
+        even_head = even
+        while even and even.next and odd.next:
+            odd.next = odd.next.next
+            even.next = even.next.next
+            odd = odd.next
+            even = even.next
+        odd.next = even_head
+        return head        
 ```
 
 

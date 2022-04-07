@@ -49,6 +49,33 @@
 
 ## 题解
 
+### c [🔗](flatten-binary-tree-to-linked-list.c) 
+```c
+/**
+ * Definition for a binary tree node.
+ * struct TreeNode {
+ *     int val;
+ *     struct TreeNode *left;
+ *     struct TreeNode *right;
+ * };
+ */
+
+void flatten_recur(struct TreeNode* root, struct TreeNode** last) {
+    if (root == NULL) {
+        return;
+    }
+    flatten_recur(root->right, last);
+    flatten_recur(root->left, last);
+    root->right = *last;
+    root->left = NULL;
+    *last = root;
+}
+
+void flatten(struct TreeNode* root){
+    struct TreeNode* last = NULL;
+    flatten_recur(root, &last);
+}
+```
 ### cpp [🔗](flatten-binary-tree-to-linked-list.cpp) 
 ```cpp
 /**
@@ -84,33 +111,6 @@ public:
         }
     }
 };
-```
-### c [🔗](flatten-binary-tree-to-linked-list.c) 
-```c
-/**
- * Definition for a binary tree node.
- * struct TreeNode {
- *     int val;
- *     struct TreeNode *left;
- *     struct TreeNode *right;
- * };
- */
-
-void flatten_recur(struct TreeNode* root, struct TreeNode** last) {
-    if (root == NULL) {
-        return;
-    }
-    flatten_recur(root->right, last);
-    flatten_recur(root->left, last);
-    root->right = *last;
-    root->left = NULL;
-    *last = root;
-}
-
-void flatten(struct TreeNode* root){
-    struct TreeNode* last = NULL;
-    flatten_recur(root, &last);
-}
 ```
 
 

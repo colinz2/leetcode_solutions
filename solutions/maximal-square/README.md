@@ -42,33 +42,6 @@
 
 ## 题解
 
-### cpp [🔗](maximal-square.cpp) 
-```cpp
-class Solution {
-public:
-    int maximalSquare(vector<vector<char>>& matrix) {
-        int m = matrix.size(), n = matrix.back().size();
-        int res = 0;
-        vector<vector<int>> dp(m, vector<int>(n));
-
-        for (int i = 0; i < m; i++) {
-            for (int j = 0; j < n; j++) {
-                if (matrix[i][j] == '1') {
-                    if (i == 0 || j == 0) {
-                        dp[i][j] = 1;
-                    } else {
-                        dp[i][j] = std::min({dp[i-1][j-1], dp[i-1][j], dp[i][j-1]}) + 1;
-                    }
-                    res = std::max(res, dp[i][j]);
-                } else {
-                    dp[i][j] = 0;
-                }
-            }
-        }
-        return res * res;
-    }
-};
-```
 ### c [🔗](maximal-square.c) 
 ```c
 int max(int a, int b) {
@@ -115,6 +88,33 @@ int maximalSquare(char** matrix, int matrixSize, int* matrixColSize){
     }
     return maxWidth * maxWidth;
 }
+```
+### cpp [🔗](maximal-square.cpp) 
+```cpp
+class Solution {
+public:
+    int maximalSquare(vector<vector<char>>& matrix) {
+        int m = matrix.size(), n = matrix.back().size();
+        int res = 0;
+        vector<vector<int>> dp(m, vector<int>(n));
+
+        for (int i = 0; i < m; i++) {
+            for (int j = 0; j < n; j++) {
+                if (matrix[i][j] == '1') {
+                    if (i == 0 || j == 0) {
+                        dp[i][j] = 1;
+                    } else {
+                        dp[i][j] = std::min({dp[i-1][j-1], dp[i-1][j], dp[i][j-1]}) + 1;
+                    }
+                    res = std::max(res, dp[i][j]);
+                } else {
+                    dp[i][j] = 0;
+                }
+            }
+        }
+        return res * res;
+    }
+};
 ```
 ### golang [🔗](maximal-square.go) 
 ```golang

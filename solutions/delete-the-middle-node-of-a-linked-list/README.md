@@ -62,34 +62,6 @@
 
 ## 题解
 
-### java [🔗](delete-the-middle-node-of-a-linked-list.java) 
-```java
-/**
- * Definition for singly-linked list.
- * public class ListNode {
- *     int val;
- *     ListNode next;
- *     ListNode() {}
- *     ListNode(int val) { this.val = val; }
- *     ListNode(int val, ListNode next) { this.val = val; this.next = next; }
- * }
- */
-
-
-class Solution {
-    public ListNode deleteMiddle(ListNode head) {
-        //快慢指针
-        ListNode slow = head,fast = head.next;
-        if(fast == null) return null;
-        while(fast.next != null && fast.next.next != null){
-            slow = slow.next;
-            fast = fast.next.next;
-        }
-        slow.next = slow.next.next;
-        return head;
-    }
-}
-```
 ### cpp [🔗](delete-the-middle-node-of-a-linked-list.cpp) 
 ```cpp
 /**
@@ -118,6 +90,34 @@ public:
         return head;
     }
 };
+```
+### java [🔗](delete-the-middle-node-of-a-linked-list.java) 
+```java
+/**
+ * Definition for singly-linked list.
+ * public class ListNode {
+ *     int val;
+ *     ListNode next;
+ *     ListNode() {}
+ *     ListNode(int val) { this.val = val; }
+ *     ListNode(int val, ListNode next) { this.val = val; this.next = next; }
+ * }
+ */
+
+
+class Solution {
+    public ListNode deleteMiddle(ListNode head) {
+        //快慢指针
+        ListNode slow = head,fast = head.next;
+        if(fast == null) return null;
+        while(fast.next != null && fast.next.next != null){
+            slow = slow.next;
+            fast = fast.next.next;
+        }
+        slow.next = slow.next.next;
+        return head;
+    }
+}
 ```
 
 

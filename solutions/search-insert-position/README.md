@@ -62,20 +62,6 @@ public:
     }
 };
 ```
-### python3 [🔗](search-insert-position.py) 
-```python3
-class Solution:
-    def searchInsert(self, nums: List[int], target: int) -> int:
-        i, j = 0, len(nums)
-        while i < j:
-            m = (i + j)//2
-            if nums[m] < target:
-                i = m + 1
-            else:
-                j = m
-        
-        return i
-```
 ### golang [🔗](search-insert-position.go) 
 ```golang
 func searchInsert(nums []int, target int) int {
@@ -92,6 +78,20 @@ func searchInsert(nums []int, target int) int {
     }
     return j;
 }
+```
+### python3 [🔗](search-insert-position.py) 
+```python3
+class Solution:
+    def searchInsert(self, nums: List[int], target: int) -> int:
+        i, j = 0, len(nums)
+        while i < j:
+            m = (i + j)//2
+            if nums[m] < target:
+                i = m + 1
+            else:
+                j = m
+        
+        return i
 ```
 
 

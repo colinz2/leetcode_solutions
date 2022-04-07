@@ -19,43 +19,6 @@
 
 ## 题解
 
-### python3 [🔗](kth-node-from-end-of-list-lcci.py) 
-```python3
-# Definition for singly-linked list.
-# class ListNode:
-#     def __init__(self, x):
-#         self.val = x
-#         self.next = None
-
-class Solution:
-    def kthToLast(self, head: ListNode, k: int) -> int:
-        node_list = []
-        while head:
-            node_list.append(head.val)
-            head = head.next
-        return node_list[-k]
-```
-### python [🔗](kth-node-from-end-of-list-lcci.py) 
-```python
-# Definition for singly-linked list.
-# class ListNode(object):
-#     def __init__(self, x):
-#         self.val = x
-#         self.next = None
-
-class Solution(object):
-    def kthToLast(self, head, k):
-        """
-        :type head: ListNode
-        :type k: int
-        :rtype: int
-        """
-        node_list = []
-        while head:
-            node_list.append(head.val)
-            head = head.next
-        return node_list[-k]
-```
 ### cpp [🔗](kth-node-from-end-of-list-lcci.cpp) 
 ```cpp
 /**
@@ -84,6 +47,43 @@ public:
         return n2->val;
     }
 };
+```
+### python [🔗](kth-node-from-end-of-list-lcci.py) 
+```python
+# Definition for singly-linked list.
+# class ListNode(object):
+#     def __init__(self, x):
+#         self.val = x
+#         self.next = None
+
+class Solution(object):
+    def kthToLast(self, head, k):
+        """
+        :type head: ListNode
+        :type k: int
+        :rtype: int
+        """
+        node_list = []
+        while head:
+            node_list.append(head.val)
+            head = head.next
+        return node_list[-k]
+```
+### python3 [🔗](kth-node-from-end-of-list-lcci.py) 
+```python3
+# Definition for singly-linked list.
+# class ListNode:
+#     def __init__(self, x):
+#         self.val = x
+#         self.next = None
+
+class Solution:
+    def kthToLast(self, head: ListNode, k: int) -> int:
+        node_list = []
+        while head:
+            node_list.append(head.val)
+            head = head.next
+        return node_list[-k]
 ```
 
 

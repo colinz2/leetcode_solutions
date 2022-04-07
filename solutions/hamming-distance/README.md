@@ -39,6 +39,18 @@
 
 ## 题解
 
+### c [🔗](hamming-distance.c) 
+```c
+int hammingDistance(int x, int y) {
+    int z = x ^ y;
+    int distance = 0;
+    while (z > 0) {
+        distance += z & 1;
+        z = z >> 1;
+    }
+    return distance;
+}
+```
 ### cpp [🔗](hamming-distance.cpp) 
 ```cpp
 class Solution {
@@ -85,18 +97,6 @@ class Solution:
             xor >>= 1
         return d
         
-```
-### c [🔗](hamming-distance.c) 
-```c
-int hammingDistance(int x, int y) {
-    int z = x ^ y;
-    int distance = 0;
-    while (z > 0) {
-        distance += z & 1;
-        z = z >> 1;
-    }
-    return distance;
-}
 ```
 
 

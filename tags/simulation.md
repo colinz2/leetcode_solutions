@@ -9,7 +9,8 @@
 6. [生命游戏](../solutions/game-of-life/README.md)
 7. [Fizz Buzz](../solutions/fizz-buzz/README.md)
 8. [字符串相加](../solutions/add-strings/README.md)
-9. [转置矩阵](../solutions/transpose-matrix/README.md)
-10. [用栈操作构建数组](../solutions/build-an-array-with-stack-operations/README.md)
+9. [翻转图像](../solutions/flipping-an-image/README.md)
+10. [转置矩阵](../solutions/transpose-matrix/README.md)
+11. [用栈操作构建数组](../solutions/build-an-array-with-stack-operations/README.md)
 
 
