@@ -51,6 +51,46 @@ minStack.getMin();   --&gt; 返回 -2.
 
 ## 题解
 
+### cpp [🔗](min-stack.cpp) 
+```cpp
+class MinStack {
+public:
+    MinStack() {
+
+    }
+    
+    void push(int val) {
+        if (stack_.empty()) {
+            stack_.push({val, val});
+        } else {
+            stack_.push({val, std::min(val, stack_.top().second)});
+        }
+    }
+    
+    void pop() {
+        stack_.pop();
+    }
+    
+    int top() {
+        return stack_.top().first;
+    }
+    
+    int getMin() {
+        return stack_.top().second;
+    }
+private:
+    std::stack<std::pair<int,int>> stack_;
+};
+
+/**
+ * Your MinStack object will be instantiated and called as such:
+ * MinStack* obj = new MinStack();
+ * obj->push(val);
+ * obj->pop();
+ * int param_3 = obj->top();
+ * int param_4 = obj->getMin();
+ */
+```
 ### golang [🔗](min-stack.go) 
 ```golang
 type MinStack struct {
@@ -108,46 +148,6 @@ func (this *MinStack) GetMin() int {
  * obj.Pop();
  * param_3 := obj.Top();
  * param_4 := obj.GetMin();
- */
-```
-### cpp [🔗](min-stack.cpp) 
-```cpp
-class MinStack {
-public:
-    MinStack() {
-
-    }
-    
-    void push(int val) {
-        if (stack_.empty()) {
-            stack_.push({val, val});
-        } else {
-            stack_.push({val, std::min(val, stack_.top().second)});
-        }
-    }
-    
-    void pop() {
-        stack_.pop();
-    }
-    
-    int top() {
-        return stack_.top().first;
-    }
-    
-    int getMin() {
-        return stack_.top().second;
-    }
-private:
-    std::stack<std::pair<int,int>> stack_;
-};
-
-/**
- * Your MinStack object will be instantiated and called as such:
- * MinStack* obj = new MinStack();
- * obj->push(val);
- * obj->pop();
- * int param_3 = obj->top();
- * int param_4 = obj->getMin();
  */
 ```
 

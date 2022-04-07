@@ -49,6 +49,27 @@
 
 ## 题解
 
+### python [🔗](richest-customer-wealth.py) 
+```python
+class Solution(object):
+    def maximumWealth(self, accounts):
+        """
+        :type accounts: List[List[int]]
+        :rtype: int
+        """
+        return max([sum(account) for account in accounts])
+```
+### rust [🔗](richest-customer-wealth.rs) 
+```rust
+impl Solution {
+    pub fn maximum_wealth(accounts: Vec<Vec<i32>>) -> i32 {
+        accounts.iter()
+            .map(|v|v.iter().sum())
+            .max()
+            .unwrap()
+    }
+}
+```
 ### c [🔗](richest-customer-wealth.c) 
 ```c
 int maximumWealth(int** accounts, int accountsSize, int* accountsColSize){
@@ -92,27 +113,6 @@ func maximumWealth(accounts [][]int) int {
         }
     }
     return accounts[0][0]
-}
-```
-### python [🔗](richest-customer-wealth.py) 
-```python
-class Solution(object):
-    def maximumWealth(self, accounts):
-        """
-        :type accounts: List[List[int]]
-        :rtype: int
-        """
-        return max([sum(account) for account in accounts])
-```
-### rust [🔗](richest-customer-wealth.rs) 
-```rust
-impl Solution {
-    pub fn maximum_wealth(accounts: Vec<Vec<i32>>) -> i32 {
-        accounts.iter()
-            .map(|v|v.iter().sum())
-            .max()
-            .unwrap()
-    }
 }
 ```
 

@@ -55,33 +55,6 @@
 
 ## 题解
 
-### c [🔗](sum-root-to-leaf-numbers.c) 
-```c
-/**
- * Definition for a binary tree node.
- * struct TreeNode {
- *     int val;
- *     struct TreeNode *left;
- *     struct TreeNode *right;
- * };
- */
-void sumNumbersDfs(struct TreeNode* root, int sumPrev, int *total) {
-    if (root == NULL) return;
-    int num = sumPrev*10 + root->val;
-    if (root->left == NULL && root->right == NULL) {
-        *total += num;
-        return;
-    }
-    if (root->left) sumNumbersDfs(root->left, num, total);
-    if (root->right) sumNumbersDfs(root->right, num, total);
-}
-
-int sumNumbers(struct TreeNode* root){
-    int sum = 0;
-    sumNumbersDfs(root, 0, &sum);
-    return sum;
-}
-```
 ### golang [🔗](sum-root-to-leaf-numbers.go) 
 ```golang
 /**
@@ -107,6 +80,33 @@ func helper(root *TreeNode, prev int) int {
         return sum
     }
     return helper(root.Left, sum) + helper(root.Right, sum)
+}
+```
+### c [🔗](sum-root-to-leaf-numbers.c) 
+```c
+/**
+ * Definition for a binary tree node.
+ * struct TreeNode {
+ *     int val;
+ *     struct TreeNode *left;
+ *     struct TreeNode *right;
+ * };
+ */
+void sumNumbersDfs(struct TreeNode* root, int sumPrev, int *total) {
+    if (root == NULL) return;
+    int num = sumPrev*10 + root->val;
+    if (root->left == NULL && root->right == NULL) {
+        *total += num;
+        return;
+    }
+    if (root->left) sumNumbersDfs(root->left, num, total);
+    if (root->right) sumNumbersDfs(root->right, num, total);
+}
+
+int sumNumbers(struct TreeNode* root){
+    int sum = 0;
+    sumNumbersDfs(root, 0, &sum);
+    return sum;
 }
 ```
 

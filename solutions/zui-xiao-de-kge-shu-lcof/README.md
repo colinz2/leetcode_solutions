@@ -30,34 +30,6 @@
 
 ## 题解
 
-### cpp [🔗](zui-xiao-de-kge-shu-lcof.cpp) 
-```cpp
-class Solution {
-public:
-    vector<int> getLeastNumbers(vector<int>& arr, int k) {
-        std::vector<int> res;
-        if (k == 0) return res;
-        std::priority_queue<int, std::vector<int>, std::less<int>> pq;
-
-        for (auto v : arr) {
-            if (pq.size() < k) {
-                pq.push(v);
-            } else {
-                if (pq.top() > v) {
-                    pq.pop();
-                    pq.push(v);
-                }
-            }
-        }
-        while (pq.size() > 0) {
-            res.emplace_back(pq.top());
-            pq.pop();
-        }
-
-        return res;      
-    }
-};
-```
 ### golang [🔗](zui-xiao-de-kge-shu-lcof.go) 
 ```golang
 
@@ -161,6 +133,34 @@ func getLeastNumbers(arr []int, k int) []int {
 
     return res
 }
+```
+### cpp [🔗](zui-xiao-de-kge-shu-lcof.cpp) 
+```cpp
+class Solution {
+public:
+    vector<int> getLeastNumbers(vector<int>& arr, int k) {
+        std::vector<int> res;
+        if (k == 0) return res;
+        std::priority_queue<int, std::vector<int>, std::less<int>> pq;
+
+        for (auto v : arr) {
+            if (pq.size() < k) {
+                pq.push(v);
+            } else {
+                if (pq.top() > v) {
+                    pq.pop();
+                    pq.push(v);
+                }
+            }
+        }
+        while (pq.size() > 0) {
+            res.emplace_back(pq.top());
+            pq.pop();
+        }
+
+        return res;      
+    }
+};
 ```
 
 

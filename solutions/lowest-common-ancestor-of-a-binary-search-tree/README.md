@@ -38,29 +38,6 @@
 
 ## 题解
 
-### c [🔗](lowest-common-ancestor-of-a-binary-search-tree.c) 
-```c
-/**
- * Definition for a binary tree node.
- * struct TreeNode {
- *     int val;
- *     struct TreeNode *left;
- *     struct TreeNode *right;
- * };
- */
-
-struct TreeNode* lowestCommonAncestor(struct TreeNode* root, struct TreeNode* p, struct TreeNode* q) {
-    if (root == NULL) {
-        return NULL;
-    }
-    if (root->val > p->val && root->val > q->val) {
-        return lowestCommonAncestor(root->left, p, q);
-    } else if (root->val < p->val && root->val < q->val) {
-        return lowestCommonAncestor(root->right, p, q);
-    }
-    return root;    
-}
-```
 ### cpp [🔗](lowest-common-ancestor-of-a-binary-search-tree.cpp) 
 ```cpp
 /**
@@ -131,7 +108,7 @@ class Solution:
                 return root
         return root
 ```
-### typescript [🔗](lowest-common-ancestor-of-a-binary-search-tree.typescript) 
+### typescript [🔗](lowest-common-ancestor-of-a-binary-search-tree.ts) 
 ```typescript
 /**
  * Definition for a binary tree node.
@@ -157,6 +134,29 @@ function lowestCommonAncestor(root: TreeNode | null, p: TreeNode | null, q: Tree
     }
     return root
 };
+```
+### c [🔗](lowest-common-ancestor-of-a-binary-search-tree.c) 
+```c
+/**
+ * Definition for a binary tree node.
+ * struct TreeNode {
+ *     int val;
+ *     struct TreeNode *left;
+ *     struct TreeNode *right;
+ * };
+ */
+
+struct TreeNode* lowestCommonAncestor(struct TreeNode* root, struct TreeNode* p, struct TreeNode* q) {
+    if (root == NULL) {
+        return NULL;
+    }
+    if (root->val > p->val && root->val > q->val) {
+        return lowestCommonAncestor(root->left, p, q);
+    } else if (root->val < p->val && root->val < q->val) {
+        return lowestCommonAncestor(root->right, p, q);
+    }
+    return root;    
+}
 ```
 
 

@@ -39,6 +39,14 @@
 
 ## 题解
 
+### rust [🔗](add-digits.rs) 
+```rust
+impl Solution {
+    pub fn add_digits(num: i32) -> i32 {
+        (num - 1) % 9 + 1
+    }
+}
+```
 ### cpp [🔗](add-digits.cpp) 
 ```cpp
 class Solution {
@@ -72,7 +80,7 @@ func addDigits(num int) int {
     return num
 }
 ```
-### javascript [🔗](add-digits.javascript) 
+### javascript [🔗](add-digits.js) 
 ```javascript
 /**
  * @param {number} num
@@ -93,14 +101,6 @@ class Solution:
             next += num%10
             num = num//10
         return self.addDigits(next)
-```
-### rust [🔗](add-digits.rs) 
-```rust
-impl Solution {
-    pub fn add_digits(num: i32) -> i32 {
-        (num - 1) % 9 + 1
-    }
-}
 ```
 
 

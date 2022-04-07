@@ -88,7 +88,7 @@ class Solution:
             i -= 1
         return (len(bits)-2-i) % 2 ==  0
 ```
-### typescript [🔗](1-bit-and-2-bit-characters.typescript) 
+### typescript [🔗](1-bit-and-2-bit-characters.ts) 
 ```typescript
 function isOneBitCharacter(bits: number[]): boolean {
     let i = bits.length - 2

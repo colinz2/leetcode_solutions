@@ -40,6 +40,67 @@
 
 ## 题解
 
+### cpp [🔗](kth-smallest-element-in-a-bst.cpp) 
+```cpp
+/**
+ * Definition for a binary tree node.
+ * struct TreeNode {
+ *     int val;
+ *     TreeNode *left;
+ *     TreeNode *right;
+ *     TreeNode() : val(0), left(nullptr), right(nullptr) {}
+ *     TreeNode(int x) : val(x), left(nullptr), right(nullptr) {}
+ *     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
+ * };
+ */
+class Solution {
+public:
+    int kthSmallest(TreeNode* root, int k) {
+        std::vector<TreeNode*> stack;
+        while (root || !stack.empty()) {
+            while (root) {
+                stack.push_back(root);
+                root = root->left;
+            }
+            root = stack.back();
+            stack.pop_back();
+            if (--k == 0) {
+                return root->val;
+            }
+            root = root->right;
+        }
+        return -1;
+    }
+};
+```
+### golang [🔗](kth-smallest-element-in-a-bst.go) 
+```golang
+/**
+ * Definition for a binary tree node.
+ * type TreeNode struct {
+ *     Val int
+ *     Left *TreeNode
+ *     Right *TreeNode
+ * }
+ */
+func kthSmallest(root *TreeNode, k int) int {
+    stack := make([]*TreeNode, 0)
+    for root != nil || len(stack) > 0 {
+        for root != nil {
+            stack = append(stack, root)
+            root = root.Left
+        }
+        root = stack[len(stack)-1]
+        stack = stack[0:len(stack)-1]
+        k--
+        if k == 0 {
+            return root.Val
+        }
+        root = root.Right
+    }
+    return 0
+}
+```
 ### python [🔗](kth-smallest-element-in-a-bst.py) 
 ```python
 # Definition for a binary tree node.
@@ -127,67 +188,6 @@ int kthSmallest(struct TreeNode* root, int k){
 
     free(stack);
     return val;
-}
-```
-### cpp [🔗](kth-smallest-element-in-a-bst.cpp) 
-```cpp
-/**
- * Definition for a binary tree node.
- * struct TreeNode {
- *     int val;
- *     TreeNode *left;
- *     TreeNode *right;
- *     TreeNode() : val(0), left(nullptr), right(nullptr) {}
- *     TreeNode(int x) : val(x), left(nullptr), right(nullptr) {}
- *     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
- * };
- */
-class Solution {
-public:
-    int kthSmallest(TreeNode* root, int k) {
-        std::vector<TreeNode*> stack;
-        while (root || !stack.empty()) {
-            while (root) {
-                stack.push_back(root);
-                root = root->left;
-            }
-            root = stack.back();
-            stack.pop_back();
-            if (--k == 0) {
-                return root->val;
-            }
-            root = root->right;
-        }
-        return -1;
-    }
-};
-```
-### golang [🔗](kth-smallest-element-in-a-bst.go) 
-```golang
-/**
- * Definition for a binary tree node.
- * type TreeNode struct {
- *     Val int
- *     Left *TreeNode
- *     Right *TreeNode
- * }
- */
-func kthSmallest(root *TreeNode, k int) int {
-    stack := make([]*TreeNode, 0)
-    for root != nil || len(stack) > 0 {
-        for root != nil {
-            stack = append(stack, root)
-            root = root.Left
-        }
-        root = stack[len(stack)-1]
-        stack = stack[0:len(stack)-1]
-        k--
-        if k == 0 {
-            return root.Val
-        }
-        root = root.Right
-    }
-    return 0
 }
 ```
 

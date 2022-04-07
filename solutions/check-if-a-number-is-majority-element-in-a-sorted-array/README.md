@@ -42,6 +42,22 @@
 
 ## 题解
 
+### golang [🔗](check-if-a-number-is-majority-element-in-a-sorted-array.go) 
+```golang
+func isMajorityElement(nums []int, target int) bool {
+    j , k := 0, len(nums)
+    for j < k {
+        m := (j+k)>>1
+        if nums[m] < target {
+            j = m + 1
+        } else {
+            k = m
+        }
+    }
+    j += len(nums)/2
+    return j < len(nums) && nums[j] == target
+}
+```
 ### c [🔗](check-if-a-number-is-majority-element-in-a-sorted-array.c) 
 ```c
 bool isMajorityElement(int* nums, int numsSize, int target){
@@ -75,22 +91,6 @@ public:
         return cnt > nums.size()/2;
     }
 };
-```
-### golang [🔗](check-if-a-number-is-majority-element-in-a-sorted-array.go) 
-```golang
-func isMajorityElement(nums []int, target int) bool {
-    j , k := 0, len(nums)
-    for j < k {
-        m := (j+k)>>1
-        if nums[m] < target {
-            j = m + 1
-        } else {
-            k = m
-        }
-    }
-    j += len(nums)/2
-    return j < len(nums) && nums[j] == target
-}
 ```
 
 

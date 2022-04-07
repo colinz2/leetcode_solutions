@@ -39,6 +39,49 @@
 
 ## 题解
 
+### golang [🔗](daily-temperatures.go) 
+```golang
+func dailyTemperatures(temperatures []int) []int {
+    res := make([]int, len(temperatures))
+    stack := []int{}
+
+    for i, t := range temperatures {
+        for len(stack) > 0 {
+            top := stack[len(stack)-1]
+            if t > temperatures[top] {
+                res[top] = i - top
+                stack = stack[:len(stack)-1]
+            } else {
+                break;
+            }
+        }
+        stack = append(stack, i)
+    }
+
+    for _, leftIndex := range stack {
+        res[leftIndex] = 0
+    }
+
+    return res
+}
+```
+### java [🔗](daily-temperatures.java) 
+```java
+class Solution {
+    public int[] dailyTemperatures(int[] T) {
+        int[] res = new int[T.length];
+        for (int i = 0; i < T.length; i++) {
+            for (int j =  i + 1; j < T.length; j++) {
+                if (T[j] > T[i]) {
+                    res[i] = j - i;
+                    break;
+                }
+            }
+        }
+        return res;
+    }
+}
+```
 ### c [🔗](daily-temperatures.c) 
 ```c
 /**
@@ -92,49 +135,6 @@ public:
         return res;
     }
 };
-```
-### golang [🔗](daily-temperatures.go) 
-```golang
-func dailyTemperatures(temperatures []int) []int {
-    res := make([]int, len(temperatures))
-    stack := []int{}
-
-    for i, t := range temperatures {
-        for len(stack) > 0 {
-            top := stack[len(stack)-1]
-            if t > temperatures[top] {
-                res[top] = i - top
-                stack = stack[:len(stack)-1]
-            } else {
-                break;
-            }
-        }
-        stack = append(stack, i)
-    }
-
-    for _, leftIndex := range stack {
-        res[leftIndex] = 0
-    }
-
-    return res
-}
-```
-### java [🔗](daily-temperatures.java) 
-```java
-class Solution {
-    public int[] dailyTemperatures(int[] T) {
-        int[] res = new int[T.length];
-        for (int i = 0; i < T.length; i++) {
-            for (int j =  i + 1; j < T.length; j++) {
-                if (T[j] > T[i]) {
-                    res[i] = j - i;
-                    break;
-                }
-            }
-        }
-        return res;
-    }
-}
 ```
 
 
