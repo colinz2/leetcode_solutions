@@ -34,21 +34,6 @@
 
 ## 题解
 
-### cpp [🔗](valid-perfect-square.cpp) 
-```cpp
-class Solution {
-public:
-    bool isPerfectSquare(int num) {
-        long square = 1, n = 1;
-        while (square <= num) {
-            square = n*n;
-            if (square == num) return true;
-            n++;
-        }
-        return false;
-    }
-};
-```
 ### golang [🔗](valid-perfect-square.go) 
 ```golang
 func isPerfectSquare(num int) bool {
@@ -67,6 +52,21 @@ func isPerfectSquare(num int) bool {
     }
     return false
 }
+```
+### cpp [🔗](valid-perfect-square.cpp) 
+```cpp
+class Solution {
+public:
+    bool isPerfectSquare(int num) {
+        long square = 1, n = 1;
+        while (square <= num) {
+            square = n*n;
+            if (square == num) return true;
+            n++;
+        }
+        return false;
+    }
+};
 ```
 
 

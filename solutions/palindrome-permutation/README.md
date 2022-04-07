@@ -23,6 +23,20 @@
 
 ## 题解
 
+### c [🔗](palindrome-permutation.c) 
+```c
+bool canPermutePalindrome(char * s){
+    int seen[128] = {0,};
+    while (*s) seen[*s++]++;
+
+    int cnt = 0;
+    for (int i = 0; i < sizeof(seen)/sizeof(seen[0]); i++) {
+        cnt += seen[i] % 2;
+        if (cnt > 1) return false;
+    } 
+    return true;
+}
+```
 ### cpp [🔗](palindrome-permutation.cpp) 
 ```cpp
 class Solution {
@@ -56,20 +70,6 @@ class Solution:
             if cnt > 1:
                 return False
         return True
-```
-### c [🔗](palindrome-permutation.c) 
-```c
-bool canPermutePalindrome(char * s){
-    int seen[128] = {0,};
-    while (*s) seen[*s++]++;
-
-    int cnt = 0;
-    for (int i = 0; i < sizeof(seen)/sizeof(seen[0]); i++) {
-        cnt += seen[i] % 2;
-        if (cnt > 1) return false;
-    } 
-    return true;
-}
 ```
 
 

@@ -27,6 +27,18 @@
 
 ## 题解
 
+### c [🔗](que-shi-de-shu-zi-lcof.c) 
+```c
+int missingNumber(int* nums, int numsSize){
+    int i = 0; 
+    for (; i < numsSize; i++) {
+        if (nums[i] != i) {
+            return i;
+        }
+    }
+    return i;
+}
+```
 ### cpp [🔗](que-shi-de-shu-zi-lcof.cpp) 
 ```cpp
 class Solution {
@@ -44,18 +56,6 @@ public:
         return hi;
     }
 };
-```
-### c [🔗](que-shi-de-shu-zi-lcof.c) 
-```c
-int missingNumber(int* nums, int numsSize){
-    int i = 0; 
-    for (; i < numsSize; i++) {
-        if (nums[i] != i) {
-            return i;
-        }
-    }
-    return i;
-}
 ```
 
 

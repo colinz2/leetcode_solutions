@@ -49,16 +49,6 @@
 
 ## 题解
 
-### python [🔗](richest-customer-wealth.py) 
-```python
-class Solution(object):
-    def maximumWealth(self, accounts):
-        """
-        :type accounts: List[List[int]]
-        :rtype: int
-        """
-        return max([sum(account) for account in accounts])
-```
 ### rust [🔗](richest-customer-wealth.rs) 
 ```rust
 impl Solution {
@@ -114,6 +104,16 @@ func maximumWealth(accounts [][]int) int {
     }
     return accounts[0][0]
 }
+```
+### python [🔗](richest-customer-wealth.py) 
+```python
+class Solution(object):
+    def maximumWealth(self, accounts):
+        """
+        :type accounts: List[List[int]]
+        :rtype: int
+        """
+        return max([sum(account) for account in accounts])
 ```
 
 

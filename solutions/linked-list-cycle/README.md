@@ -58,51 +58,6 @@
 
 ## 题解
 
-### java [🔗](linked-list-cycle.java) 
-```java
-/**
- * Definition for singly-linked list.
- * class ListNode {
- *     int val;
- *     ListNode next;
- *     ListNode(int x) {
- *         val = x;
- *         next = null;
- *     }
- * }
- */
-public class Solution {
-    public boolean hasCycle(ListNode head) {
-        ListNode fast = head;
-        while (fast != null && fast.next != null) {
-            fast = fast.next.next;
-            head = head.next;
-            if (head == fast) {
-                return true;
-            }
-        }
-        return false;
-    }
-}
-```
-### python3 [🔗](linked-list-cycle.py) 
-```python3
-# Definition for singly-linked list.
-# class ListNode:
-#     def __init__(self, x):
-#         self.val = x
-#         self.next = None
-
-class Solution:
-    def hasCycle(self, head: Optional[ListNode]) -> bool:
-        fast = head
-        while fast != None and fast.next != None:
-            fast = fast.next.next
-            head = head.next
-            if fast == head:
-                return True
-        return False
-```
 ### typescript [🔗](linked-list-cycle.ts) 
 ```typescript
 /**
@@ -196,6 +151,51 @@ func hasCycle(head *ListNode) bool {
     }
     return false
 }
+```
+### java [🔗](linked-list-cycle.java) 
+```java
+/**
+ * Definition for singly-linked list.
+ * class ListNode {
+ *     int val;
+ *     ListNode next;
+ *     ListNode(int x) {
+ *         val = x;
+ *         next = null;
+ *     }
+ * }
+ */
+public class Solution {
+    public boolean hasCycle(ListNode head) {
+        ListNode fast = head;
+        while (fast != null && fast.next != null) {
+            fast = fast.next.next;
+            head = head.next;
+            if (head == fast) {
+                return true;
+            }
+        }
+        return false;
+    }
+}
+```
+### python3 [🔗](linked-list-cycle.py) 
+```python3
+# Definition for singly-linked list.
+# class ListNode:
+#     def __init__(self, x):
+#         self.val = x
+#         self.next = None
+
+class Solution:
+    def hasCycle(self, head: Optional[ListNode]) -> bool:
+        fast = head
+        while fast != None and fast.next != None:
+            fast = fast.next.next
+            head = head.next
+            if fast == head:
+                return True
+        return False
 ```
 
 

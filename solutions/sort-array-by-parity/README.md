@@ -28,6 +28,21 @@
 
 ## 题解
 
+### cpp [🔗](sort-array-by-parity.cpp) 
+```cpp
+class Solution {
+public:
+    vector<int> sortArrayByParity(vector<int>& nums) {
+        int j = 0;
+        for (int i = 0; i < nums.size(); i++) {
+            if (nums[i] % 2 == 0) {
+                swap(nums[i], nums[j++]);
+            }
+        }
+        return nums;
+    }
+};
+```
 ### java [🔗](sort-array-by-parity.java) 
 ```java
 class Solution {
@@ -59,21 +74,6 @@ class Solution:
                 nums[i], nums[j] = nums[j], nums[i]
                 j += 1
         return nums
-```
-### cpp [🔗](sort-array-by-parity.cpp) 
-```cpp
-class Solution {
-public:
-    vector<int> sortArrayByParity(vector<int>& nums) {
-        int j = 0;
-        for (int i = 0; i < nums.size(); i++) {
-            if (nums[i] % 2 == 0) {
-                swap(nums[i], nums[j++]);
-            }
-        }
-        return nums;
-    }
-};
 ```
 
 

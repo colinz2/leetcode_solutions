@@ -55,33 +55,6 @@
 
 ## 题解
 
-### golang [🔗](sum-root-to-leaf-numbers.go) 
-```golang
-/**
- * Definition for a binary tree node.
- * type TreeNode struct {
- *     Val int
- *     Left *TreeNode
- *     Right *TreeNode
- * }
- */
-
-
-func sumNumbers(root *TreeNode) int {
-    return helper(root, 0)
-}
-
-func helper(root *TreeNode, prev int) int {
-    if root == nil {
-        return 0
-    }
-    sum := 10*prev + root.Val
-    if root.Left == nil && root.Right == nil {
-        return sum
-    }
-    return helper(root.Left, sum) + helper(root.Right, sum)
-}
-```
 ### c [🔗](sum-root-to-leaf-numbers.c) 
 ```c
 /**
@@ -107,6 +80,33 @@ int sumNumbers(struct TreeNode* root){
     int sum = 0;
     sumNumbersDfs(root, 0, &sum);
     return sum;
+}
+```
+### golang [🔗](sum-root-to-leaf-numbers.go) 
+```golang
+/**
+ * Definition for a binary tree node.
+ * type TreeNode struct {
+ *     Val int
+ *     Left *TreeNode
+ *     Right *TreeNode
+ * }
+ */
+
+
+func sumNumbers(root *TreeNode) int {
+    return helper(root, 0)
+}
+
+func helper(root *TreeNode, prev int) int {
+    if root == nil {
+        return 0
+    }
+    sum := 10*prev + root.Val
+    if root.Left == nil && root.Right == nil {
+        return sum
+    }
+    return helper(root.Left, sum) + helper(root.Right, sum)
 }
 ```
 
