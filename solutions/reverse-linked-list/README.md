@@ -47,29 +47,39 @@
 
 ## 题解
 
-### typescript [🔗](reverse-linked-list.ts) 
-```typescript
+### golang [🔗](reverse-linked-list.go) 
+```golang
 /**
  * Definition for singly-linked list.
- * class ListNode {
- *     val: number
- *     next: ListNode | null
- *     constructor(val?: number, next?: ListNode | null) {
- *         this.val = (val===undefined ? 0 : val)
- *         this.next = (next===undefined ? null : next)
- *     }
+ * type ListNode struct {
+ *     Val int
+ *     Next *ListNode
  * }
  */
-
-function reverseList(head: ListNode | null): ListNode | null {
-    if (head == null || head.next == null) {
-        return head;
+func reverseList(head *ListNode) *ListNode {
+    var pre, next *ListNode = nil, nil
+    for head != nil {
+        next, head.Next = head.Next, pre
+        pre , head = head, next
     }
-    let newNode = reverseList(head.next)
-    head.next.next = head
-    head.next = null
-    return newNode
-};
+    return pre
+}
+```
+### python3 [🔗](reverse-linked-list.py) 
+```python3
+# Definition for singly-linked list.
+# class ListNode:
+#     def __init__(self, val=0, next=None):
+#         self.val = val
+#         self.next = next
+class Solution:
+    def reverseList(self, head: ListNode) -> ListNode:
+        if head == None or head.next == None :
+            return head
+        new_head = self.reverseList(head.next)
+        head.next.next = head
+        head.next = None
+        return new_head 
 ```
 ### c [🔗](reverse-linked-list.c) 
 ```c
@@ -119,65 +129,6 @@ public:
     }
 };
 ```
-### golang [🔗](reverse-linked-list.go) 
-```golang
-/**
- * Definition for singly-linked list.
- * type ListNode struct {
- *     Val int
- *     Next *ListNode
- * }
- */
-func reverseList(head *ListNode) *ListNode {
-    var pre, next *ListNode = nil, nil
-    for head != nil {
-        next, head.Next = head.Next, pre
-        pre , head = head, next
-    }
-    return pre
-}
-```
-### java [🔗](reverse-linked-list.java) 
-```java
-/**
- * Definition for singly-linked list.
- * public class ListNode {
- *     int val;
- *     ListNode next;
- *     ListNode() {}
- *     ListNode(int val) { this.val = val; }
- *     ListNode(int val, ListNode next) { this.val = val; this.next = next; }
- * }
- */
-class Solution {
-    public ListNode reverseList(ListNode head) {
-        ListNode pre = null, next = null;
-        while (head != null) {
-            next = head.next;
-            head.next = pre;
-            pre = head;
-            head = next;
-        }
-        return pre;
-    }
-}
-```
-### python3 [🔗](reverse-linked-list.py) 
-```python3
-# Definition for singly-linked list.
-# class ListNode:
-#     def __init__(self, val=0, next=None):
-#         self.val = val
-#         self.next = next
-class Solution:
-    def reverseList(self, head: ListNode) -> ListNode:
-        if head == None or head.next == None :
-            return head
-        new_head = self.reverseList(head.next)
-        head.next.next = head
-        head.next = None
-        return new_head 
-```
 ### rust [🔗](reverse-linked-list.rs) 
 ```rust
 // Definition for singly-linked list.
@@ -210,6 +161,55 @@ impl Solution {
         prev
     }
 }
+```
+### java [🔗](reverse-linked-list.java) 
+```java
+/**
+ * Definition for singly-linked list.
+ * public class ListNode {
+ *     int val;
+ *     ListNode next;
+ *     ListNode() {}
+ *     ListNode(int val) { this.val = val; }
+ *     ListNode(int val, ListNode next) { this.val = val; this.next = next; }
+ * }
+ */
+class Solution {
+    public ListNode reverseList(ListNode head) {
+        ListNode pre = null, next = null;
+        while (head != null) {
+            next = head.next;
+            head.next = pre;
+            pre = head;
+            head = next;
+        }
+        return pre;
+    }
+}
+```
+### typescript [🔗](reverse-linked-list.ts) 
+```typescript
+/**
+ * Definition for singly-linked list.
+ * class ListNode {
+ *     val: number
+ *     next: ListNode | null
+ *     constructor(val?: number, next?: ListNode | null) {
+ *         this.val = (val===undefined ? 0 : val)
+ *         this.next = (next===undefined ? null : next)
+ *     }
+ * }
+ */
+
+function reverseList(head: ListNode | null): ListNode | null {
+    if (head == null || head.next == null) {
+        return head;
+    }
+    let newNode = reverseList(head.next)
+    head.next.next = head
+    head.next = null
+    return newNode
+};
 ```
 
 

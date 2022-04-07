@@ -45,24 +45,6 @@
 
 ## 题解
 
-### cpp [🔗](fizz-buzz.cpp) 
-```cpp
-class Solution {
-public:
-    vector<string> fizzBuzz(int n) {
-        vector<string> result;
-        //c++ std::to_string
-        for (int i = 1; i <= n; i++){
-            if (i%15 == 0) result.push_back("FizzBuzz");
-            else if (i%3 == 0) result.push_back("Fizz");
-            else if (i%5 == 0) result.push_back("Buzz");
-            else result.push_back(to_string(i));
-        }
-        
-        return result;
-    }
-};
-```
 ### python3 [🔗](fizz-buzz.py) 
 ```python3
 class Solution:
@@ -81,6 +63,24 @@ class Solution:
             i += 1
         return res
 
+```
+### cpp [🔗](fizz-buzz.cpp) 
+```cpp
+class Solution {
+public:
+    vector<string> fizzBuzz(int n) {
+        vector<string> result;
+        //c++ std::to_string
+        for (int i = 1; i <= n; i++){
+            if (i%15 == 0) result.push_back("FizzBuzz");
+            else if (i%3 == 0) result.push_back("Fizz");
+            else if (i%5 == 0) result.push_back("Buzz");
+            else result.push_back(to_string(i));
+        }
+        
+        return result;
+    }
+};
 ```
 ### rust [🔗](fizz-buzz.rs) 
 ```rust

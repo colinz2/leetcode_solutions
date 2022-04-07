@@ -60,6 +60,49 @@ myStack.empty(); // 返回 False
 
 ## 题解
 
+### cpp [🔗](implement-stack-using-queues.cpp) 
+```cpp
+class MyStack {
+public:
+    /** Initialize your data structure here. */
+    MyStack() {
+
+    }
+    
+    /** Push element x onto stack. */
+    void push(int x) {
+        list_.push_back(x);
+    }
+    
+    /** Removes the element on top of the stack and returns that element. */
+    int pop() {
+        int top = list_.back();
+        list_.pop_back();
+        return top;
+    }
+    
+    /** Get the top element. */
+    int top() {
+        return list_.back();
+    }
+    
+    /** Returns whether the stack is empty. */
+    bool empty() {
+        return list_.empty();
+    }
+private:
+    list<int> list_;
+};
+
+/**
+ * Your MyStack object will be instantiated and called as such:
+ * MyStack* obj = new MyStack();
+ * obj->push(x);
+ * int param_2 = obj->pop();
+ * int param_3 = obj->top();
+ * bool param_4 = obj->empty();
+ */
+```
 ### golang [🔗](implement-stack-using-queues.go) 
 ```golang
 type MyStack struct {
@@ -108,49 +151,6 @@ func (this *MyStack) Empty() bool {
  * param_2 := obj.Pop();
  * param_3 := obj.Top();
  * param_4 := obj.Empty();
- */
-```
-### cpp [🔗](implement-stack-using-queues.cpp) 
-```cpp
-class MyStack {
-public:
-    /** Initialize your data structure here. */
-    MyStack() {
-
-    }
-    
-    /** Push element x onto stack. */
-    void push(int x) {
-        list_.push_back(x);
-    }
-    
-    /** Removes the element on top of the stack and returns that element. */
-    int pop() {
-        int top = list_.back();
-        list_.pop_back();
-        return top;
-    }
-    
-    /** Get the top element. */
-    int top() {
-        return list_.back();
-    }
-    
-    /** Returns whether the stack is empty. */
-    bool empty() {
-        return list_.empty();
-    }
-private:
-    list<int> list_;
-};
-
-/**
- * Your MyStack object will be instantiated and called as such:
- * MyStack* obj = new MyStack();
- * obj->push(x);
- * int param_2 = obj->pop();
- * int param_3 = obj->top();
- * bool param_4 = obj->empty();
  */
 ```
 

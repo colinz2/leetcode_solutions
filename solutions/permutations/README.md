@@ -41,6 +41,22 @@
 
 ## 题解
 
+### python3 [🔗](permutations.py) 
+```python3
+class Solution:
+    def permute(self, nums: List[int]) -> List[List[int]]:
+        res = []
+        def backtrack(nums, tmp):
+            if not nums:
+                res.append(tmp)
+                return 
+            for i in range(len(nums)):
+                backtrack(nums[:i] + nums[i+1:], tmp + [nums[i]])
+                
+        backtrack(nums, [])
+        return res
+
+```
 ### cpp [🔗](permutations.cpp) 
 ```cpp
 class Solution {
@@ -72,22 +88,6 @@ public:
         }
     }
 };
-```
-### python3 [🔗](permutations.py) 
-```python3
-class Solution:
-    def permute(self, nums: List[int]) -> List[List[int]]:
-        res = []
-        def backtrack(nums, tmp):
-            if not nums:
-                res.append(tmp)
-                return 
-            for i in range(len(nums)):
-                backtrack(nums[:i] + nums[i+1:], tmp + [nums[i]])
-                
-        backtrack(nums, [])
-        return res
-
 ```
 
 

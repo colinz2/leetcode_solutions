@@ -33,22 +33,22 @@
 
 ## 题解
 
-### c [🔗](binary-search.c) 
-```c
-int search(int* nums, int numsSize, int target){
-    int i = 0, j = numsSize;
-    while (i < j) {
-        int m = (i+j)>>1;
-        if (nums[m] < target) {
-            i = m + 1;
-        } else if (nums[m] > target) {
-            j = m;
-        } else {
-            return m; 
-        }
-    }
-    return -1;
-}
+### python3 [🔗](binary-search.py) 
+```python3
+class Solution:
+    def search(self, nums: List[int], target: int) -> int:
+        i, j = 0, len(nums)
+        while i < j:
+            m = (i + j)//2
+            if nums[m] == target:
+                return m
+            elif nums[m] < target:
+                i = m + 1
+            else:
+                j = m
+
+        return -1
+
 ```
 ### cpp [🔗](binary-search.cpp) 
 ```cpp
@@ -70,40 +70,6 @@ public:
     }
 };
 ```
-### golang [🔗](binary-search.go) 
-```golang
-func search(nums []int, target int) int {
-    j, k := 0, len(nums)
-    for j < k {
-        m := (j + k) >> 1
-        if nums[m] < target {
-            j = m + 1
-        } else if (nums[m] > target) {
-            k = m
-        } else {
-            return m
-        }
-    }
-    return -1
-}
-```
-### python3 [🔗](binary-search.py) 
-```python3
-class Solution:
-    def search(self, nums: List[int], target: int) -> int:
-        i, j = 0, len(nums)
-        while i < j:
-            m = (i + j)//2
-            if nums[m] == target:
-                return m
-            elif nums[m] < target:
-                i = m + 1
-            else:
-                j = m
-
-        return -1
-
-```
 ### rust [🔗](binary-search.rs) 
 ```rust
 impl Solution {
@@ -123,6 +89,40 @@ impl Solution {
 
         return -1;
     }
+}
+```
+### c [🔗](binary-search.c) 
+```c
+int search(int* nums, int numsSize, int target){
+    int i = 0, j = numsSize;
+    while (i < j) {
+        int m = (i+j)>>1;
+        if (nums[m] < target) {
+            i = m + 1;
+        } else if (nums[m] > target) {
+            j = m;
+        } else {
+            return m; 
+        }
+    }
+    return -1;
+}
+```
+### golang [🔗](binary-search.go) 
+```golang
+func search(nums []int, target int) int {
+    j, k := 0, len(nums)
+    for j < k {
+        m := (j + k) >> 1
+        if nums[m] < target {
+            j = m + 1
+        } else if (nums[m] > target) {
+            k = m
+        } else {
+            return m
+        }
+    }
+    return -1
 }
 ```
 

@@ -39,6 +39,24 @@
 
 ## 题解
 
+### python3 [🔗](convert-sorted-array-to-binary-search-tree.py) 
+```python3
+# Definition for a binary tree node.
+# class TreeNode:
+#     def __init__(self, val=0, left=None, right=None):
+#         self.val = val
+#         self.left = left
+#         self.right = right
+class Solution:
+    def sortedArrayToBST(self, nums: List[int]) -> TreeNode:
+        def build(nums:List[int], l:int, r:int) -> TreeNode:
+            if l > r:
+                return None
+            m = (l+r)>>1
+            return TreeNode(nums[m], build(nums, l, m-1), build(nums, m+1, r))
+        
+        return build(nums, 0, len(nums)-1)
+```
 ### cpp [🔗](convert-sorted-array-to-binary-search-tree.cpp) 
 ```cpp
 /**
@@ -67,24 +85,6 @@ public:
         return node;
     }
 };
-```
-### python3 [🔗](convert-sorted-array-to-binary-search-tree.py) 
-```python3
-# Definition for a binary tree node.
-# class TreeNode:
-#     def __init__(self, val=0, left=None, right=None):
-#         self.val = val
-#         self.left = left
-#         self.right = right
-class Solution:
-    def sortedArrayToBST(self, nums: List[int]) -> TreeNode:
-        def build(nums:List[int], l:int, r:int) -> TreeNode:
-            if l > r:
-                return None
-            m = (l+r)>>1
-            return TreeNode(nums[m], build(nums, l, m-1), build(nums, m+1, r))
-        
-        return build(nums, 0, len(nums)-1)
 ```
 
 

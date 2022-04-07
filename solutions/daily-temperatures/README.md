@@ -39,6 +39,23 @@
 
 ## 题解
 
+### java [🔗](daily-temperatures.java) 
+```java
+class Solution {
+    public int[] dailyTemperatures(int[] T) {
+        int[] res = new int[T.length];
+        for (int i = 0; i < T.length; i++) {
+            for (int j =  i + 1; j < T.length; j++) {
+                if (T[j] > T[i]) {
+                    res[i] = j - i;
+                    break;
+                }
+            }
+        }
+        return res;
+    }
+}
+```
 ### c [🔗](daily-temperatures.c) 
 ```c
 /**
@@ -69,30 +86,6 @@ int *dailyTemperatures(int *T, int TSize, int *returnSize)
 }
 
 ```
-### cpp [🔗](daily-temperatures.cpp) 
-```cpp
-class Solution {
-public:
-    vector<int> dailyTemperatures(vector<int>& temperatures) {
-        // 单调栈，保存位置
-        int len = temperatures.size();
-        vector<int> res(len, 0);
-        vector<int> st(len, 0);
-
-        int stLen = 0;
-
-        for (int i = 0; i < len; i++) {
-            while (stLen > 0 && temperatures[i] > temperatures[st[stLen-1]]) {
-                res[st[stLen-1]] = i - st[stLen-1];
-                stLen--;
-            }
-            st[stLen++] = i;
-        }
-
-        return res;
-    }
-};
-```
 ### golang [🔗](daily-temperatures.go) 
 ```golang
 func dailyTemperatures(temperatures []int) []int {
@@ -119,22 +112,29 @@ func dailyTemperatures(temperatures []int) []int {
     return res
 }
 ```
-### java [🔗](daily-temperatures.java) 
-```java
+### cpp [🔗](daily-temperatures.cpp) 
+```cpp
 class Solution {
-    public int[] dailyTemperatures(int[] T) {
-        int[] res = new int[T.length];
-        for (int i = 0; i < T.length; i++) {
-            for (int j =  i + 1; j < T.length; j++) {
-                if (T[j] > T[i]) {
-                    res[i] = j - i;
-                    break;
-                }
+public:
+    vector<int> dailyTemperatures(vector<int>& temperatures) {
+        // 单调栈，保存位置
+        int len = temperatures.size();
+        vector<int> res(len, 0);
+        vector<int> st(len, 0);
+
+        int stLen = 0;
+
+        for (int i = 0; i < len; i++) {
+            while (stLen > 0 && temperatures[i] > temperatures[st[stLen-1]]) {
+                res[st[stLen-1]] = i - st[stLen-1];
+                stLen--;
             }
+            st[stLen++] = i;
         }
+
         return res;
     }
-}
+};
 ```
 
 

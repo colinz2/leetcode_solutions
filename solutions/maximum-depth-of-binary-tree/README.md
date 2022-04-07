@@ -23,27 +23,6 @@
 
 ## 题解
 
-### cpp [🔗](maximum-depth-of-binary-tree.cpp) 
-```cpp
-/**
- * Definition for a binary tree node.
- * struct TreeNode {
- *     int val;
- *     TreeNode *left;
- *     TreeNode *right;
- *     TreeNode() : val(0), left(nullptr), right(nullptr) {}
- *     TreeNode(int x) : val(x), left(nullptr), right(nullptr) {}
- *     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
- * };
- */
-class Solution {
-public:
-    int maxDepth(TreeNode* root) {
-        if (root == nullptr) return 0;
-        return std::max(maxDepth(root->right), maxDepth(root->left)) + 1;
-    }
-};
-```
 ### golang [🔗](maximum-depth-of-binary-tree.go) 
 ```golang
 /**
@@ -67,6 +46,27 @@ func max(a, b int) int {
     }
     return b;
 }
+```
+### cpp [🔗](maximum-depth-of-binary-tree.cpp) 
+```cpp
+/**
+ * Definition for a binary tree node.
+ * struct TreeNode {
+ *     int val;
+ *     TreeNode *left;
+ *     TreeNode *right;
+ *     TreeNode() : val(0), left(nullptr), right(nullptr) {}
+ *     TreeNode(int x) : val(x), left(nullptr), right(nullptr) {}
+ *     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
+ * };
+ */
+class Solution {
+public:
+    int maxDepth(TreeNode* root) {
+        if (root == nullptr) return 0;
+        return std::max(maxDepth(root->right), maxDepth(root->left)) + 1;
+    }
+};
 ```
 
 

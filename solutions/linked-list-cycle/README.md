@@ -58,6 +58,33 @@
 
 ## 题解
 
+### java [🔗](linked-list-cycle.java) 
+```java
+/**
+ * Definition for singly-linked list.
+ * class ListNode {
+ *     int val;
+ *     ListNode next;
+ *     ListNode(int x) {
+ *         val = x;
+ *         next = null;
+ *     }
+ * }
+ */
+public class Solution {
+    public boolean hasCycle(ListNode head) {
+        ListNode fast = head;
+        while (fast != null && fast.next != null) {
+            fast = fast.next.next;
+            head = head.next;
+            if (head == fast) {
+                return true;
+            }
+        }
+        return false;
+    }
+}
+```
 ### python3 [🔗](linked-list-cycle.py) 
 ```python3
 # Definition for singly-linked list.
@@ -76,51 +103,25 @@ class Solution:
                 return True
         return False
 ```
-### typescript [🔗](linked-list-cycle.ts) 
-```typescript
+### golang [🔗](linked-list-cycle.go) 
+```golang
 /**
  * Definition for singly-linked list.
- * class ListNode {
- *     val: number
- *     next: ListNode | null
- *     constructor(val?: number, next?: ListNode | null) {
- *         this.val = (val===undefined ? 0 : val)
- *         this.next = (next===undefined ? null : next)
- *     }
+ * type ListNode struct {
+ *     Val int
+ *     Next *ListNode
  * }
  */
-
-function hasCycle(head: ListNode | null): boolean {
-    let fast = head
-    while (fast != null && fast.next != null) {
-        fast = fast.next.next
-        head = head.next
-        if (head === fast) {
+func hasCycle(head *ListNode) bool {
+    fast := head
+    for fast != nil && fast.Next != nil {
+        head = head.Next
+        fast = fast.Next.Next
+        if fast == head {
             return true
         }
     }
     return false
-};
-```
-### c [🔗](linked-list-cycle.c) 
-```c
-/**
- * Definition for singly-linked list.
- * struct ListNode {
- *     int val;
- *     struct ListNode *next;
- * };
- */
-bool hasCycle(struct ListNode *head) {
-    struct ListNode* fast = head;
-    while (fast && fast->next) {
-        fast = fast->next->next;
-        head = head->next;
-        if (head == fast) {
-            return true;
-        }
-    } 
-    return false;
 }
 ```
 ### cpp [🔗](linked-list-cycle.cpp) 
@@ -149,53 +150,52 @@ public:
     }
 };
 ```
-### golang [🔗](linked-list-cycle.go) 
-```golang
+### c [🔗](linked-list-cycle.c) 
+```c
 /**
  * Definition for singly-linked list.
- * type ListNode struct {
- *     Val int
- *     Next *ListNode
+ * struct ListNode {
+ *     int val;
+ *     struct ListNode *next;
+ * };
+ */
+bool hasCycle(struct ListNode *head) {
+    struct ListNode* fast = head;
+    while (fast && fast->next) {
+        fast = fast->next->next;
+        head = head->next;
+        if (head == fast) {
+            return true;
+        }
+    } 
+    return false;
+}
+```
+### typescript [🔗](linked-list-cycle.ts) 
+```typescript
+/**
+ * Definition for singly-linked list.
+ * class ListNode {
+ *     val: number
+ *     next: ListNode | null
+ *     constructor(val?: number, next?: ListNode | null) {
+ *         this.val = (val===undefined ? 0 : val)
+ *         this.next = (next===undefined ? null : next)
+ *     }
  * }
  */
-func hasCycle(head *ListNode) bool {
-    fast := head
-    for fast != nil && fast.Next != nil {
-        head = head.Next
-        fast = fast.Next.Next
-        if fast == head {
+
+function hasCycle(head: ListNode | null): boolean {
+    let fast = head
+    while (fast != null && fast.next != null) {
+        fast = fast.next.next
+        head = head.next
+        if (head === fast) {
             return true
         }
     }
     return false
-}
-```
-### java [🔗](linked-list-cycle.java) 
-```java
-/**
- * Definition for singly-linked list.
- * class ListNode {
- *     int val;
- *     ListNode next;
- *     ListNode(int x) {
- *         val = x;
- *         next = null;
- *     }
- * }
- */
-public class Solution {
-    public boolean hasCycle(ListNode head) {
-        ListNode fast = head;
-        while (fast != null && fast.next != null) {
-            fast = fast.next.next;
-            head = head.next;
-            if (head == fast) {
-                return true;
-            }
-        }
-        return false;
-    }
-}
+};
 ```
 
 

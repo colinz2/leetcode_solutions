@@ -34,6 +34,21 @@
 
 ## 题解
 
+### python3 [🔗](intersection-of-two-arrays.py) 
+```python3
+class Solution:
+    def intersection(self, nums1, nums2):
+        """
+        :type nums1: List[int]
+        :type nums2: List[int]
+        :rtype: List[int]
+        """
+        a = set(nums1)
+        b = set(nums2)
+        c = a & b
+        return list(c)
+        
+```
 ### cpp [🔗](intersection-of-two-arrays.cpp) 
 ```cpp
 class Solution {
@@ -72,21 +87,6 @@ func intersection(nums1 []int, nums2 []int) []int {
 	return res
 }
 
-```
-### python3 [🔗](intersection-of-two-arrays.py) 
-```python3
-class Solution:
-    def intersection(self, nums1, nums2):
-        """
-        :type nums1: List[int]
-        :type nums2: List[int]
-        :rtype: List[int]
-        """
-        a = set(nums1)
-        b = set(nums2)
-        c = a & b
-        return list(c)
-        
 ```
 
 

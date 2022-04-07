@@ -50,27 +50,6 @@
 
 ## 题解
 
-### cpp [🔗](student-attendance-record-i.cpp) 
-```cpp
-class Solution {
-public:
-    bool checkRecord(string s) {
-        int record[256] = {0, };
-
-        for (int i = 0; i < s.size(); i++) {
-            char c = s[i];
-            record[c] += 1;
-            if (c == 'L') {
-                if (record[c] > 2) return false;
-                if (c != s[i + 1]) record[c] = 0;
-            } else if (c == 'A') {
-                if (record[c] > 1) return false;
-            }
-        }
-        return true;
-    }
-};
-```
 ### golang [🔗](student-attendance-record-i.go) 
 ```golang
 func checkRecord(s string) bool {
@@ -91,6 +70,27 @@ func checkRecord(s string) bool {
     }
     return true
 }
+```
+### cpp [🔗](student-attendance-record-i.cpp) 
+```cpp
+class Solution {
+public:
+    bool checkRecord(string s) {
+        int record[256] = {0, };
+
+        for (int i = 0; i < s.size(); i++) {
+            char c = s[i];
+            record[c] += 1;
+            if (c == 'L') {
+                if (record[c] > 2) return false;
+                if (c != s[i + 1]) record[c] = 0;
+            } else if (c == 'A') {
+                if (record[c] > 1) return false;
+            }
+        }
+        return true;
+    }
+};
 ```
 
 

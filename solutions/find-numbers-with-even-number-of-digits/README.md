@@ -40,6 +40,18 @@
 
 ## 题解
 
+### cpp [🔗](find-numbers-with-even-number-of-digits.cpp) 
+```cpp
+class Solution {
+public:
+    int findNumbers(vector<int>& nums) {
+        return accumulate(nums.begin(), nums.end(), 0, [](int a, int b){
+            int c = (int)(log10(b) + 1) % 2 == 0;
+            return a + c;
+        });
+    }
+};
+```
 ### c [🔗](find-numbers-with-even-number-of-digits.c) 
 ```c
 inline int isEven(int n) {
@@ -57,18 +69,6 @@ int findNumbers(int* nums, int numsSize){
     }
     return res;
 }
-```
-### cpp [🔗](find-numbers-with-even-number-of-digits.cpp) 
-```cpp
-class Solution {
-public:
-    int findNumbers(vector<int>& nums) {
-        return accumulate(nums.begin(), nums.end(), 0, [](int a, int b){
-            int c = (int)(log10(b) + 1) % 2 == 0;
-            return a + c;
-        });
-    }
-};
 ```
 
 

@@ -61,35 +61,6 @@ func max(a, b int) int {
 
 
 ```
-### c [🔗](diameter-of-binary-tree.c) 
-```c
-/**
- * Definition for a binary tree node.
- * struct TreeNode {
- *     int val;
- *     struct TreeNode *left;
- *     struct TreeNode *right;
- * };
- */
-
-int max(int a, int b) {
-    return a > b ? a : b;
-}
-
-int depthOfBinaryTree(struct TreeNode* root, int *diameter) {
-    if (root == NULL) return 0;
-    int dleft = depthOfBinaryTree(root->left, diameter);
-    int dright = depthOfBinaryTree(root->right, diameter);
-    *diameter = max(*diameter, dleft + dright);
-    return max(dleft, dright) + 1;
-}
-
-int diameterOfBinaryTree(struct TreeNode* root){
-    int diameter = 0;
-    depthOfBinaryTree(root, &diameter);
-    return diameter;
-}
-```
 ### cpp [🔗](diameter-of-binary-tree.cpp) 
 ```cpp
 /**
@@ -119,6 +90,35 @@ public:
         return std::max(d1, d2) + 1;
     }
 };
+```
+### c [🔗](diameter-of-binary-tree.c) 
+```c
+/**
+ * Definition for a binary tree node.
+ * struct TreeNode {
+ *     int val;
+ *     struct TreeNode *left;
+ *     struct TreeNode *right;
+ * };
+ */
+
+int max(int a, int b) {
+    return a > b ? a : b;
+}
+
+int depthOfBinaryTree(struct TreeNode* root, int *diameter) {
+    if (root == NULL) return 0;
+    int dleft = depthOfBinaryTree(root->left, diameter);
+    int dright = depthOfBinaryTree(root->right, diameter);
+    *diameter = max(*diameter, dleft + dright);
+    return max(dleft, dright) + 1;
+}
+
+int diameterOfBinaryTree(struct TreeNode* root){
+    int diameter = 0;
+    depthOfBinaryTree(root, &diameter);
+    return diameter;
+}
 ```
 
 

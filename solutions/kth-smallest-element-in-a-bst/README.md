@@ -66,40 +66,59 @@ class Solution:
         inorder(root)
         return self.val
 ```
-### c [🔗](kth-smallest-element-in-a-bst.c) 
-```c
+### python [🔗](kth-smallest-element-in-a-bst.py) 
+```python
+# Definition for a binary tree node.
+# class TreeNode(object):
+#     def __init__(self, val=0, left=None, right=None):
+#         self.val = val
+#         self.left = left
+#         self.right = right
+class Solution(object):
+    def kthSmallest(self, root, k):
+        """
+        :type root: TreeNode
+        :type k: int
+        :rtype: int
+        """
+        stack = []
+        while root is not None or len(stack) > 0:
+            while root is not None:
+                stack.append(root)
+                root = root.left
+            root = stack.pop()
+            k -= 1
+            if k == 0:
+                return root.val
+            root = root.right
+        return -1
+```
+### golang [🔗](kth-smallest-element-in-a-bst.go) 
+```golang
 /**
  * Definition for a binary tree node.
- * struct TreeNode {
- *     int val;
- *     struct TreeNode *left;
- *     struct TreeNode *right;
- * };
+ * type TreeNode struct {
+ *     Val int
+ *     Left *TreeNode
+ *     Right *TreeNode
+ * }
  */
-
-
-int kthSmallest(struct TreeNode* root, int k){
-    struct TreeNode** stack = (struct TreeNode**)malloc(sizeof(struct TreeNode*) * 10000);
-    size_t stack_index = 0;
-    int val = 0;
-
-    struct TreeNode* node = root;
-    while (node != NULL || stack_index != 0) {
-        while (node != NULL) {
-            stack[stack_index++] = node;
-            node = node->left;
+func kthSmallest(root *TreeNode, k int) int {
+    stack := make([]*TreeNode, 0)
+    for root != nil || len(stack) > 0 {
+        for root != nil {
+            stack = append(stack, root)
+            root = root.Left
         }
-        // 是 --stack_index 不是 stack_index--
-        node = stack[--stack_index];
-        if (--k == 0) {
-            val = node->val;
-            break;
+        root = stack[len(stack)-1]
+        stack = stack[0:len(stack)-1]
+        k--
+        if k == 0 {
+            return root.Val
         }
-        node = node->right;
+        root = root.Right
     }
-
-    free(stack);
-    return val;
+    return 0
 }
 ```
 ### cpp [🔗](kth-smallest-element-in-a-bst.cpp) 
@@ -135,60 +154,41 @@ public:
     }
 };
 ```
-### golang [🔗](kth-smallest-element-in-a-bst.go) 
-```golang
+### c [🔗](kth-smallest-element-in-a-bst.c) 
+```c
 /**
  * Definition for a binary tree node.
- * type TreeNode struct {
- *     Val int
- *     Left *TreeNode
- *     Right *TreeNode
- * }
+ * struct TreeNode {
+ *     int val;
+ *     struct TreeNode *left;
+ *     struct TreeNode *right;
+ * };
  */
-func kthSmallest(root *TreeNode, k int) int {
-    stack := make([]*TreeNode, 0)
-    for root != nil || len(stack) > 0 {
-        for root != nil {
-            stack = append(stack, root)
-            root = root.Left
+
+
+int kthSmallest(struct TreeNode* root, int k){
+    struct TreeNode** stack = (struct TreeNode**)malloc(sizeof(struct TreeNode*) * 10000);
+    size_t stack_index = 0;
+    int val = 0;
+
+    struct TreeNode* node = root;
+    while (node != NULL || stack_index != 0) {
+        while (node != NULL) {
+            stack[stack_index++] = node;
+            node = node->left;
         }
-        root = stack[len(stack)-1]
-        stack = stack[0:len(stack)-1]
-        k--
-        if k == 0 {
-            return root.Val
+        // 是 --stack_index 不是 stack_index--
+        node = stack[--stack_index];
+        if (--k == 0) {
+            val = node->val;
+            break;
         }
-        root = root.Right
+        node = node->right;
     }
-    return 0
+
+    free(stack);
+    return val;
 }
-```
-### python [🔗](kth-smallest-element-in-a-bst.py) 
-```python
-# Definition for a binary tree node.
-# class TreeNode(object):
-#     def __init__(self, val=0, left=None, right=None):
-#         self.val = val
-#         self.left = left
-#         self.right = right
-class Solution(object):
-    def kthSmallest(self, root, k):
-        """
-        :type root: TreeNode
-        :type k: int
-        :rtype: int
-        """
-        stack = []
-        while root is not None or len(stack) > 0:
-            while root is not None:
-                stack.append(root)
-                root = root.left
-            root = stack.pop()
-            k -= 1
-            if k == 0:
-                return root.val
-            root = root.right
-        return -1
 ```
 
 

@@ -37,6 +37,20 @@ bool canPermutePalindrome(char * s){
     return true;
 }
 ```
+### python3 [🔗](palindrome-permutation.py) 
+```python3
+class Solution:
+    def canPermutePalindrome(self, s: str) -> bool:
+        seen = collections.defaultdict(int)
+        for c in s:
+            seen[c] += 1
+        cnt = 0
+        for v in seen.values():
+            cnt += v % 2
+            if cnt > 1:
+                return False
+        return True
+```
 ### cpp [🔗](palindrome-permutation.cpp) 
 ```cpp
 class Solution {
@@ -56,20 +70,6 @@ public:
         return true;
     }
 };
-```
-### python3 [🔗](palindrome-permutation.py) 
-```python3
-class Solution:
-    def canPermutePalindrome(self, s: str) -> bool:
-        seen = collections.defaultdict(int)
-        for c in s:
-            seen[c] += 1
-        cnt = 0
-        for v in seen.values():
-            cnt += v % 2
-            if cnt > 1:
-                return False
-        return True
 ```
 
 

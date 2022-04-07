@@ -39,49 +39,6 @@
 
 ## 题解
 
-### cpp [🔗](add-digits.cpp) 
-```cpp
-class Solution {
-public:
-    int addDigits(int num) {
-        while (num > 9) {
-            int res = 0;
-            while (num > 0) {
-                res += num%10;
-                num /= 10;
-            }
-            num = res;
-        }
-        return num;
-    }
-};
-```
-### golang [🔗](add-digits.go) 
-```golang
-func addDigits(num int) int {
-    if num > 9 {
-        return addDigits(func(n int) int {
-            res := 0
-            for n > 0 {
-                res += n % 10
-                n /= 10
-            }
-            return res
-        }(num))
-    }
-    return num
-}
-```
-### javascript [🔗](add-digits.js) 
-```javascript
-/**
- * @param {number} num
- * @return {number}
- */
-var addDigits = function(num) {
-    return (num - 1) % 9 + 1
-};
-```
 ### python3 [🔗](add-digits.py) 
 ```python3
 class Solution:
@@ -101,6 +58,49 @@ impl Solution {
         (num - 1) % 9 + 1
     }
 }
+```
+### golang [🔗](add-digits.go) 
+```golang
+func addDigits(num int) int {
+    if num > 9 {
+        return addDigits(func(n int) int {
+            res := 0
+            for n > 0 {
+                res += n % 10
+                n /= 10
+            }
+            return res
+        }(num))
+    }
+    return num
+}
+```
+### cpp [🔗](add-digits.cpp) 
+```cpp
+class Solution {
+public:
+    int addDigits(int num) {
+        while (num > 9) {
+            int res = 0;
+            while (num > 0) {
+                res += num%10;
+                num /= 10;
+            }
+            num = res;
+        }
+        return num;
+    }
+};
+```
+### javascript [🔗](add-digits.js) 
+```javascript
+/**
+ * @param {number} num
+ * @return {number}
+ */
+var addDigits = function(num) {
+    return (num - 1) % 9 + 1
+};
 ```
 
 

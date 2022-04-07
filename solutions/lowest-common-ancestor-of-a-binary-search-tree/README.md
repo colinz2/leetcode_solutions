@@ -38,27 +38,26 @@
 
 ## 题解
 
-### c [🔗](lowest-common-ancestor-of-a-binary-search-tree.c) 
-```c
+### golang [🔗](lowest-common-ancestor-of-a-binary-search-tree.go) 
+```golang
 /**
  * Definition for a binary tree node.
- * struct TreeNode {
- *     int val;
- *     struct TreeNode *left;
- *     struct TreeNode *right;
- * };
+ * type TreeNode struct {
+ *     Val   int
+ *     Left  *TreeNode
+ *     Right *TreeNode
+ * }
  */
 
-struct TreeNode* lowestCommonAncestor(struct TreeNode* root, struct TreeNode* p, struct TreeNode* q) {
-    if (root == NULL) {
-        return NULL;
+func lowestCommonAncestor(root, p, q *TreeNode) *TreeNode {
+    if root != nil {
+        if root.Val > p.Val && root.Val > q.Val {
+            return lowestCommonAncestor(root.Left, p, q)
+        } else if root.Val < p.Val && root.Val < q.Val {
+            return lowestCommonAncestor(root.Right, p, q)
+        }
     }
-    if (root->val > p->val && root->val > q->val) {
-        return lowestCommonAncestor(root->left, p, q);
-    } else if (root->val < p->val && root->val < q->val) {
-        return lowestCommonAncestor(root->right, p, q);
-    }
-    return root;    
+    return root
 }
 ```
 ### cpp [🔗](lowest-common-ancestor-of-a-binary-search-tree.cpp) 
@@ -89,28 +88,6 @@ public:
     }
 };
 ```
-### golang [🔗](lowest-common-ancestor-of-a-binary-search-tree.go) 
-```golang
-/**
- * Definition for a binary tree node.
- * type TreeNode struct {
- *     Val   int
- *     Left  *TreeNode
- *     Right *TreeNode
- * }
- */
-
-func lowestCommonAncestor(root, p, q *TreeNode) *TreeNode {
-    if root != nil {
-        if root.Val > p.Val && root.Val > q.Val {
-            return lowestCommonAncestor(root.Left, p, q)
-        } else if root.Val < p.Val && root.Val < q.Val {
-            return lowestCommonAncestor(root.Right, p, q)
-        }
-    }
-    return root
-}
-```
 ### python3 [🔗](lowest-common-ancestor-of-a-binary-search-tree.py) 
 ```python3
 # Definition for a binary tree node.
@@ -130,6 +107,29 @@ class Solution:
             else: 
                 return root
         return root
+```
+### c [🔗](lowest-common-ancestor-of-a-binary-search-tree.c) 
+```c
+/**
+ * Definition for a binary tree node.
+ * struct TreeNode {
+ *     int val;
+ *     struct TreeNode *left;
+ *     struct TreeNode *right;
+ * };
+ */
+
+struct TreeNode* lowestCommonAncestor(struct TreeNode* root, struct TreeNode* p, struct TreeNode* q) {
+    if (root == NULL) {
+        return NULL;
+    }
+    if (root->val > p->val && root->val > q->val) {
+        return lowestCommonAncestor(root->left, p, q);
+    } else if (root->val < p->val && root->val < q->val) {
+        return lowestCommonAncestor(root->right, p, q);
+    }
+    return root;    
+}
 ```
 ### typescript [🔗](lowest-common-ancestor-of-a-binary-search-tree.ts) 
 ```typescript

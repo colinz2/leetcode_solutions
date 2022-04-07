@@ -44,24 +44,6 @@
 
 ## 题解
 
-### c [🔗](longest-palindrome.c) 
-```c
-int longestPalindrome(char * s){
-    int seen[128] = {0,};
-    int strlen = 0;
-    while (*s) seen[*s++]++, strlen++;
-    int ocnt = 0;
-    for (int i = 'a'; i <= 'z'; i++) {
-        ocnt += seen[i] % 2;
-    }
-    for (int i = 'A'; i <= 'Z'; i++) {
-        ocnt += seen[i] % 2;
-    }
-    if (ocnt > 0) ocnt--;
-    
-    return strlen - ocnt;
-}
-```
 ### cpp [🔗](longest-palindrome.cpp) 
 ```cpp
 class Solution {
@@ -93,6 +75,24 @@ public:
         return even + odd;
     }
 };
+```
+### c [🔗](longest-palindrome.c) 
+```c
+int longestPalindrome(char * s){
+    int seen[128] = {0,};
+    int strlen = 0;
+    while (*s) seen[*s++]++, strlen++;
+    int ocnt = 0;
+    for (int i = 'a'; i <= 'z'; i++) {
+        ocnt += seen[i] % 2;
+    }
+    for (int i = 'A'; i <= 'Z'; i++) {
+        ocnt += seen[i] % 2;
+    }
+    if (ocnt > 0) ocnt--;
+    
+    return strlen - ocnt;
+}
 ```
 
 

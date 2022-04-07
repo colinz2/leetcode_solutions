@@ -38,38 +38,6 @@
 
 ## 题解
 
-### cpp [🔗](binary-tree-maximum-path-sum.cpp) 
-```cpp
-/**
- * Definition for a binary tree node.
- * struct TreeNode {
- *     int val;
- *     TreeNode *left;
- *     TreeNode *right;
- *     TreeNode() : val(0), left(nullptr), right(nullptr) {}
- *     TreeNode(int x) : val(x), left(nullptr), right(nullptr) {}
- *     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
- * };
- */
-class Solution {
-public:
-    int maxPathSum(TreeNode* root) {
-        int res = INT_MIN;
-        calculateSum(root, res);
-        return res;
-    }
-
-    int calculateSum(TreeNode* root, int& res) {
-        if (root == nullptr) return 0;
-        int s1 = calculateSum(root->left, res);
-        int s2 = calculateSum(root->right, res);
-        s1 = max(0, s1);
-        s2 = max(0, s2);
-        res = max(res, s1 + s2 + root->val);
-        return max(s1, s2) + root->val;
-    }
-};
-```
 ### golang [🔗](binary-tree-maximum-path-sum.go) 
 ```golang
 /**
@@ -102,6 +70,38 @@ func max(a, b int) int {
     }
     return b
 }
+```
+### cpp [🔗](binary-tree-maximum-path-sum.cpp) 
+```cpp
+/**
+ * Definition for a binary tree node.
+ * struct TreeNode {
+ *     int val;
+ *     TreeNode *left;
+ *     TreeNode *right;
+ *     TreeNode() : val(0), left(nullptr), right(nullptr) {}
+ *     TreeNode(int x) : val(x), left(nullptr), right(nullptr) {}
+ *     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
+ * };
+ */
+class Solution {
+public:
+    int maxPathSum(TreeNode* root) {
+        int res = INT_MIN;
+        calculateSum(root, res);
+        return res;
+    }
+
+    int calculateSum(TreeNode* root, int& res) {
+        if (root == nullptr) return 0;
+        int s1 = calculateSum(root->left, res);
+        int s2 = calculateSum(root->right, res);
+        s1 = max(0, s1);
+        s2 = max(0, s2);
+        res = max(res, s1 + s2 + root->val);
+        return max(s1, s2) + root->val;
+    }
+};
 ```
 
 

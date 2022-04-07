@@ -37,6 +37,33 @@
 
 ## 题解
 
+### golang [🔗](univalued-binary-tree.go) 
+```golang
+/**
+ * Definition for a binary tree node.
+ * type TreeNode struct {
+ *     Val int
+ *     Left *TreeNode
+ *     Right *TreeNode
+ * }
+ */
+func isUnivalTree(root *TreeNode) bool {
+    if root == nil {
+        return true
+    }
+    return dfsCheck(root, root.Val)
+}
+
+func dfsCheck(root *TreeNode, val int) bool {
+    if root == nil {
+        return true
+    }
+    if root.Val != val {
+        return false
+    }
+    return dfsCheck(root.Left, val) && dfsCheck(root.Right, val)
+}
+```
 ### cpp [🔗](univalued-binary-tree.cpp) 
 ```cpp
 /**
@@ -73,33 +100,6 @@ public:
         return true;
     }
 };
-```
-### golang [🔗](univalued-binary-tree.go) 
-```golang
-/**
- * Definition for a binary tree node.
- * type TreeNode struct {
- *     Val int
- *     Left *TreeNode
- *     Right *TreeNode
- * }
- */
-func isUnivalTree(root *TreeNode) bool {
-    if root == nil {
-        return true
-    }
-    return dfsCheck(root, root.Val)
-}
-
-func dfsCheck(root *TreeNode, val int) bool {
-    if root == nil {
-        return true
-    }
-    if root.Val != val {
-        return false
-    }
-    return dfsCheck(root.Left, val) && dfsCheck(root.Right, val)
-}
 ```
 
 

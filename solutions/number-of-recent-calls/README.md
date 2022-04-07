@@ -112,30 +112,25 @@ void recentCounterFree(RecentCounter* obj) {
  * recentCounterFree(obj);
 */
 ```
-### cpp [🔗](number-of-recent-calls.cpp) 
-```cpp
-class RecentCounter {
-public:
-    RecentCounter() {
+### python3 [🔗](number-of-recent-calls.py) 
+```python3
+class RecentCounter:
 
-    }
-    
-    int ping(int t) {
-        t_queue_.push(t);
-        while (t - t_queue_.front() > 3000) {
-            t_queue_.pop();
-        }
-        return t_queue_.size();
-    }
-private:
-    std::queue<int> t_queue_;
-};
+    def __init__(self):
+        from collections import deque
+        self.q = deque()
 
-/**
- * Your RecentCounter object will be instantiated and called as such:
- * RecentCounter* obj = new RecentCounter();
- * int param_1 = obj->ping(t);
- */
+    def ping(self, t: int) -> int:
+        self.q.append(t)
+        while self.q[0] + 3000 < t:
+            self.q.popleft()
+
+        return len(self.q)
+
+
+# Your RecentCounter object will be instantiated and called as such:
+# obj = RecentCounter()
+# param_1 = obj.ping(t)
 ```
 ### golang [🔗](number-of-recent-calls.go) 
 ```golang
@@ -166,25 +161,30 @@ func (this *RecentCounter) Ping(t int) int {
  * param_1 := obj.Ping(t);
  */
 ```
-### python3 [🔗](number-of-recent-calls.py) 
-```python3
-class RecentCounter:
+### cpp [🔗](number-of-recent-calls.cpp) 
+```cpp
+class RecentCounter {
+public:
+    RecentCounter() {
 
-    def __init__(self):
-        from collections import deque
-        self.q = deque()
+    }
+    
+    int ping(int t) {
+        t_queue_.push(t);
+        while (t - t_queue_.front() > 3000) {
+            t_queue_.pop();
+        }
+        return t_queue_.size();
+    }
+private:
+    std::queue<int> t_queue_;
+};
 
-    def ping(self, t: int) -> int:
-        self.q.append(t)
-        while self.q[0] + 3000 < t:
-            self.q.popleft()
-
-        return len(self.q)
-
-
-# Your RecentCounter object will be instantiated and called as such:
-# obj = RecentCounter()
-# param_1 = obj.ping(t)
+/**
+ * Your RecentCounter object will be instantiated and called as such:
+ * RecentCounter* obj = new RecentCounter();
+ * int param_1 = obj->ping(t);
+ */
 ```
 
 

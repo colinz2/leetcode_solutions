@@ -46,41 +46,6 @@
 
 ## 题解
 
-### cpp [🔗](add-two-numbers.cpp) 
-```cpp
-/**
- * Definition for singly-linked list.
- * struct ListNode {
- *     int val;
- *     ListNode *next;
- *     ListNode() : val(0), next(nullptr) {}
- *     ListNode(int x) : val(x), next(nullptr) {}
- *     ListNode(int x, ListNode *next) : val(x), next(next) {}
- * };
- */
-class Solution {
-public:
-    ListNode* addTwoNumbers(ListNode* l1, ListNode* l2) {
-        ListNode dummy;
-        ListNode* l3 = &dummy;
-        int add = 0;
-        while (l1 || l2 || add) {
-            if (l1) {
-                add += l1->val;
-                l1 = l1->next;
-            }
-            if (l2) {
-                add += l2->val;
-                l2 = l2->next;
-            }
-            l3->next = new ListNode(add % 10);
-            l3 = l3->next;
-            add = add / 10; 
-        }
-        return dummy.next;
-    }
-};
-```
 ### golang [🔗](add-two-numbers.go) 
 ```golang
 /**
@@ -115,6 +80,41 @@ func addTwoNumbers(l1 *ListNode, l2 *ListNode) *ListNode {
 	return head.Next
 }
 
+```
+### cpp [🔗](add-two-numbers.cpp) 
+```cpp
+/**
+ * Definition for singly-linked list.
+ * struct ListNode {
+ *     int val;
+ *     ListNode *next;
+ *     ListNode() : val(0), next(nullptr) {}
+ *     ListNode(int x) : val(x), next(nullptr) {}
+ *     ListNode(int x, ListNode *next) : val(x), next(next) {}
+ * };
+ */
+class Solution {
+public:
+    ListNode* addTwoNumbers(ListNode* l1, ListNode* l2) {
+        ListNode dummy;
+        ListNode* l3 = &dummy;
+        int add = 0;
+        while (l1 || l2 || add) {
+            if (l1) {
+                add += l1->val;
+                l1 = l1->next;
+            }
+            if (l2) {
+                add += l2->val;
+                l2 = l2->next;
+            }
+            l3->next = new ListNode(add % 10);
+            l3 = l3->next;
+            add = add / 10; 
+        }
+        return dummy.next;
+    }
+};
 ```
 
 

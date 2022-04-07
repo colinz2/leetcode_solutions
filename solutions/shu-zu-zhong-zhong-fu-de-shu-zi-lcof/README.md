@@ -24,17 +24,6 @@
 
 ## 题解
 
-### python3 [🔗](shu-zu-zhong-zhong-fu-de-shu-zi-lcof.py) 
-```python3
-class Solution:
-    def findRepeatNumber(self, nums: List[int]) -> int:
-        seen = set()
-        for n in nums:
-            if n in seen:
-                return n
-            seen.add(n)
-        return -1
-```
 ### c [🔗](shu-zu-zhong-zhong-fu-de-shu-zi-lcof.c) 
 ```c
 int findRepeatNumber(int* nums, int numsSize){
@@ -46,6 +35,30 @@ int findRepeatNumber(int* nums, int numsSize){
         nums[idx] += numsSize;
     }
     return -1;
+}
+```
+### python3 [🔗](shu-zu-zhong-zhong-fu-de-shu-zi-lcof.py) 
+```python3
+class Solution:
+    def findRepeatNumber(self, nums: List[int]) -> int:
+        seen = set()
+        for n in nums:
+            if n in seen:
+                return n
+            seen.add(n)
+        return -1
+```
+### golang [🔗](shu-zu-zhong-zhong-fu-de-shu-zi-lcof.go) 
+```golang
+func findRepeatNumber(nums []int) int {
+    seen := make(map[int]struct{})
+    for _, n := range nums {
+        if _, e := seen[n]; e {
+            return n
+        }
+        seen[n] = struct{}{}
+    }
+    return -1
 }
 ```
 ### cpp [🔗](shu-zu-zhong-zhong-fu-de-shu-zi-lcof.cpp) 
@@ -64,19 +77,6 @@ public:
         return -1;
     }
 };
-```
-### golang [🔗](shu-zu-zhong-zhong-fu-de-shu-zi-lcof.go) 
-```golang
-func findRepeatNumber(nums []int) int {
-    seen := make(map[int]struct{})
-    for _, n := range nums {
-        if _, e := seen[n]; e {
-            return n
-        }
-        seen[n] = struct{}{}
-    }
-    return -1
-}
 ```
 
 
