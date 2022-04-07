@@ -49,22 +49,6 @@
 
 ## 题解
 
-### c [🔗](richest-customer-wealth.c) 
-```c
-int maximumWealth(int** accounts, int accountsSize, int* accountsColSize){
-    int maxW = 0;
-    for (int i = 0; i < accountsSize; i++) {
-        int wealthOneAccount = 0;
-        for (int j = 0; j < accountsColSize[i]; j++) {
-            wealthOneAccount += accounts[i][j];
-        }
-        if (maxW < wealthOneAccount) {
-            maxW = wealthOneAccount;
-        } 
-    }
-    return maxW;
-}
-```
 ### cpp [🔗](richest-customer-wealth.cpp) 
 ```cpp
 class Solution {
@@ -113,6 +97,22 @@ impl Solution {
             .max()
             .unwrap()
     }
+}
+```
+### c [🔗](richest-customer-wealth.c) 
+```c
+int maximumWealth(int** accounts, int accountsSize, int* accountsColSize){
+    int maxW = 0;
+    for (int i = 0; i < accountsSize; i++) {
+        int wealthOneAccount = 0;
+        for (int j = 0; j < accountsColSize[i]; j++) {
+            wealthOneAccount += accounts[i][j];
+        }
+        if (maxW < wealthOneAccount) {
+            maxW = wealthOneAccount;
+        } 
+    }
+    return maxW;
 }
 ```
 

@@ -1,5 +1,5 @@
 
-# [双向链表](https://leetcode-cn.com/tag/doubly-linked-list)
+## [双向链表](https://leetcode-cn.com/tag/doubly-linked-list)
 
 1. [LRU 缓存](../solutions/lru-cache/README.md)
 2. [最大栈](../solutions/max-stack/README.md)

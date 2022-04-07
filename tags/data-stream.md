@@ -1,5 +1,5 @@
 
-# [数据流](https://leetcode-cn.com/tag/data-stream)
+## [数据流](https://leetcode-cn.com/tag/data-stream)
 
 1. [数据流中的移动平均值](../solutions/moving-average-from-data-stream/README.md)
 2. [数据流中的第 K 大元素](../solutions/kth-largest-element-in-a-stream/README.md)

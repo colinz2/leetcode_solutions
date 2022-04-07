@@ -44,6 +44,29 @@
 
 ## 题解
 
+### c [🔗](invert-binary-tree.c) 
+```c
+/**
+ * Definition for a binary tree node.
+ * struct TreeNode {
+ *     int val;
+ *     struct TreeNode *left;
+ *     struct TreeNode *right;
+ * };
+ */
+
+
+struct TreeNode* invertTree(struct TreeNode* root){
+    if (root == NULL) return root;
+    invertTree(root->left);
+    invertTree(root->right);
+    struct TreeNode* tmp;
+    tmp = root->left;
+    root->left = root->right;
+    root->right = tmp;
+    return root;
+}
+```
 ### cpp [🔗](invert-binary-tree.cpp) 
 ```cpp
 /**
@@ -73,29 +96,6 @@ public:
         return root;
     }
 };
-```
-### c [🔗](invert-binary-tree.c) 
-```c
-/**
- * Definition for a binary tree node.
- * struct TreeNode {
- *     int val;
- *     struct TreeNode *left;
- *     struct TreeNode *right;
- * };
- */
-
-
-struct TreeNode* invertTree(struct TreeNode* root){
-    if (root == NULL) return root;
-    invertTree(root->left);
-    invertTree(root->right);
-    struct TreeNode* tmp;
-    tmp = root->left;
-    root->left = root->right;
-    root->right = tmp;
-    return root;
-}
 ```
 
 

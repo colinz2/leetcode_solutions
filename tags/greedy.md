@@ -1,5 +1,5 @@
 
-# [贪心](https://leetcode-cn.com/tag/greedy)
+## [贪心](https://leetcode-cn.com/tag/greedy)
 
 1. [盛最多水的容器](../solutions/container-with-most-water/README.md)
 2. [通配符匹配](../solutions/wildcard-matching/README.md)

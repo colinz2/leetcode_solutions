@@ -1,5 +1,5 @@
 
-# [并查集](https://leetcode-cn.com/tag/union-find)
+## [并查集](https://leetcode-cn.com/tag/union-find)
 
 1. [最长连续序列](../solutions/longest-consecutive-sequence/README.md)
 2. [被围绕的区域](../solutions/surrounded-regions/README.md)

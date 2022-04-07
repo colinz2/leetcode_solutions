@@ -1,5 +1,5 @@
 
-# [字典树](https://leetcode-cn.com/tag/trie)
+## [字典树](https://leetcode-cn.com/tag/trie)
 
 1. [单词拆分](../solutions/word-break/README.md)
 2. [实现 Trie (前缀树)](../solutions/implement-trie-prefix-tree/README.md)

@@ -1,5 +1,5 @@
 
-# [计数](https://leetcode-cn.com/tag/counting)
+## [计数](https://leetcode-cn.com/tag/counting)
 
 1. [多数元素](../solutions/majority-element/README.md)
 2. [前 K 个高频元素](../solutions/top-k-frequent-elements/README.md)

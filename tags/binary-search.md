@@ -1,5 +1,5 @@
 
-# [二分查找](https://leetcode-cn.com/tag/binary-search)
+## [二分查找](https://leetcode-cn.com/tag/binary-search)
 
 1. [寻找两个正序数组的中位数](../solutions/median-of-two-sorted-arrays/README.md)
 2. [搜索旋转排序数组](../solutions/search-in-rotated-sorted-array/README.md)

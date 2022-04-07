@@ -1,5 +1,5 @@
 
-# [设计](https://leetcode-cn.com/tag/design)
+## [设计](https://leetcode-cn.com/tag/design)
 
 1. [LRU 缓存](../solutions/lru-cache/README.md)
 2. [最小栈](../solutions/min-stack/README.md)

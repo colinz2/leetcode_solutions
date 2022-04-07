@@ -1,5 +1,5 @@
 
-# [模拟](https://leetcode-cn.com/tag/simulation)
+## [模拟](https://leetcode-cn.com/tag/simulation)
 
 1. [字符串相乘](../solutions/multiply-strings/README.md)
 2. [螺旋矩阵](../solutions/spiral-matrix/README.md)

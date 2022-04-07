@@ -1,5 +1,5 @@
 
-# [广度优先搜索](https://leetcode-cn.com/tag/breadth-first-search)
+## [广度优先搜索](https://leetcode-cn.com/tag/breadth-first-search)
 
 1. [相同的树](../solutions/same-tree/README.md)
 2. [对称二叉树](../solutions/symmetric-tree/README.md)

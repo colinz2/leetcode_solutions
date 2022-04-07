@@ -1,5 +1,5 @@
 
-# [哈希表](https://leetcode-cn.com/tag/hash-table)
+## [哈希表](https://leetcode-cn.com/tag/hash-table)
 
 1. [两数之和](../solutions/two-sum/README.md)
 2. [无重复字符的最长子串](../solutions/longest-substring-without-repeating-characters/README.md)

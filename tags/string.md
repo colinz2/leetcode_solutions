@@ -1,5 +1,5 @@
 
-# [字符串](https://leetcode-cn.com/tag/string)
+## [字符串](https://leetcode-cn.com/tag/string)
 
 1. [无重复字符的最长子串](../solutions/longest-substring-without-repeating-characters/README.md)
 2. [最长回文子串](../solutions/longest-palindromic-substring/README.md)

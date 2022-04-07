@@ -1,5 +1,5 @@
 
-# [分治](https://leetcode-cn.com/tag/divide-and-conquer)
+## [分治](https://leetcode-cn.com/tag/divide-and-conquer)
 
 1. [寻找两个正序数组的中位数](../solutions/median-of-two-sorted-arrays/README.md)
 2. [合并K个升序链表](../solutions/merge-k-sorted-lists/README.md)

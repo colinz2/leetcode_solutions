@@ -47,6 +47,76 @@
 
 ## 题解
 
+### cpp [🔗](reverse-linked-list.cpp) 
+```cpp
+/**
+ * Definition for singly-linked list.
+ * struct ListNode {
+ *     int val;
+ *     ListNode *next;
+ *     ListNode() : val(0), next(nullptr) {}
+ *     ListNode(int x) : val(x), next(nullptr) {}
+ *     ListNode(int x, ListNode *next) : val(x), next(next) {}
+ * };
+ */
+class Solution {
+public:
+    ListNode* reverseList(ListNode* head) {
+        ListNode* curr = head;
+        ListNode* prev = nullptr;
+        while (curr) {
+            auto next = curr->next;
+            curr->next = prev;
+            prev = curr;
+            curr = next;
+        }
+        return prev;
+    }
+};
+```
+### golang [🔗](reverse-linked-list.go) 
+```golang
+/**
+ * Definition for singly-linked list.
+ * type ListNode struct {
+ *     Val int
+ *     Next *ListNode
+ * }
+ */
+func reverseList(head *ListNode) *ListNode {
+    var pre, next *ListNode = nil, nil
+    for head != nil {
+        next, head.Next = head.Next, pre
+        pre , head = head, next
+    }
+    return pre
+}
+```
+### java [🔗](reverse-linked-list.java) 
+```java
+/**
+ * Definition for singly-linked list.
+ * public class ListNode {
+ *     int val;
+ *     ListNode next;
+ *     ListNode() {}
+ *     ListNode(int val) { this.val = val; }
+ *     ListNode(int val, ListNode next) { this.val = val; this.next = next; }
+ * }
+ */
+class Solution {
+    public ListNode reverseList(ListNode head) {
+        ListNode pre = null, next = null;
+        while (head != null) {
+            next = head.next;
+            head.next = pre;
+            pre = head;
+            head = next;
+        }
+        return pre;
+    }
+}
+```
 ### python3 [🔗](reverse-linked-list.py) 
 ```python3
 # Definition for singly-linked list.
@@ -139,76 +209,6 @@ struct ListNode* reverseList(struct ListNode* head){
     head->next->next = head;
     head->next = NULL;
     return new_head;
-}
-```
-### cpp [🔗](reverse-linked-list.cpp) 
-```cpp
-/**
- * Definition for singly-linked list.
- * struct ListNode {
- *     int val;
- *     ListNode *next;
- *     ListNode() : val(0), next(nullptr) {}
- *     ListNode(int x) : val(x), next(nullptr) {}
- *     ListNode(int x, ListNode *next) : val(x), next(next) {}
- * };
- */
-class Solution {
-public:
-    ListNode* reverseList(ListNode* head) {
-        ListNode* curr = head;
-        ListNode* prev = nullptr;
-        while (curr) {
-            auto next = curr->next;
-            curr->next = prev;
-            prev = curr;
-            curr = next;
-        }
-        return prev;
-    }
-};
-```
-### golang [🔗](reverse-linked-list.go) 
-```golang
-/**
- * Definition for singly-linked list.
- * type ListNode struct {
- *     Val int
- *     Next *ListNode
- * }
- */
-func reverseList(head *ListNode) *ListNode {
-    var pre, next *ListNode = nil, nil
-    for head != nil {
-        next, head.Next = head.Next, pre
-        pre , head = head, next
-    }
-    return pre
-}
-```
-### java [🔗](reverse-linked-list.java) 
-```java
-/**
- * Definition for singly-linked list.
- * public class ListNode {
- *     int val;
- *     ListNode next;
- *     ListNode() {}
- *     ListNode(int val) { this.val = val; }
- *     ListNode(int val, ListNode next) { this.val = val; this.next = next; }
- * }
- */
-class Solution {
-    public ListNode reverseList(ListNode head) {
-        ListNode pre = null, next = null;
-        while (head != null) {
-            next = head.next;
-            head.next = pre;
-            pre = head;
-            head = next;
-        }
-        return pre;
-    }
 }
 ```
 

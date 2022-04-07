@@ -39,6 +39,30 @@
 
 ## 题解
 
+### cpp [🔗](daily-temperatures.cpp) 
+```cpp
+class Solution {
+public:
+    vector<int> dailyTemperatures(vector<int>& temperatures) {
+        // 单调栈，保存位置
+        int len = temperatures.size();
+        vector<int> res(len, 0);
+        vector<int> st(len, 0);
+
+        int stLen = 0;
+
+        for (int i = 0; i < len; i++) {
+            while (stLen > 0 && temperatures[i] > temperatures[st[stLen-1]]) {
+                res[st[stLen-1]] = i - st[stLen-1];
+                stLen--;
+            }
+            st[stLen++] = i;
+        }
+
+        return res;
+    }
+};
+```
 ### golang [🔗](daily-temperatures.go) 
 ```golang
 func dailyTemperatures(temperatures []int) []int {
@@ -111,30 +135,6 @@ int *dailyTemperatures(int *T, int TSize, int *returnSize)
     return res;
 }
 
-```
-### cpp [🔗](daily-temperatures.cpp) 
-```cpp
-class Solution {
-public:
-    vector<int> dailyTemperatures(vector<int>& temperatures) {
-        // 单调栈，保存位置
-        int len = temperatures.size();
-        vector<int> res(len, 0);
-        vector<int> st(len, 0);
-
-        int stLen = 0;
-
-        for (int i = 0; i < len; i++) {
-            while (stLen > 0 && temperatures[i] > temperatures[st[stLen-1]]) {
-                res[st[stLen-1]] = i - st[stLen-1];
-                stLen--;
-            }
-            st[stLen++] = i;
-        }
-
-        return res;
-    }
-};
 ```
 
 

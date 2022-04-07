@@ -33,6 +33,17 @@
 
 ## 题解
 
+### python3 [🔗](majority-element.py) 
+```python3
+class Solution:
+    def majorityElement(self, nums: List[int]) -> int:
+        ans, count = 0, 0
+        for x in nums:
+            ans = x if count == 0  else ans
+            count = count + 1 if ans == x else count - 1
+
+        return ans
+```
 ### cpp [🔗](majority-element.cpp) 
 ```cpp
 class Solution {
@@ -70,17 +81,6 @@ func majorityElement(nums []int) int {
 	}
 	return res
 }
-```
-### python3 [🔗](majority-element.py) 
-```python3
-class Solution:
-    def majorityElement(self, nums: List[int]) -> int:
-        ans, count = 0, 0
-        for x in nums:
-            ans = x if count == 0  else ans
-            count = count + 1 if ans == x else count - 1
-
-        return ans
 ```
 
 

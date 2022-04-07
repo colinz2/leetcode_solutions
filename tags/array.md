@@ -1,5 +1,5 @@
 
-# [数组](https://leetcode-cn.com/tag/array)
+## [数组](https://leetcode-cn.com/tag/array)
 
 1. [两数之和](../solutions/two-sum/README.md)
 2. [寻找两个正序数组的中位数](../solutions/median-of-two-sorted-arrays/README.md)

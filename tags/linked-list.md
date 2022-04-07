@@ -1,5 +1,5 @@
 
-# [链表](https://leetcode-cn.com/tag/linked-list)
+## [链表](https://leetcode-cn.com/tag/linked-list)
 
 1. [两数相加](../solutions/add-two-numbers/README.md)
 2. [删除链表的倒数第 N 个结点](../solutions/remove-nth-node-from-end-of-list/README.md)

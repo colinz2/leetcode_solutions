@@ -39,6 +39,36 @@
 
 ## 题解
 
+### javascript [🔗](add-digits.js) 
+```javascript
+/**
+ * @param {number} num
+ * @return {number}
+ */
+var addDigits = function(num) {
+    return (num - 1) % 9 + 1
+};
+```
+### python3 [🔗](add-digits.py) 
+```python3
+class Solution:
+    def addDigits(self, num: int) -> int:
+        if num < 10:
+            return num
+        next = 0
+        while num > 0:
+            next += num%10
+            num = num//10
+        return self.addDigits(next)
+```
+### rust [🔗](add-digits.rs) 
+```rust
+impl Solution {
+    pub fn add_digits(num: i32) -> i32 {
+        (num - 1) % 9 + 1
+    }
+}
+```
 ### cpp [🔗](add-digits.cpp) 
 ```cpp
 class Solution {
@@ -70,36 +100,6 @@ func addDigits(num int) int {
         }(num))
     }
     return num
-}
-```
-### javascript [🔗](add-digits.js) 
-```javascript
-/**
- * @param {number} num
- * @return {number}
- */
-var addDigits = function(num) {
-    return (num - 1) % 9 + 1
-};
-```
-### python3 [🔗](add-digits.py) 
-```python3
-class Solution:
-    def addDigits(self, num: int) -> int:
-        if num < 10:
-            return num
-        next = 0
-        while num > 0:
-            next += num%10
-            num = num//10
-        return self.addDigits(next)
-```
-### rust [🔗](add-digits.rs) 
-```rust
-impl Solution {
-    pub fn add_digits(num: i32) -> i32 {
-        (num - 1) % 9 + 1
-    }
 }
 ```
 

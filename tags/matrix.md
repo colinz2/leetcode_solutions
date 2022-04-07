@@ -1,5 +1,5 @@
 
-# [矩阵](https://leetcode-cn.com/tag/matrix)
+## [矩阵](https://leetcode-cn.com/tag/matrix)
 
 1. [旋转图像](../solutions/rotate-image/README.md)
 2. [螺旋矩阵](../solutions/spiral-matrix/README.md)

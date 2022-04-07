@@ -1,5 +1,5 @@
 
-# [排序](https://leetcode-cn.com/tag/sorting)
+## [排序](https://leetcode-cn.com/tag/sorting)
 
 1. [三数之和](../solutions/3sum/README.md)
 2. [字母异位词分组](../solutions/group-anagrams/README.md)

@@ -1,5 +1,5 @@
 
-# [栈](https://leetcode-cn.com/tag/stack)
+## [栈](https://leetcode-cn.com/tag/stack)
 
 1. [有效的括号](../solutions/valid-parentheses/README.md)
 2. [接雨水](../solutions/trapping-rain-water/README.md)

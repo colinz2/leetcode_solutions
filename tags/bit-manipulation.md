@@ -1,5 +1,5 @@
 
-# [位运算](https://leetcode-cn.com/tag/bit-manipulation)
+## [位运算](https://leetcode-cn.com/tag/bit-manipulation)
 
 1. [两数相除](../solutions/divide-two-integers/README.md)
 2. [二进制求和](../solutions/add-binary/README.md)

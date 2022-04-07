@@ -1,5 +1,5 @@
 
-# [二叉搜索树](https://leetcode-cn.com/tag/binary-search-tree)
+## [二叉搜索树](https://leetcode-cn.com/tag/binary-search-tree)
 
 1. [不同的二叉搜索树](../solutions/unique-binary-search-trees/README.md)
 2. [验证二叉搜索树](../solutions/validate-binary-search-tree/README.md)

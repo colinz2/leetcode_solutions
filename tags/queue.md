@@ -1,5 +1,5 @@
 
-# [队列](https://leetcode-cn.com/tag/queue)
+## [队列](https://leetcode-cn.com/tag/queue)
 
 1. [用队列实现栈](../solutions/implement-stack-using-queues/README.md)
 2. [用栈实现队列](../solutions/implement-queue-using-stacks/README.md)

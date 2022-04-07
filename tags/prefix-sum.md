@@ -1,5 +1,5 @@
 
-# [前缀和](https://leetcode-cn.com/tag/prefix-sum)
+## [前缀和](https://leetcode-cn.com/tag/prefix-sum)
 
 1. [长度最小的子数组](../solutions/minimum-size-subarray-sum/README.md)
 2. [除自身以外数组的乘积](../solutions/product-of-array-except-self/README.md)

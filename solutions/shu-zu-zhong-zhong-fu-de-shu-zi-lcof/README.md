@@ -24,17 +24,6 @@
 
 ## 题解
 
-### python3 [🔗](shu-zu-zhong-zhong-fu-de-shu-zi-lcof.py) 
-```python3
-class Solution:
-    def findRepeatNumber(self, nums: List[int]) -> int:
-        seen = set()
-        for n in nums:
-            if n in seen:
-                return n
-            seen.add(n)
-        return -1
-```
 ### c [🔗](shu-zu-zhong-zhong-fu-de-shu-zi-lcof.c) 
 ```c
 int findRepeatNumber(int* nums, int numsSize){
@@ -77,6 +66,17 @@ func findRepeatNumber(nums []int) int {
     }
     return -1
 }
+```
+### python3 [🔗](shu-zu-zhong-zhong-fu-de-shu-zi-lcof.py) 
+```python3
+class Solution:
+    def findRepeatNumber(self, nums: List[int]) -> int:
+        seen = set()
+        for n in nums:
+            if n in seen:
+                return n
+            seen.add(n)
+        return -1
 ```
 
 

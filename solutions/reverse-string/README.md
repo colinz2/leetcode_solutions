@@ -34,6 +34,17 @@
 
 ## 题解
 
+### python3 [🔗](reverse-string.py) 
+```python3
+class Solution:
+    def reverseString(self, s):
+        """
+        :type s: str
+        :rtype: str
+        """
+        return s[::-1]
+        
+```
 ### cpp [🔗](reverse-string.cpp) 
 ```cpp
 class Solution {
@@ -46,17 +57,6 @@ public:
         return s;
     }
 };
-```
-### python3 [🔗](reverse-string.py) 
-```python3
-class Solution:
-    def reverseString(self, s):
-        """
-        :type s: str
-        :rtype: str
-        """
-        return s[::-1]
-        
 ```
 
 

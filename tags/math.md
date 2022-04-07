@@ -1,5 +1,5 @@
 
-# [数学](https://leetcode-cn.com/tag/math)
+## [数学](https://leetcode-cn.com/tag/math)
 
 1. [两数相加](../solutions/add-two-numbers/README.md)
 2. [整数反转](../solutions/reverse-integer/README.md)

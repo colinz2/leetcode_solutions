@@ -1,5 +1,5 @@
 
-# [双指针](https://leetcode-cn.com/tag/two-pointers)
+## [双指针](https://leetcode-cn.com/tag/two-pointers)
 
 1. [盛最多水的容器](../solutions/container-with-most-water/README.md)
 2. [三数之和](../solutions/3sum/README.md)

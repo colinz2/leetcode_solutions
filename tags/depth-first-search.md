@@ -1,5 +1,5 @@
 
-# [深度优先搜索](https://leetcode-cn.com/tag/depth-first-search)
+## [深度优先搜索](https://leetcode-cn.com/tag/depth-first-search)
 
 1. [二叉树的中序遍历](../solutions/binary-tree-inorder-traversal/README.md)
 2. [验证二叉搜索树](../solutions/validate-binary-search-tree/README.md)

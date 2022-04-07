@@ -40,61 +40,6 @@
 
 ## 题解
 
-### golang [🔗](kth-smallest-element-in-a-bst.go) 
-```golang
-/**
- * Definition for a binary tree node.
- * type TreeNode struct {
- *     Val int
- *     Left *TreeNode
- *     Right *TreeNode
- * }
- */
-func kthSmallest(root *TreeNode, k int) int {
-    stack := make([]*TreeNode, 0)
-    for root != nil || len(stack) > 0 {
-        for root != nil {
-            stack = append(stack, root)
-            root = root.Left
-        }
-        root = stack[len(stack)-1]
-        stack = stack[0:len(stack)-1]
-        k--
-        if k == 0 {
-            return root.Val
-        }
-        root = root.Right
-    }
-    return 0
-}
-```
-### python [🔗](kth-smallest-element-in-a-bst.py) 
-```python
-# Definition for a binary tree node.
-# class TreeNode(object):
-#     def __init__(self, val=0, left=None, right=None):
-#         self.val = val
-#         self.left = left
-#         self.right = right
-class Solution(object):
-    def kthSmallest(self, root, k):
-        """
-        :type root: TreeNode
-        :type k: int
-        :rtype: int
-        """
-        stack = []
-        while root is not None or len(stack) > 0:
-            while root is not None:
-                stack.append(root)
-                root = root.left
-            root = stack.pop()
-            k -= 1
-            if k == 0:
-                return root.val
-            root = root.right
-        return -1
-```
 ### python3 [🔗](kth-smallest-element-in-a-bst.py) 
 ```python3
 # Definition for a binary tree node.
@@ -189,6 +134,61 @@ public:
         return -1;
     }
 };
+```
+### golang [🔗](kth-smallest-element-in-a-bst.go) 
+```golang
+/**
+ * Definition for a binary tree node.
+ * type TreeNode struct {
+ *     Val int
+ *     Left *TreeNode
+ *     Right *TreeNode
+ * }
+ */
+func kthSmallest(root *TreeNode, k int) int {
+    stack := make([]*TreeNode, 0)
+    for root != nil || len(stack) > 0 {
+        for root != nil {
+            stack = append(stack, root)
+            root = root.Left
+        }
+        root = stack[len(stack)-1]
+        stack = stack[0:len(stack)-1]
+        k--
+        if k == 0 {
+            return root.Val
+        }
+        root = root.Right
+    }
+    return 0
+}
+```
+### python [🔗](kth-smallest-element-in-a-bst.py) 
+```python
+# Definition for a binary tree node.
+# class TreeNode(object):
+#     def __init__(self, val=0, left=None, right=None):
+#         self.val = val
+#         self.left = left
+#         self.right = right
+class Solution(object):
+    def kthSmallest(self, root, k):
+        """
+        :type root: TreeNode
+        :type k: int
+        :rtype: int
+        """
+        stack = []
+        while root is not None or len(stack) > 0:
+            while root is not None:
+                stack.append(root)
+                root = root.left
+            root = stack.pop()
+            k -= 1
+            if k == 0:
+                return root.val
+            root = root.right
+        return -1
 ```
 
 

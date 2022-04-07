@@ -1,5 +1,5 @@
 
-# [树](https://leetcode-cn.com/tag/tree)
+## [树](https://leetcode-cn.com/tag/tree)
 
 1. [二叉树的中序遍历](../solutions/binary-tree-inorder-traversal/README.md)
 2. [不同的二叉搜索树](../solutions/unique-binary-search-trees/README.md)

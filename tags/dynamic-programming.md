@@ -1,5 +1,5 @@
 
-# [动态规划](https://leetcode-cn.com/tag/dynamic-programming)
+## [动态规划](https://leetcode-cn.com/tag/dynamic-programming)
 
 1. [最长回文子串](../solutions/longest-palindromic-substring/README.md)
 2. [括号生成](../solutions/generate-parentheses/README.md)

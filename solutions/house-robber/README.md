@@ -38,25 +38,6 @@
 
 ## 题解
 
-### golang [🔗](house-robber.go) 
-```golang
-func rob(nums []int) int {
-    pre := 0
-    curr := 0
-    for _, n := range nums {
-        tmp := max(curr, pre + n)
-        pre, curr = curr, tmp
-    }
-    return curr
-}
-
-func max(a, b int) int {
-    if a > b {
-        return a
-    }
-    return b
-}
-```
 ### cpp [🔗](house-robber.cpp) 
 ```cpp
 class Solution {
@@ -77,6 +58,25 @@ public:
         return r[cnt - 1];
     }
 };
+```
+### golang [🔗](house-robber.go) 
+```golang
+func rob(nums []int) int {
+    pre := 0
+    curr := 0
+    for _, n := range nums {
+        tmp := max(curr, pre + n)
+        pre, curr = curr, tmp
+    }
+    return curr
+}
+
+func max(a, b int) int {
+    if a > b {
+        return a
+    }
+    return b
+}
 ```
 
 

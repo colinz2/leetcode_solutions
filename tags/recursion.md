@@ -1,5 +1,5 @@
 
-# [递归](https://leetcode-cn.com/tag/recursion)
+## [递归](https://leetcode-cn.com/tag/recursion)
 
 1. [两数相加](../solutions/add-two-numbers/README.md)
 2. [合并两个有序链表](../solutions/merge-two-sorted-lists/README.md)
