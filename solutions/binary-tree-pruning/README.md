@@ -46,6 +46,31 @@
 
 ## 题解
 
+### c [🔗](binary-tree-pruning.c) 
+```c
+/**
+ * Definition for a binary tree node.
+ * struct TreeNode {
+ *     int val;
+ *     struct TreeNode *left;
+ *     struct TreeNode *right;
+ * };
+ */
+
+
+struct TreeNode* pruneTree(struct TreeNode* root){
+    if (root == NULL) {
+        return NULL;
+    }
+    root->left = pruneTree(root->left);
+    root->right = pruneTree(root->right);
+    if (!root->left && !root->right && !root->val) {
+        return NULL;
+    }
+
+    return root;
+}
+```
 ### cpp [🔗](binary-tree-pruning.cpp) 
 ```cpp
 /**
@@ -93,31 +118,6 @@ func pruneTree(root *TreeNode) *TreeNode {
     if root.Left == nil && root.Right == nil && root.Val == 0 {
         return nil
     }
-    return root;
-}
-```
-### c [🔗](binary-tree-pruning.c) 
-```c
-/**
- * Definition for a binary tree node.
- * struct TreeNode {
- *     int val;
- *     struct TreeNode *left;
- *     struct TreeNode *right;
- * };
- */
-
-
-struct TreeNode* pruneTree(struct TreeNode* root){
-    if (root == NULL) {
-        return NULL;
-    }
-    root->left = pruneTree(root->left);
-    root->right = pruneTree(root->right);
-    if (!root->left && !root->right && !root->val) {
-        return NULL;
-    }
-
     return root;
 }
 ```

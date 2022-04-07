@@ -52,6 +52,29 @@ class Node {
 
 ## 题解
 
+### golang [🔗](clone-n-ary-tree.go) 
+```golang
+/**
+ * Definition for a Node.
+ * type Node struct {
+ *     Val int
+ *     Children []*Node
+ * }
+ */
+
+func cloneTree(root *Node) *Node {
+	if root == nil {
+        return nil
+    }
+    newRoot := new(Node)
+    newRoot.Val = root.Val
+    for _, ch := range root.Children {
+        newRoot.Children = append(newRoot.Children, cloneTree(ch))
+    }
+
+    return newRoot
+}
+```
 ### cpp [🔗](clone-n-ary-tree.cpp) 
 ```cpp
 /*
@@ -88,29 +111,6 @@ public:
         return newRoot;
     }
 };
-```
-### golang [🔗](clone-n-ary-tree.go) 
-```golang
-/**
- * Definition for a Node.
- * type Node struct {
- *     Val int
- *     Children []*Node
- * }
- */
-
-func cloneTree(root *Node) *Node {
-	if root == nil {
-        return nil
-    }
-    newRoot := new(Node)
-    newRoot.Val = root.Val
-    for _, ch := range root.Children {
-        newRoot.Children = append(newRoot.Children, cloneTree(ch))
-    }
-
-    return newRoot
-}
 ```
 
 

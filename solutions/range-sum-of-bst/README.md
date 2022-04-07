@@ -35,28 +35,6 @@
 
 ## 题解
 
-### c [🔗](range-sum-of-bst.c) 
-```c
-/**
- * Definition for a binary tree node.
- * struct TreeNode {
- *     int val;
- *     struct TreeNode *left;
- *     struct TreeNode *right;
- * };
- */
-
-
-int rangeSumBST(struct TreeNode* root, int low, int high){
-    if (root == NULL) return 0;
-    if (root->val < low) {
-        return rangeSumBST(root->right, low, high);
-    } else if (root->val > high) {
-        return rangeSumBST(root->left, low, high);
-    }
-    return root->val + rangeSumBST(root->left, low, high) + rangeSumBST(root->right, low, high);
-}
-```
 ### cpp [🔗](range-sum-of-bst.cpp) 
 ```cpp
 /**
@@ -121,6 +99,28 @@ func rangeSumBST(root *TreeNode, low int, high int) int {
         root = root.Right
     }
     return res
+}
+```
+### c [🔗](range-sum-of-bst.c) 
+```c
+/**
+ * Definition for a binary tree node.
+ * struct TreeNode {
+ *     int val;
+ *     struct TreeNode *left;
+ *     struct TreeNode *right;
+ * };
+ */
+
+
+int rangeSumBST(struct TreeNode* root, int low, int high){
+    if (root == NULL) return 0;
+    if (root->val < low) {
+        return rangeSumBST(root->right, low, high);
+    } else if (root->val > high) {
+        return rangeSumBST(root->left, low, high);
+    }
+    return root->val + rangeSumBST(root->left, low, high) + rangeSumBST(root->right, low, high);
 }
 ```
 

@@ -44,29 +44,6 @@
 
 ## 题解
 
-### c [🔗](1-bit-and-2-bit-characters.c) 
-```c
-bool isOneBitCharacter(int* bits, int bitsSize){
-    int i = bitsSize - 2;
-    while (i >= 0 && bits[i] == 1)i--;
-    return (bitsSize-2-i) % 2 == 0;
-}
-```
-### cpp [🔗](1-bit-and-2-bit-characters.cpp) 
-```cpp
-class Solution {
-public:
-    bool isOneBitCharacter(vector<int>& bits) {
-        for (int i = 0; i < bits.size();) {
-            if (bits[i] == 1 && i + 2 == bits.size()) {
-                return false;
-            }
-            i += bits[i] + 1;
-        }
-        return true;
-    }
-};
-```
 ### java [🔗](1-bit-and-2-bit-characters.java) 
 ```java
 class Solution {
@@ -95,6 +72,29 @@ function isOneBitCharacter(bits: number[]): boolean {
     while (i >= 0 && bits[i] == 1)i--;
     return (bits.length - 2 - i) % 2 == 0
 
+};
+```
+### c [🔗](1-bit-and-2-bit-characters.c) 
+```c
+bool isOneBitCharacter(int* bits, int bitsSize){
+    int i = bitsSize - 2;
+    while (i >= 0 && bits[i] == 1)i--;
+    return (bitsSize-2-i) % 2 == 0;
+}
+```
+### cpp [🔗](1-bit-and-2-bit-characters.cpp) 
+```cpp
+class Solution {
+public:
+    bool isOneBitCharacter(vector<int>& bits) {
+        for (int i = 0; i < bits.size();) {
+            if (bits[i] == 1 && i + 2 == bits.size()) {
+                return false;
+            }
+            i += bits[i] + 1;
+        }
+        return true;
+    }
 };
 ```
 

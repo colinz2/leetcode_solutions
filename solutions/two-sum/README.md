@@ -49,6 +49,22 @@
 
 ## 题解
 
+### python3 [🔗](two-sum.py) 
+```python3
+class Solution:
+    def twoSum(self, nums, target):
+        """
+        :type nums: List[int]
+        :type target: int
+        :rtype: List[int]
+        """
+        check_dict = dict()
+        for i, n in enumerate(nums):
+            c = target - n
+            if c in check_dict:
+                return [check_dict[c], i]
+            check_dict[n] = i
+```
 ### rust [🔗](two-sum.rs) 
 ```rust
 
@@ -100,22 +116,6 @@ func twoSum(nums []int, target int) []int {
     }
     return []int{-1, -1}
 }
-```
-### python3 [🔗](two-sum.py) 
-```python3
-class Solution:
-    def twoSum(self, nums, target):
-        """
-        :type nums: List[int]
-        :type target: int
-        :rtype: List[int]
-        """
-        check_dict = dict()
-        for i, n in enumerate(nums):
-            c = target - n
-            if c in check_dict:
-                return [check_dict[c], i]
-            check_dict[n] = i
 ```
 
 

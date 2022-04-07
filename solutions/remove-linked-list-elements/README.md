@@ -40,27 +40,6 @@
 
 ## 题解
 
-### c [🔗](remove-linked-list-elements.c) 
-```c
-/**
- * Definition for singly-linked list.
- * struct ListNode {
- *     int val;
- *     struct ListNode *next;
- * };
- */
-struct ListNode* removeElements(struct ListNode* head, int val) {
-    struct ListNode **list = &head;
-    while (*list != NULL) {
-        if ((*list)->val == val) {
-            *list = (*list)->next;
-        } else {
-            list = &(*list)->next;
-        }
-    }
-    return head;
-}
-```
 ### cpp [🔗](remove-linked-list-elements.cpp) 
 ```cpp
 /**
@@ -90,6 +69,27 @@ public:
         return head;
     }
 };
+```
+### c [🔗](remove-linked-list-elements.c) 
+```c
+/**
+ * Definition for singly-linked list.
+ * struct ListNode {
+ *     int val;
+ *     struct ListNode *next;
+ * };
+ */
+struct ListNode* removeElements(struct ListNode* head, int val) {
+    struct ListNode **list = &head;
+    while (*list != NULL) {
+        if ((*list)->val == val) {
+            *list = (*list)->next;
+        } else {
+            list = &(*list)->next;
+        }
+    }
+    return head;
+}
 ```
 
 

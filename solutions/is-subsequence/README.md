@@ -44,21 +44,6 @@
 
 ## 题解
 
-### cpp [🔗](is-subsequence.cpp) 
-```cpp
-class Solution {
-public:
-    bool isSubsequence(string s, string t) {
-        int index = 0;
-        for (auto c : t) {
-            if (index < s.size() && c == s[index]) {
-                index++;
-            }
-        }
-        return index == s.size();
-    }
-};
-```
 ### golang [🔗](is-subsequence.go) 
 ```golang
 func isSubsequence(s string, t string) bool {
@@ -86,6 +71,21 @@ bool isSubsequence(char * s, char * t){
     while (*s && *t) s += (*s == *t++);
     return !*s;
 }
+```
+### cpp [🔗](is-subsequence.cpp) 
+```cpp
+class Solution {
+public:
+    bool isSubsequence(string s, string t) {
+        int index = 0;
+        for (auto c : t) {
+            if (index < s.size() && c == s[index]) {
+                index++;
+            }
+        }
+        return index == s.size();
+    }
+};
 ```
 
 

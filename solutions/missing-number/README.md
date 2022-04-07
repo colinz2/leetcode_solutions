@@ -56,6 +56,15 @@
 
 ## 题解
 
+### c [🔗](missing-number.c) 
+```c
+int missingNumber(int* nums, int numsSize) {
+    int result = 0;
+    for (int i = 0; i < numsSize; i++)
+        result ^= nums[i]^(i+1);
+    return result;
+}
+```
 ### cpp [🔗](missing-number.cpp) 
 ```cpp
 class Solution {
@@ -66,15 +75,6 @@ public:
         return  (size * (size + 1) /2) - sum;
     }
 };
-```
-### c [🔗](missing-number.c) 
-```c
-int missingNumber(int* nums, int numsSize) {
-    int result = 0;
-    for (int i = 0; i < numsSize; i++)
-        result ^= nums[i]^(i+1);
-    return result;
-}
 ```
 
 

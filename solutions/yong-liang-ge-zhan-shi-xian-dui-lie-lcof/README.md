@@ -33,6 +33,45 @@
 
 ## 题解
 
+### cpp [🔗](yong-liang-ge-zhan-shi-xian-dui-lie-lcof.cpp) 
+```cpp
+class CQueue {
+public:
+    CQueue() {
+
+    }
+    
+    void appendTail(int value) {
+        st1.push(value);
+    }
+    
+    int deleteHead() {
+        if (st2.empty()) {
+            while (!st1.empty()) {
+                st2.push(st1.top());
+                st1.pop();
+            }
+        }
+        if (st2.empty()) {
+            return -1;
+        }
+
+        int top = st2.top();
+        st2.pop();
+        return top;
+    }
+private:
+    stack<int> st1;
+    stack<int> st2;
+};
+
+/**
+ * Your CQueue object will be instantiated and called as such:
+ * CQueue* obj = new CQueue();
+ * obj->appendTail(value);
+ * int param_2 = obj->deleteHead();
+ */
+```
 ### golang [🔗](yong-liang-ge-zhan-shi-xian-dui-lie-lcof.go) 
 ```golang
 type CQueue struct {
@@ -76,45 +115,6 @@ func (this *CQueue) DeleteHead() int {
  * obj := Constructor();
  * obj.AppendTail(value);
  * param_2 := obj.DeleteHead();
- */
-```
-### cpp [🔗](yong-liang-ge-zhan-shi-xian-dui-lie-lcof.cpp) 
-```cpp
-class CQueue {
-public:
-    CQueue() {
-
-    }
-    
-    void appendTail(int value) {
-        st1.push(value);
-    }
-    
-    int deleteHead() {
-        if (st2.empty()) {
-            while (!st1.empty()) {
-                st2.push(st1.top());
-                st1.pop();
-            }
-        }
-        if (st2.empty()) {
-            return -1;
-        }
-
-        int top = st2.top();
-        st2.pop();
-        return top;
-    }
-private:
-    stack<int> st1;
-    stack<int> st2;
-};
-
-/**
- * Your CQueue object will be instantiated and called as such:
- * CQueue* obj = new CQueue();
- * obj->appendTail(value);
- * int param_2 = obj->deleteHead();
  */
 ```
 

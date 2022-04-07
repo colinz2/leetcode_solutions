@@ -42,26 +42,6 @@
 
 ## 题解
 
-### c [🔗](check-if-a-number-is-majority-element-in-a-sorted-array.c) 
-```c
-bool isMajorityElement(int* nums, int numsSize, int target){
-    int start = 0, end = numsSize-1;
-    int targetSize = 0;
-    while (start < end) {
-        if (nums[start] != target) {
-            start++;
-        } else if (nums[end] != target) {
-            end--;
-        }
-        if (targetSize == end-start+1) {
-            return targetSize > numsSize/2;
-        } else {
-            targetSize = end-start+1;
-        }
-    }
-    return false;
-}
-```
 ### cpp [🔗](check-if-a-number-is-majority-element-in-a-sorted-array.cpp) 
 ```cpp
 class Solution {
@@ -90,6 +70,26 @@ func isMajorityElement(nums []int, target int) bool {
     }
     j += len(nums)/2
     return j < len(nums) && nums[j] == target
+}
+```
+### c [🔗](check-if-a-number-is-majority-element-in-a-sorted-array.c) 
+```c
+bool isMajorityElement(int* nums, int numsSize, int target){
+    int start = 0, end = numsSize-1;
+    int targetSize = 0;
+    while (start < end) {
+        if (nums[start] != target) {
+            start++;
+        } else if (nums[end] != target) {
+            end--;
+        }
+        if (targetSize == end-start+1) {
+            return targetSize > numsSize/2;
+        } else {
+            targetSize = end-start+1;
+        }
+    }
+    return false;
 }
 ```
 

@@ -33,6 +33,43 @@
 
 ## 题解
 
+### c [🔗](binary-search.c) 
+```c
+int search(int* nums, int numsSize, int target){
+    int i = 0, j = numsSize;
+    while (i < j) {
+        int m = (i+j)>>1;
+        if (nums[m] < target) {
+            i = m + 1;
+        } else if (nums[m] > target) {
+            j = m;
+        } else {
+            return m; 
+        }
+    }
+    return -1;
+}
+```
+### cpp [🔗](binary-search.cpp) 
+```cpp
+class Solution {
+public:
+    int search(vector<int>& nums, int target) {
+        int l = 0, r = nums.size() - 1;
+        while (l <= r) {
+            int mid = l + (r - l)/2;
+            if (target > nums[mid]) {
+                l = mid + 1;
+            } else if (target < nums[mid]) {
+                r = mid - 1;
+            } else {
+                return mid;
+            }
+        }
+        return -1;
+    }
+};
+```
 ### golang [🔗](binary-search.go) 
 ```golang
 func search(nums []int, target int) int {
@@ -87,43 +124,6 @@ impl Solution {
         return -1;
     }
 }
-```
-### c [🔗](binary-search.c) 
-```c
-int search(int* nums, int numsSize, int target){
-    int i = 0, j = numsSize;
-    while (i < j) {
-        int m = (i+j)>>1;
-        if (nums[m] < target) {
-            i = m + 1;
-        } else if (nums[m] > target) {
-            j = m;
-        } else {
-            return m; 
-        }
-    }
-    return -1;
-}
-```
-### cpp [🔗](binary-search.cpp) 
-```cpp
-class Solution {
-public:
-    int search(vector<int>& nums, int target) {
-        int l = 0, r = nums.size() - 1;
-        while (l <= r) {
-            int mid = l + (r - l)/2;
-            if (target > nums[mid]) {
-                l = mid + 1;
-            } else if (target < nums[mid]) {
-                r = mid - 1;
-            } else {
-                return mid;
-            }
-        }
-        return -1;
-    }
-};
 ```
 
 

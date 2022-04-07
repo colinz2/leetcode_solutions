@@ -38,6 +38,19 @@
 
 ## 题解
 
+### cpp [🔗](valid-anagram.cpp) 
+```cpp
+class Solution {
+public:
+    bool isAnagram(string s, string t) {
+        int cnt[256] = {0,};
+
+        for (auto &c : s) cnt[c]++;
+        for (auto &c : t) cnt[c]--;
+        return all_of(cnt+'a', cnt+'z' + 1, [](int c){ return  c == 0; });
+    }
+};
+```
 ### golang [🔗](valid-anagram.go) 
 ```golang
 func isAnagram(s string, t string) bool {
@@ -95,19 +108,6 @@ bool isAnagram(char * s, char * t){
     } 
     return s_len == t_len && is_all_zero(find, 26);
 }
-```
-### cpp [🔗](valid-anagram.cpp) 
-```cpp
-class Solution {
-public:
-    bool isAnagram(string s, string t) {
-        int cnt[256] = {0,};
-
-        for (auto &c : s) cnt[c]++;
-        for (auto &c : t) cnt[c]--;
-        return all_of(cnt+'a', cnt+'z' + 1, [](int c){ return  c == 0; });
-    }
-};
 ```
 
 
