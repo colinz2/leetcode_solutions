@@ -62,8 +62,8 @@ public:
 
 ## 相关话题
 
-- [字符串](https://leetcode-cn.com/tag/string) 
-- [动态规划](https://leetcode-cn.com/tag/dynamic-programming) 
+- [字符串](../../tags/string.md) 
+- [动态规划](../../tags/dynamic-programming.md) 
 
 
 ## 相似题目

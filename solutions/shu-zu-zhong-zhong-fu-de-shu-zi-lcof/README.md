@@ -24,6 +24,30 @@
 
 ## 题解
 
+### golang [🔗](shu-zu-zhong-zhong-fu-de-shu-zi-lcof.go) 
+```golang
+func findRepeatNumber(nums []int) int {
+    seen := make(map[int]struct{})
+    for _, n := range nums {
+        if _, e := seen[n]; e {
+            return n
+        }
+        seen[n] = struct{}{}
+    }
+    return -1
+}
+```
+### python3 [🔗](shu-zu-zhong-zhong-fu-de-shu-zi-lcof.py) 
+```python3
+class Solution:
+    def findRepeatNumber(self, nums: List[int]) -> int:
+        seen = set()
+        for n in nums:
+            if n in seen:
+                return n
+            seen.add(n)
+        return -1
+```
 ### c [🔗](shu-zu-zhong-zhong-fu-de-shu-zi-lcof.c) 
 ```c
 int findRepeatNumber(int* nums, int numsSize){
@@ -54,37 +78,13 @@ public:
     }
 };
 ```
-### golang [🔗](shu-zu-zhong-zhong-fu-de-shu-zi-lcof.go) 
-```golang
-func findRepeatNumber(nums []int) int {
-    seen := make(map[int]struct{})
-    for _, n := range nums {
-        if _, e := seen[n]; e {
-            return n
-        }
-        seen[n] = struct{}{}
-    }
-    return -1
-}
-```
-### python3 [🔗](shu-zu-zhong-zhong-fu-de-shu-zi-lcof.py) 
-```python3
-class Solution:
-    def findRepeatNumber(self, nums: List[int]) -> int:
-        seen = set()
-        for n in nums:
-            if n in seen:
-                return n
-            seen.add(n)
-        return -1
-```
 
 
 ## 相关话题
 
-- [数组](https://leetcode-cn.com/tag/array) 
-- [哈希表](https://leetcode-cn.com/tag/hash-table) 
-- [排序](https://leetcode-cn.com/tag/sorting) 
+- [数组](../../tags/array.md) 
+- [哈希表](../../tags/hash-table.md) 
+- [排序](../../tags/sorting.md) 
 
 
 ## 相似题目

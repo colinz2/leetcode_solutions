@@ -49,36 +49,6 @@
 
 ## 题解
 
-### cpp [🔗](two-sum.cpp) 
-```cpp
-class Solution {
-public:
-    vector<int> twoSum(vector<int>& nums, int target) {
-        unordered_map<int, int> seen;
-        for (int i = 0; i < nums.size(); i++) {
-            auto it = seen.find(target - nums[i]);
-            if (it != seen.end()) {
-                return {it->second, i};
-            }
-            seen[nums[i]] = i;
-        }
-        return {-1, -1};
-    }
-};
-```
-### golang [🔗](two-sum.go) 
-```golang
-func twoSum(nums []int, target int) []int {
-    seen := make(map[int]int)
-    for i, num := range nums {
-        if val, e := seen[target - num]; e {
-            return []int{val, i}
-        }
-        seen[num] = i
-    }
-    return []int{-1, -1}
-}
-```
 ### python3 [🔗](two-sum.py) 
 ```python3
 class Solution:
@@ -117,12 +87,42 @@ impl Solution {
     }
 }
 ```
+### cpp [🔗](two-sum.cpp) 
+```cpp
+class Solution {
+public:
+    vector<int> twoSum(vector<int>& nums, int target) {
+        unordered_map<int, int> seen;
+        for (int i = 0; i < nums.size(); i++) {
+            auto it = seen.find(target - nums[i]);
+            if (it != seen.end()) {
+                return {it->second, i};
+            }
+            seen[nums[i]] = i;
+        }
+        return {-1, -1};
+    }
+};
+```
+### golang [🔗](two-sum.go) 
+```golang
+func twoSum(nums []int, target int) []int {
+    seen := make(map[int]int)
+    for i, num := range nums {
+        if val, e := seen[target - num]; e {
+            return []int{val, i}
+        }
+        seen[num] = i
+    }
+    return []int{-1, -1}
+}
+```
 
 
 ## 相关话题
 
-- [数组](https://leetcode-cn.com/tag/array) 
-- [哈希表](https://leetcode-cn.com/tag/hash-table) 
+- [数组](../../tags/array.md) 
+- [哈希表](../../tags/hash-table.md) 
 
 
 ## 相似题目

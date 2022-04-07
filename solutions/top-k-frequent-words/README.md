@@ -94,13 +94,13 @@ func topKFrequent(words []string, k int) []string {
 
 ## 相关话题
 
-- [字典树](https://leetcode-cn.com/tag/trie) 
-- [哈希表](https://leetcode-cn.com/tag/hash-table) 
-- [字符串](https://leetcode-cn.com/tag/string) 
-- [桶排序](https://leetcode-cn.com/tag/bucket-sort) 
-- [计数](https://leetcode-cn.com/tag/counting) 
-- [排序](https://leetcode-cn.com/tag/sorting) 
-- [堆（优先队列）](https://leetcode-cn.com/tag/heap-priority-queue) 
+- [字典树](../../tags/trie.md) 
+- [哈希表](../../tags/hash-table.md) 
+- [字符串](../../tags/string.md) 
+- [桶排序](../../tags/bucket-sort.md) 
+- [计数](../../tags/counting.md) 
+- [排序](../../tags/sorting.md) 
+- [堆（优先队列）](../../tags/heap-priority-queue.md) 
 
 
 ## 相似题目

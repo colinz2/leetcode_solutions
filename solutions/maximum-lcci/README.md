@@ -28,9 +28,9 @@ public:
 
 ## 相关话题
 
-- [位运算](https://leetcode-cn.com/tag/bit-manipulation) 
-- [脑筋急转弯](https://leetcode-cn.com/tag/brainteaser) 
-- [数学](https://leetcode-cn.com/tag/math) 
+- [位运算](../../tags/bit-manipulation.md) 
+- [脑筋急转弯](../../tags/brainteaser.md) 
+- [数学](../../tags/math.md) 
 
 
 ## 相似题目

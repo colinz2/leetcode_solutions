@@ -59,8 +59,8 @@ public:
 
 ## 相关话题
 
-- [深度优先搜索](https://leetcode-cn.com/tag/depth-first-search) 
-- [字典树](https://leetcode-cn.com/tag/trie) 
+- [深度优先搜索](../../tags/depth-first-search.md) 
+- [字典树](../../tags/trie.md) 
 
 
 ## 相似题目

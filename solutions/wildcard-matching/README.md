@@ -92,10 +92,10 @@ class Solution:
 
 ## 相关话题
 
-- [贪心](https://leetcode-cn.com/tag/greedy) 
-- [递归](https://leetcode-cn.com/tag/recursion) 
-- [字符串](https://leetcode-cn.com/tag/string) 
-- [动态规划](https://leetcode-cn.com/tag/dynamic-programming) 
+- [贪心](../../tags/greedy.md) 
+- [递归](../../tags/recursion.md) 
+- [字符串](../../tags/string.md) 
+- [动态规划](../../tags/dynamic-programming.md) 
 
 
 ## 相似题目

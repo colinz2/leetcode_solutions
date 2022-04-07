@@ -39,10 +39,10 @@ private:
 
 ## 相关话题
 
-- [设计](https://leetcode-cn.com/tag/design) 
-- [哈希表](https://leetcode-cn.com/tag/hash-table) 
-- [字符串](https://leetcode-cn.com/tag/string) 
-- [哈希函数](https://leetcode-cn.com/tag/hash-function) 
+- [设计](../../tags/design.md) 
+- [哈希表](../../tags/hash-table.md) 
+- [字符串](../../tags/string.md) 
+- [哈希函数](../../tags/hash-function.md) 
 
 
 ## 相似题目

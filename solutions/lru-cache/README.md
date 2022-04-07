@@ -148,10 +148,10 @@ private:
 
 ## 相关话题
 
-- [设计](https://leetcode-cn.com/tag/design) 
-- [哈希表](https://leetcode-cn.com/tag/hash-table) 
-- [链表](https://leetcode-cn.com/tag/linked-list) 
-- [双向链表](https://leetcode-cn.com/tag/doubly-linked-list) 
+- [设计](../../tags/design.md) 
+- [哈希表](../../tags/hash-table.md) 
+- [链表](../../tags/linked-list.md) 
+- [双向链表](../../tags/doubly-linked-list.md) 
 
 
 ## 相似题目

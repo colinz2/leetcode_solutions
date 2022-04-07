@@ -77,7 +77,7 @@ select (select DISTINCT  Salary from Employee ORDER BY Salary DESC limit 1, 1) a
 
 ## 相关话题
 
-- [数据库](https://leetcode-cn.com/tag/database) 
+- [数据库](../../tags/database.md) 
 
 
 ## 相似题目

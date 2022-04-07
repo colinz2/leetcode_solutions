@@ -83,11 +83,11 @@ public:
 
 ## 相关话题
 
-- [深度优先搜索](https://leetcode-cn.com/tag/depth-first-search) 
-- [广度优先搜索](https://leetcode-cn.com/tag/breadth-first-search) 
-- [并查集](https://leetcode-cn.com/tag/union-find) 
-- [数组](https://leetcode-cn.com/tag/array) 
-- [矩阵](https://leetcode-cn.com/tag/matrix) 
+- [深度优先搜索](../../tags/depth-first-search.md) 
+- [广度优先搜索](../../tags/breadth-first-search.md) 
+- [并查集](../../tags/union-find.md) 
+- [数组](../../tags/array.md) 
+- [矩阵](../../tags/matrix.md) 
 
 
 ## 相似题目

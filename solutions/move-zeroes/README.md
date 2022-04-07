@@ -39,6 +39,20 @@
 
 ## 题解
 
+### golang [🔗](move-zeroes.go) 
+```golang
+func moveZeroes(nums []int) {
+	k := 0
+	for i := range nums {
+		if nums[i] != 0 {
+			if i != k {
+				nums[i], nums[k] = nums[k], nums[i]
+			}
+			k++
+		}
+	}
+}
+```
 ### cpp [🔗](move-zeroes.cpp) 
 ```cpp
 class Solution {
@@ -56,26 +70,12 @@ public:
     }
 };
 ```
-### golang [🔗](move-zeroes.go) 
-```golang
-func moveZeroes(nums []int) {
-	k := 0
-	for i := range nums {
-		if nums[i] != 0 {
-			if i != k {
-				nums[i], nums[k] = nums[k], nums[i]
-			}
-			k++
-		}
-	}
-}
-```
 
 
 ## 相关话题
 
-- [数组](https://leetcode-cn.com/tag/array) 
-- [双指针](https://leetcode-cn.com/tag/two-pointers) 
+- [数组](../../tags/array.md) 
+- [双指针](../../tags/two-pointers.md) 
 
 
 ## 相似题目

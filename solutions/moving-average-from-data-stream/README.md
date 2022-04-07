@@ -87,10 +87,10 @@ func (this *MovingAverage) Next(val int) float64 {
 
 ## 相关话题
 
-- [设计](https://leetcode-cn.com/tag/design) 
-- [队列](https://leetcode-cn.com/tag/queue) 
-- [数组](https://leetcode-cn.com/tag/array) 
-- [数据流](https://leetcode-cn.com/tag/data-stream) 
+- [设计](../../tags/design.md) 
+- [队列](../../tags/queue.md) 
+- [数组](../../tags/array.md) 
+- [数据流](../../tags/data-stream.md) 
 
 
 ## 相似题目

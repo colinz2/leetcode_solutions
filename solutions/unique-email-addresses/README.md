@@ -57,6 +57,33 @@
 
 ## 题解
 
+### cpp [🔗](unique-email-addresses.cpp) 
+```cpp
+class Solution {
+public:
+    int numUniqueEmails(vector<string>& emails) {
+        unordered_set<string> rd;
+        for (string email : emails) {
+            auto at = email.find("@");
+            if (at == string::npos) {
+                continue;
+            }
+            string name = email.substr(0, at);
+            auto plus = name.find('+');
+            if (plus != string::npos) {
+                name = name.substr(0, plus);
+            }
+            string res = "";
+            for (char c: name)
+                if (c != '.')
+                    res += c;
+            res += email.substr(at);
+            rd.insert(res);
+        }
+        return rd.size();
+    }
+};
+```
 ### golang [🔗](unique-email-addresses.go) 
 ```golang
 func numUniqueEmails(emails []string) int {
@@ -91,40 +118,13 @@ class Solution:
             seen.add("@".join(sep))
         return len(seen)
 ```
-### cpp [🔗](unique-email-addresses.cpp) 
-```cpp
-class Solution {
-public:
-    int numUniqueEmails(vector<string>& emails) {
-        unordered_set<string> rd;
-        for (string email : emails) {
-            auto at = email.find("@");
-            if (at == string::npos) {
-                continue;
-            }
-            string name = email.substr(0, at);
-            auto plus = name.find('+');
-            if (plus != string::npos) {
-                name = name.substr(0, plus);
-            }
-            string res = "";
-            for (char c: name)
-                if (c != '.')
-                    res += c;
-            res += email.substr(at);
-            rd.insert(res);
-        }
-        return rd.size();
-    }
-};
-```
 
 
 ## 相关话题
 
-- [数组](https://leetcode-cn.com/tag/array) 
-- [哈希表](https://leetcode-cn.com/tag/hash-table) 
-- [字符串](https://leetcode-cn.com/tag/string) 
+- [数组](../../tags/array.md) 
+- [哈希表](../../tags/hash-table.md) 
+- [字符串](../../tags/string.md) 
 
 
 ## 相似题目

@@ -35,7 +35,7 @@ public:
 
 ## 相关话题
 
-- [字符串](https://leetcode-cn.com/tag/string) 
+- [字符串](../../tags/string.md) 
 
 
 ## 相似题目

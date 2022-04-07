@@ -125,9 +125,9 @@ public:
 
 ## 相关话题
 
-- [数组](https://leetcode-cn.com/tag/array) 
-- [二分查找](https://leetcode-cn.com/tag/binary-search) 
-- [交互](https://leetcode-cn.com/tag/interactive) 
+- [数组](../../tags/array.md) 
+- [二分查找](../../tags/binary-search.md) 
+- [交互](../../tags/interactive.md) 
 
 
 ## 相似题目

@@ -51,26 +51,6 @@
 
 ## 题解
 
-### cpp [🔗](longest-common-subsequence.cpp) 
-```cpp
-class Solution {
-public:
-    int longestCommonSubsequence(string text1, string text2) {
-        vector<vector<int>> dp(text1.size()+1, vector<int>(text2.size()+1));
-        for (int i = 1; i <= text1.size(); i++) {
-            for (int j = 1; j <= text2.size(); j++) {
-                if (text1[i-1] == text2[j-1]) {
-                    dp[i][j] = dp[i-1][j-1] + 1;
-                } else {
-                    dp[i][j] = std::max(dp[i][j-1], dp[i-1][j]);
-                }
-            }
-        }
-
-        return dp.back().back();
-    }
-};
-```
 ### golang [🔗](longest-common-subsequence.go) 
 ```golang
 func longestCommonSubsequence(text1 string, text2 string) int {
@@ -106,12 +86,32 @@ func max(a, b int) int {
     return b
 }
 ```
+### cpp [🔗](longest-common-subsequence.cpp) 
+```cpp
+class Solution {
+public:
+    int longestCommonSubsequence(string text1, string text2) {
+        vector<vector<int>> dp(text1.size()+1, vector<int>(text2.size()+1));
+        for (int i = 1; i <= text1.size(); i++) {
+            for (int j = 1; j <= text2.size(); j++) {
+                if (text1[i-1] == text2[j-1]) {
+                    dp[i][j] = dp[i-1][j-1] + 1;
+                } else {
+                    dp[i][j] = std::max(dp[i][j-1], dp[i-1][j]);
+                }
+            }
+        }
+
+        return dp.back().back();
+    }
+};
+```
 
 
 ## 相关话题
 
-- [字符串](https://leetcode-cn.com/tag/string) 
-- [动态规划](https://leetcode-cn.com/tag/dynamic-programming) 
+- [字符串](../../tags/string.md) 
+- [动态规划](../../tags/dynamic-programming.md) 
 
 
 ## 相似题目

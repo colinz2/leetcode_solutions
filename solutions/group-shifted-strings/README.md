@@ -52,9 +52,9 @@ public:
 
 ## 相关话题
 
-- [数组](https://leetcode-cn.com/tag/array) 
-- [哈希表](https://leetcode-cn.com/tag/hash-table) 
-- [字符串](https://leetcode-cn.com/tag/string) 
+- [数组](../../tags/array.md) 
+- [哈希表](../../tags/hash-table.md) 
+- [字符串](../../tags/string.md) 
 
 
 ## 相似题目

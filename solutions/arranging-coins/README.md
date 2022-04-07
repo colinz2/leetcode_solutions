@@ -59,8 +59,8 @@ public:
 
 ## 相关话题
 
-- [数学](https://leetcode-cn.com/tag/math) 
-- [二分查找](https://leetcode-cn.com/tag/binary-search) 
+- [数学](../../tags/math.md) 
+- [二分查找](../../tags/binary-search.md) 
 
 
 ## 相似题目

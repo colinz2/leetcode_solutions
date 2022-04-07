@@ -83,9 +83,9 @@ public:
 
 ## 相关话题
 
-- [贪心](https://leetcode-cn.com/tag/greedy) 
-- [数组](https://leetcode-cn.com/tag/array) 
-- [动态规划](https://leetcode-cn.com/tag/dynamic-programming) 
+- [贪心](../../tags/greedy.md) 
+- [数组](../../tags/array.md) 
+- [动态规划](../../tags/dynamic-programming.md) 
 
 
 ## 相似题目

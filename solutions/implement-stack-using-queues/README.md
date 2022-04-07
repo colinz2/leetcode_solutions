@@ -157,9 +157,9 @@ func (this *MyStack) Empty() bool {
 
 ## 相关话题
 
-- [栈](https://leetcode-cn.com/tag/stack) 
-- [设计](https://leetcode-cn.com/tag/design) 
-- [队列](https://leetcode-cn.com/tag/queue) 
+- [栈](../../tags/stack.md) 
+- [设计](../../tags/design.md) 
+- [队列](../../tags/queue.md) 
 
 
 ## 相似题目

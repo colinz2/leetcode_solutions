@@ -195,10 +195,10 @@ private:
 
 ## 相关话题
 
-- [设计](https://leetcode-cn.com/tag/design) 
-- [哈希表](https://leetcode-cn.com/tag/hash-table) 
-- [链表](https://leetcode-cn.com/tag/linked-list) 
-- [堆（优先队列）](https://leetcode-cn.com/tag/heap-priority-queue) 
+- [设计](../../tags/design.md) 
+- [哈希表](../../tags/hash-table.md) 
+- [链表](../../tags/linked-list.md) 
+- [堆（优先队列）](../../tags/heap-priority-queue.md) 
 
 
 ## 相似题目

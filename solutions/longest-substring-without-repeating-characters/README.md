@@ -44,30 +44,6 @@
 
 ## 题解
 
-### cpp [🔗](longest-substring-without-repeating-characters.cpp) 
-```cpp
-class Solution {
-public:
-    int lengthOfLongestSubstring(string s) {
-        bool exists[256] = {false};
-        int left = 0, right = 0;
-        int max_len = 0;
-
-        while (right < s.size()) {
-            int next = s[right];
-            if (!exists[next]) {
-                exists[s[right]] = true;
-                max_len = std::max(max_len, right - left + 1);
-                right++;
-            } else {
-                exists[s[left]] = false;
-                left++;
-            }
-        }
-        return max_len;
-    }
-};
-```
 ### c [🔗](longest-substring-without-repeating-characters.c) 
 ```c
 int lengthOfLongestSubstring(char * s){
@@ -92,13 +68,37 @@ int lengthOfLongestSubstring(char * s){
     return max_len;
 }
 ```
+### cpp [🔗](longest-substring-without-repeating-characters.cpp) 
+```cpp
+class Solution {
+public:
+    int lengthOfLongestSubstring(string s) {
+        bool exists[256] = {false};
+        int left = 0, right = 0;
+        int max_len = 0;
+
+        while (right < s.size()) {
+            int next = s[right];
+            if (!exists[next]) {
+                exists[s[right]] = true;
+                max_len = std::max(max_len, right - left + 1);
+                right++;
+            } else {
+                exists[s[left]] = false;
+                left++;
+            }
+        }
+        return max_len;
+    }
+};
+```
 
 
 ## 相关话题
 
-- [哈希表](https://leetcode-cn.com/tag/hash-table) 
-- [字符串](https://leetcode-cn.com/tag/string) 
-- [滑动窗口](https://leetcode-cn.com/tag/sliding-window) 
+- [哈希表](../../tags/hash-table.md) 
+- [字符串](../../tags/string.md) 
+- [滑动窗口](../../tags/sliding-window.md) 
 
 
 ## 相似题目

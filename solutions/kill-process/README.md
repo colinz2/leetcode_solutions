@@ -100,11 +100,11 @@ func killProcess(pid []int, ppid []int, kill int) []int {
 
 ## 相关话题
 
-- [树](https://leetcode-cn.com/tag/tree) 
-- [深度优先搜索](https://leetcode-cn.com/tag/depth-first-search) 
-- [广度优先搜索](https://leetcode-cn.com/tag/breadth-first-search) 
-- [数组](https://leetcode-cn.com/tag/array) 
-- [哈希表](https://leetcode-cn.com/tag/hash-table) 
+- [树](../../tags/tree.md) 
+- [深度优先搜索](../../tags/depth-first-search.md) 
+- [广度优先搜索](../../tags/breadth-first-search.md) 
+- [数组](../../tags/array.md) 
+- [哈希表](../../tags/hash-table.md) 
 
 
 ## 相似题目

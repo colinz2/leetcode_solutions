@@ -84,9 +84,9 @@ class Solution {
 
 ## 相关话题
 
-- [数组](https://leetcode-cn.com/tag/array) 
-- [动态规划](https://leetcode-cn.com/tag/dynamic-programming) 
-- [矩阵](https://leetcode-cn.com/tag/matrix) 
+- [数组](../../tags/array.md) 
+- [动态规划](../../tags/dynamic-programming.md) 
+- [矩阵](../../tags/matrix.md) 
 
 
 ## 相似题目

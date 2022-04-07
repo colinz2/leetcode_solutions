@@ -132,11 +132,11 @@ private:
 
 ## 相关话题
 
-- [设计](https://leetcode-cn.com/tag/design) 
-- [数组](https://leetcode-cn.com/tag/array) 
-- [哈希表](https://leetcode-cn.com/tag/hash-table) 
-- [链表](https://leetcode-cn.com/tag/linked-list) 
-- [哈希函数](https://leetcode-cn.com/tag/hash-function) 
+- [设计](../../tags/design.md) 
+- [数组](../../tags/array.md) 
+- [哈希表](../../tags/hash-table.md) 
+- [链表](../../tags/linked-list.md) 
+- [哈希函数](../../tags/hash-function.md) 
 
 
 ## 相似题目

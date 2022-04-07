@@ -28,17 +28,6 @@
 
 ## 题解
 
-### python3 [🔗](sort-array-by-parity.py) 
-```python3
-class Solution:
-    def sortArrayByParity(self, nums: List[int]) -> List[int]:
-        j = 0
-        for i in range(len(nums)):
-            if nums[i] % 2 == 0:
-                nums[i], nums[j] = nums[j], nums[i]
-                j += 1
-        return nums
-```
 ### cpp [🔗](sort-array-by-parity.cpp) 
 ```cpp
 class Solution {
@@ -75,13 +64,24 @@ class Solution {
 }
 
 ```
+### python3 [🔗](sort-array-by-parity.py) 
+```python3
+class Solution:
+    def sortArrayByParity(self, nums: List[int]) -> List[int]:
+        j = 0
+        for i in range(len(nums)):
+            if nums[i] % 2 == 0:
+                nums[i], nums[j] = nums[j], nums[i]
+                j += 1
+        return nums
+```
 
 
 ## 相关话题
 
-- [数组](https://leetcode-cn.com/tag/array) 
-- [双指针](https://leetcode-cn.com/tag/two-pointers) 
-- [排序](https://leetcode-cn.com/tag/sorting) 
+- [数组](../../tags/array.md) 
+- [双指针](../../tags/two-pointers.md) 
+- [排序](../../tags/sorting.md) 
 
 
 ## 相似题目

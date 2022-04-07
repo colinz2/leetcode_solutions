@@ -56,6 +56,19 @@
 
 ## 题解
 
+### cpp [🔗](counting-bits.cpp) 
+```cpp
+class Solution {
+public:
+    vector<int> countBits(int n) {
+        vector<int> bits(n + 1);
+        for (int i = 1; i <= n; i++) {
+            bits[i] = bits[i & (i - 1)] + 1;
+        }
+        return bits;
+    }
+};
+```
 ### golang [🔗](counting-bits.go) 
 ```golang
 func countBits(n int) []int {
@@ -75,25 +88,12 @@ func bitCount(n int) int {
     return cnt
 }
 ```
-### cpp [🔗](counting-bits.cpp) 
-```cpp
-class Solution {
-public:
-    vector<int> countBits(int n) {
-        vector<int> bits(n + 1);
-        for (int i = 1; i <= n; i++) {
-            bits[i] = bits[i & (i - 1)] + 1;
-        }
-        return bits;
-    }
-};
-```
 
 
 ## 相关话题
 
-- [位运算](https://leetcode-cn.com/tag/bit-manipulation) 
-- [动态规划](https://leetcode-cn.com/tag/dynamic-programming) 
+- [位运算](../../tags/bit-manipulation.md) 
+- [动态规划](../../tags/dynamic-programming.md) 
 
 
 ## 相似题目

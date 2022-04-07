@@ -39,18 +39,6 @@
 
 ## 题解
 
-### c [🔗](hamming-distance.c) 
-```c
-int hammingDistance(int x, int y) {
-    int z = x ^ y;
-    int distance = 0;
-    while (z > 0) {
-        distance += z & 1;
-        z = z >> 1;
-    }
-    return distance;
-}
-```
 ### cpp [🔗](hamming-distance.cpp) 
 ```cpp
 class Solution {
@@ -98,11 +86,23 @@ class Solution:
         return d
         
 ```
+### c [🔗](hamming-distance.c) 
+```c
+int hammingDistance(int x, int y) {
+    int z = x ^ y;
+    int distance = 0;
+    while (z > 0) {
+        distance += z & 1;
+        z = z >> 1;
+    }
+    return distance;
+}
+```
 
 
 ## 相关话题
 
-- [位运算](https://leetcode-cn.com/tag/bit-manipulation) 
+- [位运算](../../tags/bit-manipulation.md) 
 
 
 ## 相似题目

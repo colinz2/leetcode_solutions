@@ -63,8 +63,8 @@ public:
 
 ## 相关话题
 
-- [数组](https://leetcode-cn.com/tag/array) 
-- [排序](https://leetcode-cn.com/tag/sorting) 
+- [数组](../../tags/array.md) 
+- [排序](../../tags/sorting.md) 
 
 
 ## 相似题目

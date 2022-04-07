@@ -67,9 +67,9 @@ public:
 
 ## 相关话题
 
-- [数组](https://leetcode-cn.com/tag/array) 
-- [数学](https://leetcode-cn.com/tag/math) 
-- [矩阵](https://leetcode-cn.com/tag/matrix) 
+- [数组](../../tags/array.md) 
+- [数学](../../tags/math.md) 
+- [矩阵](../../tags/matrix.md) 
 
 
 ## 相似题目

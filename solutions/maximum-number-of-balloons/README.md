@@ -61,9 +61,9 @@ public:
 
 ## 相关话题
 
-- [哈希表](https://leetcode-cn.com/tag/hash-table) 
-- [字符串](https://leetcode-cn.com/tag/string) 
-- [计数](https://leetcode-cn.com/tag/counting) 
+- [哈希表](../../tags/hash-table.md) 
+- [字符串](../../tags/string.md) 
+- [计数](../../tags/counting.md) 
 
 
 ## 相似题目

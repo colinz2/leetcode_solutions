@@ -89,12 +89,12 @@ private:
 
 ## 相关话题
 
-- [树](https://leetcode-cn.com/tag/tree) 
-- [设计](https://leetcode-cn.com/tag/design) 
-- [二叉搜索树](https://leetcode-cn.com/tag/binary-search-tree) 
-- [二叉树](https://leetcode-cn.com/tag/binary-tree) 
-- [数据流](https://leetcode-cn.com/tag/data-stream) 
-- [堆（优先队列）](https://leetcode-cn.com/tag/heap-priority-queue) 
+- [树](../../tags/tree.md) 
+- [设计](../../tags/design.md) 
+- [二叉搜索树](../../tags/binary-search-tree.md) 
+- [二叉树](../../tags/binary-tree.md) 
+- [数据流](../../tags/data-stream.md) 
+- [堆（优先队列）](../../tags/heap-priority-queue.md) 
 
 
 ## 相似题目

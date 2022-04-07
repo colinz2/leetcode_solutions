@@ -74,8 +74,8 @@ public:
 
 ## 相关话题
 
-- [数组](https://leetcode-cn.com/tag/array) 
-- [数学](https://leetcode-cn.com/tag/math) 
+- [数组](../../tags/array.md) 
+- [数学](../../tags/math.md) 
 
 
 ## 相似题目

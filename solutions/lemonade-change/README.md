@@ -87,8 +87,8 @@ public:
 
 ## 相关话题
 
-- [贪心](https://leetcode-cn.com/tag/greedy) 
-- [数组](https://leetcode-cn.com/tag/array) 
+- [贪心](../../tags/greedy.md) 
+- [数组](../../tags/array.md) 
 
 
 ## 相似题目

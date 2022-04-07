@@ -62,9 +62,9 @@ class Solution:
 
 ## 相关话题
 
-- [位运算](https://leetcode-cn.com/tag/bit-manipulation) 
-- [数学](https://leetcode-cn.com/tag/math) 
-- [回溯](https://leetcode-cn.com/tag/backtracking) 
+- [位运算](../../tags/bit-manipulation.md) 
+- [数学](../../tags/math.md) 
+- [回溯](../../tags/backtracking.md) 
 
 
 ## 相似题目

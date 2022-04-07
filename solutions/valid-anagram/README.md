@@ -38,37 +38,6 @@
 
 ## 题解
 
-### golang [🔗](valid-anagram.go) 
-```golang
-func isAnagram(s string, t string) bool {
-    cntMap := make(map[rune]int)
-    if len(s) != len(t) {
-        return false
-    }
-
-    for _, c := range s {
-        cntMap[c]++
-    }
-
-    for _, c := range t {
-        cntMap[c]--
-    }
-
-    for _, v := range cntMap {
-        if v != 0 {
-            return false
-        }
-    }
-
-    return true
-}
-```
-### python3 [🔗](valid-anagram.py) 
-```python3
-class Solution:
-    def isAnagram(self, s: str, t: str) -> bool:
-        return sorted(s) == sorted(t)
-```
 ### c [🔗](valid-anagram.c) 
 ```c
 bool is_all_zero(int *array, int len) {
@@ -109,13 +78,44 @@ public:
     }
 };
 ```
+### golang [🔗](valid-anagram.go) 
+```golang
+func isAnagram(s string, t string) bool {
+    cntMap := make(map[rune]int)
+    if len(s) != len(t) {
+        return false
+    }
+
+    for _, c := range s {
+        cntMap[c]++
+    }
+
+    for _, c := range t {
+        cntMap[c]--
+    }
+
+    for _, v := range cntMap {
+        if v != 0 {
+            return false
+        }
+    }
+
+    return true
+}
+```
+### python3 [🔗](valid-anagram.py) 
+```python3
+class Solution:
+    def isAnagram(self, s: str, t: str) -> bool:
+        return sorted(s) == sorted(t)
+```
 
 
 ## 相关话题
 
-- [哈希表](https://leetcode-cn.com/tag/hash-table) 
-- [字符串](https://leetcode-cn.com/tag/string) 
-- [排序](https://leetcode-cn.com/tag/sorting) 
+- [哈希表](../../tags/hash-table.md) 
+- [字符串](../../tags/string.md) 
+- [排序](../../tags/sorting.md) 
 
 
 ## 相似题目

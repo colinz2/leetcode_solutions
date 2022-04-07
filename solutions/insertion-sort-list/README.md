@@ -87,8 +87,8 @@ public:
 
 ## 相关话题
 
-- [链表](https://leetcode-cn.com/tag/linked-list) 
-- [排序](https://leetcode-cn.com/tag/sorting) 
+- [链表](../../tags/linked-list.md) 
+- [排序](../../tags/sorting.md) 
 
 
 ## 相似题目

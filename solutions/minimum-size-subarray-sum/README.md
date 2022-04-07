@@ -82,10 +82,10 @@ public:
 
 ## 相关话题
 
-- [数组](https://leetcode-cn.com/tag/array) 
-- [二分查找](https://leetcode-cn.com/tag/binary-search) 
-- [前缀和](https://leetcode-cn.com/tag/prefix-sum) 
-- [滑动窗口](https://leetcode-cn.com/tag/sliding-window) 
+- [数组](../../tags/array.md) 
+- [二分查找](../../tags/binary-search.md) 
+- [前缀和](../../tags/prefix-sum.md) 
+- [滑动窗口](../../tags/sliding-window.md) 
 
 
 ## 相似题目

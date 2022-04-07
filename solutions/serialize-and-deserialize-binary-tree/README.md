@@ -107,12 +107,12 @@ public:
 
 ## 相关话题
 
-- [树](https://leetcode-cn.com/tag/tree) 
-- [深度优先搜索](https://leetcode-cn.com/tag/depth-first-search) 
-- [广度优先搜索](https://leetcode-cn.com/tag/breadth-first-search) 
-- [设计](https://leetcode-cn.com/tag/design) 
-- [字符串](https://leetcode-cn.com/tag/string) 
-- [二叉树](https://leetcode-cn.com/tag/binary-tree) 
+- [树](../../tags/tree.md) 
+- [深度优先搜索](../../tags/depth-first-search.md) 
+- [广度优先搜索](../../tags/breadth-first-search.md) 
+- [设计](../../tags/design.md) 
+- [字符串](../../tags/string.md) 
+- [二叉树](../../tags/binary-tree.md) 
 
 
 ## 相似题目

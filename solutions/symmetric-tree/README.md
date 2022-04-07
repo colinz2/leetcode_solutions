@@ -37,39 +37,6 @@
 
 ## 题解
 
-### golang [🔗](symmetric-tree.go) 
-```golang
-/**
- * Definition for a binary tree node.
- * type TreeNode struct {
- *     Val int
- *     Left *TreeNode
- *     Right *TreeNode
- * }
- */
-func isSymmetric(root *TreeNode) bool {
-    if root == nil {
-        return true
-    }
-    return isSym(root.Left, root.Right)
-}
-
-func isSym(left, right *TreeNode) bool {
-    if left == nil && right ==  nil {
-        return true
-    } 
-
-    if left == nil || right == nil  {
-        return false
-    }
-
-    if left.Val != right.Val {
-        return false
-    } else {
-        return isSym(left.Left, right.Right) && isSym(left.Right, right.Left)
-    }
-}
-```
 ### cpp [🔗](symmetric-tree.cpp) 
 ```cpp
 /**
@@ -109,14 +76,47 @@ private:
     }
 };
 ```
+### golang [🔗](symmetric-tree.go) 
+```golang
+/**
+ * Definition for a binary tree node.
+ * type TreeNode struct {
+ *     Val int
+ *     Left *TreeNode
+ *     Right *TreeNode
+ * }
+ */
+func isSymmetric(root *TreeNode) bool {
+    if root == nil {
+        return true
+    }
+    return isSym(root.Left, root.Right)
+}
+
+func isSym(left, right *TreeNode) bool {
+    if left == nil && right ==  nil {
+        return true
+    } 
+
+    if left == nil || right == nil  {
+        return false
+    }
+
+    if left.Val != right.Val {
+        return false
+    } else {
+        return isSym(left.Left, right.Right) && isSym(left.Right, right.Left)
+    }
+}
+```
 
 
 ## 相关话题
 
-- [树](https://leetcode-cn.com/tag/tree) 
-- [深度优先搜索](https://leetcode-cn.com/tag/depth-first-search) 
-- [广度优先搜索](https://leetcode-cn.com/tag/breadth-first-search) 
-- [二叉树](https://leetcode-cn.com/tag/binary-tree) 
+- [树](../../tags/tree.md) 
+- [深度优先搜索](../../tags/depth-first-search.md) 
+- [广度优先搜索](../../tags/breadth-first-search.md) 
+- [二叉树](../../tags/binary-tree.md) 
 
 
 ## 相似题目

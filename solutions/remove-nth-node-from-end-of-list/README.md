@@ -46,6 +46,34 @@
 
 ## 题解
 
+### c [🔗](remove-nth-node-from-end-of-list.c) 
+```c
+/**
+ * Definition for singly-linked list.
+ * struct ListNode {
+ *     int val;
+ *     struct ListNode *next;
+ * };
+ */
+
+
+struct ListNode* removeNthFromEnd(struct ListNode* head, int n){
+    struct ListNode* fast = head;
+    struct ListNode dummy = {.next = head};
+    for (int i = 0; i < n; i++) {
+        fast = fast->next;
+    }
+    struct ListNode* pre = &dummy;
+    while (fast) {
+        fast = fast->next;
+        pre = head;
+        head = head->next;
+    }
+    pre->next = head->next;
+    free(head);
+    return dummy.next;
+}
+```
 ### cpp [🔗](remove-nth-node-from-end-of-list.cpp) 
 ```cpp
 /**
@@ -83,40 +111,12 @@ public:
     }
 };
 ```
-### c [🔗](remove-nth-node-from-end-of-list.c) 
-```c
-/**
- * Definition for singly-linked list.
- * struct ListNode {
- *     int val;
- *     struct ListNode *next;
- * };
- */
-
-
-struct ListNode* removeNthFromEnd(struct ListNode* head, int n){
-    struct ListNode* fast = head;
-    struct ListNode dummy = {.next = head};
-    for (int i = 0; i < n; i++) {
-        fast = fast->next;
-    }
-    struct ListNode* pre = &dummy;
-    while (fast) {
-        fast = fast->next;
-        pre = head;
-        head = head->next;
-    }
-    pre->next = head->next;
-    free(head);
-    return dummy.next;
-}
-```
 
 
 ## 相关话题
 
-- [链表](https://leetcode-cn.com/tag/linked-list) 
-- [双指针](https://leetcode-cn.com/tag/two-pointers) 
+- [链表](../../tags/linked-list.md) 
+- [双指针](../../tags/two-pointers.md) 
 
 
 ## 相似题目

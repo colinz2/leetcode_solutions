@@ -39,23 +39,6 @@
 
 ## 题解
 
-### java [🔗](daily-temperatures.java) 
-```java
-class Solution {
-    public int[] dailyTemperatures(int[] T) {
-        int[] res = new int[T.length];
-        for (int i = 0; i < T.length; i++) {
-            for (int j =  i + 1; j < T.length; j++) {
-                if (T[j] > T[i]) {
-                    res[i] = j - i;
-                    break;
-                }
-            }
-        }
-        return res;
-    }
-}
-```
 ### c [🔗](daily-temperatures.c) 
 ```c
 /**
@@ -136,13 +119,30 @@ func dailyTemperatures(temperatures []int) []int {
     return res
 }
 ```
+### java [🔗](daily-temperatures.java) 
+```java
+class Solution {
+    public int[] dailyTemperatures(int[] T) {
+        int[] res = new int[T.length];
+        for (int i = 0; i < T.length; i++) {
+            for (int j =  i + 1; j < T.length; j++) {
+                if (T[j] > T[i]) {
+                    res[i] = j - i;
+                    break;
+                }
+            }
+        }
+        return res;
+    }
+}
+```
 
 
 ## 相关话题
 
-- [栈](https://leetcode-cn.com/tag/stack) 
-- [数组](https://leetcode-cn.com/tag/array) 
-- [单调栈](https://leetcode-cn.com/tag/monotonic-stack) 
+- [栈](../../tags/stack.md) 
+- [数组](../../tags/array.md) 
+- [单调栈](../../tags/monotonic-stack.md) 
 
 
 ## 相似题目

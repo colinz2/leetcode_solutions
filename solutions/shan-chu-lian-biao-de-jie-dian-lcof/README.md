@@ -66,7 +66,7 @@ struct ListNode* deleteNode(struct ListNode* head, int val){
 
 ## 相关话题
 
-- [链表](https://leetcode-cn.com/tag/linked-list) 
+- [链表](../../tags/linked-list.md) 
 
 
 ## 相似题目

@@ -52,6 +52,29 @@ class Node {
 
 ## 题解
 
+### golang [🔗](clone-n-ary-tree.go) 
+```golang
+/**
+ * Definition for a Node.
+ * type Node struct {
+ *     Val int
+ *     Children []*Node
+ * }
+ */
+
+func cloneTree(root *Node) *Node {
+	if root == nil {
+        return nil
+    }
+    newRoot := new(Node)
+    newRoot.Val = root.Val
+    for _, ch := range root.Children {
+        newRoot.Children = append(newRoot.Children, cloneTree(ch))
+    }
+
+    return newRoot
+}
+```
 ### cpp [🔗](clone-n-ary-tree.cpp) 
 ```cpp
 /*
@@ -89,37 +112,14 @@ public:
     }
 };
 ```
-### golang [🔗](clone-n-ary-tree.go) 
-```golang
-/**
- * Definition for a Node.
- * type Node struct {
- *     Val int
- *     Children []*Node
- * }
- */
-
-func cloneTree(root *Node) *Node {
-	if root == nil {
-        return nil
-    }
-    newRoot := new(Node)
-    newRoot.Val = root.Val
-    for _, ch := range root.Children {
-        newRoot.Children = append(newRoot.Children, cloneTree(ch))
-    }
-
-    return newRoot
-}
-```
 
 
 ## 相关话题
 
-- [树](https://leetcode-cn.com/tag/tree) 
-- [深度优先搜索](https://leetcode-cn.com/tag/depth-first-search) 
-- [广度优先搜索](https://leetcode-cn.com/tag/breadth-first-search) 
-- [哈希表](https://leetcode-cn.com/tag/hash-table) 
+- [树](../../tags/tree.md) 
+- [深度优先搜索](../../tags/depth-first-search.md) 
+- [广度优先搜索](../../tags/breadth-first-search.md) 
+- [哈希表](../../tags/hash-table.md) 
 
 
 ## 相似题目

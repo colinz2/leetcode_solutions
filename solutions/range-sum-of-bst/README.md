@@ -35,41 +35,6 @@
 
 ## 题解
 
-### cpp [🔗](range-sum-of-bst.cpp) 
-```cpp
-/**
- * Definition for a binary tree node.
- * struct TreeNode {
- *     int val;
- *     TreeNode *left;
- *     TreeNode *right;
- *     TreeNode() : val(0), left(nullptr), right(nullptr) {}
- *     TreeNode(int x) : val(x), left(nullptr), right(nullptr) {}
- *     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
- * };
- */
-class Solution {
-public:
-    int rangeSumBST(TreeNode* root, int low, int high) {
-        int res = 0;
-        dfs(root, low, high, res);
-        return res;
-    }
-
-    void dfs(TreeNode* root, int low, int high, int& res) {
-        if (root == nullptr) return;
-        if (root->val >= low && root->val <= high) {
-            res += root->val;
-            dfs(root->left, low, high, res);
-            dfs(root->right, low, high, res);
-        } else if (root->val < low) {
-            dfs(root->right, low, high, res);
-        } else {
-            dfs(root->left, low, high, res);
-        }
-    }
-};
-```
 ### golang [🔗](range-sum-of-bst.go) 
 ```golang
 /**
@@ -123,14 +88,49 @@ int rangeSumBST(struct TreeNode* root, int low, int high){
     return root->val + rangeSumBST(root->left, low, high) + rangeSumBST(root->right, low, high);
 }
 ```
+### cpp [🔗](range-sum-of-bst.cpp) 
+```cpp
+/**
+ * Definition for a binary tree node.
+ * struct TreeNode {
+ *     int val;
+ *     TreeNode *left;
+ *     TreeNode *right;
+ *     TreeNode() : val(0), left(nullptr), right(nullptr) {}
+ *     TreeNode(int x) : val(x), left(nullptr), right(nullptr) {}
+ *     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
+ * };
+ */
+class Solution {
+public:
+    int rangeSumBST(TreeNode* root, int low, int high) {
+        int res = 0;
+        dfs(root, low, high, res);
+        return res;
+    }
+
+    void dfs(TreeNode* root, int low, int high, int& res) {
+        if (root == nullptr) return;
+        if (root->val >= low && root->val <= high) {
+            res += root->val;
+            dfs(root->left, low, high, res);
+            dfs(root->right, low, high, res);
+        } else if (root->val < low) {
+            dfs(root->right, low, high, res);
+        } else {
+            dfs(root->left, low, high, res);
+        }
+    }
+};
+```
 
 
 ## 相关话题
 
-- [树](https://leetcode-cn.com/tag/tree) 
-- [深度优先搜索](https://leetcode-cn.com/tag/depth-first-search) 
-- [二叉搜索树](https://leetcode-cn.com/tag/binary-search-tree) 
-- [二叉树](https://leetcode-cn.com/tag/binary-tree) 
+- [树](../../tags/tree.md) 
+- [深度优先搜索](../../tags/depth-first-search.md) 
+- [二叉搜索树](../../tags/binary-search-tree.md) 
+- [二叉树](../../tags/binary-tree.md) 
 
 
 ## 相似题目

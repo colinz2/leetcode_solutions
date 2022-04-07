@@ -63,9 +63,9 @@ bool canWinNim(int n){
 
 ## 相关话题
 
-- [脑筋急转弯](https://leetcode-cn.com/tag/brainteaser) 
-- [数学](https://leetcode-cn.com/tag/math) 
-- [博弈](https://leetcode-cn.com/tag/game-theory) 
+- [脑筋急转弯](../../tags/brainteaser.md) 
+- [数学](../../tags/math.md) 
+- [博弈](../../tags/game-theory.md) 
 
 
 ## 相似题目

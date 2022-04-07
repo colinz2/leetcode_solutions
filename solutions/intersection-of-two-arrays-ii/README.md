@@ -69,11 +69,11 @@ public:
 
 ## 相关话题
 
-- [数组](https://leetcode-cn.com/tag/array) 
-- [哈希表](https://leetcode-cn.com/tag/hash-table) 
-- [双指针](https://leetcode-cn.com/tag/two-pointers) 
-- [二分查找](https://leetcode-cn.com/tag/binary-search) 
-- [排序](https://leetcode-cn.com/tag/sorting) 
+- [数组](../../tags/array.md) 
+- [哈希表](../../tags/hash-table.md) 
+- [双指针](../../tags/two-pointers.md) 
+- [二分查找](../../tags/binary-search.md) 
+- [排序](../../tags/sorting.md) 
 
 
 ## 相似题目

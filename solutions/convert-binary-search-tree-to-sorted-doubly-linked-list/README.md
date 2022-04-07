@@ -113,13 +113,13 @@ public:
 
 ## 相关话题
 
-- [栈](https://leetcode-cn.com/tag/stack) 
-- [树](https://leetcode-cn.com/tag/tree) 
-- [深度优先搜索](https://leetcode-cn.com/tag/depth-first-search) 
-- [二叉搜索树](https://leetcode-cn.com/tag/binary-search-tree) 
-- [链表](https://leetcode-cn.com/tag/linked-list) 
-- [二叉树](https://leetcode-cn.com/tag/binary-tree) 
-- [双向链表](https://leetcode-cn.com/tag/doubly-linked-list) 
+- [栈](../../tags/stack.md) 
+- [树](../../tags/tree.md) 
+- [深度优先搜索](../../tags/depth-first-search.md) 
+- [二叉搜索树](../../tags/binary-search-tree.md) 
+- [链表](../../tags/linked-list.md) 
+- [二叉树](../../tags/binary-tree.md) 
+- [双向链表](../../tags/doubly-linked-list.md) 
 
 
 ## 相似题目

@@ -63,10 +63,10 @@ public:
 
 ## 相关话题
 
-- [数组](https://leetcode-cn.com/tag/array) 
-- [数学](https://leetcode-cn.com/tag/math) 
-- [枚举](https://leetcode-cn.com/tag/enumeration) 
-- [数论](https://leetcode-cn.com/tag/number-theory) 
+- [数组](../../tags/array.md) 
+- [数学](../../tags/math.md) 
+- [枚举](../../tags/enumeration.md) 
+- [数论](../../tags/number-theory.md) 
 
 
 ## 相似题目

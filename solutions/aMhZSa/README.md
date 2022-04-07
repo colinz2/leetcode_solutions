@@ -46,36 +46,6 @@
 
 ## 题解
 
-### cpp [🔗](aMhZSa.cpp) 
-```cpp
-/**
- * Definition for singly-linked list.
- * struct ListNode {
- *     int val;
- *     ListNode *next;
- *     ListNode() : val(0), next(nullptr) {}
- *     ListNode(int x) : val(x), next(nullptr) {}
- *     ListNode(int x, ListNode *next) : val(x), next(next) {}
- * };
- */
-class Solution {
-public:
-    bool isPalindrome(ListNode* head) {
-        vector<ListNode*> vec;
-        while (head) {
-            vec.emplace_back(head);
-            head = head->next;
-        }
-
-        for (int i = 0; i < vec.size()/2; i++) {
-            if (vec[i]->val != vec[vec.size() - 1 -i]->val) {
-                return false;
-            }
-        }
-        return true;
-    }
-};
-```
 ### c [🔗](aMhZSa.c) 
 ```c
 /**
@@ -113,14 +83,44 @@ bool isPalindrome(struct ListNode* head){
     return true;
 }
 ```
+### cpp [🔗](aMhZSa.cpp) 
+```cpp
+/**
+ * Definition for singly-linked list.
+ * struct ListNode {
+ *     int val;
+ *     ListNode *next;
+ *     ListNode() : val(0), next(nullptr) {}
+ *     ListNode(int x) : val(x), next(nullptr) {}
+ *     ListNode(int x, ListNode *next) : val(x), next(next) {}
+ * };
+ */
+class Solution {
+public:
+    bool isPalindrome(ListNode* head) {
+        vector<ListNode*> vec;
+        while (head) {
+            vec.emplace_back(head);
+            head = head->next;
+        }
+
+        for (int i = 0; i < vec.size()/2; i++) {
+            if (vec[i]->val != vec[vec.size() - 1 -i]->val) {
+                return false;
+            }
+        }
+        return true;
+    }
+};
+```
 
 
 ## 相关话题
 
-- [栈](https://leetcode-cn.com/tag/stack) 
-- [递归](https://leetcode-cn.com/tag/recursion) 
-- [链表](https://leetcode-cn.com/tag/linked-list) 
-- [双指针](https://leetcode-cn.com/tag/two-pointers) 
+- [栈](../../tags/stack.md) 
+- [递归](../../tags/recursion.md) 
+- [链表](../../tags/linked-list.md) 
+- [双指针](../../tags/two-pointers.md) 
 
 
 ## 相似题目

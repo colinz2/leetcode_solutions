@@ -98,9 +98,9 @@ public:
 
 ## 相关话题
 
-- [贪心](https://leetcode-cn.com/tag/greedy) 
-- [哈希表](https://leetcode-cn.com/tag/hash-table) 
-- [字符串](https://leetcode-cn.com/tag/string) 
+- [贪心](../../tags/greedy.md) 
+- [哈希表](../../tags/hash-table.md) 
+- [字符串](../../tags/string.md) 
 
 
 ## 相似题目

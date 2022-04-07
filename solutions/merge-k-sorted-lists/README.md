@@ -107,10 +107,10 @@ public:
 
 ## 相关话题
 
-- [链表](https://leetcode-cn.com/tag/linked-list) 
-- [分治](https://leetcode-cn.com/tag/divide-and-conquer) 
-- [堆（优先队列）](https://leetcode-cn.com/tag/heap-priority-queue) 
-- [归并排序](https://leetcode-cn.com/tag/merge-sort) 
+- [链表](../../tags/linked-list.md) 
+- [分治](../../tags/divide-and-conquer.md) 
+- [堆（优先队列）](../../tags/heap-priority-queue.md) 
+- [归并排序](../../tags/merge-sort.md) 
 
 
 ## 相似题目

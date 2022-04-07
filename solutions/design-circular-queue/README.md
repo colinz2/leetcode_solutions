@@ -112,10 +112,10 @@ private:
 
 ## 相关话题
 
-- [设计](https://leetcode-cn.com/tag/design) 
-- [队列](https://leetcode-cn.com/tag/queue) 
-- [数组](https://leetcode-cn.com/tag/array) 
-- [链表](https://leetcode-cn.com/tag/linked-list) 
+- [设计](../../tags/design.md) 
+- [队列](../../tags/queue.md) 
+- [数组](../../tags/array.md) 
+- [链表](../../tags/linked-list.md) 
 
 
 ## 相似题目

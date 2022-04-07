@@ -72,8 +72,8 @@ public:
 
 ## 相关话题
 
-- [字符串](https://leetcode-cn.com/tag/string) 
-- [字符串匹配](https://leetcode-cn.com/tag/string-matching) 
+- [字符串](../../tags/string.md) 
+- [字符串匹配](../../tags/string-matching.md) 
 
 
 ## 相似题目

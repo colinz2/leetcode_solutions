@@ -58,9 +58,9 @@ public:
 
 ## 相关话题
 
-- [记忆化搜索](https://leetcode-cn.com/tag/memoization) 
-- [数学](https://leetcode-cn.com/tag/math) 
-- [动态规划](https://leetcode-cn.com/tag/dynamic-programming) 
+- [记忆化搜索](../../tags/memoization.md) 
+- [数学](../../tags/math.md) 
+- [动态规划](../../tags/dynamic-programming.md) 
 
 
 ## 相似题目

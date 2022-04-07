@@ -64,9 +64,9 @@ public:
 
 ## 相关话题
 
-- [数组](https://leetcode-cn.com/tag/array) 
-- [二分查找](https://leetcode-cn.com/tag/binary-search) 
-- [分治](https://leetcode-cn.com/tag/divide-and-conquer) 
+- [数组](../../tags/array.md) 
+- [二分查找](../../tags/binary-search.md) 
+- [分治](../../tags/divide-and-conquer.md) 
 
 
 ## 相似题目

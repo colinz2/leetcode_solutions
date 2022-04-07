@@ -67,9 +67,9 @@ public:
 
 ## 相关话题
 
-- [贪心](https://leetcode-cn.com/tag/greedy) 
-- [数组](https://leetcode-cn.com/tag/array) 
-- [双指针](https://leetcode-cn.com/tag/two-pointers) 
+- [贪心](../../tags/greedy.md) 
+- [数组](../../tags/array.md) 
+- [双指针](../../tags/two-pointers.md) 
 
 
 ## 相似题目

@@ -85,10 +85,10 @@ public:
 
 ## 相关话题
 
-- [栈](https://leetcode-cn.com/tag/stack) 
-- [数组](https://leetcode-cn.com/tag/array) 
-- [哈希表](https://leetcode-cn.com/tag/hash-table) 
-- [单调栈](https://leetcode-cn.com/tag/monotonic-stack) 
+- [栈](../../tags/stack.md) 
+- [数组](../../tags/array.md) 
+- [哈希表](../../tags/hash-table.md) 
+- [单调栈](../../tags/monotonic-stack.md) 
 
 
 ## 相似题目

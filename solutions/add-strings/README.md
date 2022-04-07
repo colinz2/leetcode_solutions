@@ -79,9 +79,9 @@ public:
 
 ## 相关话题
 
-- [数学](https://leetcode-cn.com/tag/math) 
-- [字符串](https://leetcode-cn.com/tag/string) 
-- [模拟](https://leetcode-cn.com/tag/simulation) 
+- [数学](../../tags/math.md) 
+- [字符串](../../tags/string.md) 
+- [模拟](../../tags/simulation.md) 
 
 
 ## 相似题目

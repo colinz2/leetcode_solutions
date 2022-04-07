@@ -113,9 +113,9 @@ public:
 
 ## 相关话题
 
-- [栈](https://leetcode-cn.com/tag/stack) 
-- [数组](https://leetcode-cn.com/tag/array) 
-- [数学](https://leetcode-cn.com/tag/math) 
+- [栈](../../tags/stack.md) 
+- [数组](../../tags/array.md) 
+- [数学](../../tags/math.md) 
 
 
 ## 相似题目

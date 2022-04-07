@@ -67,9 +67,9 @@ public:
 
 ## 相关话题
 
-- [栈](https://leetcode-cn.com/tag/stack) 
-- [数组](https://leetcode-cn.com/tag/array) 
-- [单调栈](https://leetcode-cn.com/tag/monotonic-stack) 
+- [栈](../../tags/stack.md) 
+- [数组](../../tags/array.md) 
+- [单调栈](../../tags/monotonic-stack.md) 
 
 
 ## 相似题目

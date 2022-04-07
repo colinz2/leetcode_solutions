@@ -93,9 +93,9 @@ public:
 
 ## 相关话题
 
-- [栈](https://leetcode-cn.com/tag/stack) 
-- [链表](https://leetcode-cn.com/tag/linked-list) 
-- [双指针](https://leetcode-cn.com/tag/two-pointers) 
+- [栈](../../tags/stack.md) 
+- [链表](../../tags/linked-list.md) 
+- [双指针](../../tags/two-pointers.md) 
 
 
 ## 相似题目

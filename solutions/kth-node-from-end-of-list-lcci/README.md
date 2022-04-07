@@ -89,8 +89,8 @@ class Solution:
 
 ## 相关话题
 
-- [链表](https://leetcode-cn.com/tag/linked-list) 
-- [双指针](https://leetcode-cn.com/tag/two-pointers) 
+- [链表](../../tags/linked-list.md) 
+- [双指针](../../tags/two-pointers.md) 
 
 
 ## 相似题目

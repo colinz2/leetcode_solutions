@@ -72,7 +72,7 @@ public:
 
 ## 相关话题
 
-- [位运算](https://leetcode-cn.com/tag/bit-manipulation) 
+- [位运算](../../tags/bit-manipulation.md) 
 
 
 ## 相似题目

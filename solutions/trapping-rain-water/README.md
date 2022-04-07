@@ -66,11 +66,11 @@ public:
 
 ## 相关话题
 
-- [栈](https://leetcode-cn.com/tag/stack) 
-- [数组](https://leetcode-cn.com/tag/array) 
-- [双指针](https://leetcode-cn.com/tag/two-pointers) 
-- [动态规划](https://leetcode-cn.com/tag/dynamic-programming) 
-- [单调栈](https://leetcode-cn.com/tag/monotonic-stack) 
+- [栈](../../tags/stack.md) 
+- [数组](../../tags/array.md) 
+- [双指针](../../tags/two-pointers.md) 
+- [动态规划](../../tags/dynamic-programming.md) 
+- [单调栈](../../tags/monotonic-stack.md) 
 
 
 ## 相似题目

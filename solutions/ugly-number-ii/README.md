@@ -59,10 +59,10 @@ public:
 
 ## 相关话题
 
-- [哈希表](https://leetcode-cn.com/tag/hash-table) 
-- [数学](https://leetcode-cn.com/tag/math) 
-- [动态规划](https://leetcode-cn.com/tag/dynamic-programming) 
-- [堆（优先队列）](https://leetcode-cn.com/tag/heap-priority-queue) 
+- [哈希表](../../tags/hash-table.md) 
+- [数学](../../tags/math.md) 
+- [动态规划](../../tags/dynamic-programming.md) 
+- [堆（优先队列）](../../tags/heap-priority-queue.md) 
 
 
 ## 相似题目

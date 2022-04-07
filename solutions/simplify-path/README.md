@@ -105,8 +105,8 @@ public:
 
 ## 相关话题
 
-- [栈](https://leetcode-cn.com/tag/stack) 
-- [字符串](https://leetcode-cn.com/tag/string) 
+- [栈](../../tags/stack.md) 
+- [字符串](../../tags/string.md) 
 
 
 ## 相似题目

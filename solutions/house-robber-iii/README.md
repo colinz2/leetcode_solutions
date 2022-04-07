@@ -68,10 +68,10 @@ class Solution:
 
 ## 相关话题
 
-- [树](https://leetcode-cn.com/tag/tree) 
-- [深度优先搜索](https://leetcode-cn.com/tag/depth-first-search) 
-- [动态规划](https://leetcode-cn.com/tag/dynamic-programming) 
-- [二叉树](https://leetcode-cn.com/tag/binary-tree) 
+- [树](../../tags/tree.md) 
+- [深度优先搜索](../../tags/depth-first-search.md) 
+- [动态规划](../../tags/dynamic-programming.md) 
+- [二叉树](../../tags/binary-tree.md) 
 
 
 ## 相似题目

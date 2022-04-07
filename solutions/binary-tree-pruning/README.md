@@ -46,34 +46,6 @@
 
 ## 题解
 
-### cpp [🔗](binary-tree-pruning.cpp) 
-```cpp
-/**
- * Definition for a binary tree node.
- * struct TreeNode {
- *     int val;
- *     TreeNode *left;
- *     TreeNode *right;
- *     TreeNode() : val(0), left(nullptr), right(nullptr) {}
- *     TreeNode(int x) : val(x), left(nullptr), right(nullptr) {}
- *     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
- * };
- */
-class Solution {
-public:
-    TreeNode* pruneTree(TreeNode* root) {
-        if (root == nullptr) {
-            return nullptr;
-        }
-        root->right = pruneTree(root->right);
-        root->left = pruneTree(root->left);
-        if (!root->right && !root->left && !root->val) {
-            return nullptr;
-        }
-        return root;
-    }
-};
-```
 ### golang [🔗](binary-tree-pruning.go) 
 ```golang
 /**
@@ -121,13 +93,41 @@ struct TreeNode* pruneTree(struct TreeNode* root){
     return root;
 }
 ```
+### cpp [🔗](binary-tree-pruning.cpp) 
+```cpp
+/**
+ * Definition for a binary tree node.
+ * struct TreeNode {
+ *     int val;
+ *     TreeNode *left;
+ *     TreeNode *right;
+ *     TreeNode() : val(0), left(nullptr), right(nullptr) {}
+ *     TreeNode(int x) : val(x), left(nullptr), right(nullptr) {}
+ *     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
+ * };
+ */
+class Solution {
+public:
+    TreeNode* pruneTree(TreeNode* root) {
+        if (root == nullptr) {
+            return nullptr;
+        }
+        root->right = pruneTree(root->right);
+        root->left = pruneTree(root->left);
+        if (!root->right && !root->left && !root->val) {
+            return nullptr;
+        }
+        return root;
+    }
+};
+```
 
 
 ## 相关话题
 
-- [树](https://leetcode-cn.com/tag/tree) 
-- [深度优先搜索](https://leetcode-cn.com/tag/depth-first-search) 
-- [二叉树](https://leetcode-cn.com/tag/binary-tree) 
+- [树](../../tags/tree.md) 
+- [深度优先搜索](../../tags/depth-first-search.md) 
+- [二叉树](../../tags/binary-tree.md) 
 
 
 ## 相似题目

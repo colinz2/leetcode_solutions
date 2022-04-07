@@ -63,9 +63,9 @@ public:
 
 ## 相关话题
 
-- [数组](https://leetcode-cn.com/tag/array) 
-- [哈希表](https://leetcode-cn.com/tag/hash-table) 
-- [滑动窗口](https://leetcode-cn.com/tag/sliding-window) 
+- [数组](../../tags/array.md) 
+- [哈希表](../../tags/hash-table.md) 
+- [滑动窗口](../../tags/sliding-window.md) 
 
 
 ## 相似题目

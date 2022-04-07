@@ -88,9 +88,9 @@ public:
 
 ## 相关话题
 
-- [树](https://leetcode-cn.com/tag/tree) 
-- [广度优先搜索](https://leetcode-cn.com/tag/breadth-first-search) 
-- [二叉树](https://leetcode-cn.com/tag/binary-tree) 
+- [树](../../tags/tree.md) 
+- [广度优先搜索](../../tags/breadth-first-search.md) 
+- [二叉树](../../tags/binary-tree.md) 
 
 
 ## 相似题目

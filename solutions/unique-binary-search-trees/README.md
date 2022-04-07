@@ -56,11 +56,11 @@ public:
 
 ## 相关话题
 
-- [树](https://leetcode-cn.com/tag/tree) 
-- [二叉搜索树](https://leetcode-cn.com/tag/binary-search-tree) 
-- [数学](https://leetcode-cn.com/tag/math) 
-- [动态规划](https://leetcode-cn.com/tag/dynamic-programming) 
-- [二叉树](https://leetcode-cn.com/tag/binary-tree) 
+- [树](../../tags/tree.md) 
+- [二叉搜索树](../../tags/binary-search-tree.md) 
+- [数学](../../tags/math.md) 
+- [动态规划](../../tags/dynamic-programming.md) 
+- [二叉树](../../tags/binary-tree.md) 
 
 
 ## 相似题目

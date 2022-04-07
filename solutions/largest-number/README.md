@@ -58,9 +58,9 @@ public:
 
 ## 相关话题
 
-- [贪心](https://leetcode-cn.com/tag/greedy) 
-- [字符串](https://leetcode-cn.com/tag/string) 
-- [排序](https://leetcode-cn.com/tag/sorting) 
+- [贪心](../../tags/greedy.md) 
+- [字符串](../../tags/string.md) 
+- [排序](../../tags/sorting.md) 
 
 
 ## 相似题目

@@ -101,7 +101,7 @@ function isOneBitCharacter(bits: number[]): boolean {
 
 ## 相关话题
 
-- [数组](https://leetcode-cn.com/tag/array) 
+- [数组](../../tags/array.md) 
 
 
 ## 相似题目

@@ -94,10 +94,10 @@ private:
 
 ## 相关话题
 
-- [栈](https://leetcode-cn.com/tag/stack) 
-- [设计](https://leetcode-cn.com/tag/design) 
-- [哈希表](https://leetcode-cn.com/tag/hash-table) 
-- [有序集合](https://leetcode-cn.com/tag/ordered-set) 
+- [栈](../../tags/stack.md) 
+- [设计](../../tags/design.md) 
+- [哈希表](../../tags/hash-table.md) 
+- [有序集合](../../tags/ordered-set.md) 
 
 
 ## 相似题目

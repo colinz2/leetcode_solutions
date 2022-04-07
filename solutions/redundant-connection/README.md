@@ -107,10 +107,10 @@ func find(p []int, a int) int {
 
 ## 相关话题
 
-- [深度优先搜索](https://leetcode-cn.com/tag/depth-first-search) 
-- [广度优先搜索](https://leetcode-cn.com/tag/breadth-first-search) 
-- [并查集](https://leetcode-cn.com/tag/union-find) 
-- [图](https://leetcode-cn.com/tag/graph) 
+- [深度优先搜索](../../tags/depth-first-search.md) 
+- [广度优先搜索](../../tags/breadth-first-search.md) 
+- [并查集](../../tags/union-find.md) 
+- [图](../../tags/graph.md) 
 
 
 ## 相似题目

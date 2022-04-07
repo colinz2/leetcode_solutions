@@ -71,7 +71,7 @@ public:
 
 ## 相关话题
 
-- [数学](https://leetcode-cn.com/tag/math) 
+- [数学](../../tags/math.md) 
 
 
 ## 相似题目

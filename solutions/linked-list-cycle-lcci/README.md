@@ -101,9 +101,9 @@ func detectCycle(head *ListNode) *ListNode {
 
 ## 相关话题
 
-- [哈希表](https://leetcode-cn.com/tag/hash-table) 
-- [链表](https://leetcode-cn.com/tag/linked-list) 
-- [双指针](https://leetcode-cn.com/tag/two-pointers) 
+- [哈希表](../../tags/hash-table.md) 
+- [链表](../../tags/linked-list.md) 
+- [双指针](../../tags/two-pointers.md) 
 
 
 ## 相似题目

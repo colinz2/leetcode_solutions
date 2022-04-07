@@ -97,8 +97,8 @@ private:
 
 ## 相关话题
 
-- [字符串](https://leetcode-cn.com/tag/string) 
-- [回溯](https://leetcode-cn.com/tag/backtracking) 
+- [字符串](../../tags/string.md) 
+- [回溯](../../tags/backtracking.md) 
 
 
 ## 相似题目

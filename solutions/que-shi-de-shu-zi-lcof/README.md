@@ -61,11 +61,11 @@ public:
 
 ## 相关话题
 
-- [位运算](https://leetcode-cn.com/tag/bit-manipulation) 
-- [数组](https://leetcode-cn.com/tag/array) 
-- [哈希表](https://leetcode-cn.com/tag/hash-table) 
-- [数学](https://leetcode-cn.com/tag/math) 
-- [二分查找](https://leetcode-cn.com/tag/binary-search) 
+- [位运算](../../tags/bit-manipulation.md) 
+- [数组](../../tags/array.md) 
+- [哈希表](../../tags/hash-table.md) 
+- [数学](../../tags/math.md) 
+- [二分查找](../../tags/binary-search.md) 
 
 
 ## 相似题目

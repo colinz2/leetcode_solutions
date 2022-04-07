@@ -40,39 +40,6 @@
 
 ## 题解
 
-### golang [🔗](binary-tree-level-order-traversal.go) 
-```golang
-/**
- * Definition for a binary tree node.
- * type TreeNode struct {
- *     Val int
- *     Left *TreeNode
- *     Right *TreeNode
- * }
- */
-func levelOrder(root *TreeNode) [][]int {
-    res := make([][]int, 0)
-    q := make([]*TreeNode, 0)
-
-    q = append(q, root)
-    for len(q) > 0 {
-        tmp := []int{}
-        size := len(q)
-        for i := 0; i < size; i++ {
-            node := q[i]
-            if node != nil {
-                tmp = append(tmp, node.Val)
-                q = append(q, node.Left, node.Right)
-            }
-        }
-        q = q[size:]
-        if len(tmp) > 0 {
-            res = append(res, tmp)
-        }
-    }
-    return res;
-}
-```
 ### cpp [🔗](binary-tree-level-order-traversal.cpp) 
 ```cpp
 /**
@@ -113,13 +80,46 @@ public:
     }
 };
 ```
+### golang [🔗](binary-tree-level-order-traversal.go) 
+```golang
+/**
+ * Definition for a binary tree node.
+ * type TreeNode struct {
+ *     Val int
+ *     Left *TreeNode
+ *     Right *TreeNode
+ * }
+ */
+func levelOrder(root *TreeNode) [][]int {
+    res := make([][]int, 0)
+    q := make([]*TreeNode, 0)
+
+    q = append(q, root)
+    for len(q) > 0 {
+        tmp := []int{}
+        size := len(q)
+        for i := 0; i < size; i++ {
+            node := q[i]
+            if node != nil {
+                tmp = append(tmp, node.Val)
+                q = append(q, node.Left, node.Right)
+            }
+        }
+        q = q[size:]
+        if len(tmp) > 0 {
+            res = append(res, tmp)
+        }
+    }
+    return res;
+}
+```
 
 
 ## 相关话题
 
-- [树](https://leetcode-cn.com/tag/tree) 
-- [广度优先搜索](https://leetcode-cn.com/tag/breadth-first-search) 
-- [二叉树](https://leetcode-cn.com/tag/binary-tree) 
+- [树](../../tags/tree.md) 
+- [广度优先搜索](../../tags/breadth-first-search.md) 
+- [二叉树](../../tags/binary-tree.md) 
 
 
 ## 相似题目

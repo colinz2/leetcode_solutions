@@ -75,11 +75,11 @@ public:
 
 ## 相关话题
 
-- [队列](https://leetcode-cn.com/tag/queue) 
-- [数组](https://leetcode-cn.com/tag/array) 
-- [滑动窗口](https://leetcode-cn.com/tag/sliding-window) 
-- [单调队列](https://leetcode-cn.com/tag/monotonic-queue) 
-- [堆（优先队列）](https://leetcode-cn.com/tag/heap-priority-queue) 
+- [队列](../../tags/queue.md) 
+- [数组](../../tags/array.md) 
+- [滑动窗口](../../tags/sliding-window.md) 
+- [单调队列](../../tags/monotonic-queue.md) 
+- [堆（优先队列）](../../tags/heap-priority-queue.md) 
 
 
 ## 相似题目

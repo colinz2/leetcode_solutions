@@ -136,8 +136,8 @@ private:
 
 ## 相关话题
 
-- [设计](https://leetcode-cn.com/tag/design) 
-- [链表](https://leetcode-cn.com/tag/linked-list) 
+- [设计](../../tags/design.md) 
+- [链表](../../tags/linked-list.md) 
 
 
 ## 相似题目

@@ -86,11 +86,11 @@ class Solution:
 
 ## 相关话题
 
-- [数组](https://leetcode-cn.com/tag/array) 
-- [哈希表](https://leetcode-cn.com/tag/hash-table) 
-- [分治](https://leetcode-cn.com/tag/divide-and-conquer) 
-- [计数](https://leetcode-cn.com/tag/counting) 
-- [排序](https://leetcode-cn.com/tag/sorting) 
+- [数组](../../tags/array.md) 
+- [哈希表](../../tags/hash-table.md) 
+- [分治](../../tags/divide-and-conquer.md) 
+- [计数](../../tags/counting.md) 
+- [排序](../../tags/sorting.md) 
 
 
 ## 相似题目

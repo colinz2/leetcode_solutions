@@ -1,0 +1,28 @@
+
+# [位运算](https://leetcode-cn.com/tag/bit-manipulation)
+
+1. [两数相除](../solutions/divide-two-integers/README.md)
+2. [二进制求和](../solutions/add-binary/README.md)
+3. [子集](../solutions/subsets/README.md)
+4. [格雷编码](../solutions/gray-code/README.md)
+5. [子集 II](../solutions/subsets-ii/README.md)
+6. [只出现一次的数字](../solutions/single-number/README.md)
+7. [颠倒二进制位](../solutions/reverse-bits/README.md)
+8. [位1的个数](../solutions/number-of-1-bits/README.md)
+9. [2 的幂](../solutions/power-of-two/README.md)
+10. [回文排列](../solutions/palindrome-permutation/README.md)
+11. [丢失的数字](../solutions/missing-number/README.md)
+12. [比特位计数](../solutions/counting-bits/README.md)
+13. [两整数之和](../solutions/sum-of-two-integers/README.md)
+14. [找不同](../solutions/find-the-difference/README.md)
+15. [UTF-8 编码验证](../solutions/utf-8-validation/README.md)
+16. [汉明距离](../solutions/hamming-distance/README.md)
+17. [数字的补数](../solutions/number-complement/README.md)
+18. [字母大小写全排列](../solutions/letter-case-permutation/README.md)
+19. [二进制间距](../solutions/binary-gap/README.md)
+20. [判定字符是否唯一](../solutions/is-unique-lcci/README.md)
+21. [二进制中1的个数](../solutions/er-jin-zhi-zhong-1de-ge-shu-lcof/README.md)
+22. [0～n-1中缺失的数字](../solutions/que-shi-de-shu-zi-lcof/README.md)
+23. [最大数值](../solutions/maximum-lcci/README.md)
+
+

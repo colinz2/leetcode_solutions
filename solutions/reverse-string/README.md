@@ -62,9 +62,9 @@ class Solution:
 
 ## 相关话题
 
-- [递归](https://leetcode-cn.com/tag/recursion) 
-- [双指针](https://leetcode-cn.com/tag/two-pointers) 
-- [字符串](https://leetcode-cn.com/tag/string) 
+- [递归](../../tags/recursion.md) 
+- [双指针](../../tags/two-pointers.md) 
+- [字符串](../../tags/string.md) 
 
 
 ## 相似题目

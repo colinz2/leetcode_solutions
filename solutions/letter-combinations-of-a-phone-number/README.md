@@ -113,9 +113,9 @@ func letterCombinations(digits string) []string {
 
 ## 相关话题
 
-- [哈希表](https://leetcode-cn.com/tag/hash-table) 
-- [字符串](https://leetcode-cn.com/tag/string) 
-- [回溯](https://leetcode-cn.com/tag/backtracking) 
+- [哈希表](../../tags/hash-table.md) 
+- [字符串](../../tags/string.md) 
+- [回溯](../../tags/backtracking.md) 
 
 
 ## 相似题目

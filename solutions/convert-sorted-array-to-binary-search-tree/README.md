@@ -90,11 +90,11 @@ class Solution:
 
 ## 相关话题
 
-- [树](https://leetcode-cn.com/tag/tree) 
-- [二叉搜索树](https://leetcode-cn.com/tag/binary-search-tree) 
-- [数组](https://leetcode-cn.com/tag/array) 
-- [分治](https://leetcode-cn.com/tag/divide-and-conquer) 
-- [二叉树](https://leetcode-cn.com/tag/binary-tree) 
+- [树](../../tags/tree.md) 
+- [二叉搜索树](../../tags/binary-search-tree.md) 
+- [数组](../../tags/array.md) 
+- [分治](../../tags/divide-and-conquer.md) 
+- [二叉树](../../tags/binary-tree.md) 
 
 
 ## 相似题目

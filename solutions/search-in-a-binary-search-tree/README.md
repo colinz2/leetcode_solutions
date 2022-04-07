@@ -106,9 +106,9 @@ func searchBST(root *TreeNode, val int) *TreeNode {
 
 ## 相关话题
 
-- [树](https://leetcode-cn.com/tag/tree) 
-- [二叉搜索树](https://leetcode-cn.com/tag/binary-search-tree) 
-- [二叉树](https://leetcode-cn.com/tag/binary-tree) 
+- [树](../../tags/tree.md) 
+- [二叉搜索树](../../tags/binary-search-tree.md) 
+- [二叉树](../../tags/binary-tree.md) 
 
 
 ## 相似题目

@@ -52,9 +52,9 @@ public:
 
 ## 相关话题
 
-- [数学](https://leetcode-cn.com/tag/math) 
-- [双指针](https://leetcode-cn.com/tag/two-pointers) 
-- [二分查找](https://leetcode-cn.com/tag/binary-search) 
+- [数学](../../tags/math.md) 
+- [双指针](../../tags/two-pointers.md) 
+- [二分查找](../../tags/binary-search.md) 
 
 
 ## 相似题目

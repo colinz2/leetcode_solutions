@@ -80,11 +80,11 @@ public:
 
 ## 相关话题
 
-- [位运算](https://leetcode-cn.com/tag/bit-manipulation) 
-- [数组](https://leetcode-cn.com/tag/array) 
-- [哈希表](https://leetcode-cn.com/tag/hash-table) 
-- [数学](https://leetcode-cn.com/tag/math) 
-- [排序](https://leetcode-cn.com/tag/sorting) 
+- [位运算](../../tags/bit-manipulation.md) 
+- [数组](../../tags/array.md) 
+- [哈希表](../../tags/hash-table.md) 
+- [数学](../../tags/math.md) 
+- [排序](../../tags/sorting.md) 
 
 
 ## 相似题目

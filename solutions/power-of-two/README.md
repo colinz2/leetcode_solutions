@@ -74,9 +74,9 @@ public:
 
 ## 相关话题
 
-- [位运算](https://leetcode-cn.com/tag/bit-manipulation) 
-- [递归](https://leetcode-cn.com/tag/recursion) 
-- [数学](https://leetcode-cn.com/tag/math) 
+- [位运算](../../tags/bit-manipulation.md) 
+- [递归](../../tags/recursion.md) 
+- [数学](../../tags/math.md) 
 
 
 ## 相似题目

@@ -59,9 +59,9 @@ public:
 
 ## 相关话题
 
-- [数组](https://leetcode-cn.com/tag/array) 
-- [数学](https://leetcode-cn.com/tag/math) 
-- [排序](https://leetcode-cn.com/tag/sorting) 
+- [数组](../../tags/array.md) 
+- [数学](../../tags/math.md) 
+- [排序](../../tags/sorting.md) 
 
 
 ## 相似题目

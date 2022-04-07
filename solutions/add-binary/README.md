@@ -70,10 +70,10 @@ public:
 
 ## 相关话题
 
-- [位运算](https://leetcode-cn.com/tag/bit-manipulation) 
-- [数学](https://leetcode-cn.com/tag/math) 
-- [字符串](https://leetcode-cn.com/tag/string) 
-- [模拟](https://leetcode-cn.com/tag/simulation) 
+- [位运算](../../tags/bit-manipulation.md) 
+- [数学](../../tags/math.md) 
+- [字符串](../../tags/string.md) 
+- [模拟](../../tags/simulation.md) 
 
 
 ## 相似题目

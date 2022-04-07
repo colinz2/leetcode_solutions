@@ -49,6 +49,33 @@
 
 ## 题解
 
+### c [🔗](flatten-binary-tree-to-linked-list.c) 
+```c
+/**
+ * Definition for a binary tree node.
+ * struct TreeNode {
+ *     int val;
+ *     struct TreeNode *left;
+ *     struct TreeNode *right;
+ * };
+ */
+
+void flatten_recur(struct TreeNode* root, struct TreeNode** last) {
+    if (root == NULL) {
+        return;
+    }
+    flatten_recur(root->right, last);
+    flatten_recur(root->left, last);
+    root->right = *last;
+    root->left = NULL;
+    *last = root;
+}
+
+void flatten(struct TreeNode* root){
+    struct TreeNode* last = NULL;
+    flatten_recur(root, &last);
+}
+```
 ### cpp [🔗](flatten-binary-tree-to-linked-list.cpp) 
 ```cpp
 /**
@@ -85,42 +112,15 @@ public:
     }
 };
 ```
-### c [🔗](flatten-binary-tree-to-linked-list.c) 
-```c
-/**
- * Definition for a binary tree node.
- * struct TreeNode {
- *     int val;
- *     struct TreeNode *left;
- *     struct TreeNode *right;
- * };
- */
-
-void flatten_recur(struct TreeNode* root, struct TreeNode** last) {
-    if (root == NULL) {
-        return;
-    }
-    flatten_recur(root->right, last);
-    flatten_recur(root->left, last);
-    root->right = *last;
-    root->left = NULL;
-    *last = root;
-}
-
-void flatten(struct TreeNode* root){
-    struct TreeNode* last = NULL;
-    flatten_recur(root, &last);
-}
-```
 
 
 ## 相关话题
 
-- [栈](https://leetcode-cn.com/tag/stack) 
-- [树](https://leetcode-cn.com/tag/tree) 
-- [深度优先搜索](https://leetcode-cn.com/tag/depth-first-search) 
-- [链表](https://leetcode-cn.com/tag/linked-list) 
-- [二叉树](https://leetcode-cn.com/tag/binary-tree) 
+- [栈](../../tags/stack.md) 
+- [树](../../tags/tree.md) 
+- [深度优先搜索](../../tags/depth-first-search.md) 
+- [链表](../../tags/linked-list.md) 
+- [二叉树](../../tags/binary-tree.md) 
 
 
 ## 相似题目

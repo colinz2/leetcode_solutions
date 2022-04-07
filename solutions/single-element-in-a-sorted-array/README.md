@@ -62,8 +62,8 @@ public:
 
 ## 相关话题
 
-- [数组](https://leetcode-cn.com/tag/array) 
-- [二分查找](https://leetcode-cn.com/tag/binary-search) 
+- [数组](../../tags/array.md) 
+- [二分查找](../../tags/binary-search.md) 
 
 
 ## 相似题目

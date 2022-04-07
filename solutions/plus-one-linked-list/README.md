@@ -79,8 +79,8 @@ public:
 
 ## 相关话题
 
-- [链表](https://leetcode-cn.com/tag/linked-list) 
-- [数学](https://leetcode-cn.com/tag/math) 
+- [链表](../../tags/linked-list.md) 
+- [数学](../../tags/math.md) 
 
 
 ## 相似题目

@@ -63,8 +63,8 @@ public:
 
 ## 相关话题
 
-- [双指针](https://leetcode-cn.com/tag/two-pointers) 
-- [字符串](https://leetcode-cn.com/tag/string) 
+- [双指针](../../tags/two-pointers.md) 
+- [字符串](../../tags/string.md) 
 
 
 ## 相似题目

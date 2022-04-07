@@ -63,59 +63,6 @@ bSTIterator.hasNext(); // 返回 False
 
 ## 题解
 
-### golang [🔗](binary-search-tree-iterator.go) 
-```golang
-/**
- * Definition for a binary tree node.
- * type TreeNode struct {
- *     Val int
- *     Left *TreeNode
- *     Right *TreeNode
- * }
- */
-type BSTIterator struct {
-    root  *TreeNode
-    stack []*TreeNode
-}
-
-
-func Constructor(root *TreeNode) BSTIterator {
-    return BSTIterator{
-        root: root,
-    }
-}
-
-
-func (this *BSTIterator) Next() int {
-    if !this.HasNext() {
-        return -1
-    }
-
-    for this.root != nil {
-        this.stack = append(this.stack, this.root)
-        this.root = this.root.Left
-    }
-    topIndex := len(this.stack) - 1
-    this.root = this.stack[topIndex]
-    this.stack = this.stack[:topIndex]
-    ret := this.root.Val
-    this.root = this.root.Right
-    return ret
-}
-
-
-func (this *BSTIterator) HasNext() bool {
-    return this.root != nil || len(this.stack) != 0 
-}
-
-
-/**
- * Your BSTIterator object will be instantiated and called as such:
- * obj := Constructor(root);
- * param_1 := obj.Next();
- * param_2 := obj.HasNext();
- */
-```
 ### c [🔗](binary-search-tree-iterator.c) 
 ```c
 /**
@@ -237,16 +184,69 @@ private:
  * bool param_2 = obj->hasNext();
  */
 ```
+### golang [🔗](binary-search-tree-iterator.go) 
+```golang
+/**
+ * Definition for a binary tree node.
+ * type TreeNode struct {
+ *     Val int
+ *     Left *TreeNode
+ *     Right *TreeNode
+ * }
+ */
+type BSTIterator struct {
+    root  *TreeNode
+    stack []*TreeNode
+}
+
+
+func Constructor(root *TreeNode) BSTIterator {
+    return BSTIterator{
+        root: root,
+    }
+}
+
+
+func (this *BSTIterator) Next() int {
+    if !this.HasNext() {
+        return -1
+    }
+
+    for this.root != nil {
+        this.stack = append(this.stack, this.root)
+        this.root = this.root.Left
+    }
+    topIndex := len(this.stack) - 1
+    this.root = this.stack[topIndex]
+    this.stack = this.stack[:topIndex]
+    ret := this.root.Val
+    this.root = this.root.Right
+    return ret
+}
+
+
+func (this *BSTIterator) HasNext() bool {
+    return this.root != nil || len(this.stack) != 0 
+}
+
+
+/**
+ * Your BSTIterator object will be instantiated and called as such:
+ * obj := Constructor(root);
+ * param_1 := obj.Next();
+ * param_2 := obj.HasNext();
+ */
+```
 
 
 ## 相关话题
 
-- [栈](https://leetcode-cn.com/tag/stack) 
-- [树](https://leetcode-cn.com/tag/tree) 
-- [设计](https://leetcode-cn.com/tag/design) 
-- [二叉搜索树](https://leetcode-cn.com/tag/binary-search-tree) 
-- [二叉树](https://leetcode-cn.com/tag/binary-tree) 
-- [迭代器](https://leetcode-cn.com/tag/iterator) 
+- [栈](../../tags/stack.md) 
+- [树](../../tags/tree.md) 
+- [设计](../../tags/design.md) 
+- [二叉搜索树](../../tags/binary-search-tree.md) 
+- [二叉树](../../tags/binary-tree.md) 
+- [迭代器](../../tags/iterator.md) 
 
 
 ## 相似题目

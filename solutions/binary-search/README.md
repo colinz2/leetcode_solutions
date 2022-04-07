@@ -33,6 +33,44 @@
 
 ## 题解
 
+### rust [🔗](binary-search.rs) 
+```rust
+impl Solution {
+    pub fn search(nums: Vec<i32>, target: i32) -> i32 {
+        let mut left = 0;
+        let mut right = nums.len();
+        while left < right {
+            let mid = left + ((right - left) >> 1) ;
+            if target == nums[mid] {
+                return mid as i32;
+            } else if target < nums[mid] {
+                right = mid;
+            } else {
+                left = mid + 1;
+            }
+        }
+
+        return -1;
+    }
+}
+```
+### c [🔗](binary-search.c) 
+```c
+int search(int* nums, int numsSize, int target){
+    int i = 0, j = numsSize;
+    while (i < j) {
+        int m = (i+j)>>1;
+        if (nums[m] < target) {
+            i = m + 1;
+        } else if (nums[m] > target) {
+            j = m;
+        } else {
+            return m; 
+        }
+    }
+    return -1;
+}
+```
 ### cpp [🔗](binary-search.cpp) 
 ```cpp
 class Solution {
@@ -87,50 +125,12 @@ class Solution:
         return -1
 
 ```
-### rust [🔗](binary-search.rs) 
-```rust
-impl Solution {
-    pub fn search(nums: Vec<i32>, target: i32) -> i32 {
-        let mut left = 0;
-        let mut right = nums.len();
-        while left < right {
-            let mid = left + ((right - left) >> 1) ;
-            if target == nums[mid] {
-                return mid as i32;
-            } else if target < nums[mid] {
-                right = mid;
-            } else {
-                left = mid + 1;
-            }
-        }
-
-        return -1;
-    }
-}
-```
-### c [🔗](binary-search.c) 
-```c
-int search(int* nums, int numsSize, int target){
-    int i = 0, j = numsSize;
-    while (i < j) {
-        int m = (i+j)>>1;
-        if (nums[m] < target) {
-            i = m + 1;
-        } else if (nums[m] > target) {
-            j = m;
-        } else {
-            return m; 
-        }
-    }
-    return -1;
-}
-```
 
 
 ## 相关话题
 
-- [数组](https://leetcode-cn.com/tag/array) 
-- [二分查找](https://leetcode-cn.com/tag/binary-search) 
+- [数组](../../tags/array.md) 
+- [二分查找](../../tags/binary-search.md) 
 
 
 ## 相似题目

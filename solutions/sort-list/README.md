@@ -112,11 +112,11 @@ public:
 
 ## 相关话题
 
-- [链表](https://leetcode-cn.com/tag/linked-list) 
-- [双指针](https://leetcode-cn.com/tag/two-pointers) 
-- [分治](https://leetcode-cn.com/tag/divide-and-conquer) 
-- [排序](https://leetcode-cn.com/tag/sorting) 
-- [归并排序](https://leetcode-cn.com/tag/merge-sort) 
+- [链表](../../tags/linked-list.md) 
+- [双指针](../../tags/two-pointers.md) 
+- [分治](../../tags/divide-and-conquer.md) 
+- [排序](../../tags/sorting.md) 
+- [归并排序](../../tags/merge-sort.md) 
 
 
 ## 相似题目

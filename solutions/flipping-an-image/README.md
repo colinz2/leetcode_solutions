@@ -79,10 +79,10 @@ public:
 
 ## 相关话题
 
-- [数组](https://leetcode-cn.com/tag/array) 
-- [双指针](https://leetcode-cn.com/tag/two-pointers) 
-- [矩阵](https://leetcode-cn.com/tag/matrix) 
-- [模拟](https://leetcode-cn.com/tag/simulation) 
+- [数组](../../tags/array.md) 
+- [双指针](../../tags/two-pointers.md) 
+- [矩阵](../../tags/matrix.md) 
+- [模拟](../../tags/simulation.md) 
 
 
 ## 相似题目

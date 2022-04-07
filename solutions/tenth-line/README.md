@@ -44,7 +44,7 @@ awk 'NR==10{print $0}' file.txt
 
 ## 相关话题
 
-- [](https://leetcode-cn.com/tag/shell) 
+- [](../../tags/shell.md) 
 
 
 ## 相似题目

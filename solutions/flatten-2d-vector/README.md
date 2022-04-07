@@ -84,10 +84,10 @@ private:
 
 ## 相关话题
 
-- [设计](https://leetcode-cn.com/tag/design) 
-- [数组](https://leetcode-cn.com/tag/array) 
-- [双指针](https://leetcode-cn.com/tag/two-pointers) 
-- [迭代器](https://leetcode-cn.com/tag/iterator) 
+- [设计](../../tags/design.md) 
+- [数组](../../tags/array.md) 
+- [双指针](../../tags/two-pointers.md) 
+- [迭代器](../../tags/iterator.md) 
 
 
 ## 相似题目

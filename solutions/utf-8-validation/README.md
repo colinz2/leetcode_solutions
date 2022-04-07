@@ -105,8 +105,8 @@ int i = 0;
 
 ## 相关话题
 
-- [位运算](https://leetcode-cn.com/tag/bit-manipulation) 
-- [数组](https://leetcode-cn.com/tag/array) 
+- [位运算](../../tags/bit-manipulation.md) 
+- [数组](../../tags/array.md) 
 
 
 ## 相似题目

@@ -62,38 +62,6 @@
 
 ## 题解
 
-### python3 [🔗](copy-list-with-random-pointer.py) 
-```python3
-"""
-# Definition for a Node.
-class Node:
-    def __init__(self, x: int, next: 'Node' = None, random: 'Node' = None):
-        self.val = int(x)
-        self.next = next
-        self.random = random
-"""
-
-class Solution:
-    def copyRandomList(self, head: 'Optional[Node]') -> 'Optional[Node]':
-        curr = head
-        node_map = dict()
-        while curr:
-            node_map[curr] = Node(curr.val)
-            curr = curr.next
-        curr = head
-        
-        while curr:
-            node = node_map[curr]
-            if curr.next:
-                node.next = node_map[curr.next]
-            if curr.random:
-                node.random = node_map[curr.random]
-            curr = curr.next
-        if head == None:
-            return None
-        return node_map[head]
-
-```
 ### cpp [🔗](copy-list-with-random-pointer.cpp) 
 ```cpp
 /*
@@ -157,12 +125,44 @@ func copyRandomList(head *Node) *Node {
     return node_map[head]
 }
 ```
+### python3 [🔗](copy-list-with-random-pointer.py) 
+```python3
+"""
+# Definition for a Node.
+class Node:
+    def __init__(self, x: int, next: 'Node' = None, random: 'Node' = None):
+        self.val = int(x)
+        self.next = next
+        self.random = random
+"""
+
+class Solution:
+    def copyRandomList(self, head: 'Optional[Node]') -> 'Optional[Node]':
+        curr = head
+        node_map = dict()
+        while curr:
+            node_map[curr] = Node(curr.val)
+            curr = curr.next
+        curr = head
+        
+        while curr:
+            node = node_map[curr]
+            if curr.next:
+                node.next = node_map[curr.next]
+            if curr.random:
+                node.random = node_map[curr.random]
+            curr = curr.next
+        if head == None:
+            return None
+        return node_map[head]
+
+```
 
 
 ## 相关话题
 
-- [哈希表](https://leetcode-cn.com/tag/hash-table) 
-- [链表](https://leetcode-cn.com/tag/linked-list) 
+- [哈希表](../../tags/hash-table.md) 
+- [链表](../../tags/linked-list.md) 
 
 
 ## 相似题目

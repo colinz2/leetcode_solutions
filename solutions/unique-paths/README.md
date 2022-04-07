@@ -79,9 +79,9 @@ public:
 
 ## 相关话题
 
-- [数学](https://leetcode-cn.com/tag/math) 
-- [动态规划](https://leetcode-cn.com/tag/dynamic-programming) 
-- [组合数学](https://leetcode-cn.com/tag/combinatorics) 
+- [数学](../../tags/math.md) 
+- [动态规划](../../tags/dynamic-programming.md) 
+- [组合数学](../../tags/combinatorics.md) 
 
 
 ## 相似题目

@@ -68,8 +68,8 @@ public:
 
 ## 相关话题
 
-- [数组](https://leetcode-cn.com/tag/array) 
-- [回溯](https://leetcode-cn.com/tag/backtracking) 
+- [数组](../../tags/array.md) 
+- [回溯](../../tags/backtracking.md) 
 
 
 ## 相似题目

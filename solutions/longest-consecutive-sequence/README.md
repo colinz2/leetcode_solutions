@@ -65,9 +65,9 @@ public:
 
 ## 相关话题
 
-- [并查集](https://leetcode-cn.com/tag/union-find) 
-- [数组](https://leetcode-cn.com/tag/array) 
-- [哈希表](https://leetcode-cn.com/tag/hash-table) 
+- [并查集](../../tags/union-find.md) 
+- [数组](../../tags/array.md) 
+- [哈希表](../../tags/hash-table.md) 
 
 
 ## 相似题目

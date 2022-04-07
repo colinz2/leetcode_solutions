@@ -110,7 +110,7 @@ public:
 
 ## 相关话题
 
-- [多线程](https://leetcode-cn.com/tag/concurrency) 
+- [多线程](../../tags/concurrency.md) 
 
 
 ## 相似题目

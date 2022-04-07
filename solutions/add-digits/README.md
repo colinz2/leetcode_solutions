@@ -106,9 +106,9 @@ impl Solution {
 
 ## 相关话题
 
-- [数学](https://leetcode-cn.com/tag/math) 
-- [数论](https://leetcode-cn.com/tag/number-theory) 
-- [模拟](https://leetcode-cn.com/tag/simulation) 
+- [数学](../../tags/math.md) 
+- [数论](../../tags/number-theory.md) 
+- [模拟](../../tags/simulation.md) 
 
 
 ## 相似题目

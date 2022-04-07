@@ -38,57 +38,6 @@
 
 ## 题解
 
-### c [🔗](lowest-common-ancestor-of-a-binary-search-tree.c) 
-```c
-/**
- * Definition for a binary tree node.
- * struct TreeNode {
- *     int val;
- *     struct TreeNode *left;
- *     struct TreeNode *right;
- * };
- */
-
-struct TreeNode* lowestCommonAncestor(struct TreeNode* root, struct TreeNode* p, struct TreeNode* q) {
-    if (root == NULL) {
-        return NULL;
-    }
-    if (root->val > p->val && root->val > q->val) {
-        return lowestCommonAncestor(root->left, p, q);
-    } else if (root->val < p->val && root->val < q->val) {
-        return lowestCommonAncestor(root->right, p, q);
-    }
-    return root;    
-}
-```
-### cpp [🔗](lowest-common-ancestor-of-a-binary-search-tree.cpp) 
-```cpp
-/**
- * Definition for a binary tree node.
- * struct TreeNode {
- *     int val;
- *     TreeNode *left;
- *     TreeNode *right;
- *     TreeNode(int x) : val(x), left(NULL), right(NULL) {}
- * };
- */
-
-class Solution {
-public:
-    TreeNode* lowestCommonAncestor(TreeNode* root, TreeNode* p, TreeNode* q) {
-        while (root) {
-            if (root->val > std::max(p->val, q->val)) {
-                root = root->left;
-            } else if (root->val < std::min(p->val, q->val)) {
-                root = root->right;
-            } else {
-                return root;
-            }
-        }
-        return root;
-    }
-};
-```
 ### golang [🔗](lowest-common-ancestor-of-a-binary-search-tree.go) 
 ```golang
 /**
@@ -158,14 +107,65 @@ function lowestCommonAncestor(root: TreeNode | null, p: TreeNode | null, q: Tree
     return root
 };
 ```
+### c [🔗](lowest-common-ancestor-of-a-binary-search-tree.c) 
+```c
+/**
+ * Definition for a binary tree node.
+ * struct TreeNode {
+ *     int val;
+ *     struct TreeNode *left;
+ *     struct TreeNode *right;
+ * };
+ */
+
+struct TreeNode* lowestCommonAncestor(struct TreeNode* root, struct TreeNode* p, struct TreeNode* q) {
+    if (root == NULL) {
+        return NULL;
+    }
+    if (root->val > p->val && root->val > q->val) {
+        return lowestCommonAncestor(root->left, p, q);
+    } else if (root->val < p->val && root->val < q->val) {
+        return lowestCommonAncestor(root->right, p, q);
+    }
+    return root;    
+}
+```
+### cpp [🔗](lowest-common-ancestor-of-a-binary-search-tree.cpp) 
+```cpp
+/**
+ * Definition for a binary tree node.
+ * struct TreeNode {
+ *     int val;
+ *     TreeNode *left;
+ *     TreeNode *right;
+ *     TreeNode(int x) : val(x), left(NULL), right(NULL) {}
+ * };
+ */
+
+class Solution {
+public:
+    TreeNode* lowestCommonAncestor(TreeNode* root, TreeNode* p, TreeNode* q) {
+        while (root) {
+            if (root->val > std::max(p->val, q->val)) {
+                root = root->left;
+            } else if (root->val < std::min(p->val, q->val)) {
+                root = root->right;
+            } else {
+                return root;
+            }
+        }
+        return root;
+    }
+};
+```
 
 
 ## 相关话题
 
-- [树](https://leetcode-cn.com/tag/tree) 
-- [深度优先搜索](https://leetcode-cn.com/tag/depth-first-search) 
-- [二叉搜索树](https://leetcode-cn.com/tag/binary-search-tree) 
-- [二叉树](https://leetcode-cn.com/tag/binary-tree) 
+- [树](../../tags/tree.md) 
+- [深度优先搜索](../../tags/depth-first-search.md) 
+- [二叉搜索树](../../tags/binary-search-tree.md) 
+- [二叉树](../../tags/binary-tree.md) 
 
 
 ## 相似题目

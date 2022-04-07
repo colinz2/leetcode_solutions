@@ -126,11 +126,11 @@ private:
 
 ## 相关话题
 
-- [栈](https://leetcode-cn.com/tag/stack) 
-- [设计](https://leetcode-cn.com/tag/design) 
-- [链表](https://leetcode-cn.com/tag/linked-list) 
-- [双向链表](https://leetcode-cn.com/tag/doubly-linked-list) 
-- [有序集合](https://leetcode-cn.com/tag/ordered-set) 
+- [栈](../../tags/stack.md) 
+- [设计](../../tags/design.md) 
+- [链表](../../tags/linked-list.md) 
+- [双向链表](../../tags/doubly-linked-list.md) 
+- [有序集合](../../tags/ordered-set.md) 
 
 
 ## 相似题目

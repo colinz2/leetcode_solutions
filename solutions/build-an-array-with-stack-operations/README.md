@@ -84,9 +84,9 @@ public:
 
 ## 相关话题
 
-- [栈](https://leetcode-cn.com/tag/stack) 
-- [数组](https://leetcode-cn.com/tag/array) 
-- [模拟](https://leetcode-cn.com/tag/simulation) 
+- [栈](../../tags/stack.md) 
+- [数组](../../tags/array.md) 
+- [模拟](../../tags/simulation.md) 
 
 
 ## 相似题目

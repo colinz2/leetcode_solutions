@@ -55,6 +55,26 @@
 
 ## 题解
 
+### c [🔗](convert-binary-number-in-a-linked-list-to-integer.c) 
+```c
+/**
+ * Definition for singly-linked list.
+ * struct ListNode {
+ *     int val;
+ *     struct ListNode *next;
+ * };
+ */
+
+
+int getDecimalValue(struct ListNode* head){
+    int res = 0;
+    while (head) {
+        res = (res << 1) + head->val;
+        head = head->next;
+    }
+    return res;
+}
+```
 ### cpp [🔗](convert-binary-number-in-a-linked-list-to-integer.cpp) 
 ```cpp
 /**
@@ -86,32 +106,12 @@ public:
     }
 };
 ```
-### c [🔗](convert-binary-number-in-a-linked-list-to-integer.c) 
-```c
-/**
- * Definition for singly-linked list.
- * struct ListNode {
- *     int val;
- *     struct ListNode *next;
- * };
- */
-
-
-int getDecimalValue(struct ListNode* head){
-    int res = 0;
-    while (head) {
-        res = (res << 1) + head->val;
-        head = head->next;
-    }
-    return res;
-}
-```
 
 
 ## 相关话题
 
-- [链表](https://leetcode-cn.com/tag/linked-list) 
-- [数学](https://leetcode-cn.com/tag/math) 
+- [链表](../../tags/linked-list.md) 
+- [数学](../../tags/math.md) 
 
 
 ## 相似题目

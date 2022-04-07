@@ -151,14 +151,14 @@ func (p PriorityQueue) Less(i, j int) bool {
 
 ## 相关话题
 
-- [数组](https://leetcode-cn.com/tag/array) 
-- [哈希表](https://leetcode-cn.com/tag/hash-table) 
-- [分治](https://leetcode-cn.com/tag/divide-and-conquer) 
-- [桶排序](https://leetcode-cn.com/tag/bucket-sort) 
-- [计数](https://leetcode-cn.com/tag/counting) 
-- [快速选择](https://leetcode-cn.com/tag/quickselect) 
-- [排序](https://leetcode-cn.com/tag/sorting) 
-- [堆（优先队列）](https://leetcode-cn.com/tag/heap-priority-queue) 
+- [数组](../../tags/array.md) 
+- [哈希表](../../tags/hash-table.md) 
+- [分治](../../tags/divide-and-conquer.md) 
+- [桶排序](../../tags/bucket-sort.md) 
+- [计数](../../tags/counting.md) 
+- [快速选择](../../tags/quickselect.md) 
+- [排序](../../tags/sorting.md) 
+- [堆（优先队列）](../../tags/heap-priority-queue.md) 
 
 
 ## 相似题目

@@ -110,11 +110,11 @@ private:
 
 ## 相关话题
 
-- [设计](https://leetcode-cn.com/tag/design) 
-- [数组](https://leetcode-cn.com/tag/array) 
-- [哈希表](https://leetcode-cn.com/tag/hash-table) 
-- [字符串](https://leetcode-cn.com/tag/string) 
-- [迭代器](https://leetcode-cn.com/tag/iterator) 
+- [设计](../../tags/design.md) 
+- [数组](../../tags/array.md) 
+- [哈希表](../../tags/hash-table.md) 
+- [字符串](../../tags/string.md) 
+- [迭代器](../../tags/iterator.md) 
 
 
 ## 相似题目

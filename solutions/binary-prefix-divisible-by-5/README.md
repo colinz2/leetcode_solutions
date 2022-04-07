@@ -43,6 +43,35 @@
 
 ## 题解
 
+### java [🔗](binary-prefix-divisible-by-5.java) 
+```java
+class Solution {
+    // 有限状态机 DFA ？
+    public List<Boolean> prefixesDivBy5(int[] nums) {
+        List<Boolean> res = new ArrayList<>();
+        if (nums.length < 1) {
+            return res;
+        }
+        int StateSet[][] = new int[][]{
+                {0, 1},
+                {2, 3},
+                {4, 0},
+                {1, 2},
+                {3, 4}
+        };
+        int state = 0;
+        for (int i = 0; i < nums.length; i++) {
+            state = StateSet[state][nums[i]];  //转换后的状态
+            if (state == 0) {
+                res.add(Boolean.TRUE);
+            } else {
+                res.add(Boolean.FALSE);
+            }
+        }
+        return res;
+    }
+}
+```
 ### cpp [🔗](binary-prefix-divisible-by-5.cpp) 
 ```cpp
 class Solution {
@@ -73,40 +102,11 @@ func prefixesDivBy5(nums []int) []bool {
     return ans
 }
 ```
-### java [🔗](binary-prefix-divisible-by-5.java) 
-```java
-class Solution {
-    // 有限状态机 DFA ？
-    public List<Boolean> prefixesDivBy5(int[] nums) {
-        List<Boolean> res = new ArrayList<>();
-        if (nums.length < 1) {
-            return res;
-        }
-        int StateSet[][] = new int[][]{
-                {0, 1},
-                {2, 3},
-                {4, 0},
-                {1, 2},
-                {3, 4}
-        };
-        int state = 0;
-        for (int i = 0; i < nums.length; i++) {
-            state = StateSet[state][nums[i]];  //转换后的状态
-            if (state == 0) {
-                res.add(Boolean.TRUE);
-            } else {
-                res.add(Boolean.FALSE);
-            }
-        }
-        return res;
-    }
-}
-```
 
 
 ## 相关话题
 
-- [数组](https://leetcode-cn.com/tag/array) 
+- [数组](../../tags/array.md) 
 
 
 ## 相似题目

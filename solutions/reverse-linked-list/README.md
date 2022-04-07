@@ -47,54 +47,6 @@
 
 ## 题解
 
-### c [🔗](reverse-linked-list.c) 
-```c
-/**
- * Definition for singly-linked list.
- * struct ListNode {
- *     int val;
- *     struct ListNode *next;
- * };
- */
-
-
-struct ListNode* reverseList(struct ListNode* head){
-    if (head == NULL || head->next == NULL) {
-        return head;
-    }
-    struct ListNode* new_head = reverseList(head->next);
-    head->next->next = head;
-    head->next = NULL;
-    return new_head;
-}
-```
-### cpp [🔗](reverse-linked-list.cpp) 
-```cpp
-/**
- * Definition for singly-linked list.
- * struct ListNode {
- *     int val;
- *     ListNode *next;
- *     ListNode() : val(0), next(nullptr) {}
- *     ListNode(int x) : val(x), next(nullptr) {}
- *     ListNode(int x, ListNode *next) : val(x), next(next) {}
- * };
- */
-class Solution {
-public:
-    ListNode* reverseList(ListNode* head) {
-        ListNode* curr = head;
-        ListNode* prev = nullptr;
-        while (curr) {
-            auto next = curr->next;
-            curr->next = prev;
-            prev = curr;
-            curr = next;
-        }
-        return prev;
-    }
-};
-```
 ### golang [🔗](reverse-linked-list.go) 
 ```golang
 /**
@@ -211,12 +163,60 @@ function reverseList(head: ListNode | null): ListNode | null {
     return newNode
 };
 ```
+### c [🔗](reverse-linked-list.c) 
+```c
+/**
+ * Definition for singly-linked list.
+ * struct ListNode {
+ *     int val;
+ *     struct ListNode *next;
+ * };
+ */
+
+
+struct ListNode* reverseList(struct ListNode* head){
+    if (head == NULL || head->next == NULL) {
+        return head;
+    }
+    struct ListNode* new_head = reverseList(head->next);
+    head->next->next = head;
+    head->next = NULL;
+    return new_head;
+}
+```
+### cpp [🔗](reverse-linked-list.cpp) 
+```cpp
+/**
+ * Definition for singly-linked list.
+ * struct ListNode {
+ *     int val;
+ *     ListNode *next;
+ *     ListNode() : val(0), next(nullptr) {}
+ *     ListNode(int x) : val(x), next(nullptr) {}
+ *     ListNode(int x, ListNode *next) : val(x), next(next) {}
+ * };
+ */
+class Solution {
+public:
+    ListNode* reverseList(ListNode* head) {
+        ListNode* curr = head;
+        ListNode* prev = nullptr;
+        while (curr) {
+            auto next = curr->next;
+            curr->next = prev;
+            prev = curr;
+            curr = next;
+        }
+        return prev;
+    }
+};
+```
 
 
 ## 相关话题
 
-- [递归](https://leetcode-cn.com/tag/recursion) 
-- [链表](https://leetcode-cn.com/tag/linked-list) 
+- [递归](../../tags/recursion.md) 
+- [链表](../../tags/linked-list.md) 
 
 
 ## 相似题目

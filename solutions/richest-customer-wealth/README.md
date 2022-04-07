@@ -119,8 +119,8 @@ class Solution(object):
 
 ## 相关话题
 
-- [数组](https://leetcode-cn.com/tag/array) 
-- [矩阵](https://leetcode-cn.com/tag/matrix) 
+- [数组](../../tags/array.md) 
+- [矩阵](../../tags/matrix.md) 
 
 
 ## 相似题目

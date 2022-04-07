@@ -120,9 +120,9 @@ func addTwoNumbers(l1 *ListNode, l2 *ListNode) *ListNode {
 
 ## 相关话题
 
-- [递归](https://leetcode-cn.com/tag/recursion) 
-- [链表](https://leetcode-cn.com/tag/linked-list) 
-- [数学](https://leetcode-cn.com/tag/math) 
+- [递归](../../tags/recursion.md) 
+- [链表](../../tags/linked-list.md) 
+- [数学](../../tags/math.md) 
 
 
 ## 相似题目

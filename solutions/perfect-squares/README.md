@@ -65,9 +65,9 @@ private:
 
 ## 相关话题
 
-- [广度优先搜索](https://leetcode-cn.com/tag/breadth-first-search) 
-- [数学](https://leetcode-cn.com/tag/math) 
-- [动态规划](https://leetcode-cn.com/tag/dynamic-programming) 
+- [广度优先搜索](../../tags/breadth-first-search.md) 
+- [数学](../../tags/math.md) 
+- [动态规划](../../tags/dynamic-programming.md) 
 
 
 ## 相似题目

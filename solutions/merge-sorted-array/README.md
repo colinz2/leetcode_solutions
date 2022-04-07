@@ -90,9 +90,9 @@ public:
 
 ## 相关话题
 
-- [数组](https://leetcode-cn.com/tag/array) 
-- [双指针](https://leetcode-cn.com/tag/two-pointers) 
-- [排序](https://leetcode-cn.com/tag/sorting) 
+- [数组](../../tags/array.md) 
+- [双指针](../../tags/two-pointers.md) 
+- [排序](../../tags/sorting.md) 
 
 
 ## 相似题目

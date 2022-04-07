@@ -60,10 +60,10 @@ func isUnique(astr string) bool {
 
 ## 相关话题
 
-- [位运算](https://leetcode-cn.com/tag/bit-manipulation) 
-- [哈希表](https://leetcode-cn.com/tag/hash-table) 
-- [字符串](https://leetcode-cn.com/tag/string) 
-- [排序](https://leetcode-cn.com/tag/sorting) 
+- [位运算](../../tags/bit-manipulation.md) 
+- [哈希表](../../tags/hash-table.md) 
+- [字符串](../../tags/string.md) 
+- [排序](../../tags/sorting.md) 
 
 
 ## 相似题目

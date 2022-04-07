@@ -64,8 +64,8 @@ public:
 
 ## 相关话题
 
-- [递归](https://leetcode-cn.com/tag/recursion) 
-- [数学](https://leetcode-cn.com/tag/math) 
+- [递归](../../tags/recursion.md) 
+- [数学](../../tags/math.md) 
 
 
 ## 相似题目

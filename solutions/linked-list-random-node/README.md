@@ -92,10 +92,10 @@ private:
 
 ## 相关话题
 
-- [水塘抽样](https://leetcode-cn.com/tag/reservoir-sampling) 
-- [链表](https://leetcode-cn.com/tag/linked-list) 
-- [数学](https://leetcode-cn.com/tag/math) 
-- [随机化](https://leetcode-cn.com/tag/randomized) 
+- [水塘抽样](../../tags/reservoir-sampling.md) 
+- [链表](../../tags/linked-list.md) 
+- [数学](../../tags/math.md) 
+- [随机化](../../tags/randomized.md) 
 
 
 ## 相似题目

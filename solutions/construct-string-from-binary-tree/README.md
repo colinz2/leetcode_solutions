@@ -84,10 +84,10 @@ public:
 
 ## 相关话题
 
-- [树](https://leetcode-cn.com/tag/tree) 
-- [深度优先搜索](https://leetcode-cn.com/tag/depth-first-search) 
-- [字符串](https://leetcode-cn.com/tag/string) 
-- [二叉树](https://leetcode-cn.com/tag/binary-tree) 
+- [树](../../tags/tree.md) 
+- [深度优先搜索](../../tags/depth-first-search.md) 
+- [字符串](../../tags/string.md) 
+- [二叉树](../../tags/binary-tree.md) 
 
 
 ## 相似题目

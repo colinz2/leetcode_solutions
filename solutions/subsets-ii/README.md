@@ -66,9 +66,9 @@ public:
 
 ## 相关话题
 
-- [位运算](https://leetcode-cn.com/tag/bit-manipulation) 
-- [数组](https://leetcode-cn.com/tag/array) 
-- [回溯](https://leetcode-cn.com/tag/backtracking) 
+- [位运算](../../tags/bit-manipulation.md) 
+- [数组](../../tags/array.md) 
+- [回溯](../../tags/backtracking.md) 
 
 
 ## 相似题目

@@ -101,8 +101,8 @@ public:
 
 ## 相关话题
 
-- [数组](https://leetcode-cn.com/tag/array) 
-- [前缀和](https://leetcode-cn.com/tag/prefix-sum) 
+- [数组](../../tags/array.md) 
+- [前缀和](../../tags/prefix-sum.md) 
 
 
 ## 相似题目
