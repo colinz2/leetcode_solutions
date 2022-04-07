@@ -24,19 +24,6 @@
 
 ## 题解
 
-### golang [🔗](shu-zu-zhong-zhong-fu-de-shu-zi-lcof.go) 
-```golang
-func findRepeatNumber(nums []int) int {
-    seen := make(map[int]struct{})
-    for _, n := range nums {
-        if _, e := seen[n]; e {
-            return n
-        }
-        seen[n] = struct{}{}
-    }
-    return -1
-}
-```
 ### python3 [🔗](shu-zu-zhong-zhong-fu-de-shu-zi-lcof.py) 
 ```python3
 class Solution:
@@ -77,6 +64,19 @@ public:
         return -1;
     }
 };
+```
+### golang [🔗](shu-zu-zhong-zhong-fu-de-shu-zi-lcof.go) 
+```golang
+func findRepeatNumber(nums []int) int {
+    seen := make(map[int]struct{})
+    for _, n := range nums {
+        if _, e := seen[n]; e {
+            return n
+        }
+        seen[n] = struct{}{}
+    }
+    return -1
+}
 ```
 
 

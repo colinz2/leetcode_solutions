@@ -38,6 +38,37 @@
 
 ## 题解
 
+### golang [🔗](valid-anagram.go) 
+```golang
+func isAnagram(s string, t string) bool {
+    cntMap := make(map[rune]int)
+    if len(s) != len(t) {
+        return false
+    }
+
+    for _, c := range s {
+        cntMap[c]++
+    }
+
+    for _, c := range t {
+        cntMap[c]--
+    }
+
+    for _, v := range cntMap {
+        if v != 0 {
+            return false
+        }
+    }
+
+    return true
+}
+```
+### python3 [🔗](valid-anagram.py) 
+```python3
+class Solution:
+    def isAnagram(self, s: str, t: str) -> bool:
+        return sorted(s) == sorted(t)
+```
 ### c [🔗](valid-anagram.c) 
 ```c
 bool is_all_zero(int *array, int len) {
@@ -77,37 +108,6 @@ public:
         return all_of(cnt+'a', cnt+'z' + 1, [](int c){ return  c == 0; });
     }
 };
-```
-### golang [🔗](valid-anagram.go) 
-```golang
-func isAnagram(s string, t string) bool {
-    cntMap := make(map[rune]int)
-    if len(s) != len(t) {
-        return false
-    }
-
-    for _, c := range s {
-        cntMap[c]++
-    }
-
-    for _, c := range t {
-        cntMap[c]--
-    }
-
-    for _, v := range cntMap {
-        if v != 0 {
-            return false
-        }
-    }
-
-    return true
-}
-```
-### python3 [🔗](valid-anagram.py) 
-```python3
-class Solution:
-    def isAnagram(self, s: str, t: str) -> bool:
-        return sorted(s) == sorted(t)
 ```
 
 

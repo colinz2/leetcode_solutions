@@ -49,6 +49,23 @@
 
 ## 题解
 
+### cpp [🔗](two-sum.cpp) 
+```cpp
+class Solution {
+public:
+    vector<int> twoSum(vector<int>& nums, int target) {
+        unordered_map<int, int> seen;
+        for (int i = 0; i < nums.size(); i++) {
+            auto it = seen.find(target - nums[i]);
+            if (it != seen.end()) {
+                return {it->second, i};
+            }
+            seen[nums[i]] = i;
+        }
+        return {-1, -1};
+    }
+};
+```
 ### golang [🔗](two-sum.go) 
 ```golang
 func twoSum(nums []int, target int) []int {
@@ -99,23 +116,6 @@ impl Solution {
         vec![]
     }
 }
-```
-### cpp [🔗](two-sum.cpp) 
-```cpp
-class Solution {
-public:
-    vector<int> twoSum(vector<int>& nums, int target) {
-        unordered_map<int, int> seen;
-        for (int i = 0; i < nums.size(); i++) {
-            auto it = seen.find(target - nums[i]);
-            if (it != seen.end()) {
-                return {it->second, i};
-            }
-            seen[nums[i]] = i;
-        }
-        return {-1, -1};
-    }
-};
 ```
 
 

@@ -49,20 +49,6 @@
 
 ## 题解
 
-### cpp [🔗](richest-customer-wealth.cpp) 
-```cpp
-class Solution {
-public:
-    int maximumWealth(vector<vector<int>>& accounts) {
-        vector<int> res;
-        for (auto &v : accounts) {
-            res.push_back(accumulate(v.begin(), v.end(), 0));
-        }
-        sort(res.begin(), res.end());
-        return res.back();
-    }
-};
-```
 ### golang [🔗](richest-customer-wealth.go) 
 ```golang
 func maximumWealth(accounts [][]int) int {
@@ -114,6 +100,20 @@ int maximumWealth(int** accounts, int accountsSize, int* accountsColSize){
     }
     return maxW;
 }
+```
+### cpp [🔗](richest-customer-wealth.cpp) 
+```cpp
+class Solution {
+public:
+    int maximumWealth(vector<vector<int>>& accounts) {
+        vector<int> res;
+        for (auto &v : accounts) {
+            res.push_back(accumulate(v.begin(), v.end(), 0));
+        }
+        sort(res.begin(), res.end());
+        return res.back();
+    }
+};
 ```
 
 

@@ -42,32 +42,6 @@
 
 ## 题解
 
-### c [🔗](odd-even-linked-list.c) 
-```c
-/**
- * Definition for singly-linked list.
- * struct ListNode {
- *     int val;
- *     struct ListNode *next;
- * };
- */
-
-
-struct ListNode* oddEvenList(struct ListNode* head){
-    if (head == NULL) return NULL;
-    struct ListNode* odd = head;
-    struct ListNode* even = head->next;
-    struct ListNode* evenHead = even;
-    while (even != NULL && even->next != NULL) {
-        odd->next = odd->next->next;
-        even->next = even->next->next;
-        odd = odd->next;
-        even = even->next;
-    }
-    odd->next = evenHead;
-    return head;
-}
-```
 ### cpp [🔗](odd-even-linked-list.cpp) 
 ```cpp
 /**
@@ -121,6 +95,32 @@ class Solution:
             even = even.next
         odd.next = even_head
         return head        
+```
+### c [🔗](odd-even-linked-list.c) 
+```c
+/**
+ * Definition for singly-linked list.
+ * struct ListNode {
+ *     int val;
+ *     struct ListNode *next;
+ * };
+ */
+
+
+struct ListNode* oddEvenList(struct ListNode* head){
+    if (head == NULL) return NULL;
+    struct ListNode* odd = head;
+    struct ListNode* even = head->next;
+    struct ListNode* evenHead = even;
+    while (even != NULL && even->next != NULL) {
+        odd->next = odd->next->next;
+        even->next = even->next->next;
+        odd = odd->next;
+        even = even->next;
+    }
+    odd->next = evenHead;
+    return head;
+}
 ```
 
 

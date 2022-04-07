@@ -35,6 +35,37 @@
 
 ## 题解
 
+### golang [🔗](range-sum-of-bst.go) 
+```golang
+/**
+ * Definition for a binary tree node.
+ * type TreeNode struct {
+ *     Val int
+ *     Left *TreeNode
+ *     Right *TreeNode
+ * }
+ */
+func rangeSumBST(root *TreeNode, low int, high int) int {
+    res := 0
+    stack := []*TreeNode{}
+    for root != nil || len(stack) > 0 {
+        for root != nil {
+            stack = append(stack, root)
+            root = root.Left
+        }
+        root = stack[len(stack) - 1]
+        stack = stack[:len(stack) - 1]
+        if (root.Val >= low && root.Val <= high) {
+            res += root.Val
+        } else if (root.Val > high) {
+            // 可以提前退出
+            break;
+        }
+        root = root.Right
+    }
+    return res
+}
+```
 ### c [🔗](range-sum-of-bst.c) 
 ```c
 /**
@@ -91,37 +122,6 @@ public:
         }
     }
 };
-```
-### golang [🔗](range-sum-of-bst.go) 
-```golang
-/**
- * Definition for a binary tree node.
- * type TreeNode struct {
- *     Val int
- *     Left *TreeNode
- *     Right *TreeNode
- * }
- */
-func rangeSumBST(root *TreeNode, low int, high int) int {
-    res := 0
-    stack := []*TreeNode{}
-    for root != nil || len(stack) > 0 {
-        for root != nil {
-            stack = append(stack, root)
-            root = root.Left
-        }
-        root = stack[len(stack) - 1]
-        stack = stack[:len(stack) - 1]
-        if (root.Val >= low && root.Val <= high) {
-            res += root.Val
-        } else if (root.Val > high) {
-            // 可以提前退出
-            break;
-        }
-        root = root.Right
-    }
-    return res
-}
 ```
 
 

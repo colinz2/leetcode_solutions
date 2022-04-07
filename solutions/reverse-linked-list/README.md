@@ -47,80 +47,6 @@
 
 ## 题解
 
-### java [🔗](reverse-linked-list.java) 
-```java
-/**
- * Definition for singly-linked list.
- * public class ListNode {
- *     int val;
- *     ListNode next;
- *     ListNode() {}
- *     ListNode(int val) { this.val = val; }
- *     ListNode(int val, ListNode next) { this.val = val; this.next = next; }
- * }
- */
-class Solution {
-    public ListNode reverseList(ListNode head) {
-        ListNode pre = null, next = null;
-        while (head != null) {
-            next = head.next;
-            head.next = pre;
-            pre = head;
-            head = next;
-        }
-        return pre;
-    }
-}
-```
-### python3 [🔗](reverse-linked-list.py) 
-```python3
-# Definition for singly-linked list.
-# class ListNode:
-#     def __init__(self, val=0, next=None):
-#         self.val = val
-#         self.next = next
-class Solution:
-    def reverseList(self, head: ListNode) -> ListNode:
-        if head == None or head.next == None :
-            return head
-        new_head = self.reverseList(head.next)
-        head.next.next = head
-        head.next = None
-        return new_head 
-```
-### rust [🔗](reverse-linked-list.rs) 
-```rust
-// Definition for singly-linked list.
-// #[derive(PartialEq, Eq, Clone, Debug)]
-// pub struct ListNode {
-//   pub val: i32,
-//   pub next: Option<Box<ListNode>>
-// }
-//
-// impl ListNode {
-//   #[inline]
-//   fn new(val: i32) -> Self {
-//     ListNode {
-//       next: None,
-//       val
-//     }
-//   }
-// }
-impl Solution {
-    pub fn reverse_list(head: Option<Box<ListNode>>) -> Option<Box<ListNode>> {
-        if head.is_none() { return None; }
-        let mut prev = None;
-        let mut current = head;
-        while let Some(mut tmp) = current.take() {
-	        let next = tmp.next.take();
-	        tmp.next = prev.take();
-	        prev = Some(tmp);
-	        current = next;
-        }
-        prev
-    }
-}
-```
 ### typescript [🔗](reverse-linked-list.ts) 
 ```typescript
 /**
@@ -209,6 +135,80 @@ func reverseList(head *ListNode) *ListNode {
         pre , head = head, next
     }
     return pre
+}
+```
+### java [🔗](reverse-linked-list.java) 
+```java
+/**
+ * Definition for singly-linked list.
+ * public class ListNode {
+ *     int val;
+ *     ListNode next;
+ *     ListNode() {}
+ *     ListNode(int val) { this.val = val; }
+ *     ListNode(int val, ListNode next) { this.val = val; this.next = next; }
+ * }
+ */
+class Solution {
+    public ListNode reverseList(ListNode head) {
+        ListNode pre = null, next = null;
+        while (head != null) {
+            next = head.next;
+            head.next = pre;
+            pre = head;
+            head = next;
+        }
+        return pre;
+    }
+}
+```
+### python3 [🔗](reverse-linked-list.py) 
+```python3
+# Definition for singly-linked list.
+# class ListNode:
+#     def __init__(self, val=0, next=None):
+#         self.val = val
+#         self.next = next
+class Solution:
+    def reverseList(self, head: ListNode) -> ListNode:
+        if head == None or head.next == None :
+            return head
+        new_head = self.reverseList(head.next)
+        head.next.next = head
+        head.next = None
+        return new_head 
+```
+### rust [🔗](reverse-linked-list.rs) 
+```rust
+// Definition for singly-linked list.
+// #[derive(PartialEq, Eq, Clone, Debug)]
+// pub struct ListNode {
+//   pub val: i32,
+//   pub next: Option<Box<ListNode>>
+// }
+//
+// impl ListNode {
+//   #[inline]
+//   fn new(val: i32) -> Self {
+//     ListNode {
+//       next: None,
+//       val
+//     }
+//   }
+// }
+impl Solution {
+    pub fn reverse_list(head: Option<Box<ListNode>>) -> Option<Box<ListNode>> {
+        if head.is_none() { return None; }
+        let mut prev = None;
+        let mut current = head;
+        while let Some(mut tmp) = current.take() {
+	        let next = tmp.next.take();
+	        tmp.next = prev.take();
+	        prev = Some(tmp);
+	        current = next;
+        }
+        prev
+    }
 }
 ```
 
