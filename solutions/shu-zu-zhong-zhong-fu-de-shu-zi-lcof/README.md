@@ -24,6 +24,19 @@
 
 ## 题解
 
+### c [🔗](shu-zu-zhong-zhong-fu-de-shu-zi-lcof.c) 
+```c
+int findRepeatNumber(int* nums, int numsSize){
+    for (int i = 0; i < numsSize; i++) {
+        int idx = nums[i] % numsSize;
+        if (nums[idx] >= numsSize) {
+            return idx;
+        }
+        nums[idx] += numsSize;
+    }
+    return -1;
+}
+```
 ### cpp [🔗](shu-zu-zhong-zhong-fu-de-shu-zi-lcof.cpp) 
 ```cpp
 class Solution {
@@ -64,19 +77,6 @@ class Solution:
                 return n
             seen.add(n)
         return -1
-```
-### c [🔗](shu-zu-zhong-zhong-fu-de-shu-zi-lcof.c) 
-```c
-int findRepeatNumber(int* nums, int numsSize){
-    for (int i = 0; i < numsSize; i++) {
-        int idx = nums[i] % numsSize;
-        if (nums[idx] >= numsSize) {
-            return idx;
-        }
-        nums[idx] += numsSize;
-    }
-    return -1;
-}
 ```
 
 

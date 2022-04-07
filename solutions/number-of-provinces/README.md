@@ -47,31 +47,6 @@
 
 ## 题解
 
-### golang [🔗](number-of-provinces.go) 
-```golang
-func findCircleNum(isConnected [][]int) int {
-    pCnt := 0
-    vis := make([]bool, len(isConnected))
-    
-    var dfs func(int)
-    dfs = func(from int) {
-        vis[from] = true;
-        for i, c := range isConnected[from] {
-            if c == 1 && !vis[i] {
-                dfs(i)
-            }
-        }
-    }
-
-    for i, _:= range isConnected {
-        if !vis[i] {
-            pCnt++
-            dfs(i)
-        }
-    }
-    return pCnt
-}
-```
 ### cpp [🔗](number-of-provinces.cpp) 
 ```cpp
 class Solution {
@@ -100,6 +75,31 @@ public:
         return cnt;
     }
 };
+```
+### golang [🔗](number-of-provinces.go) 
+```golang
+func findCircleNum(isConnected [][]int) int {
+    pCnt := 0
+    vis := make([]bool, len(isConnected))
+    
+    var dfs func(int)
+    dfs = func(from int) {
+        vis[from] = true;
+        for i, c := range isConnected[from] {
+            if c == 1 && !vis[i] {
+                dfs(i)
+            }
+        }
+    }
+
+    for i, _:= range isConnected {
+        if !vis[i] {
+            pCnt++
+            dfs(i)
+        }
+    }
+    return pCnt
+}
 ```
 
 

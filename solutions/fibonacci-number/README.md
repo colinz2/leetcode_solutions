@@ -49,6 +49,24 @@ F(n) = F(n - 1) + F(n - 2)，其中 n &gt; 1
 
 ## 题解
 
+### python3 [🔗](fibonacci-number.py) 
+```python3
+class Solution:
+    def fib(self, n: int) -> int:
+        return int((5**0.5)*0.2*( ((1+5**0.5)/2)**n-((1-5**0.5)/2)**n))
+```
+### c [🔗](fibonacci-number.c) 
+```c
+int fib(int n) {
+    int fibs[2] = {0, 1, };
+    while (n > 1) {
+        fibs[0] = fibs[0] + fibs[1];
+        fibs[1] = fibs[0] + fibs[1];
+        n -= 2;
+    }
+    return fibs[n]; 
+}
+```
 ### cpp [🔗](fibonacci-number.cpp) 
 ```cpp
 class Solution {
@@ -71,24 +89,6 @@ func fib(n int) int {
         return n
     }
     return fib(n-1) + fib(n-2)
-}
-```
-### python3 [🔗](fibonacci-number.py) 
-```python3
-class Solution:
-    def fib(self, n: int) -> int:
-        return int((5**0.5)*0.2*( ((1+5**0.5)/2)**n-((1-5**0.5)/2)**n))
-```
-### c [🔗](fibonacci-number.c) 
-```c
-int fib(int n) {
-    int fibs[2] = {0, 1, };
-    while (n > 1) {
-        fibs[0] = fibs[0] + fibs[1];
-        fibs[1] = fibs[0] + fibs[1];
-        n -= 2;
-    }
-    return fibs[n]; 
 }
 ```
 
