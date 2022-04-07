@@ -40,20 +40,6 @@
 
 ## 题解
 
-### golang [🔗](climbing-stairs.go) 
-```golang
-func climbStairs(n int) int {
-	t := make([]int, n+2)
-	t[1] = 1
-	t[2] = 2
-
-	for i := 3; i <= n; i++ {
-		t[i] = t[i-1] + t[i-2]
-	}
-	return t[n]
-}
-
-```
 ### cpp [🔗](climbing-stairs.cpp) 
 ```cpp
 class Solution {
@@ -68,6 +54,20 @@ public:
         return dp[n];
     }
 };
+```
+### golang [🔗](climbing-stairs.go) 
+```golang
+func climbStairs(n int) int {
+	t := make([]int, n+2)
+	t[1] = 1
+	t[2] = 2
+
+	for i := 3; i <= n; i++ {
+		t[i] = t[i-1] + t[i-2]
+	}
+	return t[n]
+}
+
 ```
 
 

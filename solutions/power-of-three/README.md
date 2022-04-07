@@ -52,18 +52,6 @@
 
 ## 题解
 
-### c [🔗](power-of-three.c) 
-```c
-
-
-bool isPowerOfThree(int n){
-    long t = 1;
-    while (t < n) {
-        t *= 3;
-    }
-    return n == t;
-}
-```
 ### cpp [🔗](power-of-three.cpp) 
 ```cpp
 class Solution {
@@ -78,6 +66,18 @@ public:
 };
 
 
+```
+### c [🔗](power-of-three.c) 
+```c
+
+
+bool isPowerOfThree(int n){
+    long t = 1;
+    while (t < n) {
+        t *= 3;
+    }
+    return n == t;
+}
 ```
 
 

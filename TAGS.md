@@ -24,8 +24,8 @@
 |21|回溯|[🔗](tags/backtracking.md)|[Backtracking](https://leetcode-cn.com/tag/backtracking)|13|
 |22|堆（优先队列）|[🔗](tags/heap-priority-queue.md)|[Heap (Priority Queue)](https://leetcode-cn.com/tag/heap-priority-queue)|11|
 |23|模拟|[🔗](tags/simulation.md)|[Simulation](https://leetcode-cn.com/tag/simulation)|11|
-|24|贪心|[🔗](tags/greedy.md)|[Greedy](https://leetcode-cn.com/tag/greedy)|9|
-|25|计数|[🔗](tags/counting.md)|[Counting](https://leetcode-cn.com/tag/counting)|9|
+|24|计数|[🔗](tags/counting.md)|[Counting](https://leetcode-cn.com/tag/counting)|9|
+|25|贪心|[🔗](tags/greedy.md)|[Greedy](https://leetcode-cn.com/tag/greedy)|9|
 |26|队列|[🔗](tags/queue.md)|[Queue](https://leetcode-cn.com/tag/queue)|8|
 |27|多线程|[🔗](tags/concurrency.md)|[Concurrency](https://leetcode-cn.com/tag/concurrency)|8|
 |28|字典树|[🔗](tags/trie.md)|[Trie](https://leetcode-cn.com/tag/trie)|6|
@@ -34,28 +34,28 @@
 |31|前缀和|[🔗](tags/prefix-sum.md)|[Prefix Sum](https://leetcode-cn.com/tag/prefix-sum)|5|
 |32|记忆化搜索|[🔗](tags/memoization.md)|[Memoization](https://leetcode-cn.com/tag/memoization)|5|
 |33|滑动窗口|[🔗](tags/sliding-window.md)|[Sliding Window](https://leetcode-cn.com/tag/sliding-window)|4|
-|34|数据流|[🔗](tags/data-stream.md)|[Data Stream](https://leetcode-cn.com/tag/data-stream)|4|
-|35|双向链表|[🔗](tags/doubly-linked-list.md)|[Doubly-Linked List](https://leetcode-cn.com/tag/doubly-linked-list)|4|
+|34|双向链表|[🔗](tags/doubly-linked-list.md)|[Doubly-Linked List](https://leetcode-cn.com/tag/doubly-linked-list)|4|
+|35|数据流|[🔗](tags/data-stream.md)|[Data Stream](https://leetcode-cn.com/tag/data-stream)|4|
 |36|交互|[🔗](tags/interactive.md)|[Interactive](https://leetcode-cn.com/tag/interactive)|3|
-|37|迭代器|[🔗](tags/iterator.md)|[Iterator](https://leetcode-cn.com/tag/iterator)|3|
-|38|哈希函数|[🔗](tags/hash-function.md)|[Hash Function](https://leetcode-cn.com/tag/hash-function)|3|
-|39|快速选择|[🔗](tags/quickselect.md)|[Quickselect](https://leetcode-cn.com/tag/quickselect)|3|
+|37|桶排序|[🔗](tags/bucket-sort.md)|[Bucket Sort](https://leetcode-cn.com/tag/bucket-sort)|3|
+|38|快速选择|[🔗](tags/quickselect.md)|[Quickselect](https://leetcode-cn.com/tag/quickselect)|3|
+|39|迭代器|[🔗](tags/iterator.md)|[Iterator](https://leetcode-cn.com/tag/iterator)|3|
 |40|字符串匹配|[🔗](tags/string-matching.md)|[String Matching](https://leetcode-cn.com/tag/string-matching)|3|
-|41|桶排序|[🔗](tags/bucket-sort.md)|[Bucket Sort](https://leetcode-cn.com/tag/bucket-sort)|3|
-|42|数论|[🔗](tags/number-theory.md)|[Number Theory](https://leetcode-cn.com/tag/number-theory)|2|
-|43|几何|[🔗](tags/geometry.md)|[Geometry](https://leetcode-cn.com/tag/geometry)|2|
-|44|有序集合|[🔗](tags/ordered-set.md)|[Ordered Set](https://leetcode-cn.com/tag/ordered-set)|2|
-|45|归并排序|[🔗](tags/merge-sort.md)|[Merge Sort](https://leetcode-cn.com/tag/merge-sort)|2|
-|46|脑筋急转弯|[🔗](tags/brainteaser.md)|[Brainteaser](https://leetcode-cn.com/tag/brainteaser)|2|
-|47|图|[🔗](tags/graph.md)|[Graph](https://leetcode-cn.com/tag/graph)|2|
+|41|哈希函数|[🔗](tags/hash-function.md)|[Hash Function](https://leetcode-cn.com/tag/hash-function)|3|
+|42|几何|[🔗](tags/geometry.md)|[Geometry](https://leetcode-cn.com/tag/geometry)|2|
+|43|归并排序|[🔗](tags/merge-sort.md)|[Merge Sort](https://leetcode-cn.com/tag/merge-sort)|2|
+|44|数论|[🔗](tags/number-theory.md)|[Number Theory](https://leetcode-cn.com/tag/number-theory)|2|
+|45|脑筋急转弯|[🔗](tags/brainteaser.md)|[Brainteaser](https://leetcode-cn.com/tag/brainteaser)|2|
+|46|图|[🔗](tags/graph.md)|[Graph](https://leetcode-cn.com/tag/graph)|2|
+|47|有序集合|[🔗](tags/ordered-set.md)|[Ordered Set](https://leetcode-cn.com/tag/ordered-set)|2|
 |48|随机化|[🔗](tags/randomized.md)|[Randomized](https://leetcode-cn.com/tag/randomized)|1|
-|49|数据库|[🔗](tags/database.md)|[Database](https://leetcode-cn.com/tag/database)|1|
-|50|组合数学|[🔗](tags/combinatorics.md)|[Combinatorics](https://leetcode-cn.com/tag/combinatorics)|1|
-|51||[🔗](tags/shell.md)|[Shell](https://leetcode-cn.com/tag/shell)|1|
-|52|水塘抽样|[🔗](tags/reservoir-sampling.md)|[Reservoir Sampling](https://leetcode-cn.com/tag/reservoir-sampling)|1|
-|53|博弈|[🔗](tags/game-theory.md)|[Game Theory](https://leetcode-cn.com/tag/game-theory)|1|
-|54|枚举|[🔗](tags/enumeration.md)|[Enumeration](https://leetcode-cn.com/tag/enumeration)|1|
-|55|单调队列|[🔗](tags/monotonic-queue.md)|[Monotonic Queue](https://leetcode-cn.com/tag/monotonic-queue)|1|
+|49||[🔗](tags/shell.md)|[Shell](https://leetcode-cn.com/tag/shell)|1|
+|50|数据库|[🔗](tags/database.md)|[Database](https://leetcode-cn.com/tag/database)|1|
+|51|博弈|[🔗](tags/game-theory.md)|[Game Theory](https://leetcode-cn.com/tag/game-theory)|1|
+|52|枚举|[🔗](tags/enumeration.md)|[Enumeration](https://leetcode-cn.com/tag/enumeration)|1|
+|53|水塘抽样|[🔗](tags/reservoir-sampling.md)|[Reservoir Sampling](https://leetcode-cn.com/tag/reservoir-sampling)|1|
+|54|单调队列|[🔗](tags/monotonic-queue.md)|[Monotonic Queue](https://leetcode-cn.com/tag/monotonic-queue)|1|
+|55|组合数学|[🔗](tags/combinatorics.md)|[Combinatorics](https://leetcode-cn.com/tag/combinatorics)|1|
 # 标签
 
 ## [数组](https://leetcode-cn.com/tag/array)
@@ -1049,20 +1049,6 @@
 
 
 
-## [贪心](https://leetcode-cn.com/tag/greedy)
-
-1. [盛最多水的容器](../solutions/container-with-most-water/README.md)
-2. [通配符匹配](../solutions/wildcard-matching/README.md)
-3. [跳跃游戏](../solutions/jump-game/README.md)
-4. [买卖股票的最佳时机 II](../solutions/best-time-to-buy-and-sell-stock-ii/README.md)
-5. [最大数](../solutions/largest-number/README.md)
-6. [最长回文串](../solutions/longest-palindrome/README.md)
-7. [分发饼干](../solutions/assign-cookies/README.md)
-8. [柠檬水找零](../solutions/lemonade-change/README.md)
-9. [视频拼接](../solutions/video-stitching/README.md)
-
-
-
 ## [计数](https://leetcode-cn.com/tag/counting)
 
 1. [多数元素](../solutions/majority-element/README.md)
@@ -1074,6 +1060,20 @@
 7. [子域名访问计数](../solutions/subdomain-visit-count/README.md)
 8. [最常见的单词](../solutions/most-common-word/README.md)
 9. [“气球” 的最大数量](../solutions/maximum-number-of-balloons/README.md)
+
+
+
+## [贪心](https://leetcode-cn.com/tag/greedy)
+
+1. [盛最多水的容器](../solutions/container-with-most-water/README.md)
+2. [通配符匹配](../solutions/wildcard-matching/README.md)
+3. [跳跃游戏](../solutions/jump-game/README.md)
+4. [买卖股票的最佳时机 II](../solutions/best-time-to-buy-and-sell-stock-ii/README.md)
+5. [最大数](../solutions/largest-number/README.md)
+6. [最长回文串](../solutions/longest-palindrome/README.md)
+7. [分发饼干](../solutions/assign-cookies/README.md)
+8. [柠檬水找零](../solutions/lemonade-change/README.md)
+9. [视频拼接](../solutions/video-stitching/README.md)
 
 
 
@@ -1164,21 +1164,21 @@
 
 
 
-## [数据流](https://leetcode-cn.com/tag/data-stream)
-
-1. [数据流中的移动平均值](../solutions/moving-average-from-data-stream/README.md)
-2. [数据流中的第 K 大元素](../solutions/kth-largest-element-in-a-stream/README.md)
-3. [最近的请求次数](../solutions/number-of-recent-calls/README.md)
-4. [数据流的第 K 大数值](../solutions/jBjn9C/README.md)
-
-
-
 ## [双向链表](https://leetcode-cn.com/tag/doubly-linked-list)
 
 1. [LRU 缓存](../solutions/lru-cache/README.md)
 2. [最大栈](../solutions/max-stack/README.md)
 3. [将二叉搜索树转化为排序的双向链表](../solutions/convert-binary-search-tree-to-sorted-doubly-linked-list/README.md)
 4. [扁平化多级双向链表](../solutions/flatten-a-multilevel-doubly-linked-list/README.md)
+
+
+
+## [数据流](https://leetcode-cn.com/tag/data-stream)
+
+1. [数据流中的移动平均值](../solutions/moving-average-from-data-stream/README.md)
+2. [数据流中的第 K 大元素](../solutions/kth-largest-element-in-a-stream/README.md)
+3. [最近的请求次数](../solutions/number-of-recent-calls/README.md)
+4. [数据流的第 K 大数值](../solutions/jBjn9C/README.md)
 
 
 
@@ -1190,19 +1190,11 @@
 
 
 
-## [迭代器](https://leetcode-cn.com/tag/iterator)
+## [桶排序](https://leetcode-cn.com/tag/bucket-sort)
 
-1. [二叉搜索树迭代器](../solutions/binary-search-tree-iterator/README.md)
-2. [展开二维向量](../solutions/flatten-2d-vector/README.md)
-3. [迭代压缩字符串](../solutions/design-compressed-string-iterator/README.md)
-
-
-
-## [哈希函数](https://leetcode-cn.com/tag/hash-function)
-
-1. [TinyURL 的加密与解密](../solutions/encode-and-decode-tinyurl/README.md)
-2. [设计哈希集合](../solutions/design-hashset/README.md)
-3. [设计哈希映射](../solutions/design-hashmap/README.md)
+1. [前 K 个高频元素](../solutions/top-k-frequent-elements/README.md)
+2. [根据字符出现频率排序](../solutions/sort-characters-by-frequency/README.md)
+3. [前K个高频单词](../solutions/top-k-frequent-words/README.md)
 
 
 
@@ -1214,6 +1206,14 @@
 
 
 
+## [迭代器](https://leetcode-cn.com/tag/iterator)
+
+1. [二叉搜索树迭代器](../solutions/binary-search-tree-iterator/README.md)
+2. [展开二维向量](../solutions/flatten-2d-vector/README.md)
+3. [迭代压缩字符串](../solutions/design-compressed-string-iterator/README.md)
+
+
+
 ## [字符串匹配](https://leetcode-cn.com/tag/string-matching)
 
 1. [实现 strStr()](../solutions/implement-strstr/README.md)
@@ -1222,18 +1222,11 @@
 
 
 
-## [桶排序](https://leetcode-cn.com/tag/bucket-sort)
+## [哈希函数](https://leetcode-cn.com/tag/hash-function)
 
-1. [前 K 个高频元素](../solutions/top-k-frequent-elements/README.md)
-2. [根据字符出现频率排序](../solutions/sort-characters-by-frequency/README.md)
-3. [前K个高频单词](../solutions/top-k-frequent-words/README.md)
-
-
-
-## [数论](https://leetcode-cn.com/tag/number-theory)
-
-1. [计数质数](../solutions/count-primes/README.md)
-2. [各位相加](../solutions/add-digits/README.md)
+1. [TinyURL 的加密与解密](../solutions/encode-and-decode-tinyurl/README.md)
+2. [设计哈希集合](../solutions/design-hashset/README.md)
+3. [设计哈希映射](../solutions/design-hashmap/README.md)
 
 
 
@@ -1244,17 +1237,17 @@
 
 
 
-## [有序集合](https://leetcode-cn.com/tag/ordered-set)
-
-1. [最大栈](../solutions/max-stack/README.md)
-2. [最大频率栈](../solutions/maximum-frequency-stack/README.md)
-
-
-
 ## [归并排序](https://leetcode-cn.com/tag/merge-sort)
 
 1. [合并K个升序链表](../solutions/merge-k-sorted-lists/README.md)
 2. [排序链表](../solutions/sort-list/README.md)
+
+
+
+## [数论](https://leetcode-cn.com/tag/number-theory)
+
+1. [计数质数](../solutions/count-primes/README.md)
+2. [各位相加](../solutions/add-digits/README.md)
 
 
 
@@ -1272,21 +1265,16 @@
 
 
 
+## [有序集合](https://leetcode-cn.com/tag/ordered-set)
+
+1. [最大栈](../solutions/max-stack/README.md)
+2. [最大频率栈](../solutions/maximum-frequency-stack/README.md)
+
+
+
 ## [随机化](https://leetcode-cn.com/tag/randomized)
 
 1. [链表随机节点](../solutions/linked-list-random-node/README.md)
-
-
-
-## [数据库](https://leetcode-cn.com/tag/database)
-
-1. [第二高的薪水](../solutions/second-highest-salary/README.md)
-
-
-
-## [组合数学](https://leetcode-cn.com/tag/combinatorics)
-
-1. [不同路径](../solutions/unique-paths/README.md)
 
 
 
@@ -1296,9 +1284,9 @@
 
 
 
-## [水塘抽样](https://leetcode-cn.com/tag/reservoir-sampling)
+## [数据库](https://leetcode-cn.com/tag/database)
 
-1. [链表随机节点](../solutions/linked-list-random-node/README.md)
+1. [第二高的薪水](../solutions/second-highest-salary/README.md)
 
 
 
@@ -1314,9 +1302,21 @@
 
 
 
+## [水塘抽样](https://leetcode-cn.com/tag/reservoir-sampling)
+
+1. [链表随机节点](../solutions/linked-list-random-node/README.md)
+
+
+
 ## [单调队列](https://leetcode-cn.com/tag/monotonic-queue)
 
 1. [滑动窗口最大值](../solutions/sliding-window-maximum/README.md)
+
+
+
+## [组合数学](https://leetcode-cn.com/tag/combinatorics)
+
+1. [不同路径](../solutions/unique-paths/README.md)
 
 
 

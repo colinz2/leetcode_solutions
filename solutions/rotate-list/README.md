@@ -34,34 +34,6 @@
 
 ## 题解
 
-### c [🔗](rotate-list.c) 
-```c
-/**
- * Definition for singly-linked list.
- * struct ListNode {
- *     int val;
- *     struct ListNode *next;
- * };
- */
-
-
-struct ListNode* rotateRight(struct ListNode* head, int k){
-    if (head == NULL) return NULL;
-    struct ListNode *last = head;
-    int list_len = 1;
-    while (last->next) {
-        list_len++;
-        last = last->next;
-    }
-    last->next = head;
-    for (int i = 0; i < list_len - (k % list_len); i++) {
-        last = last->next;
-    }
-    head = last->next;
-    last->next = NULL;
-    return head;
-}
-```
 ### cpp [🔗](rotate-list.cpp) 
 ```cpp
 /**
@@ -143,6 +115,34 @@ class Solution:
         head = last.next
         last.next = None
         return head
+```
+### c [🔗](rotate-list.c) 
+```c
+/**
+ * Definition for singly-linked list.
+ * struct ListNode {
+ *     int val;
+ *     struct ListNode *next;
+ * };
+ */
+
+
+struct ListNode* rotateRight(struct ListNode* head, int k){
+    if (head == NULL) return NULL;
+    struct ListNode *last = head;
+    int list_len = 1;
+    while (last->next) {
+        list_len++;
+        last = last->next;
+    }
+    last->next = head;
+    for (int i = 0; i < list_len - (k % list_len); i++) {
+        last = last->next;
+    }
+    head = last->next;
+    last->next = NULL;
+    return head;
+}
 ```
 
 

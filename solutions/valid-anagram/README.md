@@ -38,6 +38,12 @@
 
 ## 题解
 
+### python3 [🔗](valid-anagram.py) 
+```python3
+class Solution:
+    def isAnagram(self, s: str, t: str) -> bool:
+        return sorted(s) == sorted(t)
+```
 ### c [🔗](valid-anagram.c) 
 ```c
 bool is_all_zero(int *array, int len) {
@@ -102,12 +108,6 @@ func isAnagram(s string, t string) bool {
 
     return true
 }
-```
-### python3 [🔗](valid-anagram.py) 
-```python3
-class Solution:
-    def isAnagram(self, s: str, t: str) -> bool:
-        return sorted(s) == sorted(t)
 ```
 
 

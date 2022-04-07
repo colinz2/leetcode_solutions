@@ -49,6 +49,28 @@
 
 ## 题解
 
+### rust [🔗](two-sum.rs) 
+```rust
+
+use std::collections::HashMap;
+
+impl Solution {
+    pub fn two_sum(nums: Vec<i32>, target: i32) -> Vec<i32> {
+        let mut seen: HashMap<i32 ,i32> = HashMap::new();
+        for (i, v) in nums.iter().enumerate() {
+            match seen.get(v) {
+                Some(index) => {
+                    return vec![*index, i as i32];
+                }
+                None => {
+                    seen.insert(target - v, i as i32); 
+                }
+            }
+        }
+        vec![]
+    }
+}
+```
 ### cpp [🔗](two-sum.cpp) 
 ```cpp
 class Solution {
@@ -94,28 +116,6 @@ class Solution:
             if c in check_dict:
                 return [check_dict[c], i]
             check_dict[n] = i
-```
-### rust [🔗](two-sum.rs) 
-```rust
-
-use std::collections::HashMap;
-
-impl Solution {
-    pub fn two_sum(nums: Vec<i32>, target: i32) -> Vec<i32> {
-        let mut seen: HashMap<i32 ,i32> = HashMap::new();
-        for (i, v) in nums.iter().enumerate() {
-            match seen.get(v) {
-                Some(index) => {
-                    return vec![*index, i as i32];
-                }
-                None => {
-                    seen.insert(target - v, i as i32); 
-                }
-            }
-        }
-        vec![]
-    }
-}
 ```
 
 
