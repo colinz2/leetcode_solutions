@@ -40,34 +40,6 @@
 
 ## 题解
 
-### golang [🔗](kth-smallest-element-in-a-bst.go) 
-```golang
-/**
- * Definition for a binary tree node.
- * type TreeNode struct {
- *     Val int
- *     Left *TreeNode
- *     Right *TreeNode
- * }
- */
-func kthSmallest(root *TreeNode, k int) int {
-    stack := make([]*TreeNode, 0)
-    for root != nil || len(stack) > 0 {
-        for root != nil {
-            stack = append(stack, root)
-            root = root.Left
-        }
-        root = stack[len(stack)-1]
-        stack = stack[0:len(stack)-1]
-        k--
-        if k == 0 {
-            return root.Val
-        }
-        root = root.Right
-    }
-    return 0
-}
-```
 ### python [🔗](kth-smallest-element-in-a-bst.py) 
 ```python
 # Definition for a binary tree node.
@@ -189,6 +161,34 @@ public:
         return -1;
     }
 };
+```
+### golang [🔗](kth-smallest-element-in-a-bst.go) 
+```golang
+/**
+ * Definition for a binary tree node.
+ * type TreeNode struct {
+ *     Val int
+ *     Left *TreeNode
+ *     Right *TreeNode
+ * }
+ */
+func kthSmallest(root *TreeNode, k int) int {
+    stack := make([]*TreeNode, 0)
+    for root != nil || len(stack) > 0 {
+        for root != nil {
+            stack = append(stack, root)
+            root = root.Left
+        }
+        root = stack[len(stack)-1]
+        stack = stack[0:len(stack)-1]
+        k--
+        if k == 0 {
+            return root.Val
+        }
+        root = root.Right
+    }
+    return 0
+}
 ```
 
 

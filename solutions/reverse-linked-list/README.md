@@ -47,24 +47,6 @@
 
 ## 题解
 
-### golang [🔗](reverse-linked-list.go) 
-```golang
-/**
- * Definition for singly-linked list.
- * type ListNode struct {
- *     Val int
- *     Next *ListNode
- * }
- */
-func reverseList(head *ListNode) *ListNode {
-    var pre, next *ListNode = nil, nil
-    for head != nil {
-        next, head.Next = head.Next, pre
-        pre , head = head, next
-    }
-    return pre
-}
-```
 ### java [🔗](reverse-linked-list.java) 
 ```java
 /**
@@ -210,6 +192,24 @@ public:
         return prev;
     }
 };
+```
+### golang [🔗](reverse-linked-list.go) 
+```golang
+/**
+ * Definition for singly-linked list.
+ * type ListNode struct {
+ *     Val int
+ *     Next *ListNode
+ * }
+ */
+func reverseList(head *ListNode) *ListNode {
+    var pre, next *ListNode = nil, nil
+    for head != nil {
+        next, head.Next = head.Next, pre
+        pre , head = head, next
+    }
+    return pre
+}
 ```
 
 

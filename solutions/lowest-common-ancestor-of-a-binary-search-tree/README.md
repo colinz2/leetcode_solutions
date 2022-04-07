@@ -38,28 +38,6 @@
 
 ## 题解
 
-### golang [🔗](lowest-common-ancestor-of-a-binary-search-tree.go) 
-```golang
-/**
- * Definition for a binary tree node.
- * type TreeNode struct {
- *     Val   int
- *     Left  *TreeNode
- *     Right *TreeNode
- * }
- */
-
-func lowestCommonAncestor(root, p, q *TreeNode) *TreeNode {
-    if root != nil {
-        if root.Val > p.Val && root.Val > q.Val {
-            return lowestCommonAncestor(root.Left, p, q)
-        } else if root.Val < p.Val && root.Val < q.Val {
-            return lowestCommonAncestor(root.Right, p, q)
-        }
-    }
-    return root
-}
-```
 ### python3 [🔗](lowest-common-ancestor-of-a-binary-search-tree.py) 
 ```python3
 # Definition for a binary tree node.
@@ -157,6 +135,28 @@ public:
         return root;
     }
 };
+```
+### golang [🔗](lowest-common-ancestor-of-a-binary-search-tree.go) 
+```golang
+/**
+ * Definition for a binary tree node.
+ * type TreeNode struct {
+ *     Val   int
+ *     Left  *TreeNode
+ *     Right *TreeNode
+ * }
+ */
+
+func lowestCommonAncestor(root, p, q *TreeNode) *TreeNode {
+    if root != nil {
+        if root.Val > p.Val && root.Val > q.Val {
+            return lowestCommonAncestor(root.Left, p, q)
+        } else if root.Val < p.Val && root.Val < q.Val {
+            return lowestCommonAncestor(root.Right, p, q)
+        }
+    }
+    return root
+}
 ```
 
 

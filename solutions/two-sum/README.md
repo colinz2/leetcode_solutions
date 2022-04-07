@@ -49,6 +49,19 @@
 
 ## 题解
 
+### golang [🔗](two-sum.go) 
+```golang
+func twoSum(nums []int, target int) []int {
+    seen := make(map[int]int)
+    for i, num := range nums {
+        if val, e := seen[target - num]; e {
+            return []int{val, i}
+        }
+        seen[num] = i
+    }
+    return []int{-1, -1}
+}
+```
 ### python3 [🔗](two-sum.py) 
 ```python3
 class Solution:
@@ -103,19 +116,6 @@ public:
         return {-1, -1};
     }
 };
-```
-### golang [🔗](two-sum.go) 
-```golang
-func twoSum(nums []int, target int) []int {
-    seen := make(map[int]int)
-    for i, num := range nums {
-        if val, e := seen[target - num]; e {
-            return []int{val, i}
-        }
-        seen[num] = i
-    }
-    return []int{-1, -1}
-}
 ```
 
 

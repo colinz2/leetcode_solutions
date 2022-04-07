@@ -58,50 +58,6 @@
 
 ## 题解
 
-### python3 [🔗](linked-list-cycle.py) 
-```python3
-# Definition for singly-linked list.
-# class ListNode:
-#     def __init__(self, x):
-#         self.val = x
-#         self.next = None
-
-class Solution:
-    def hasCycle(self, head: Optional[ListNode]) -> bool:
-        fast = head
-        while fast != None and fast.next != None:
-            fast = fast.next.next
-            head = head.next
-            if fast == head:
-                return True
-        return False
-```
-### typescript [🔗](linked-list-cycle.ts) 
-```typescript
-/**
- * Definition for singly-linked list.
- * class ListNode {
- *     val: number
- *     next: ListNode | null
- *     constructor(val?: number, next?: ListNode | null) {
- *         this.val = (val===undefined ? 0 : val)
- *         this.next = (next===undefined ? null : next)
- *     }
- * }
- */
-
-function hasCycle(head: ListNode | null): boolean {
-    let fast = head
-    while (fast != null && fast.next != null) {
-        fast = fast.next.next
-        head = head.next
-        if (head === fast) {
-            return true
-        }
-    }
-    return false
-};
-```
 ### c [🔗](linked-list-cycle.c) 
 ```c
 /**
@@ -196,6 +152,50 @@ public class Solution {
         return false;
     }
 }
+```
+### python3 [🔗](linked-list-cycle.py) 
+```python3
+# Definition for singly-linked list.
+# class ListNode:
+#     def __init__(self, x):
+#         self.val = x
+#         self.next = None
+
+class Solution:
+    def hasCycle(self, head: Optional[ListNode]) -> bool:
+        fast = head
+        while fast != None and fast.next != None:
+            fast = fast.next.next
+            head = head.next
+            if fast == head:
+                return True
+        return False
+```
+### typescript [🔗](linked-list-cycle.ts) 
+```typescript
+/**
+ * Definition for singly-linked list.
+ * class ListNode {
+ *     val: number
+ *     next: ListNode | null
+ *     constructor(val?: number, next?: ListNode | null) {
+ *         this.val = (val===undefined ? 0 : val)
+ *         this.next = (next===undefined ? null : next)
+ *     }
+ * }
+ */
+
+function hasCycle(head: ListNode | null): boolean {
+    let fast = head
+    while (fast != null && fast.next != null) {
+        fast = fast.next.next
+        head = head.next
+        if (head === fast) {
+            return true
+        }
+    }
+    return false
+};
 ```
 
 

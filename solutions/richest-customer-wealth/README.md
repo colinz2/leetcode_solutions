@@ -49,33 +49,6 @@
 
 ## 题解
 
-### rust [🔗](richest-customer-wealth.rs) 
-```rust
-impl Solution {
-    pub fn maximum_wealth(accounts: Vec<Vec<i32>>) -> i32 {
-        accounts.iter()
-            .map(|v|v.iter().sum())
-            .max()
-            .unwrap()
-    }
-}
-```
-### c [🔗](richest-customer-wealth.c) 
-```c
-int maximumWealth(int** accounts, int accountsSize, int* accountsColSize){
-    int maxW = 0;
-    for (int i = 0; i < accountsSize; i++) {
-        int wealthOneAccount = 0;
-        for (int j = 0; j < accountsColSize[i]; j++) {
-            wealthOneAccount += accounts[i][j];
-        }
-        if (maxW < wealthOneAccount) {
-            maxW = wealthOneAccount;
-        } 
-    }
-    return maxW;
-}
-```
 ### cpp [🔗](richest-customer-wealth.cpp) 
 ```cpp
 class Solution {
@@ -114,6 +87,33 @@ class Solution(object):
         :rtype: int
         """
         return max([sum(account) for account in accounts])
+```
+### rust [🔗](richest-customer-wealth.rs) 
+```rust
+impl Solution {
+    pub fn maximum_wealth(accounts: Vec<Vec<i32>>) -> i32 {
+        accounts.iter()
+            .map(|v|v.iter().sum())
+            .max()
+            .unwrap()
+    }
+}
+```
+### c [🔗](richest-customer-wealth.c) 
+```c
+int maximumWealth(int** accounts, int accountsSize, int* accountsColSize){
+    int maxW = 0;
+    for (int i = 0; i < accountsSize; i++) {
+        int wealthOneAccount = 0;
+        for (int j = 0; j < accountsColSize[i]; j++) {
+            wealthOneAccount += accounts[i][j];
+        }
+        if (maxW < wealthOneAccount) {
+            maxW = wealthOneAccount;
+        } 
+    }
+    return maxW;
+}
 ```
 
 

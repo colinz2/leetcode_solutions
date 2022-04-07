@@ -39,6 +39,35 @@
 
 ## 题解
 
+### python3 [🔗](hamming-distance.py) 
+```python3
+class Solution:
+    def hammingDistance(self, x, y):
+        """
+        :type x: int
+        :type y: int
+        :rtype: int
+        """
+        xor = x ^ y
+        d = 0
+        while xor > 0:
+            d += xor & 1
+            xor >>= 1
+        return d
+        
+```
+### c [🔗](hamming-distance.c) 
+```c
+int hammingDistance(int x, int y) {
+    int z = x ^ y;
+    int distance = 0;
+    while (z > 0) {
+        distance += z & 1;
+        z = z >> 1;
+    }
+    return distance;
+}
+```
 ### cpp [🔗](hamming-distance.cpp) 
 ```cpp
 class Solution {
@@ -68,35 +97,6 @@ func hammingDistance(x int, y int) int {
 	return res
 }
 
-```
-### python3 [🔗](hamming-distance.py) 
-```python3
-class Solution:
-    def hammingDistance(self, x, y):
-        """
-        :type x: int
-        :type y: int
-        :rtype: int
-        """
-        xor = x ^ y
-        d = 0
-        while xor > 0:
-            d += xor & 1
-            xor >>= 1
-        return d
-        
-```
-### c [🔗](hamming-distance.c) 
-```c
-int hammingDistance(int x, int y) {
-    int z = x ^ y;
-    int distance = 0;
-    while (z > 0) {
-        distance += z & 1;
-        z = z >> 1;
-    }
-    return distance;
-}
 ```
 
 

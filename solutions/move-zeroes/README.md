@@ -39,20 +39,6 @@
 
 ## 题解
 
-### golang [🔗](move-zeroes.go) 
-```golang
-func moveZeroes(nums []int) {
-	k := 0
-	for i := range nums {
-		if nums[i] != 0 {
-			if i != k {
-				nums[i], nums[k] = nums[k], nums[i]
-			}
-			k++
-		}
-	}
-}
-```
 ### cpp [🔗](move-zeroes.cpp) 
 ```cpp
 class Solution {
@@ -69,6 +55,20 @@ public:
         }
     }
 };
+```
+### golang [🔗](move-zeroes.go) 
+```golang
+func moveZeroes(nums []int) {
+	k := 0
+	for i := range nums {
+		if nums[i] != 0 {
+			if i != k {
+				nums[i], nums[k] = nums[k], nums[i]
+			}
+			k++
+		}
+	}
+}
 ```
 
 

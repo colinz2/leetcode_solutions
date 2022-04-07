@@ -26,6 +26,20 @@
 
 ## 题解
 
+### golang [🔗](is-unique-lcci.go) 
+```golang
+func isUnique(astr string) bool {
+    var mask uint32
+    for i := range astr {
+        bitN := uint32(1 << int(astr[i] - 'a'))
+        if bitN & mask > 0 {
+            return false
+        }
+        mask |= bitN
+    }
+    return true
+}
+```
 ### cpp [🔗](is-unique-lcci.cpp) 
 ```cpp
 class Solution {
@@ -41,20 +55,6 @@ public:
         return  true;
     }
 };
-```
-### golang [🔗](is-unique-lcci.go) 
-```golang
-func isUnique(astr string) bool {
-    var mask uint32
-    for i := range astr {
-        bitN := uint32(1 << int(astr[i] - 'a'))
-        if bitN & mask > 0 {
-            return false
-        }
-        mask |= bitN
-    }
-    return true
-}
 ```
 
 
